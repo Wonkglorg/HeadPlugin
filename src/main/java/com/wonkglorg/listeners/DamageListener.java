@@ -1,9 +1,10 @@
 package com.wonkglorg.listeners;
 
 import com.wonkglorg.Heads;
-import com.wonkglorg.config.ConfigManager;
+import com.wonkglorg.enums.English;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.config.ConfigManager;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import org.bukkit.entity.Creeper;
 import org.bukkit.entity.Player;
@@ -39,15 +40,15 @@ public class DamageListener implements Listener
 	{
 		if(e.getDamager() instanceof Player damager && e.getEntity() instanceof Player player)
 		{
-			if(Math.random() * 100 <= config.getInt("Player_PvP_Head_DropChance")) //Get % specified in config
+			if(!e.getEntity().isDead())
+			{
+				return;
+			}
+			if(Math.random() * 100 <= config.getInt("Player_PvP_Head_DropChance"))
 			{
 				ItemStack playerHead = ItemUtility.createPlayerHead(player.getUniqueId());
 				player.getWorld().dropItemNaturally(player.getLocation(),
-						ItemUtility.addLore(playerHead, "Killed by " + damager.getName()));
-				
-				//langManager.getConfig(YML.ENGLISH.getFileName())
-				//										   .getString("head_player_killed_description")
-				//										   .replace("%killer%", damager.getName()))
+						ItemUtility.addLore(playerHead, English.PVP_HEAD_DESCRIPTION.toString().replace("<killer>", damager.getName())));
 			}
 		}
 		

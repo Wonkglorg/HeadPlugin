@@ -3,9 +3,20 @@ version: '${project.version}'
 main: com.wonkglorg.Heads
 api-version: 1.19
 authors: [ Wonkglorg ]
-description: Customizeable Head Plugin for dropping heads from mobs and players in various ways
+description: Customizable Head Plugin for dropping heads from mobs and players in various ways
 commands:
-  creeperSpawner:
-    description: Spawns a creeper
+  spawn-creeper:
+    description: Spawns creeper at the clicked location
+    usage: "Usage: /<command> <args>"
+    permission: Heads.SpawnCreeper
+    permission-message: You do not have permission to use this command!
   drop-heads:
-    description: drops existing heads
+    description: Drops head of specified type
+    usage: "Usage: /<command> <args>"
+    permission: Heads.DropHeads
+    permission-message: You do not have permission to use this command!
+  reload-heads:
+    description: Reloads configs
+    usage: "Usage: /<command> <args>"
+    permission: Heads.Reload.Config
+    permission-message: You do not have permission to use this command!

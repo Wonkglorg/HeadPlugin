@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class ChargedCreeper extends Command
 {
-	private static Map<Player, String> playerStringMap = new HashMap<>();
+	private static final Map<Player, String> playerStringMap = new HashMap<>();
 	
 	public ChargedCreeper(@NotNull JavaPlugin main, @NotNull String name)
 	{
@@ -53,15 +53,5 @@ public class ChargedCreeper extends Command
 	public static Map<Player, String> getPlayerStringMap()
 	{
 		return playerStringMap;
-	}
-	
-	public static void removePlayerStringMap(Player player)
-	{
-		playerStringMap.remove(player);
-	}
-	
-	public static void addPlayerStringMap(Player player, String type)
-	{
-		playerStringMap.put(player, type);
 	}
 }

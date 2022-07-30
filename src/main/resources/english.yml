@@ -1,3 +1,12 @@
-#add more soon once setup completed
-error_message: "Error"
-head_player_killed_description: "Killed by %killer%"
+#English lang file for Heads plugin
+
+#Reload Config
+reload-config-all-success: <prefix>Successfully reloaded all configs!
+reload-config-success: <prefix>Successfully reloaded <config> !
+reload-config-error: <prefix><config> does not exist!
+
+#Head Drop Command
+command-head-drop-success: <prefix>&#FFFF55Dropped &#fcca03<headcount> &#FFFF55Head
+
+#PVP Head Drop Description
+pvp-head-description: Killed by <killer>

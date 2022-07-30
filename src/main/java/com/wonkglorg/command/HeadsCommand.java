@@ -1,6 +1,7 @@
 package com.wonkglorg.command;
 
 import com.wonkglorg.Heads;
+import com.wonkglorg.enums.English;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.abstraction.Command;
 import com.wonkglorg.utilitylib.config.Config;
@@ -44,7 +45,7 @@ public class HeadsCommand extends Command
 	{
 		if(args.length != 1)
 		{
-			return true;
+			return false;
 		}
 		addHeads(args[0], player);
 		
@@ -121,7 +122,7 @@ public class HeadsCommand extends Command
 				HeadUtils.dropHead(paths + ".Texture", paths + ".Name", paths + ".Description", player.getLocation());
 			}
 		}
-		Message.msgPlayer(player,"#&FFFF55Dropped &##fcca03" + droppedHeads + " #&FFFF55Heads");
+		Message.msgPlayer(player, English.COMMAND_HEAD_DROP_SUCCESS.toString().replace("<headcount>", String.valueOf(droppedHeads)));
 	}
 	
 	private void initHandleMap()

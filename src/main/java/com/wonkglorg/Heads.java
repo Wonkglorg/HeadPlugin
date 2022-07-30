@@ -1,14 +1,15 @@
 package com.wonkglorg;
 
 import com.wonkglorg.command.HeadsCommand;
+import com.wonkglorg.command.ReloadConfigs;
 import com.wonkglorg.command.creeper_spawner.ChargedCreeper;
 import com.wonkglorg.command.creeper_spawner.ClickListener;
 import com.wonkglorg.command.creeper_spawner.ExplosionEvent;
-import com.wonkglorg.config.ConfigManager;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.listeners.DamageListener;
 import com.wonkglorg.listeners.DeathListener;
 import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.config.ConfigManager;
 import org.bukkit.entity.Entity;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -19,8 +20,7 @@ public final class Heads extends JavaPlugin
 {
 	static ArrayList<Entity> DropHeads = new ArrayList<>();
 	
-	public static ConfigManager manager;
-	public static ConfigManager langManager;
+	private static ConfigManager manager;
 	
 	@Override
 	public void onEnable()
@@ -39,23 +39,30 @@ public final class Heads extends JavaPlugin
 	{
 		DropHeads.clear();
 	}
-	private void addCommands(){
-		new ChargedCreeper(this,"creeperSpawner");
-		new HeadsCommand(this,"drop-heads");
+	
+	private void addCommands()
+	{
+		new ChargedCreeper(this, "spawn-creeper");
+		new HeadsCommand(this, "drop-heads");
+		new ReloadConfigs(this, "reload-heads", manager);
 	}
-	private void addListeners(){
+	
+	private void addListeners()
+	{
 		PluginManager pluginManager = getServer().getPluginManager();
 		pluginManager.registerEvents(new DamageListener(), this);
 		pluginManager.registerEvents(new DeathListener(), this);
-		pluginManager.registerEvents(new ClickListener(),this);
-		pluginManager.registerEvents(new ExplosionEvent(),this);
+		pluginManager.registerEvents(new ClickListener(), this);
+		pluginManager.registerEvents(new ExplosionEvent(), this);
 	}
+	
 	private void addConfigs()
 	{
 		
 		manager = new ConfigManager();
-		manager.addConfig(new Config(this,YML.CONFIG.getFileName()));
+		manager.addConfig(new Config(this, YML.CONFIG.getFileName()));
 		manager.addConfig(new Config(this, YML.HEAD_DATA.getFileName()));
+		manager.addConfig(new Config(this,YML.ENGLISH.getFileName()));
 		manager.loadConfigs();
 	}
 	
