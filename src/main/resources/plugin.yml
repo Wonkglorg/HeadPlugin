@@ -1,0 +1,11 @@
+name: Heads
+version: '${project.version}'
+main: com.wonkglorg.Heads
+api-version: 1.19
+authors: [ Wonkglorg ]
+description: Customizeable Head Plugin for dropping heads from mobs and players in various ways
+commands:
+  creeperSpawner:
+    description: Spawns a creeper
+  drop-heads:
+    description: drops existing heads

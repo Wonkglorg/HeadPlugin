@@ -1,0 +1,1745 @@
+##############################################
+Heads:
+  sheep:
+    red:
+      Name: "Red Sheep"
+      Description: "&5 Test Description | This is a second line  "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM5YWY0NzdlYjYyNzgxNWY3MjNhNTY2MjU1NmVjOWRmY2JhYjVkNDk0ZDMzOGJkMjE0MjMyZjIzZTQ0NiJ9fX0="
+      Enabled: true
+    orange:
+      Name: "Orange Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjA5ODM5N2EyNzBiNGMzZDJiMWU1NzRiOGNmZDNjYzRlYTM0MDkwNjZjZWZlMzFlYTk5MzYzM2M5ZDU3NiJ9fX0="
+      Enabled: true
+    yellow:
+      Name: "Yellow Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjZhNDExMmRmMWU0YmNlMmE1ZTI4NDE3ZjNhYWZmNzljZDY2ZTg4NWMzNzI0NTU0MTAyY2VmOGViOCJ9fX0="
+      Enabled: true
+    lime:
+      Name: "Lime Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJhMjQ0OGY1OGE0OTEzMzI0MzRlODVjNDVkNzg2ZDg3NDM5N2U4MzBhM2E3ODk0ZTZkOTI2OTljNDJiMzAifX19"
+      Enabled: true
+    green:
+      Name: "Green Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRlNTVhMzk1YTIyNDY0NDViNDVmOWE2ZDY4ODcyMzQ0YmJlYTU0ZjM2MmQ1MjlmYzViMGI4NTdlYTU4MzI2YiJ9fX0="
+      Enabled: true
+    cyan:
+      Name: "Cyan Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZmNmM3ZTdmZDUxNGNlMGFjYzY4NTkzMjI5ZTQwZmNjNDM1MmI4NDE2NDZlNGYwZWJjY2NiMGNlMjNkMTYifX19"
+      Enabled: true
+    blue:
+      Name: "Blue Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDllYzIyODE4ZDFmYmZjODE2N2ZiZTM2NzI4YjI4MjQwZTM0ZTE2NDY5YTI5MjlkMDNmZGY1MTFiZjJjYTEifX19"
+      Enabled: true
+    light_blue:
+      Name: "Light Blue Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE2MjRmNTk2NmJlZGQ2ZTY3ZjY1NGI1OWU5MjQ5YjJlY2YzMDdkOTAzMzM5YmMxOTk5MjM5NzdmNGM4YyJ9fX0="
+      Enabled: true
+    purple:
+      Name: "Purple Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU1Mjg2N2FmZWYzOGJiMTRhMjZkMTQyNmM4YzBmMTE2YWQzNDc2MWFjZDkyZTdhYWUyYzgxOWEwZDU1Yjg1In19fQ=="
+      Enabled: true
+    magenta:
+      Name: "Magenta Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTgzNjU2NWM3ODk3ZDQ5YTcxYmMxODk4NmQxZWE2NTYxMzIxYTBiYmY3MTFkNDFhNTZjZTNiYjJjMjE3ZTdhIn19fQ=="
+      Enabled: true
+    pink:
+      Name: "Pink Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWU3MzhmNTZlYWZlNmZmYzE1ODNkZTgxMWFlMDU3ZmYzMDQ5MWM0MTc0OTA1OGJjNTI3NTMxN2U3MmU2NjkifX19"
+      Enabled: true
+    brown:
+      Name: "Brown Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTU1YWQ2ZTVkYjU2OTJkODdmNTE1MTFmNGUwOWIzOWZmOWNjYjNkZTdiNDgxOWE3Mzc4ZmNlODU1M2I4In19fQ=="
+      Enabled: true
+    black:
+      Name: "Black Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI2NTIwODNmMjhlZDFiNjFmOWI5NjVkZjFhYmYwMTBmMjM0NjgxYzIxNDM1OTUxYzY3ZDg4MzY0NzQ5ODIyIn19fQ=="
+      Enabled: true
+    gray:
+      Name: "Gray Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDI4N2ViNTAxMzkxZjI3NTM4OWYxNjZlYzlmZWJlYTc1ZWM0YWU5NTFiODhiMzhjYWU4N2RmN2UyNGY0YyJ9fX0="
+      Enabled: true
+    light_gray:
+      Name: "Light Gray Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2UxYWM2ODM5OTNiZTM1NTEyZTFiZTMxZDFmNGY5OGU1ODNlZGIxNjU4YTllMjExOTJjOWIyM2I1Y2NjZGMzIn19fQ=="
+      Enabled: true
+    white:
+      Name: "White Sheep"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMxZjljY2M2YjNlMzJlY2YxM2I4YTExYWMyOWNkMzNkMThjOTVmYzczZGI4YTY2YzVkNjU3Y2NiOGJlNzAifX19"
+      Enabled: true
+  cow:
+    Name: "Cow"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQ2YzZlZGE5NDJmN2Y1ZjcxYzMxNjFjNzMwNmY0YWVkMzA3ZDgyODk1ZjlkMmIwN2FiNDUyNTcxOGVkYzUifX19"
+    Enabled: true
+  fox:
+    Name: "Fox"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg5NTRhNDJlNjllMDg4MWFlNmQyNGQ0MjgxNDU5YzE0NGEwZDVhOTY4YWVkMzVkNmQzZDczYTNjNjVkMjZhIn19fQ"
+    Enabled: true
+  bat:
+    Name: "Bat"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzgyMGExMGRiMjIyZjY5YWMyMjE1ZDdkMTBkY2E0N2VlYWZhMjE1NTUzNzY0YTJiODFiYWZkNDc5ZTc5MzNkMSJ9fX0="
+    Enabled: true
+  chicken:
+    Name: "Chicken"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTYzODQ2OWE1OTljZWVmNzIwNzUzNzYwMzI0OGE5YWIxMWZmNTkxZmQzNzhiZWE0NzM1YjM0NmE3ZmFlODkzIn19fQ=="
+    Enabled: true
+  cod:
+    Name: "Cod"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg5MmQ3ZGQ2YWFkZjM1Zjg2ZGEyN2ZiNjNkYTRlZGRhMjExZGY5NmQyODI5ZjY5MTQ2MmE0ZmIxY2FiMCJ9fX0="
+    Enabled: true
+  ocelot:
+    Name: "Ocelot"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTY1N2NkNWMyOTg5ZmY5NzU3MGZlYzRkZGNkYzY5MjZhNjhhMzM5MzI1MGMxYmUxZjBiMTE0YTFkYjEifX19"
+    Enabled: true
+  pig:
+    Name: "Pig"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNjY4ZWY3Y2I3OWRkOWMyMmNlM2QxZjNmNGNiNmUyNTU5ODkzYjZkZjRhNDY5NTE0ZTY2N2MxNmFhNCJ9fX0="
+    Enabled: true
+  snow_golem:
+    Name: "Snowman"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWZkZmQxZjc1MzhjMDQwMjU4YmU3YTkxNDQ2ZGE4OWVkODQ1Y2M1ZWY3MjhlYjVlNjkwNTQzMzc4ZmNmNCJ9fX0="
+    Enabled: true
+  rabbit:
+    black:
+      Name: "Black Rabbit"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzJjNTgxMTZhMTQ3ZDFhOWEyNjI2OTIyNGE4YmUxODRmZThlNWYzZjNkZjliNjE3NTEzNjlhZDg3MzgyZWM5In19fQ=="
+      Enabled: true
+    white:
+      Name: "White Rabbit"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRkY2ZlZDY4OTdhMThhN2FiOTk1YTY2MTM0ZDQxYTFjYTgyMWI2OWJjYjdkMTRjZjI2OWI0YTk4ZGY0OWE4In19fQ=="
+      Enabled: true
+    gold:
+      Name: "Gold Rabbit"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzk3N2EzMjY2YmYzYjllYWYxN2U1YTAyZWE1ZmJiNDY4MDExNTk4NjNkZDI4OGI5M2U2YzEyYzljYiJ9fX0="
+      Enabled: true
+    black_and_white:
+      Name: "Black & White Rabbit"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I4Y2ZmNGIxNWI4Y2EzN2UyNTc1MGYzNDU3MThmMjg5Y2IyMmM1YjNhZDIyNjI3YTcxMjIzZmFjY2MifX19"
+      Enabled: true
+    killer_bunny:
+      Name: "Killer Bunny"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWY1OTg1MWRlOTNmNGM2NTQ3ZjgwOWNhM2FlZDE4OWU5NGJiZjRmODg4ZjFmNzUyMDhlOTRjMzczMzg1MmExIn19fQ=="
+      Enabled: true
+    brown:
+      Name: "Brown Rabbit"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2QxMTY5YjI2OTRhNmFiYTgyNjM2MDk5MjM2NWJjZGE1YTEwYzg5YTNhYTJiNDhjNDM4NTMxZGQ4Njg1YzNhNyJ9fX0="
+      Enabled: true
+  salmon:
+    Name: "Salmon"
+    Description: " "
+    Enabled: true
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlYTlhMjIzNjIwY2RiNTRiMzU3NDEzZDQzYmQ4OWM0MDA4YmNhNmEyMjdmM2I3ZGI5N2Y3NzMzZWFkNWZjZiJ9fX0="
+  mushroom Cow:
+    Name: "Mushroom Cow"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmI1Mjg0MWYyZmQ1ODllMGJjODRjYmFiZjllMWMyN2NiNzBjYWM5OGY4ZDZiM2RkMDY1ZTU1YTRkY2I3MGQ3NyJ9fX0="
+    Enabled: true
+  squid:
+    Name: "Squid"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzMGQyMDY1MWFhMzhjMGU4MmMyZGFmYzM1MDQ0NDNjYzZhNGI5ZTZlZWQxNDViNmVkY2U5OTQ3OWNlODQ4ZiJ9fX0="
+    Enabled: true
+  strider:
+    Name: "Strider"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThhOWFkZjc4MGVjN2RkNDYyNWM5YzA3NzkwNTJlNmExNWE0NTE4NjY2MjM1MTFlNGM4MmU5NjU1NzE0YjNjMSJ9fX0="
+    Enabled: true
+  tropical fish:
+    Name: "Tropical Fish"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZkZDVlNmFkZGI1NmFjYmM2OTRlYTRiYTU5MjNiMWIyNTY4ODE3OGZlZmZhNzIyOTAyOTllMjUwNWM5NzI4MSJ9fX0="
+  turtle:
+    Name: "Turtle"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGE0MDUwZTdhYWNjNDUzOTIwMjY1OGZkYzMzOWRkMTgyZDdlMzIyZjlmYmNjNGQ1Zjk5YjU3MThhIn19fQ=="
+    Enabled: true
+  villager:
+    plains:
+      mason:
+        Name: "Plains Mason Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmZiOTM5MzBmOWQxMGEwNWFkYjg0YTY4MTZiZWU5MzBkNTI5NDRhNWUxYTY3ZjkwZjY1YzdmZWM0ZWM1YTY4YSJ9fX0="
+        Enabled: true
+      cleric:
+        Name: "Plains Cleric Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjYxYzQwZjhkYTQwOWVlZjQ0MzJjZTEwNjNmNTAwNTIwMTcwNzUwMzhjZjNhOWE2NTQ4NWVhNjIxYzU0OWY0MCJ9fX0="
+        Enabled: true
+      farmer:
+        Name: "Plains Farmer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA4YmRiNTNjNTVmZWYzMmEwNjU4ZTFjNzk2NjYxNGFmMGJmZjYwOTEyNDliOGZlM2I3N2EwMjc1ZGE4MmU0MyJ9fX0="
+        Enabled: true
+      armorer:
+        Name: "Plains Armorer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI4ZmYwM2NjY2ZjNDNmNjY5MjVkNjEzMzJiMWQ2ZTc4YjQxYjE1ZjRhYjNjMmU2NjM1NDkyYzdmZDM0NDYyNCJ9fX0="
+        Enabled: true
+      butcher:
+        Name: "Plains Butcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiZDFlNzg2NjRkNzZhYWIxMzcwNmY3Y2U5MWY3NWE1MmNlYzAxN2Q2MDQ0NmZiNDNiZDhiZjIwNDJkZDNiMyJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: "Plains Fletcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUxMjYxNTgyMjBlOTQ2NTE3YjJjMjBlMTM4MDU5MjhkZjA2ZTE5YzExMDFiZGVhMmJjNWE0ZmM5NWY5YzAxMSJ9fX0="
+        Enabled: true
+      shepherd:
+        Name: "Plains Shepherd Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU3NzFiNzM4MzQ5ZDFkZTBlMDFlODk0YWU0MDE2ODZmNTk4Y2ExOWEyMDg4YjA5NTE0OWZkZTliNzZhNDM3NyJ9fX0="
+        Enabled: true
+      fisherman:
+        Name: "Plains Fisherman Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM3ZjQ0YjUxMWY3MDYzMTg3ZDBmZTEyYzc0YTBjYjhjOTNmMzRkMGY1ODczMzhiMmE5YzIyZjNmYTJmMjEyIn19fQ=="
+        Enabled: true
+      librarian:
+        Name: "Plains Librarian Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRmMDRlYjIwY2QwYjgyYWFlZjI1MjBhZWQ5ODY3YzNjY2EyNDdhNGNkOTc1YTEyZWE1MGRmMDNhNzE3NjI0MSJ9fX0="
+        Enabled: true
+      toolsmith:
+        Name: "Plains ToolSmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE4NTEyNTg0OTEzNDFjMDAxNDlhOWM5MmRlMWFjZGU2NjViMTMxYzhhNzRjOWZmZTBjYjFlM2E1YWQ5NzQ5In19fQ=="
+        Enabled: true
+      weaponsmith:
+        Name: "Plains Weaponsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBiM2E0MDNiODBjMmZmZTdiMzY1OTZmZDgwOWQ1NWM2MjRlN2M0MTQzYzZmZDYwYjFkNjJkMTU2MjkwYzU2OSJ9fX0="
+        Enabled: true
+      cartographer:
+        Name: "Plains Cartographer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZjNmFjOWQ4NTU1NGJiZTU2YTY2NjhkZTBhNTRjYjFlZmY5M2UxNGY0YmNkZjcyNDVhNzQ0Y2MzNzcyMWYwYSJ9fX0="
+        Enabled: true
+      leatherworker:
+        Name: "Plains Leatherworker Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzBjNmMzYTkxM2FmOTI5M2Q2MzcyYjBiZDRjMmRlMmNjNmQzYjZlNDczZTNmYTBmZmYwMzQ3NDFhNjEyODI5ZCJ9fX0="
+        Enabled: true
+      none:
+        Name: "Plains Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19"
+        Enabled: true
+    desert:
+      mason:
+        Name: "Desert Mason Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGM0ZDdlYTAzODE4Nzc3MGNjMmU0ODE3YzkyMDllMTliNzRmNWQyODhlZDYzMzI4MWVjY2NhZjVjOGViYzc2NyJ9fX0="
+        Enabled: true
+      cleric:
+        Name: "Desert Cleric Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGY2YTgwNmI0ZjRkYzBkYjIyZTgxZTFlZTczNDBkM2I0ZTMwMGE0MDQ2ZTRhMmI0NjYzNjRmYTA1NDY5NTBjNSJ9fX0="
+      farmer:
+        Name: "Desert Farmer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDAxZTAzNWEzZDhkNjEyNjA3MmJjYmU1MmE5NzkxM2FjZTkzNTUyYTk5OTk1YjVkNDA3MGQ2NzgzYTMxZTkwOSJ9fX0="
+        Enabled: true
+      armorer:
+        Name: "Desert Armored Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNhOGZkZWVjMDM4NjlmZTQwMDIwNzgwM2M5NzVmNjdjOTU4OTBlMzU2N2NmZDdlN2NkYThlYTViMmI2ODc3MyJ9fX0="
+        Enabled: true
+      butcher:
+        Name: "Desert Butcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWEyNTM0MjI0YzkzNTg4YWM0MDE3NzQ4NmFkMWJjODY2NjhiYzhmMGI2Y2E4ZDA4M2UzYWJkMmE1MWNkOWFiYSJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: "Desert Fletcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc1MzJlOTBjNTczYTM5NGM3ODAyYWE0MTU4MzA1ODAyYjU5ZTY3ZjJhMmI3ZTNmZDAzNjNhYTZlYTQyYjg0MSJ9fX0="
+        Enabled: true
+      shepherd:
+        Name: "Desert Shepherd Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDE2NDRhNTUyZGQwNmY3OTc0MTNjMDAyZDQxZGE1MjkwNGE3YmNmZDc0NGM1ZDJjMWZlMzQ4ZDlmNjZjYmJlYiJ9fX0="
+        Enabled: true
+      fisherman:
+        Name: "Desert Fisherman Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQxMTExMTFlNTMyZDY4ZjBlNGY5MTNhNGUzYWVkZDBjOWRmYjI4NDdhOGFhZjFmZmE1MmIzZGFiY2ZmODZlZCJ9fX0="
+        Enabled: true
+      librarian:
+        Name: "Desert Librarian Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTgwNmY5NzY3ZjA4N2UzZTRjMDlhZDAxMmJmZDA2M2QwMTNiYTRjMzE2OWZiYjBlZmQ3NTM4ZTI4ZDdkODNkIn19fQ=="
+        Enabled: true
+      toolsmith:
+        Name: "Desert Toolsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlkOTA0ZmRhZTY4ZmIxMjBlOWFlMGYzNTM3NDYwZjJhN2MxZGU5MTU5YWIzZjJiNDRjODQ0MDQ4ZmViYWJlYiJ9fX0="
+        Enabled: true
+      weaponsmith:
+        Name: "Desert Weaponsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWJiYTY5ZjZlZTNlMTI4YmMyZmVlYzc4YzI0N2IyYTJmMDBjM2FlYTExZDg5MDZjNzI4ZGU5MmM2MGE1NDJlZCJ9fX0="
+        Enabled: true
+      cartographer:
+        Name: "Desert Cartographer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhkYTE0NjI1NzU0Nzc5NWMzYTk1NGRiNzgxZTBkMGM0ZDBhZjAyN2YwZDE1MWQzOWE0OWUxYmJkMjFjZmM4OCJ9fX0="
+        Enabled: true
+      leatherworker:
+        Name: "Desert Leatherworker Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWU2MWVjYmI4NjQ4N2VkMTZmZWRiMjc1ZGI5MmM5YzUwNDNhODMwZjUyZDk3M2JhNDRiMjhhNzc0MjAwNmI0MyJ9fX0="
+        Enabled: true
+      none:
+        Name: "Desert Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTBiZjZkZjM3ZGFjNmNhNjA4OWQyYmEwNDEzNWYyMjNkNGQ4NTBkZjlmMDljN2VjNGVhZjhjNTA3NjRjYmM1MCJ9fX0="
+        Enabled: true
+    savanna:
+      mason:
+        Name: "Savanna Mason Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDAwMzY0Yzk4YWYwNTlhZTZkNTgxZmNhNjAzOGJlZTE0Yjg2OTk5OGZiM2FhMzgyYjNjNDc3NWQ1NGU4NDgxZiJ9fX0="
+        Enabled: true
+      cleric:
+        Name: "Savanna Cleric Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZjYzhmYTgzNzk2NjVmYmI4YzkyNGU0NTIzNWRhMWM5ODhjMWM1MjNhZjFiMjQ3OTc5NmQ0YTQ5YWYxYzVjOCJ9fX0="
+        Enabled: true
+      farmer:
+        Name: "Savanna Farmer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdmMzM4YmNkOWZhYzBjNjY2ZjJhOTI1Y2YwN2Q5YjBmNWZhOWY1ZmQ5NDQzZjU5NTFjZTU0ZWM1YjAxNzYxMCJ9fX0="
+        Enabled: true
+      armorer:
+        Name: "Savanna Armorer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2MxNzJlYjZmZWZmZWRkYWUyNjQzZDc1MGE5ZTRiN2I0NWFjYjgzYzZjZmFjMGRmM2U2NzkzYTU2NmEwNmEyOSJ9fX0="
+        Enabled: true
+      butcher:
+        Name: "Savanna Butcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTRmMDVmZDQyMTVlYTJhNDMyNDRlODMyYzcyM2Y2NWYwNWMyNTYyYWJmZTBiZGYzMzZmNTAyOTNlNjgzNzg5ZCJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: "Savanna Fletcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTllN2MwNTRhOGFiMmQ3ZjY0NDdkZTQzOGQzMzczMjM2MzJlOWMzZmNkYjMwZDM5YWMzMzZiNTIzZjg0ZTNlNiJ9fX0="
+        Enabled: true
+      shepherd:
+        Name: "Savanna Shepherd Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM4YmMzODFmNzRjZTU4ZTg2ZDlkNDE3ZDUxMjVmYjcyZTc1OGM1OGQ5M2YzNGNhZmM4NmQxZmM1MTQ0N2Q1MyJ9fX0="
+        Enabled: true
+      fisherman:
+        Name: "Savanna Fisherman Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdhOWU4YjFhZmU1ZWU1ZGQ0OTg3MzRjYzIyMWMxN2I3MWYxZGUxYTZkYzhlYWIyZmM4OGMzMzJlZDI0NGM5NyJ9fX0="
+        Enabled: true
+      librarian:
+        Name: "Savanna Librarian Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U1OTk1MTA2ZDA4MGYxMGIyMDUyZGUwOGUzNTVmMzRhMjIxMzkwNGQ5ZDMyZjZkYzJkMWIyN2JlYzc1M2I3NCJ9fX0="
+        Enabled: true
+      toolsmith:
+        Name: "Savanna Toolsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Q1ODZmNTViZTQyOWRiNjg5YzA3MGM0N2FhOWIxMjg0Y2Q1MWRhNDkzNzY4NTU5ZDcxMzJkZjhjODkxNmFlZCJ9fX0="
+        Enabled: true
+      weaponsmith:
+        Name: "Savanna Weaponsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNkN2E5ODMxYTcwOTBmOWQ2ZGRhMzVhYmQ2YmZmYmJiZDM0YTZkM2Q5N2VmMTFkOGE2YjFhOTQ2Y2MyNmY1ZiJ9fX0="
+        Enabled: true
+      cartographer:
+        Name: "Villager Cartographer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJmOTQ0MjIyZmY2OTNmZTA4OGJkNTQzYzhlZmRkMzI0NmVhYjZhMzQ5NzhhY2RlNzc0ZjdlMjk1ZGVlOWUxNiJ9fX0="
+        Enabled: true
+      leatherworker:
+        Name: "Savanna Leatherworker Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQ1Yzk5YzgwZDAzNDVjNGJlM2ZjM2EyZjBkMDVhM2UyM2E1YzRiZjdlOTkxNTY4ZWVlNjRhNjgwNmYwNDhjMCJ9fX0="
+        Enabled: true
+      none:
+        Name: "Savanna Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTIyNTY4MzU0ZjUzNWIwOTQwMzVjZWU4NjhhNGY3OTg1Nzg4YmQ1NzU1YjgwYzBkYzhkZmM0NDM5NjlmYWVhNyJ9fX0="
+        Enabled: true
+    snow:
+      mason:
+        Name: "Snow Mason Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjZhNWE0YjQ5MmNmMzg2MWQzMDQ0YTkxMWUxMzY0ZGFkZjdhMmJlNDFmYjJmOWE1YzYxOWRlNWNjOWE1YWYwMCJ9fX0="
+        Enabled: true
+      cleric:
+        Name: "Snow Cleric Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTJhYjk5ODBmY2U0YjYzNDNkYWYyZTYwYjNiMTdhNDE2MDE1ODhiMjZkNDM5N2JkZDliZTI0MTY0MWQyNzU1ZSJ9fX0="
+        Enabled: true
+      farmer:
+        Name: "Snow Farmer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU1ZDYxYTI0MDllYjBiNDliM2U4OGIyODg4NDY3ZjIwYTNiMDYyMTJhMTBlN2I2ZWZiOWNlM2JjMWEwZTIwZiJ9fX0="
+        Enabled: true
+      armorer:
+        Name: "Snow Armorer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzljOGIyNjg4NmI2MzI5YjczZGFkNTgwOTJkYjYxMjFmODg2NzU1NDhkYmI1ZTZiOGY0YjJlN2M3NTZhMmE5MyJ9fX0="
+        Enabled: true
+      butcher:
+        Name: "Snow Butcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiZDFlNzg2NjRkNzZhYWIxMzcwNmY3Y2U5MWY3NWE1MmNlYzAxN2Q2MDQ0NmZiNDNiZDhiZjIwNDJkZDNiMyJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: "Snow Fletcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ0ZDEzYmFmNjVlZTE5N2RmYzZlYzI4NjU3ZDI1ZDg5ZjQ3MjY2MjIwNGUxM2NiZjc2MWY5NDEyYzg5MTMzNSJ9fX0="
+        Enabled: true
+      shepherd:
+        Name: "Snow Shepherd Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2UzNmMzNjZhZWIzMDM4NWNmZjE1MWE4Y2Y5MGJhYzVhODk3OWE1NWJjMmE4MDg4NzVlMjMzZDBmODFiMjRhOSJ9fX0="
+        Enabled: true
+      fisherman:
+        Name: "Snow Fisherman Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQxMTExMTFlNTMyZDY4ZjBlNGY5MTNhNGUzYWVkZDBjOWRmYjI4NDdhOGFhZjFmZmE1MmIzZGFiY2ZmODZlZCJ9fX0="
+        Enabled: true
+      librarian:
+        Name: "Snow Librarian Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWJmZjU5MDFiOTdlZmVmOTIyNTU1MzI1ZTkxMGE2ZDM1Y2M0Njk2N2ZmOGE3YzJhMGU1NzUzYWYyM2RkY2ZmMiJ9fX0="
+        Enabled: true
+      toolsmith:
+        Name: "Snow Toolsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmU3ZGIzYTVjYjVkZDY4MTFmYTg3ZTJkMTEzYWE2MDU3YzY2OTA3OGRkNjJmZjI4YjM3N2YxNjgyNzdkOTVjZSJ9fX0="
+        Enabled: true
+      weaponsmith:
+        Name: "Snow Weaponsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYzMmI1MzFhYTRmNzM5NDZlNGQ0ZDA0M2Y0YjQwNDZmMGY1YzYwYWRlZjExNWQ4YTIyMWMwYzc2ZjRlZjkwMyJ9fX0="
+        Enabled: true
+      cartographer:
+        Name: "Snow Cartographer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE0Mzg5NWIwNGNjZTdiM2FkOTU2NjIwYmI0OGQxYWFhYTZiYmRjYzEwYmIzYThjNGFhMGE1NTkzOWYwNTBiZSJ9fX0="
+        Enabled: true
+      leatherworker:
+        Name: "Snow Leatherworker Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBlNGFhNmY1NDU1ZTMyMTA1OWUyMDJhYmM5ZDllMjM2NzU2NjMwNzBlOTJhMDc5ZThjYjU0NGY3YmU0Yzc1NSJ9fX0="
+        Enabled: true
+      none:
+        Name: "Snow Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBjNjQxZTNkMzc2NGVkMWMxZjE5MDdjNDMzNGUyYjEzMDNlMjE1MmIxM2QxZWIwYzYwNTc2M2Y5N2ZiMjU4YSJ9fX0="
+        Enabled: true
+    swamp:
+      mason:
+        Name: "Swamp Mason Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGIxNzQyN2Q0ZTlkODlmYTFlMmNiMjk3Y2QxNDZlZDJmZGI0OTcyMWEwZWFiZjA0OGU3ZTdkMjRjNzNmY2RhNSJ9fX0="
+        Enabled: true
+      cleric:
+        Name: "Swamp Cleric Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDEwMmYzYjgzMWI4MTBhMWVkNDI1ZWY5MTQwOGE2ZjQ1OTkwN2ExZjc4OWNiODk1ZDY2NTMyYWVkMjM4ODg0NSJ9fX0="
+        Enabled: true
+      farmer:
+        Name: "Swamp Farmer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTJjZmM3ZWFkZTAxNmE5NjljMmIzYTg3ZTAxMGEwMmFjOTEwZGY2MGQzNzE0Zjc2MTg0YjJjMTdhNzAzMTAxZSJ9fX0="
+        Enabled: true
+      armorer:
+        Name: "Swamp Farmer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU4YzNhMTQ5M2Q0N2IwNGNjYTkzZjc3OWMwYjY4YTRkZjRkYjI0NDc3OGExYTE2OTFkOWJlYWE1ZmQwYjdlZSJ9fX0="
+        Enabled: true
+      butcher:
+        Name: "Snow Butcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTM5MzM3MDQ0NGVlOTE1NTk1NjMwY2Q5MDBkMDY1YzAzY2M1YzYxZjdhOTFlZGQ4ZmVjMjRmMjA0YjNlZWI0ZiJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: "Snow Fletcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJlZDkzMWVlNmI3NzUzOWQyZmQ3ZDI3MTYxN2RiNmIxOTM2NWNiMGUzYzUyZWFjMDA1MjcyMzAxZDA3YWM3NCJ9fX0="
+        Enabled: true
+      shepherd:
+        Name: "Snow Shepherd Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjljZjE4YjA0NDdmZjFkZmNmYmE5ZTRjNGFjN2Y2ZTI2YTk4NjM1MmRkMTg3OGM2YTFlMDBkMGY1ZGQ2MjExZCJ9fX0="
+        Enabled: true
+      fisherman:
+        Name: "Snow Fisherman Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIyMzY2NDg4NmQ5NjY0M2QzYWZkYzRhMmFjNzJlYmMyYmNkMjI5ZTUxNzUxOWUxNWMzZTdjMTU3MGFkNzQ1ZSJ9fX0="
+        Enabled: true
+      librarian:
+        Name: "Snow Librarian Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTc0NzM1OTZhMWNiNDBjZjFiM2VjNWY0NmYyZjlkNTkwZDVlNzhkMDUwNzY4MGE3YjliYzQzMDQ1ODdkYTBjOSJ9fX0="
+        Enabled: true
+      toolsmith:
+        Name: "Snow Toolsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQwNzRiMjZiMDljNjdmZWVmZWE0ZTAyNDVmNjMzMDZlNDVjYjkzNWU5OGRiZmFhMzAyMGViNDBjNzA2OTcxOSJ9fX0="
+        Enabled: true
+      weaponsmith:
+        Name: "Snow Weaponsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzhjN2M1Njk0OGFkNzcxOGZlOTMyYjI3MDExNWVlNjJjZDkwYTBiMTk1ZGEzODZjNGVhNDJhNjlhYTE2YTdmYiJ9fX0="
+        Enabled: true
+      cartographer:
+        Name: "Snow Cartographer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTEyMDc3ZDE4OGZmODRiN2NmYjNmZjJjMDk0ZTk1ZjViMmM5YTgxZGU3MDQwOGZjYTFjNzc2ZGFjNTk0ZTY4NSJ9fX0="
+        Enabled: true
+      leatherworker:
+        Name: "Snow Leatherworker Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTAwN2M0YTNlM2I4ZDMxYjk0YTk1MTczYmMyYWVhNGI3MThjMTUwZjAxNjZmMGM5NjRjYTllMDRiZTY2NGEyMiJ9fX0="
+        Enabled: true
+      none:
+        Name: "Snow Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFkN2E5ZThmZTJiZGZlYTAzYmIxZjlmYWJlNDVmYjEwY2Y2OWE3MmUzNzYwZTVmZDlhNzBmMzM4NGM1MzZhZCJ9fX0="
+        Enabled: true
+    taiga:
+      mason:
+        Name: "Mason Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmZiOTM5MzBmOWQxMGEwNWFkYjg0YTY4MTZiZWU5MzBkNTI5NDRhNWUxYTY3ZjkwZjY1YzdmZWM0ZWM1YTY4YSJ9fX0="
+        Enabled: true
+      cleric:
+        Name: "Cleric Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjYxYzQwZjhkYTQwOWVlZjQ0MzJjZTEwNjNmNTAwNTIwMTcwNzUwMzhjZjNhOWE2NTQ4NWVhNjIxYzU0OWY0MCJ9fX0="
+        Enabled: true
+      farmer:
+        Name: "Farmer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA4YmRiNTNjNTVmZWYzMmEwNjU4ZTFjNzk2NjYxNGFmMGJmZjYwOTEyNDliOGZlM2I3N2EwMjc1ZGE4MmU0MyJ9fX0="
+        Enabled: true
+      armorer:
+        Name: "Armorer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI4ZmYwM2NjY2ZjNDNmNjY5MjVkNjEzMzJiMWQ2ZTc4YjQxYjE1ZjRhYjNjMmU2NjM1NDkyYzdmZDM0NDYyNCJ9fX0="
+        Enabled: true
+      butcher:
+        Name: "Butcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiZDFlNzg2NjRkNzZhYWIxMzcwNmY3Y2U5MWY3NWE1MmNlYzAxN2Q2MDQ0NmZiNDNiZDhiZjIwNDJkZDNiMyJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: "Fletcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUxMjYxNTgyMjBlOTQ2NTE3YjJjMjBlMTM4MDU5MjhkZjA2ZTE5YzExMDFiZGVhMmJjNWE0ZmM5NWY5YzAxMSJ9fX0="
+        Enabled: true
+      shepherd:
+        Name: "Shepherd Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU3NzFiNzM4MzQ5ZDFkZTBlMDFlODk0YWU0MDE2ODZmNTk4Y2ExOWEyMDg4YjA5NTE0OWZkZTliNzZhNDM3NyJ9fX0="
+        Enabled: true
+      fisherman:
+        Name: "Fisherman Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM3ZjQ0YjUxMWY3MDYzMTg3ZDBmZTEyYzc0YTBjYjhjOTNmMzRkMGY1ODczMzhiMmE5YzIyZjNmYTJmMjEyIn19fQ=="
+        Enabled: true
+      librarian:
+        Name: "Librarian Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRmMDRlYjIwY2QwYjgyYWFlZjI1MjBhZWQ5ODY3YzNjY2EyNDdhNGNkOTc1YTEyZWE1MGRmMDNhNzE3NjI0MSJ9fX0="
+        Enabled: true
+      toolsmith:
+        Name: "Toolsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE4NTEyNTg0OTEzNDFjMDAxNDlhOWM5MmRlMWFjZGU2NjViMTMxYzhhNzRjOWZmZTBjYjFlM2E1YWQ5NzQ5In19fQ=="
+        Enabled: true
+      weaponsmith:
+        Name: "Weaponsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBiM2E0MDNiODBjMmZmZTdiMzY1OTZmZDgwOWQ1NWM2MjRlN2M0MTQzYzZmZDYwYjFkNjJkMTU2MjkwYzU2OSJ9fX0="
+        Enabled: true
+      cartographer:
+        Name: "Cartographer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZjNmFjOWQ4NTU1NGJiZTU2YTY2NjhkZTBhNTRjYjFlZmY5M2UxNGY0YmNkZjcyNDVhNzQ0Y2MzNzcyMWYwYSJ9fX0="
+        Enabled: true
+      leatherworker:
+        Name: "Leatherworker Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc2Y2Y4YjczNzhlODg5Mzk1ZDUzOGU2MzU0YTE3YTNkZTZiMjk0YmI2YmY4ZGI5YzcwMTk1MWM2OGQzYzBlNiJ9fX0="
+        Enabled: true
+      none:
+        Name: "Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19"
+        Enabled: true
+    jungle:
+      mason:
+        Name: "Mason Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmZiOTM5MzBmOWQxMGEwNWFkYjg0YTY4MTZiZWU5MzBkNTI5NDRhNWUxYTY3ZjkwZjY1YzdmZWM0ZWM1YTY4YSJ9fX0="
+        Enabled: true
+      cleric:
+        Name: "Cleric Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjYxYzQwZjhkYTQwOWVlZjQ0MzJjZTEwNjNmNTAwNTIwMTcwNzUwMzhjZjNhOWE2NTQ4NWVhNjIxYzU0OWY0MCJ9fX0="
+        Enabled: true
+      farmer:
+        Name: "Farmer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA4YmRiNTNjNTVmZWYzMmEwNjU4ZTFjNzk2NjYxNGFmMGJmZjYwOTEyNDliOGZlM2I3N2EwMjc1ZGE4MmU0MyJ9fX0="
+        Enabled: true
+      armorer:
+        Name: "Armorer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI4ZmYwM2NjY2ZjNDNmNjY5MjVkNjEzMzJiMWQ2ZTc4YjQxYjE1ZjRhYjNjMmU2NjM1NDkyYzdmZDM0NDYyNCJ9fX0="
+        Enabled: true
+      butcher:
+        Name: "Butcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiZDFlNzg2NjRkNzZhYWIxMzcwNmY3Y2U5MWY3NWE1MmNlYzAxN2Q2MDQ0NmZiNDNiZDhiZjIwNDJkZDNiMyJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: "Fletcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUxMjYxNTgyMjBlOTQ2NTE3YjJjMjBlMTM4MDU5MjhkZjA2ZTE5YzExMDFiZGVhMmJjNWE0ZmM5NWY5YzAxMSJ9fX0="
+        Enabled: true
+      shepherd:
+        Name: "Shepherd Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU3NzFiNzM4MzQ5ZDFkZTBlMDFlODk0YWU0MDE2ODZmNTk4Y2ExOWEyMDg4YjA5NTE0OWZkZTliNzZhNDM3NyJ9fX0="
+        Enabled: true
+      fisherman:
+        Name: "Fisherman Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM3ZjQ0YjUxMWY3MDYzMTg3ZDBmZTEyYzc0YTBjYjhjOTNmMzRkMGY1ODczMzhiMmE5YzIyZjNmYTJmMjEyIn19fQ=="
+        Enabled: true
+      librarian:
+        Name: "Librarian Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRmMDRlYjIwY2QwYjgyYWFlZjI1MjBhZWQ5ODY3YzNjY2EyNDdhNGNkOTc1YTEyZWE1MGRmMDNhNzE3NjI0MSJ9fX0="
+        Enabled: true
+      toolsmith:
+        Name: "Toolsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE4NTEyNTg0OTEzNDFjMDAxNDlhOWM5MmRlMWFjZGU2NjViMTMxYzhhNzRjOWZmZTBjYjFlM2E1YWQ5NzQ5In19fQ=="
+        Enabled: true
+      weaponsmith:
+        Name: "Weaponsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBiM2E0MDNiODBjMmZmZTdiMzY1OTZmZDgwOWQ1NWM2MjRlN2M0MTQzYzZmZDYwYjFkNjJkMTU2MjkwYzU2OSJ9fX0="
+        Enabled: true
+      cartographer:
+        Name: "Cartographer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZjNmFjOWQ4NTU1NGJiZTU2YTY2NjhkZTBhNTRjYjFlZmY5M2UxNGY0YmNkZjcyNDVhNzQ0Y2MzNzcyMWYwYSJ9fX0="
+        Enabled: true
+      leatherworker:
+        Name: "Leatherworker Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc2Y2Y4YjczNzhlODg5Mzk1ZDUzOGU2MzU0YTE3YTNkZTZiMjk0YmI2YmY4ZGI5YzcwMTk1MWM2OGQzYzBlNiJ9fX0="
+        Enabled: true
+      none:
+        Name: "Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19"
+        Enabled: true
+  wandering trader:
+    Name: "Wandering Trader"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWYxMzc5YTgyMjkwZDdhYmUxZWZhYWJiYzcwNzEwZmYyZWMwMmRkMzRhZGUzODZiYzAwYzkzMGM0NjFjZjkzMiJ9fX0="
+    Enabled: true
+  pufferfish:
+    Name: "Pufferfish"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTcxNTI4NzZiYzNhOTZkZDJhMjI5OTI0NWVkYjNiZWVmNjQ3YzhhNTZhYzg4NTNhNjg3YzNlN2I1ZDhiYiJ9fX0="
+    Enabled: true
+  axolotl:
+    gold:
+      Name: "Gold Axolotl"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Y4MGNjMTQ5MmU0NDY2OGNjY2RiNDAxNzhjM2E2Njg5ZThkZmMwZDIzNGU5ODU1M2ZiN2RlYmMyNmZjYWVhYyJ9fX0="
+      Enabled: true
+    wild:
+      Name: "Brown Axolotl"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ3ZWZlMDIwMTJjZjMxYWUyNzA4ZTdkN2RmMDc5NzI2NTc1YzdlZTg1MDQzMjgxNzVmZTU0NDcwODE4N2RjZSJ9fX0="
+      Enabled: true
+    blue:
+      Name: "Blue Axolotl"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAwZTI4Y2Q0ZGRlOWFmN2E5OWFlYjEyYzIzNWZmMWQzYmY2ZDdlOTY2MjYzYmQ5MWE3MTE4YjNkZmVhYmNiNiJ9fX0="
+      Enabled: true
+    cyan:
+      Name: "Cyan Axolotl"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFjMmQwYzNiOTZhZDQ1YjQ2NjM4OGUwMjhiMjQ3YWFmZTM2YjI2YjEyYzQxMWVjYjcyZTliNTBlYTIxZTUyYyJ9fX0="
+      Enabled: true
+    lucy:
+      Name: "Pink Axolotl"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWMxMzhmNDAxYzY3ZmMyZTFlMzg3ZDljOTBhOTY5MTc3MmVlNDg2ZThkZGJmMmVkMzc1ZmM4MzQ4NzQ2ZjkzNiJ9fX0="
+      Enabled: true
+  glowsquid:
+    Name: "Glow Squid"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVjZDBiNWViNmIzODRkYjA3NmQ4NDQ2MDY1MjAyOTU5ZGRkZmYwMTYxZTBkNzIzYjNkZjBjYzU4NmQxNmJiZCJ9fX0="
+    Enabled: true
+  donkey:
+    Name: "Donkey"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE0NGJkYWQ2YmMxOGEzNzE2YjE5NmRjNGE0YmQ2OTUyNjVlY2NhYWRkMGQ5NDViZWI5NzY0NDNmODI2OTNiIn19fQ=="
+    Enabled: true
+  horse:
+    brown:
+      Name: "Brown Horse"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY2YjJiMzJkMzE1MzljNzM4M2Q5MjNiYWU0ZmFhZjY1ZGE2NzE1Y2Q1MjZjMzVkMmU0ZTY4MjVkYTExZmIifX19"
+      Enabled: true
+    white:
+      Name: "White Horse"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjBhMmRiMmYxZWI5M2U1OTc4ZDJkYzkxYTc0ZGY0M2Q3Yjc1ZDllYzBlNjk0ZmQ3ZjJhNjUyZmJkMTUifX19"
+      Enabled: true
+    black:
+      Name: "Black Horse"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRiN2ZjNWY3YTlkZGZkZDFhYTc5MzE3NDEwZmMxOTI5ZjkxYmRkZjk4NTg1OTM4YTJhNTYxOTlhNjMzY2MifX19"
+      Enabled: true
+    gray:
+      Name: "Gray Horse"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY2NzZjNGQ2ZjBmNWVkNjA2YTM1NmYzY2M1YTI5ZDE0YWFmZTY1NzIxYmExYTFhOTVjNWFjNGM1ZTIzOWU1In19fQ=="
+      Enabled: true
+    creamy:
+      Name: "Creamy Horse"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZkYWUwYWRlMGUwZGFmYjZkYmM3Nzg2Y2U0MjQxMjQyYjZiNmRmNTI3YTBmN2FmMGE0MjE4NGM5M2ZkNjQ2YiJ9fX0="
+      Enabled: true
+    chestnut:
+      Name: "Chestnut Horse"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTk5NjM5OWZmZjljYmNmYjdiYTY3N2RkMGMyZDEwNDIyOWQxY2MyMzA3YTZmMDc1YTg4MmRhNDY5NGVmODBhZSJ9fX0="
+      Enabled: true
+    darkbrown:
+      Name: "Dark Brown Horse"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY2MWYyM2ZiNzY2MjRmZmJhYmJkYTMxY2E0YTM4YjQwNGZlNjNlZjM3ZDRiYTRlNGM1NDQxYTIxZTNhNiJ9fX0="
+      Enabled: true
+  cat:
+    black:
+      Name: "Black Cat"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWY1MzkyOTNlYmVhYmE0YzM1ZjA4OTM1N2U1NDU3ZjgzOGZhNGE1ZGI0ZGE4M2FmYmZjMjk1YWQyZDZkNmVhNiJ9fX0="
+      Enabled: true
+    red:
+      Name: "Red Cat"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmNiYzBiZjNiY2IyYzUxZWQ0NDUzYjIwZTc0MWE4MGRjNWYwNjU1NTBiMWUzNTFjMGVhZmFkYzUwMjI1N2FmNSJ9fX0="
+      Enabled: true
+    tabby:
+      Name: "Tabby Cat"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2IzNTViYTM4OTAxZWU4NmEyM2Q2MWU5Y2UxMDE2NThmMjQxN2Q2YjliNGMzODEyYTkwNGFkZTU4MWNiNDQxNSJ9fX0="
+      Enabled: true
+    calico:
+      Name: "Calico Head"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmU1NTIyYzNmMzBlMzY3NDYwNDFmODU0ZWExZmU2NjNiYzkyNjc1MTk0N2FiMWFkNTY1ODFhOGJjNjU3MjI5OSJ9fX0="
+      Enabled: true
+    jellie:
+      Name: "Jellie Cat"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjdmNTk2YWZiODY5ZjgwNmY2MTA4NWE0OTliN2U3NTE0ODkxM2QzZTYwNjAxZjE2NjI1OGRmYmNiODJhM2JiZiJ9fX0="
+      Enabled: true
+    persian:
+      Name: "Persian Cat"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ2MmI0YTQ1YzVmYTIzM2E0NjM5YWY2ZmI5MTBhZmMxNzk1ZWIwMDExZTQ2MjY2YTA4NjVkMTczZWJkZTlhYiJ9fX0="
+      Enabled: true
+    ragdoll:
+      Name: "Ragdoll Cat"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzE5Nzk0NjE2NTAyN2Q2ZThjMjEzNTM0NDNlM2IxMDNlZWY0YmVlMWExYzIzODk4NGZlMGFmYjA2Njg1OWQ0NSJ9fX0="
+      Enabled: true
+    siamese:
+      Name: "Siamese"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlmMTY5OTJmM2E5MmMyZTYyZmQzOGQ1ZDg1MWZkNjYxY2ViM2U4YTgxMDIwMDUzNmVhNGIxMmViMDVmMzQxZSJ9fX0="
+      Enabled: true
+    all black:
+      Name: "All Black Cat"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2EzNzhhODllZTFkNDM1ZmUyZDk0MmQ2ODUzNTExYTgwYzBhOWZhODkyNGM1NTAzZGIzMmU2MjFkNTgzM2FlYiJ9fX0="
+      Enabled: true
+    british shorthair:
+      Name: "British Shorthair Cat"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWZjZDJlMGMyYjVkZjk0ODJlZjQ1ZjVlMWQzY2YwNzc3OGZlYmRkODQ1NWQzZjAyZDMyNjAyOWFkNzlmNDFjZiJ9fX0="
+      Enabled: true
+    white:
+      Name: "White Cat"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFkMTVhYzk1NThlOThiODlhY2E4OWQzODE5NTAzZjFjNTI1NmMyMTk3ZGQzYzM0ZGY1YWFjNGQ3MmU3ZmJlZCJ9fX0="
+      Enabled: true
+  parrot:
+    green:
+      Name: "Green Parrot"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZjOWEzYjlkNTg3OWMyMTUwOTg0ZGJmZTU4OGNjMmU2MWZiMWRlMWU2MGZkMmE0NjlmNjlkZDRiNmY2YTk5MyJ9fX0="
+      Enabled: true
+    gray:
+      Name: "Gray Parrot"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNjMzQ3MjJhYzY0NDk2YzliODRkMGM1NDAxOWRhYWU2MTg1ZDYwOTQ5OTAxMzNhZDY4MTBlZWEzZDI0MDY3YSJ9fX0="
+      Enabled: true
+    cyan:
+      Name: "Cyan Parrot"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM2NDcxZjIzNTQ3YjJkYmRmNjAzNDdlYTEyOGY4ZWIyYmFhNmE3OWIwNDAxNzI0ZjIzYmQ0ZTI1NjRhMmI2MSJ9fX0="
+      Enabled: true
+    blue:
+      Name: "Blue Parrot"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMDNiMTBjMTVlZTU2MDE0MjM4NjdkZmI4YmNiY2JjOTE5Y2E5NmMwZWVhNjMwNzNlYzhlNzk1ZWFiZDA1ZiJ9fX0="
+      Enabled: true
+    red:
+      Name: "Red Parrot"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQxYTE2OGJjNzJjYjMxNGY3Yzg2ZmVlZjlkOWJjNzYxMjM2NTI0NGNlNjdmMGExMDRmY2UwNDIwMzQzMGMxZCJ9fX0="
+      Enabled: true
+  mule:
+    Name: "Mule"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZkY2RhMjY1ZTU3ZTRmNTFiMTQ1YWFjYmY1YjU5YmRjNjA5OWZmZDNjY2UwYTY2MWIyYzAwNjVkODA5MzBkOCJ9fX0="
+    Enabled: true
+  skeleton horse:
+    Name: "Skeleton Horse"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdlZmZjZTM1MTMyYzg2ZmY3MmJjYWU3N2RmYmIxZDIyNTg3ZTk0ZGYzY2JjMjU3MGVkMTdjZjg5NzNhIn19fQ=="
+    Enabled: true
+  zombie horse:
+    Name: "Zombie Horse"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIyOTUwZjJkM2VmZGRiMThkZTg2ZjhmNTVhYzUxOGRjZTczZjEyYTZlMGY4NjM2ZDU1MWQ4ZWI0ODBjZWVjIn19fQ=="
+    Enabled: true
+  dolphin:
+    Name: "Dolphine"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=="
+    Enabled: true
+  polar bear:
+    Name: "Polar Bear"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQyMTIzYWMxNWVmZmExYmE0NjQ2MjQ3Mjg3MWI4OGYxYjA5YzFkYjQ2NzYyMTM3NmUyZjcxNjU2ZDNmYmMifX19"
+    Enabled: true
+  trader llama:
+    Name: "Trader Llama"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQyNDc4MGIzYzVjNTM1MWNmNDlmYjViZjQxZmNiMjg5NDkxZGY2YzQzMDY4M2M4NGQ3ODQ2MTg4ZGI0Zjg0ZCJ9fX0="
+    Enabled: true
+  llama:
+    Name: "Llama"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzJiMWVjZmY3N2ZmZTNiNTAzYzMwYTU0OGViMjNhMWEwOGZhMjZmZDY3Y2RmZjM4OTg1NWQ3NDkyMTM2OCJ9fX0="
+    Enabled: true
+  panda:
+    Name: "Panda"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzgxOGI2ODFjYWNlMWM2NDE5MTlmNTNlZGFkZWNiMTQyMzMwZDA4OWE4MjZiNTYyMTkxMzhjMzNiN2E1ZTBkYiJ9fX0="
+    Enabled: true
+  wolf:
+    Name: "Wolf"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA0OThkZTZmNWIwOWUwY2UzNWE3MjkyZmU1MGI3OWZjZTkwNjVkOWJlOGUyYTg3YzdhMTM1NjZlZmIyNmQ3MiJ9fX0="
+    Enabled: true
+  bee:
+    Name: "Bee"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTg3NDc4N2UzNjE1OWU0ZDc0ZGI1ZTI1YmFiYTk4N2I2NjVkY2M4OTBiZTlmMjYyYmIwY2JjZjVkMDFiODJiNiJ9fX0="
+    Enabled: true
+  iron golem:
+    Name: "Iron Golem"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODkwOTFkNzllYTBmNTllZjdlZjk0ZDdiYmE2ZTVmMTdmMmY3ZDQ1NzJjNDRmOTBmNzZjNDgxOWE3MTQifX19"
+    Enabled: true
+  goat:
+    Name: "Goat"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjAzMzMwMzk4YTBkODMzZjUzYWU4YzlhMWNiMzkzYzc0ZTlkMzFlMTg4ODU4NzBlODZhMjEzM2Q0NGYwYzYzYyJ9fX0="
+    Enabled: true
+  frog:
+    cold:
+      Name: "Cold Frog"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2U2MmU4YTA0OGQwNDBlYjA1MzNiYTI2YTg2NmNkOWMyZDA5MjhjOTMxYzUwYjQ0ODJhYzNhMzI2MWZhYjZmMCJ9fX0="
+      Enabled: true
+    warm:
+      Name: "Warm Frog"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc3MzE0ZmEwMzhlYzMxMzU3ODQ1YTkzMjc0YjRkYzg4NDEyNDY4NjcyOGZmZTBkZWQ5YzM1NDY2YWNhMGFhYiJ9fX0="
+      Enabled: true
+    tempered:
+      Name: "Tempered Frog"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDBlZGNiODk4MzU2ZmQ0MDBjMjA1YzYxMzRlMDk4NjEwYmFmYmJjNTA0MTc3MjlhMTU1Y2U3N2Q3YmNhOThkNCJ9fX0="
+      Enabled: true
+  allay:
+    Name: "Allay"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTFjNTlkY2NkZTRiODUzNTUwMGRjZjY3OTRjYTQ1MDY2M2Y2MDcyOTBlMjUxMGY2ZDhlYjFlNWViNzFkYTVhZiJ9fX0="
+    Enabled: true
+  spider:
+    Name: "Spider"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q1NDE1NDFkYWFmZjUwODk2Y2QyNThiZGJkZDRjZjgwYzNiYTgxNjczNTcyNjA3OGJmZTM5MzkyN2U1N2YxIn19fQ=="
+    Enabled: true
+  cave spider:
+    Name: "Cave Spider"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE2NDVkZmQ3N2QwOTkyMzEwN2IzNDk2ZTk0ZWViNWMzMDMyOWY5N2VmYzk2ZWQ3NmUyMjZlOTgyMjQifX19"
+    Enabled: true
+  zombified piglin:
+    Name: "Zombified Piglin"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1NGQwZDFjMjg2YzFiMzRmYjA5MTg0MWMwNmFlZDc0MWExYmY5YjY1YjlhNDMwZTRlNWNhMWQxYzRiOWY2ZiJ9fX0="
+    Enabled: true
+  piglin:
+    Name: "Piglin"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjg4MmFmMTI5NGE3NDAyM2U2OTE5YTMxZDFhMDI3MzEwZjJlMTQyYWZiNDY2N2QyMzBkMTU1ZTdmMjFkYmI0MSJ9fX0="
+    Enabled: true
+  enderman:
+    Name: "Enderman"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1OWJiMGE3YTMyOTY1YjNkOTBkOGVhZmE4OTlkMTgzNWY0MjQ1MDllYWRkNGU2YjcwOWFkYTUwYjljZiJ9fX0="
+    Enabled: true
+  evoker:
+    Name: "Evoker"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDk1NDEzNWRjODIyMTM5NzhkYjQ3ODc3OGFlMTIxMzU5MWI5M2QyMjhkMzZkZDU0ZjFlYTFkYTQ4ZTdjYmE2In19fQ=="
+    Enabled: true
+  vindicator:
+    Name: "Vindicator"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGY2ZmI4OWQxYzYzMWJkN2U3OWZlMTg1YmExYTY3MDU0MjVmNWMzMWE1ZmY2MjY1MjFlMzk1ZDRhNmY3ZTIifX19"
+    Enabled: true
+  pillager:
+    Name: "Pillager"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFlZTZiYjM3Y2JmYzkyYjBkODZkYjVhZGE0NzkwYzY0ZmY0NDY4ZDY4Yjg0OTQyZmRlMDQ0MDVlOGVmNTMzMyJ9fX0="
+    Name2: "Employee Pillager"
+    Texture2: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODcyMjkxYzAzMjdjMTU3ZTA5ODgwNGVhMjI2N2FjMTdkMzk5OWY0MWVkY2M0MWY2ODQ1ZTMyM2YyODNjMjEwZiJ9fX0="
+    Enabled: true
+  ravager:
+    Name: "Ravager"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWNiOWYxMzlmOTQ4OWQ4NmU0MTBhMDZkOGNiYzY3MGM4MDI4MTM3NTA4ZTNlNGJlZjYxMmZlMzJlZGQ2MDE5MyJ9fX0="
+    Enabled: true
+  vex:
+    Name: "Vex"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzJlYzVhNTE2NjE3ZmYxNTczY2QyZjlkNWYzOTY5ZjU2ZDU1NzVjNGZmNGVmZWZhYmQyYTE4ZGM3YWI5OGNkIn19fQ=="
+    Enabled: true
+  endermite:
+    Name: "Endermite"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJjN2I5ZDM2ZmI5MmI2YmYyOTJiZTczZDMyYzZjNWIwZWNjMjViNDQzMjNhNTQxZmFlMWYxZTY3ZTM5M2EzZSJ9fX0="
+    Enabled: true
+  guardian:
+    Name: "Guardian"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBiZjM0YTcxZTc3MTViNmJhNTJkNWRkMWJhZTVjYjg1Zjc3M2RjOWIwZDQ1N2I0YmZjNWY5ZGQzY2M3Yzk0In19fQ=="
+    Name2: "Fancy Guardian"
+    Texture2: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY2MmU5ZDk4MDI5YmZmYjg5ZjM1M2JkM2Y4OGQ5NGI2MzE4ZTgwYjk1M2I2MWIwYmZhNDI5ZjM1ZTY3MDExIn19fQ=="
+    Enabled: true
+  elder guardian:
+    Name: "Elder Guardian"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTkyMDg5NjE4NDM1YTBlZjYzZTk1ZWU5NWE5MmI4MzA3M2Y4YzMzZmE3N2RjNTM2NTE5OWJhZDMzYjYyNTYifX19"
+    Enabled: true
+  shulker:
+    Name: "Purple Shulker"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU3MzgzMmUyNzJmODg0NGM0NzY4NDZiYzQyNGEzNDMyZmI2OThjNThlNmVmMmE5ODcxYzdkMjlhZWVhNyJ9fX0="
+    Enabled: true
+    red:
+      Name: "Red Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTk5OTQwNDA0MzNhZjBmMDE1YmU0ZDY5NjhjM2Q1NWUwNDRjOThkYWMyYzRjNmE2ZWEwZWZhYzdhNmRkYiJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    orange:
+      Name: "Orange Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU3MTFkOTU0YmQ1NjIzNmQxYTlmOTliZTg4MGM1ZDM4OTkwZGY2YmVmNzJlNzNmNzQ1YjA0OTk1ZGJmNiJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    yellow:
+      Name: "Yellow Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGNiZjU1ODY4MzZiN2IzNDI5MzJlMWQyM2VmYzI0OTBjZjU5YzY5YWNjZjFlMDVlOWVkNTc2Y2FlZDhiNzg3NyJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    lime:
+      Name: "Lime Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTcxNDQ5NTdjMmM1YmJmZTQ0N2Y0YjJkMzZhMjQ2ZWExYjAyM2RhNGNiZDFhYTJkYmJiMTVlOTQ5ODEyNDgifX19"
+      DropChance: 5.0
+      Enabled: true
+    green:
+      Name: "Green Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzMxYWJlMmJiMmI5MTQxZjEwMThlYjE1MzlkMmNmZWMxM2Q5MjMxYjUzYTQ2Y2FmOGRjMjFhYTI3MDUwNDkifX19"
+      DropChance: 5.0
+      Enabled: true
+    cyan:
+      Name: "Cyan Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjZmMTczZDRlM2U4YmQ2ZjliZTBiZjliNzQ1YmQxY2M3YTI5ZmY4MzZlZDJkNDg2YzViOTkyOTJjODVjYyJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    blue:
+      Name: "Blue Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg3ZmU2ZGNhOGVmMjU2NDY4NTJkMzhiYjY3ZGIxYzEzYWUxYjFhNmVkOTg2MTg3ODc5OWRmYmFhMSJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    light_blue:
+      Name: "Light Blue Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzIxY2RlYzJjZjRlYmVlZjM1ZDU4YjE4NGI4MzI1OThiYzg5MGEwYWU1YzJkNTRlZTliZTU4NmQwIn19fQ=="
+      DropChance: 5.0
+      Enabled: true
+    purple:
+      Name: "Purple Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU3MzgzMmUyNzJmODg0NGM0NzY4NDZiYzQyNGEzNDMyZmI2OThjNThlNmVmMmE5ODcxYzdkMjlhZWVhNyJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    magenta:
+      Name: "Magenta Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjlmZTI5MTY3NmM3YjNmOTZmM2NkZjYzYzQ3YjUzZmI0NWQ3M2JkNmZlMmNlMjJkZTEwNzQ5ZWIxNDI2YSJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    pink:
+      Name: "Pink Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y4NDdjMTJkNTdmZTY1NTVlOGY5YjQ3ZTU2MmVjZjE2ODNmYjZjMzVmOTJjZTJjZWQyYWU2OGRlNjI4NzUwIn19fQ=="
+      DropChance: 5.0
+      Enabled: true
+    brown:
+      Name: "Brown Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzk2ZDdmYjg3NDQ3ZmZjMDU0ZmIxMDliODRkNjIyNWQ0MTAyOWIxZTY3MTBjN2RlNTdmNjYxYWVmYTZmIn19fQ=="
+      DropChance: 5.0
+      Enabled: true
+    black:
+      Name: "Black Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzU0NTVhYWFkYjIzMTdiNWYyOWU5ODk4MWFhNTdmNTc5NTcwNTA2OWQ4ZjQxNWMwZDY4YTkyYTc5MTQxM2IzYSJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    gray:
+      Name: "Gray Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc5ODQzMmZiZWIyYmMyZDc1N2IxZDNjM2IzNTU4ZTY5OTAzOTJkZDA5MWVhNGVmMzgxYjJlMDE5Yzk0NjIifX19"
+      DropChance: 5.0
+      Enabled: true
+    light_gray:
+      Name: "Light Gray Shulker"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmZhMTdkNDFlYTE4M2JlZTUzZDU0NmM3YmVjNGNjZjZhNTRkNGY1MDhmZGU2ZWJmM2U1ZDM4OGQ0Y2JlYWNiOSJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    white:
+      Name: "White"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmI5NGIwYWNiMzE3N2I0Y2RiMDE3ZmUzMWNkNWMyNDcyNjJkZWY1M2JmODMzODFjNmM4MmQ3MmM1NmFjIn19fQ=="
+      DropChance: 5.0
+      Enabled: true
+  husk:
+    Name: "Husk"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY3NGM2M2M4ZGI1ZjRjYTYyOGQ2OWEzYjFmOGEzNmUyOWQ4ZmQ3NzVlMWE2YmRiNmNhYmI0YmU0ZGIxMjEifX19"
+    Enabled: true
+  stray:
+    Name: "Stray"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM1MDk3OTE2YmMwNTY1ZDMwNjAxYzBlZWJmZWIyODcyNzdhMzRlODY3YjRlYTQzYzYzODE5ZDUzZTg5ZWRlNyJ9fX0="
+    Enabled: true
+  phantom:
+    Name: "Phantom"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U5NTE1M2VjMjMyODRiMjgzZjAwZDE5ZDI5NzU2ZjI0NDMxM2EwNjFiNzBhYzAzYjk3ZDIzNmVlNTdiZDk4MiJ9fX0="
+    Enabled: true
+  blaze:
+    Name: "Blaze"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwNjU3ZTI0YjU2ZTFiMmY4ZmMyMTlkYTFkZTc4OGMwYzI0ZjM2Mzg4YjFhNDA5ZDBjZDJkOGRiYTQ0YWEzYiJ9fX0="
+    Enabled: true
+  ghast:
+    Name: "Ghast"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU4YTM4ZTlhZmJkM2RhMTBkMTliNTc3YzU1YzdiZmQ2YjRmMmU0MDdlNDRkNDAxN2IyM2JlOTE2N2FiZmYwMiJ9fX0="
+    Enabled: true
+  magma cube:
+    Name: "Magma Cube"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjOTdhMDZlZmRlMDRkMDAyODdiZjIwNDE2NDA0YWIyMTAzZTEwZjA4NjIzMDg3ZTFiMGMxMjY0YTFjMGYwYyJ9fX0="
+    Enabled: true
+  silverfish:
+    Name: "Silverfish"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE5MWRhYjgzOTFhZjVmZGE1NGFjZDJjMGIxOGZiZDgxOWI4NjVlMWE4ZjFkNjIzODEzZmE3NjFlOTI0NTQwIn19fQ=="
+    Enabled: true
+  slime:
+    Name: "Green Slime"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YWVlYzZiODQyYWRhODY2OWY4NDZkNjViYzQ5NzYyNTk3ODI0YWI5NDRmMjJmNDViZjNiYmI5NDFhYmU2YyJ9fX0="
+    DropChance: 5.0
+    Enabled: true
+    red:
+      Name: "Red Slime"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2NlNTYwOWU1MzM3MGZjYjUxYzc0MzMzYmZlMDM0MTRhZjk0ZmE0MTliNWMzZjA5YThkNTlkYWRjNTFmZjZmOCJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    orange:
+      Name: "Orange Slime"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRhMzM0NjkwOTk0OGY0ZmM3MmI2N2Y1YTIzOWFjYTMyMTU1MDBkMDdjY2Q0Nzg4YTc3ZTg3NWEyMTM1NjViNiJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    yellow:
+      Name: "Yellow Slime"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmViYThlMTNlM2JkMTI0M2Q3MTI4YWViZmE0OGQ0YzlmMmQxYjEyMDc0MDU0OGFhZjRhZmI5M2E1MWZlM2IyNiJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    lime:
+      Name: "Lime Slime"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDRmMmE5ZWNlOGEyNDQ2NmU2NDU1NmZlZjQyNjdiNTlkYjQ5MWE0Y2NiNmE1NmUwNGQzOGVhNWI1MzU0MmRjIn19fQ=="
+      DropChance: 5.0
+      Enabled: true
+    green:
+      Name: "Green Slime"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YWVlYzZiODQyYWRhODY2OWY4NDZkNjViYzQ5NzYyNTk3ODI0YWI5NDRmMjJmNDViZjNiYmI5NDFhYmU2YyJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    cyan:
+      Name: "Cyan Slime"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU4YzllN2IwMGYzMWJmMjkzNzdmY2YxODlmYjczNzViYjJlZTMwMzkxZjc1YzU0MGE3YjIxNzVkM2Q0NTQyMyJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    blue:
+      Name: "Blue Slime"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzI4NWNhYTJjM2NiOGExZWE4ZjJmN2UyZWNhZWU0NGFmYjIxYzYyMjExZGVhNmZkM2MxMzdiMjJiYjg2NzM0ZiJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    light_blue:
+      Name: "Light Blue"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODBiMmRlNWRmMzk0ZDU0MmMzMTUzODU5MzJiMGQ4ZWE2OThlYjA5OWQzZDVlZDhjMzAwOGRjNTNhOGI3YmEzMCJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    purple:
+      Name: "Purple Slime"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiZTM1YTEzM2I4YjhmNDNjYzEzOTQ2MzMyMGM4ZDA4MjQ2NzNjM2IyYmU0NDAxOWZhMzU5NzVhODkwYTAzZiJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+    pink:
+      Name: "Pink Slime"
+      Description: " "
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQzNGJhNjg4ZDlkMjc1YjViMmJjMjAwZmFhYzAwMGExMzQ1MjVlNTY1YjkyNjhlMzRiZTM5MmE2MDBkMTczZSJ9fX0="
+      DropChance: 5.0
+      Enabled: true
+  drowned:
+    Name: "Drowned"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0="
+    Enabled: true
+  wither skeleton:
+    Name: "Wither Skeleton"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzk1M2I2YzY4NDQ4ZTdlNmI2YmY4ZmIyNzNkNzIwM2FjZDhlMWJlMTllODE0ODFlYWQ1MWY0NWRlNTlhOCJ9fX0="
+    Enabled: true
+  witch:
+    Name: "Witch"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMTNkMTg0NzRmYzk0ZWQ1NWFlYjcwNjk1NjZlNDY4N2Q3NzNkYWMxNmY0YzNmODcyMmZjOTViZjlmMmRmYSJ9fX0="
+    Enabled: true
+  hoglin:
+    Name: "Hoglin"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWJiOWJjMGYwMWRiZDc2MmEwOGQ5ZTc3YzA4MDY5ZWQ3Yzk1MzY0YWEzMGNhMTA3MjIwODU2MWI3MzBlOGQ3NSJ9fX0="
+    Enabled: true
+  piglin brute:
+    Name: "Piglin Brute"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2UzMDBlOTAyNzM0OWM0OTA3NDk3NDM4YmFjMjllM2E0Yzg3YTg0OGM1MGIzNGMyMTI0MjcyN2I1N2Y0ZTFjZiJ9fX0="
+    Enabled: true
+  zoglin:
+    Name: "Zoglin"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3ZTE4NjAyZTAzMDM1YWQ2ODk2N2NlMDkwMjM1ZDg5OTY2NjNmYjllYTQ3NTc4ZDNhN2ViYmM0MmE1Y2NmOSJ9fX0="
+    Enabled: true
+  wither:
+    Name: "Wither"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y4NmIzYWZmYmY2NWE5MWZhZjA4NGEwY2Q3MGU0MDQ1NTEzMGVhOTliMmIzODQ0ZDI1MTBlMWM4YjNhNTc0NiJ9fX0="
+    Enabled: true
+  warde:
+    Name: "Warden"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU1MjkxYTE1MjM5YWIyNDlmZmM0OGY5NjYyODE1YWNhODU3MjU1MDY5Y2JhYjAzNWJjNjMyNjFmNzM4ZWE1ZSJ9fX0="
+    Enabled: true
+  illusioner:
+    Name: "Illusioner"
+    Description: " "
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDYzOWQzMjVmNDQ5NDI1OGE0NzNhOTNhM2I0N2YzNGEwYzUxYjNmY2VhZjU5ZmVlODcyMDVhNWU3ZmYzMWY2OCJ9fX0="
+    Enabled: true
+  ender dragon:
+    Name: "Ender Dragon"
+    Description: "How did you even obtain this? |Unfortunatly I did not set a real drop for this yet |enjoy the rare placeholder item"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTdhMWM2YzJlOGE4Y2RmZDhiNzk5ZThiZjkxMmQ2MDBjZDNiOThmMjZjOTNiNTQyZjY0NDY0YWVjMjkxYjcyOSJ9fX0="
+    Enabled: true
+  player:
+    Enabled: true
+  zombie villager:
+    plains:
+      mason:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      cleric:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      farmer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      armorer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      butcher:
+        Name: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2M4ZGNiZGVlOTgzZDI1NGY5NDQzNjcwZTJmN2JmNDY3OWNkMDk5MjMyYmZlNmVmNjkzYzRlMjRjY2I5YjY2ZCJ9fX0="
+        Description: " "
+        Texture: ""
+        Enabled: true
+      fletcher:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      shepherd:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      fisherman:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      librarian:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      toolsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      weaponsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      cartographer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      leatherworker:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      none:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+    desert:
+      mason:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      cleric:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      farmer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      armorer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      butcher:
+        Name: ""
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWEyNTM0MjI0YzkzNTg4YWM0MDE3NzQ4NmFkMWJjODY2NjhiYzhmMGI2Y2E4ZDA4M2UzYWJkMmE1MWNkOWFiYSJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      shepherd:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      fisherman:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      librarian:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      toolsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      weaponsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      cartographer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      leatherworker:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      none:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+    savanna:
+      mason:
+        Name: ""
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
+        Enabled: true
+      cleric:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      farmer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      armorer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      butcher:
+        Name: ""
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTgwOWMxNmNmZTZkZTI1YTA4MzM4NGRkNjZkNzYzNmI0YTM1ZGFiNGU1NDU1OGEyYWNiMTkxOTNhMWIyODczNyJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      shepherd:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      fisherman:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      librarian:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      toolsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      weaponsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      cartographer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      leatherworker:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      none:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+    snow:
+      mason:
+        Name: "Snow ZombieVillager Mason"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
+        Enabled: true
+      cleric:
+        Name: "Snow ZombieVillager Cleric"
+        Description: " "
+        Texture: " "
+        Enabled: true
+      farmer:
+        Name: "Snow ZombieVillager Farmer"
+        Description: " "
+        Texture: " "
+        Enabled: true
+      armorer:
+        Name: "Snow ZombieVillager Armorer"
+        Description: " "
+        Texture: " "
+        Enabled: true
+      butcher:
+        Name: ""
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmE1NWYzZDkyNjU3M2FkNjY1YWI4NDU4NjcxMDZmZmFhZWVmOTQyMWU2ODQyN2ZmYjI3MTc3YTA3YTc3MTg3MiJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      shepherd:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      fisherman:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      librarian:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      toolsmith:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      weaponsmith:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      cartographer:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      leatherworker:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      none:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+    swamp:
+      mason:
+        Name: ""
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjJjY2EyZDlmMGFlZjQyY2MzMDg2NDE1ZTE0MTk1NjBmMzQzMzRiMTY3YmViZmVmZWNjNDM0OTJjYjE0MTc4OSJ9fX0="
+        Enabled: true
+      cleric:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      farmer:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      armorer:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      butcher:
+        Name: ""
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWYxNjU4NDYzMjE2MDM4MWIzYzQ4M2U3MTc0YjJlZTU3YzI0Mjc2YTE4N2NmZWUwNzQwYTRhNWM2ODdmZmFkNyJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: ""
+        Description: " "
+        Texture: " "
+        Enabled: true
+      shepherd:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      fisherman:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      librarian:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      toolsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      weaponsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      cartographer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      leatherworker:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      none:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+    taiga:
+      mason:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      cleric:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      farmer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      armorer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      butcher:
+        Name: ""
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQ0YmNhNjgxNTFkNTlmMjIxNDdlMmVlYjEyMzQzZmU5OTI3MTViZDA0OWIyNzk0MzEyMGIxNDI3OTBhNmI5In19fQ=="
+        Enabled: true
+      fletcher:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      shepherd:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      fisherman:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      librarian:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      toolsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      weaponsmith:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      cartographer:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      leatherworker:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+      none:
+        Name: ""
+        Description: " "
+        Texture: ""
+        Enabled: true
+    jungle:
+      mason:
+        Name: "Mason Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmZiOTM5MzBmOWQxMGEwNWFkYjg0YTY4MTZiZWU5MzBkNTI5NDRhNWUxYTY3ZjkwZjY1YzdmZWM0ZWM1YTY4YSJ9fX0="
+        Enabled: true
+      cleric:
+        Name: "Cleric Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjYxYzQwZjhkYTQwOWVlZjQ0MzJjZTEwNjNmNTAwNTIwMTcwNzUwMzhjZjNhOWE2NTQ4NWVhNjIxYzU0OWY0MCJ9fX0="
+        Enabled: true
+      farmer:
+        Name: "Farmer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA4YmRiNTNjNTVmZWYzMmEwNjU4ZTFjNzk2NjYxNGFmMGJmZjYwOTEyNDliOGZlM2I3N2EwMjc1ZGE4MmU0MyJ9fX0="
+        Enabled: true
+      armorer:
+        Name: "Armorer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI4ZmYwM2NjY2ZjNDNmNjY5MjVkNjEzMzJiMWQ2ZTc4YjQxYjE1ZjRhYjNjMmU2NjM1NDkyYzdmZDM0NDYyNCJ9fX0="
+        Enabled: true
+      butcher:
+        Name: "Butcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiZDFlNzg2NjRkNzZhYWIxMzcwNmY3Y2U5MWY3NWE1MmNlYzAxN2Q2MDQ0NmZiNDNiZDhiZjIwNDJkZDNiMyJ9fX0="
+        Enabled: true
+      fletcher:
+        Name: "Fletcher Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUxMjYxNTgyMjBlOTQ2NTE3YjJjMjBlMTM4MDU5MjhkZjA2ZTE5YzExMDFiZGVhMmJjNWE0ZmM5NWY5YzAxMSJ9fX0="
+        Enabled: true
+      shepherd:
+        Name: "Shepherd Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU3NzFiNzM4MzQ5ZDFkZTBlMDFlODk0YWU0MDE2ODZmNTk4Y2ExOWEyMDg4YjA5NTE0OWZkZTliNzZhNDM3NyJ9fX0="
+        Enabled: true
+      fisherman:
+        Name: "Fisherman Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM3ZjQ0YjUxMWY3MDYzMTg3ZDBmZTEyYzc0YTBjYjhjOTNmMzRkMGY1ODczMzhiMmE5YzIyZjNmYTJmMjEyIn19fQ=="
+        Enabled: true
+      librarian:
+        Name: "Librarian Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRmMDRlYjIwY2QwYjgyYWFlZjI1MjBhZWQ5ODY3YzNjY2EyNDdhNGNkOTc1YTEyZWE1MGRmMDNhNzE3NjI0MSJ9fX0="
+        Enabled: true
+      toolsmith:
+        Name: "Toolsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE4NTEyNTg0OTEzNDFjMDAxNDlhOWM5MmRlMWFjZGU2NjViMTMxYzhhNzRjOWZmZTBjYjFlM2E1YWQ5NzQ5In19fQ=="
+        Enabled: true
+      weaponsmith:
+        Name: "Weaponsmith Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBiM2E0MDNiODBjMmZmZTdiMzY1OTZmZDgwOWQ1NWM2MjRlN2M0MTQzYzZmZDYwYjFkNjJkMTU2MjkwYzU2OSJ9fX0="
+        Enabled: true
+      cartographer:
+        Name: "Cartographer Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZjNmFjOWQ4NTU1NGJiZTU2YTY2NjhkZTBhNTRjYjFlZmY5M2UxNGY0YmNkZjcyNDVhNzQ0Y2MzNzcyMWYwYSJ9fX0="
+        Enabled: true
+      leatherworker:
+        Name: "Leatherworker Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc2Y2Y4YjczNzhlODg5Mzk1ZDUzOGU2MzU0YTE3YTNkZTZiMjk0YmI2YmY4ZGI5YzcwMTk1MWM2OGQzYzBlNiJ9fX0="
+        Enabled: true
+      none:
+        Name: "Villager"
+        Description: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19"
+        Enabled: true

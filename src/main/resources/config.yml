@@ -1,0 +1,13 @@
+#Configs for Head plugin
+
+#Enables Heads to drop in pvp
+Player_PvP_Head: false
+
+#DropChance for pvp kill head drops in %
+Player_PvP_Head_DropChance: 100
+
+#Enables Head drops from Creeper explosions
+Creeper_Explosion_Head: true
+
+#Only drop heads from Charged creeper damage
+ChargedCreeperRequired: true
