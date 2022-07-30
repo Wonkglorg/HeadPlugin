@@ -4,16 +4,19 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.utils.random.WeightedRandomPicker;
-import com.wonkglorg.utils.HeadUtils;
 import static com.wonkglorg.utils.HeadUtils.dropHead;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public abstract class EntityTypeProcessor
 {
 	protected Entity entity;
+	private final List<String> chanceList = new ArrayList<>();
+	protected WeightedRandomPicker<String> weightedRandomPicker;
 	
 	abstract String path();
 	
@@ -26,27 +29,61 @@ public abstract class EntityTypeProcessor
 		this.entity = entity;
 		String path = path();
 		Config config = Heads.getManager().getConfig(YML.HEAD_DATA.getFileName());
-		Set<String> subHeads = config.getSection(path,false);
+		Set<String> subHeads = config.getSection(path, false);
 		if(!subHeads.isEmpty())
 		{
-			WeightedRandomPicker<String> weightedRandomPicker = new WeightedRandomPicker<>();
+			weightedRandomPicker = new WeightedRandomPicker<>();
 			String finalPath = path;
 			subHeads.forEach(s ->
 			{
 				double dropchance = config.getDouble(finalPath + "." + s + ".DropChance");
 				if(dropchance != 0.0)
 				{
-					weightedRandomPicker.addEntry(s, dropchance);
+					if(config.getBoolean(finalPath + "." + s + ".Enabled"))
+					{
+						weightedRandomPicker.addEntry(s, dropchance);
+						chanceList.add(s);
+					}
 				}
-				
 			});
 			if(!weightedRandomPicker.getEntries().isEmpty())
 			{
-				String picked = weightedRandomPicker.getRandom();
-				path = path + "." + picked;
+				if(weightedRandomPicker.getAccumulatedWeight() <= 100)
+				{
+					for(String path1 : chanceList)
+					{
+						if(config.getDouble(path + "." + path1 + ".DropChance") > Math.random() * 100)
+						{
+							dropHead(path + "." + path1 + ".Texture", path + "." + path1 + ".Name", path + "." + path1 + ".Description", loc);
+							return;
+						}
+					}
+					return;
+				}
+				if(weightedRandomPicker.getEntries().size() > 1)
+				{
+					String picked = weightedRandomPicker.getRandom();
+					path = path + "." + picked;
+				}
+			} else
+			{
+				if(config.getBoolean(path + ".Enabled"))
+				{
+					weightedRandomPicker.addEntry(path, config.getDouble(path + ".DropChance"));
+					
+					if(weightedRandomPicker.getAccumulatedWeight() > Math.random() * 100)
+					{
+						dropHead(path + ".Texture", path + ".Name", path + ".Description", loc);
+						return;
+					}
+				}
+			}
+			if(weightedRandomPicker.getEntries().isEmpty())
+			{
+				return;
 			}
 		}
-		if(HeadUtils.readConfigBoolean(YML.HEAD_DATA, path + ".Enabled"))
+		if(weightedRandomPicker.getEntries().size() != 1)
 		{
 			dropHead(path + ".Texture", path + ".Name", path + ".Description", loc);
 		}

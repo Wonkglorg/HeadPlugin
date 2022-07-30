@@ -2,6 +2,7 @@ package com.wonkglorg.listeners;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.entityProcessor.AxolotlProcessor;
+import com.wonkglorg.entityProcessor.CatProcessor;
 import com.wonkglorg.entityProcessor.EntityProcessor;
 import com.wonkglorg.entityProcessor.EntityTypeProcessor;
 import com.wonkglorg.entityProcessor.HorseProcessor;
@@ -17,6 +18,7 @@ import org.bukkit.entity.Entity;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,13 +41,14 @@ public class DeathListener implements Listener
 			{
 				continue;
 			}
-			entityTypeProcessors.forEach(entityTypeProcessor ->
+			for(EntityTypeProcessor processor : entityTypeProcessors)
 			{
-				if(entityTypeProcessor.matches(mob))
+				if(processor.matches(mob))
 				{
-					entityTypeProcessor.process(mob, e.getEntity().getLocation());
+					processor.process(mob, e.getEntity().getLocation());
+					return;
 				}
-			});
+			}
 		}
 		
 		Heads.getArray().removeIf(entity1 -> !entity1.isValid());
@@ -55,6 +58,7 @@ public class DeathListener implements Listener
 	private void addProcessors(List<EntityTypeProcessor> entityTypeProcessors)
 	{
 		entityTypeProcessors.add(new AxolotlProcessor());
+		entityTypeProcessors.add(new CatProcessor());
 		entityTypeProcessors.add(new ParrotProcessor());
 		entityTypeProcessors.add(new RabbitProcessor());
 		entityTypeProcessors.add(new SheepProcessor());
