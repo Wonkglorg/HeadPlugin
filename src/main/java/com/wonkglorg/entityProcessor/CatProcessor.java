@@ -1,7 +1,5 @@
 package com.wonkglorg.entityProcessor;
 
-import com.wonkglorg.utilitylib.utils.message.Message;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Cat;
 import org.bukkit.entity.Entity;
@@ -13,8 +11,7 @@ public class CatProcessor extends EntityTypeProcessor
 	{
 		Cat cat = (Cat) entity;
 		String name = cat.getName().toLowerCase();
-		String variant = cat.getType().name().toLowerCase();
-		Bukkit.broadcast(Message.color("Name:" + name+ "Variant + " + variant));
+		String variant = cat.getCatType().name().toLowerCase();
 		return  "Heads." + name + "." + variant;
 	}
 	

@@ -30,9 +30,9 @@ public abstract class EntityTypeProcessor
 		String path = path();
 		Config config = Heads.getManager().getConfig(YML.HEAD_DATA.getFileName());
 		Set<String> subHeads = config.getSection(path, false);
+		weightedRandomPicker = new WeightedRandomPicker<>();
 		if(!subHeads.isEmpty())
 		{
-			weightedRandomPicker = new WeightedRandomPicker<>();
 			String finalPath = path;
 			subHeads.forEach(s ->
 			{
