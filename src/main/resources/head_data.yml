@@ -2,82 +2,82 @@
 Heads:
   sheep:
     red:
-      Name: "Red Sheep"
-      Description: "&5 Test Description | This is a second line  "
+      Name: "&#ed1811Red Sheep"
+      Description: "&#FFAA00Test Description |&2This is a second line  "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM5YWY0NzdlYjYyNzgxNWY3MjNhNTY2MjU1NmVjOWRmY2JhYjVkNDk0ZDMzOGJkMjE0MjMyZjIzZTQ0NiJ9fX0="
       Enabled: true
     orange:
-      Name: "Orange Sheep"
+      Name: "&#ed5711Orange Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjA5ODM5N2EyNzBiNGMzZDJiMWU1NzRiOGNmZDNjYzRlYTM0MDkwNjZjZWZlMzFlYTk5MzYzM2M5ZDU3NiJ9fX0="
       Enabled: true
     yellow:
-      Name: "Yellow Sheep"
+      Name: "&#daed09Yellow Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjZhNDExMmRmMWU0YmNlMmE1ZTI4NDE3ZjNhYWZmNzljZDY2ZTg4NWMzNzI0NTU0MTAyY2VmOGViOCJ9fX0="
       Enabled: true
     lime:
-      Name: "Lime Sheep"
+      Name: "&#42ed09Lime Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJhMjQ0OGY1OGE0OTEzMzI0MzRlODVjNDVkNzg2ZDg3NDM5N2U4MzBhM2E3ODk0ZTZkOTI2OTljNDJiMzAifX19"
       Enabled: true
     green:
-      Name: "Green Sheep"
+      Name: "&#0dbd13Green Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRlNTVhMzk1YTIyNDY0NDViNDVmOWE2ZDY4ODcyMzQ0YmJlYTU0ZjM2MmQ1MjlmYzViMGI4NTdlYTU4MzI2YiJ9fX0="
       Enabled: true
     cyan:
-      Name: "Cyan Sheep"
+      Name: "&#13d4b4Cyan Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZmNmM3ZTdmZDUxNGNlMGFjYzY4NTkzMjI5ZTQwZmNjNDM1MmI4NDE2NDZlNGYwZWJjY2NiMGNlMjNkMTYifX19"
       Enabled: true
     blue:
-      Name: "Blue Sheep"
+      Name: "&#0e73edBlue Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDllYzIyODE4ZDFmYmZjODE2N2ZiZTM2NzI4YjI4MjQwZTM0ZTE2NDY5YTI5MjlkMDNmZGY1MTFiZjJjYTEifX19"
       Enabled: true
     light_blue:
-      Name: "Light Blue Sheep"
+      Name: "&#197ffaLight Blue Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE2MjRmNTk2NmJlZGQ2ZTY3ZjY1NGI1OWU5MjQ5YjJlY2YzMDdkOTAzMzM5YmMxOTk5MjM5NzdmNGM4YyJ9fX0="
       Enabled: true
     purple:
-      Name: "Purple Sheep"
+      Name: "&#7908c9Purple Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU1Mjg2N2FmZWYzOGJiMTRhMjZkMTQyNmM4YzBmMTE2YWQzNDc2MWFjZDkyZTdhYWUyYzgxOWEwZDU1Yjg1In19fQ=="
       Enabled: true
     magenta:
-      Name: "Magenta Sheep"
+      Name: "&#b00dd9Magenta Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTgzNjU2NWM3ODk3ZDQ5YTcxYmMxODk4NmQxZWE2NTYxMzIxYTBiYmY3MTFkNDFhNTZjZTNiYjJjMjE3ZTdhIn19fQ=="
       Enabled: true
     pink:
-      Name: "Pink Sheep"
+      Name: "&#ed0ea3Pink Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWU3MzhmNTZlYWZlNmZmYzE1ODNkZTgxMWFlMDU3ZmYzMDQ5MWM0MTc0OTA1OGJjNTI3NTMxN2U3MmU2NjkifX19"
       Enabled: true
     brown:
-      Name: "Brown Sheep"
+      Name: "&#632c36Brown Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTU1YWQ2ZTVkYjU2OTJkODdmNTE1MTFmNGUwOWIzOWZmOWNjYjNkZTdiNDgxOWE3Mzc4ZmNlODU1M2I4In19fQ=="
       Enabled: true
     black:
-      Name: "Black Sheep"
+      Name: "&#0f0f0fBlack Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI2NTIwODNmMjhlZDFiNjFmOWI5NjVkZjFhYmYwMTBmMjM0NjgxYzIxNDM1OTUxYzY3ZDg4MzY0NzQ5ODIyIn19fQ=="
       Enabled: true
     gray:
-      Name: "Gray Sheep"
+      Name: "&#4d4b4bGray Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDI4N2ViNTAxMzkxZjI3NTM4OWYxNjZlYzlmZWJlYTc1ZWM0YWU5NTFiODhiMzhjYWU4N2RmN2UyNGY0YyJ9fX0="
       Enabled: true
     light_gray:
-      Name: "Light Gray Sheep"
+      Name: "&#878484Light Gray Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2UxYWM2ODM5OTNiZTM1NTEyZTFiZTMxZDFmNGY5OGU1ODNlZGIxNjU4YTllMjExOTJjOWIyM2I1Y2NjZGMzIn19fQ=="
       Enabled: true
     white:
-      Name: "White Sheep"
+      Name: "&#edebebWhite Sheep"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMxZjljY2M2YjNlMzJlY2YxM2I4YTExYWMyOWNkMzNkMThjOTVmYzczZGI4YTY2YzVkNjU3Y2NiOGJlNzAifX19"
       Enabled: true
@@ -538,143 +538,143 @@ Heads:
         Enabled: true
     taiga:
       mason:
-        Name: "Mason Villager"
+        Name: "Taiga Mason Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmZiOTM5MzBmOWQxMGEwNWFkYjg0YTY4MTZiZWU5MzBkNTI5NDRhNWUxYTY3ZjkwZjY1YzdmZWM0ZWM1YTY4YSJ9fX0="
         Enabled: true
       cleric:
-        Name: "Cleric Villager"
+        Name: "Taiga Cleric Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjYxYzQwZjhkYTQwOWVlZjQ0MzJjZTEwNjNmNTAwNTIwMTcwNzUwMzhjZjNhOWE2NTQ4NWVhNjIxYzU0OWY0MCJ9fX0="
         Enabled: true
       farmer:
-        Name: "Farmer Villager"
+        Name: "Taiga Farmer Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA4YmRiNTNjNTVmZWYzMmEwNjU4ZTFjNzk2NjYxNGFmMGJmZjYwOTEyNDliOGZlM2I3N2EwMjc1ZGE4MmU0MyJ9fX0="
         Enabled: true
       armorer:
-        Name: "Armorer Villager"
+        Name: "Taiga Armorer Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI4ZmYwM2NjY2ZjNDNmNjY5MjVkNjEzMzJiMWQ2ZTc4YjQxYjE1ZjRhYjNjMmU2NjM1NDkyYzdmZDM0NDYyNCJ9fX0="
         Enabled: true
       butcher:
-        Name: "Butcher Villager"
+        Name: "Taiga Butcher Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiZDFlNzg2NjRkNzZhYWIxMzcwNmY3Y2U5MWY3NWE1MmNlYzAxN2Q2MDQ0NmZiNDNiZDhiZjIwNDJkZDNiMyJ9fX0="
         Enabled: true
       fletcher:
-        Name: "Fletcher Villager"
+        Name: "Taiga Fletcher Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUxMjYxNTgyMjBlOTQ2NTE3YjJjMjBlMTM4MDU5MjhkZjA2ZTE5YzExMDFiZGVhMmJjNWE0ZmM5NWY5YzAxMSJ9fX0="
         Enabled: true
       shepherd:
-        Name: "Shepherd Villager"
+        Name: "Taiga Shepherd Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU3NzFiNzM4MzQ5ZDFkZTBlMDFlODk0YWU0MDE2ODZmNTk4Y2ExOWEyMDg4YjA5NTE0OWZkZTliNzZhNDM3NyJ9fX0="
         Enabled: true
       fisherman:
-        Name: "Fisherman Villager"
+        Name: "Taiga Fisherman Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM3ZjQ0YjUxMWY3MDYzMTg3ZDBmZTEyYzc0YTBjYjhjOTNmMzRkMGY1ODczMzhiMmE5YzIyZjNmYTJmMjEyIn19fQ=="
         Enabled: true
       librarian:
-        Name: "Librarian Villager"
+        Name: "Taiga Librarian Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRmMDRlYjIwY2QwYjgyYWFlZjI1MjBhZWQ5ODY3YzNjY2EyNDdhNGNkOTc1YTEyZWE1MGRmMDNhNzE3NjI0MSJ9fX0="
         Enabled: true
       toolsmith:
-        Name: "Toolsmith Villager"
+        Name: "Taiga Toolsmith Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE4NTEyNTg0OTEzNDFjMDAxNDlhOWM5MmRlMWFjZGU2NjViMTMxYzhhNzRjOWZmZTBjYjFlM2E1YWQ5NzQ5In19fQ=="
         Enabled: true
       weaponsmith:
-        Name: "Weaponsmith Villager"
+        Name: "Taiga Weaponsmith Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBiM2E0MDNiODBjMmZmZTdiMzY1OTZmZDgwOWQ1NWM2MjRlN2M0MTQzYzZmZDYwYjFkNjJkMTU2MjkwYzU2OSJ9fX0="
         Enabled: true
       cartographer:
-        Name: "Cartographer Villager"
+        Name: "Taiga Cartographer Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZjNmFjOWQ4NTU1NGJiZTU2YTY2NjhkZTBhNTRjYjFlZmY5M2UxNGY0YmNkZjcyNDVhNzQ0Y2MzNzcyMWYwYSJ9fX0="
         Enabled: true
       leatherworker:
-        Name: "Leatherworker Villager"
+        Name: "Taiga Leatherworker Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc2Y2Y4YjczNzhlODg5Mzk1ZDUzOGU2MzU0YTE3YTNkZTZiMjk0YmI2YmY4ZGI5YzcwMTk1MWM2OGQzYzBlNiJ9fX0="
         Enabled: true
       none:
-        Name: "Villager"
+        Name: "Taiga Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19"
         Enabled: true
     jungle:
       mason:
-        Name: "Mason Villager"
+        Name: "Jungle Mason Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmZiOTM5MzBmOWQxMGEwNWFkYjg0YTY4MTZiZWU5MzBkNTI5NDRhNWUxYTY3ZjkwZjY1YzdmZWM0ZWM1YTY4YSJ9fX0="
         Enabled: true
       cleric:
-        Name: "Cleric Villager"
+        Name: "Jungle Cleric Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjYxYzQwZjhkYTQwOWVlZjQ0MzJjZTEwNjNmNTAwNTIwMTcwNzUwMzhjZjNhOWE2NTQ4NWVhNjIxYzU0OWY0MCJ9fX0="
         Enabled: true
       farmer:
-        Name: "Farmer Villager"
+        Name: "Jungle Farmer Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA4YmRiNTNjNTVmZWYzMmEwNjU4ZTFjNzk2NjYxNGFmMGJmZjYwOTEyNDliOGZlM2I3N2EwMjc1ZGE4MmU0MyJ9fX0="
         Enabled: true
       armorer:
-        Name: "Armorer Villager"
+        Name: "Jungle Armorer Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI4ZmYwM2NjY2ZjNDNmNjY5MjVkNjEzMzJiMWQ2ZTc4YjQxYjE1ZjRhYjNjMmU2NjM1NDkyYzdmZDM0NDYyNCJ9fX0="
         Enabled: true
       butcher:
-        Name: "Butcher Villager"
+        Name: "Jungle Butcher Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiZDFlNzg2NjRkNzZhYWIxMzcwNmY3Y2U5MWY3NWE1MmNlYzAxN2Q2MDQ0NmZiNDNiZDhiZjIwNDJkZDNiMyJ9fX0="
         Enabled: true
       fletcher:
-        Name: "Fletcher Villager"
+        Name: "Jungle Fletcher Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUxMjYxNTgyMjBlOTQ2NTE3YjJjMjBlMTM4MDU5MjhkZjA2ZTE5YzExMDFiZGVhMmJjNWE0ZmM5NWY5YzAxMSJ9fX0="
         Enabled: true
       shepherd:
-        Name: "Shepherd Villager"
+        Name: "Jungle Shepherd Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU3NzFiNzM4MzQ5ZDFkZTBlMDFlODk0YWU0MDE2ODZmNTk4Y2ExOWEyMDg4YjA5NTE0OWZkZTliNzZhNDM3NyJ9fX0="
         Enabled: true
       fisherman:
-        Name: "Fisherman Villager"
+        Name: "Jungle Fisherman Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM3ZjQ0YjUxMWY3MDYzMTg3ZDBmZTEyYzc0YTBjYjhjOTNmMzRkMGY1ODczMzhiMmE5YzIyZjNmYTJmMjEyIn19fQ=="
         Enabled: true
       librarian:
-        Name: "Librarian Villager"
+        Name: "Jungle Librarian Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRmMDRlYjIwY2QwYjgyYWFlZjI1MjBhZWQ5ODY3YzNjY2EyNDdhNGNkOTc1YTEyZWE1MGRmMDNhNzE3NjI0MSJ9fX0="
         Enabled: true
       toolsmith:
-        Name: "Toolsmith Villager"
+        Name: "Jungle Toolsmith Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE4NTEyNTg0OTEzNDFjMDAxNDlhOWM5MmRlMWFjZGU2NjViMTMxYzhhNzRjOWZmZTBjYjFlM2E1YWQ5NzQ5In19fQ=="
         Enabled: true
       weaponsmith:
-        Name: "Weaponsmith Villager"
+        Name: "Jungle Weaponsmith Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBiM2E0MDNiODBjMmZmZTdiMzY1OTZmZDgwOWQ1NWM2MjRlN2M0MTQzYzZmZDYwYjFkNjJkMTU2MjkwYzU2OSJ9fX0="
         Enabled: true
       cartographer:
-        Name: "Cartographer Villager"
+        Name: "Jungle Cartographer Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZjNmFjOWQ4NTU1NGJiZTU2YTY2NjhkZTBhNTRjYjFlZmY5M2UxNGY0YmNkZjcyNDVhNzQ0Y2MzNzcyMWYwYSJ9fX0="
         Enabled: true
       leatherworker:
-        Name: "Leatherworker Villager"
+        Name: "Jungle Leatherworker Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc2Y2Y4YjczNzhlODg5Mzk1ZDUzOGU2MzU0YTE3YTNkZTZiMjk0YmI2YmY4ZGI5YzcwMTk1MWM2OGQzYzBlNiJ9fX0="
         Enabled: true
       none:
-        Name: "Villager"
+        Name: "Jungle Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19"
         Enabled: true
@@ -1272,7 +1272,7 @@ Heads:
     Enabled: true
   ender dragon:
     Name: "Ender Dragon"
-    Description: "How did you even obtain this? |Unfortunatly I did not set a real drop for this yet |enjoy the rare placeholder item"
+    Description: "How did you even obtain this? |Unfortunately I did not set a real drop for this yet |enjoy the placeholder item :)"
     Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTdhMWM2YzJlOGE4Y2RmZDhiNzk5ZThiZjkxMmQ2MDBjZDNiOThmMjZjOTNiNTQyZjY0NDY0YWVjMjkxYjcyOSJ9fX0="
     Enabled: true
   player:
@@ -1280,498 +1280,498 @@ Heads:
   zombie villager:
     plains:
       mason:
-        Name: ""
+        Name: "Plains Mason Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
         Enabled: true
       cleric:
-        Name: ""
+        Name: "Plains Cleric Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
         Enabled: true
       farmer:
-        Name: ""
+        Name: "Plains Farmer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0="
         Enabled: true
       armorer:
-        Name: ""
+        Name: "Plains Armorer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzE3YWIxZjRhMzFiZTUyYTZjOTk1ZTI0MDg3OGYwMTgyNGNjOTA1NDM5ZDY2NDI1NjVkNjA5MWM2NDFhZjhlYSJ9fX0="
         Enabled: true
       butcher:
-        Name: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2M4ZGNiZGVlOTgzZDI1NGY5NDQzNjcwZTJmN2JmNDY3OWNkMDk5MjMyYmZlNmVmNjkzYzRlMjRjY2I5YjY2ZCJ9fX0="
+        Name: "Plains Butcher Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWNjZThkNmNlNDEyNGNlYzNlODRhODUyZTcwZjUwMjkzZjI0NGRkYzllZTg1NzhmN2Q2ZDg5MjllMTZiYWQ2OSJ9fX0="
         Enabled: true
       fletcher:
-        Name: ""
+        Name: "Plains Fletcher Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjk1NzIyZmM4Zjg3MjM3MDJjMzI1Y2FmNGI2YWY2NTFmOWRjYmMzMTA4NmE3MjcwYTI1YTNkM2MwZTE2MmMwMSJ9fX0="
         Enabled: true
       shepherd:
-        Name: ""
+        Name: "Plains Shepherd Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
         Enabled: true
       fisherman:
-        Name: ""
+        Name: "Plains Fisherman Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1NDY1OTQwNWUyYTYzODM3NTdmMDJlZmE3YzVhOWQ0ZTE5ZTU1NDUxOWUxOGU4ZGEyMDQ4MDhiMWI1NjViOSJ9fX0="
         Enabled: true
       librarian:
-        Name: ""
+        Name: "Plains Librarian Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
         Enabled: true
       toolsmith:
-        Name: ""
+        Name: "Plains Toolsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
         Enabled: true
       weaponsmith:
-        Name: ""
+        Name: "Plains Weaponsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM1NGE0MTcyYTliYTljNDdmYjg1M2FiMjg0ZmRjMGEzNDQzMjYwMTNlNWQ3M2M0YmVjNzgwMGQ4M2Y0ZTM5OSJ9fX0="
         Enabled: true
       cartographer:
-        Name: ""
+        Name: "Plains Cartographer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhkMDBjMTViOGZlYmE4N2IxNDA0NjYzYmRiMTVhZTc1ZTQwZTQ5ZWQxNDA2MzVhYzgwZjQzOGI1MmMyMjFlYyJ9fX0="
         Enabled: true
       leatherworker:
-        Name: ""
+        Name: "Plains Leatherworker Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
         Enabled: true
       none:
-        Name: ""
+        Name: "Plains Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
         Enabled: true
     desert:
       mason:
-        Name: ""
+        Name: "Desert Mason Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
         Enabled: true
       cleric:
-        Name: ""
+        Name: "Desert Cleric Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
         Enabled: true
       farmer:
-        Name: ""
+        Name: "Desert Farmer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA2MTA5MjQ0MzZlNzEyNjY3MjFlN2M4Y2FkN2VjZDZhZmQ4ZDFkMGRkZmMyNGUzOGNmMDc4OGI2MjBhMDExMSJ9fX0="
         Enabled: true
       armorer:
-        Name: ""
+        Name: "Desert Armorer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjI1YWZlYzRmOGFjNzJjMzQ5YzViNWNiNGNjNjY5MzUzMzNjZTQ0NTY3NDY4MTRhYjU4ZjRiM2M5MmMyMzhiOSJ9fX0="
         Enabled: true
       butcher:
-        Name: ""
+        Name: "Desert Butcher Zombie Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWEyNTM0MjI0YzkzNTg4YWM0MDE3NzQ4NmFkMWJjODY2NjhiYzhmMGI2Y2E4ZDA4M2UzYWJkMmE1MWNkOWFiYSJ9fX0="
         Enabled: true
       fletcher:
-        Name: ""
+        Name: "Desert Fletcher Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM4YWI3MGNjNTM4NzkwMWIyOTBmN2Y4MTU4NWZmMTlkYWQ1ZTYyNTY0YWQxMTBiM2UxZGE3OWRmOTVlMWMzMiJ9fX0="
         Enabled: true
       shepherd:
-        Name: ""
+        Name: "Desert Shepherd Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
         Enabled: true
       fisherman:
-        Name: ""
+        Name: "Desert Fisherman Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRiYmIzY2Q2NDA1YmFhNDllMGQxMDg3NTU0YzJjZTU0NWM1NDJmM2ExOTFhYzljM2Y2ZGYzODk2OGUxMjdkNiJ9fX0="
         Enabled: true
       librarian:
-        Name: ""
+        Name: "Desert Librarian Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
         Enabled: true
       toolsmith:
-        Name: ""
+        Name: "Desert Toolsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
         Enabled: true
       weaponsmith:
-        Name: ""
+        Name: "Desert Weaponsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ5YWRmODNhNGY2ZTM3ZmUzZjYxYjQ2ZDczZWJkOGEzNDJkMWM3NWRkNDgzNWNiZDI5OWQyOTY4ZDcwMjNmNCJ9fX0="
         Enabled: true
       cartographer:
-        Name: ""
+        Name: "Desert Cartographer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgzNTM3NDIxMGM2YzE0M2Q0ZGIzMmY0OTgxODc3MjM4ODljMjNmNTljN2VmZGZlOGZjZDQ0MGMwYmJmYWUzOSJ9fX0="
         Enabled: true
       leatherworker:
-        Name: ""
+        Name: "Desert Leatherworker Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcyZDk4YzkxMDFjNjllNzRkN2JhNjUyMjlhOTQ5NzE2NTM1YmNhN2Q5ZjQxZWQzYTQwYjY1M2U3ZmM5MDNiNCJ9fX0="
         Enabled: true
       none:
-        Name: ""
+        Name: "Desert Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
         Enabled: true
     savanna:
       mason:
-        Name: ""
+        Name: "Savanna Mason Zombie Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
         Enabled: true
       cleric:
-        Name: ""
+        Name: "Savanna Cleric Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODA1NjhjMjc2MmIyYWU2NTg1YzIzYTI2ZDg1Y2ZkMzA4ZjEyMTgzNTVlMWVjZDNiMTFmNTliNDAyNGZiYjEzMyJ9fX0="
         Enabled: true
       farmer:
-        Name: ""
+        Name: "Savanna Farmer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0="
         Enabled: true
       armorer:
-        Name: ""
+        Name: "Savanna Armorer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWMyNDUzNzkwOTM1NDI1NjRlNWUxM2IwNjg2NTkzODFmYWQzMTk2MDQ2NzQyNWM5ODJjMmVhZTIwMjYzZjYwZCJ9fX0="
         Enabled: true
       butcher:
-        Name: ""
+        Name: "Savanna Butcher Zombie Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTgwOWMxNmNmZTZkZTI1YTA4MzM4NGRkNjZkNzYzNmI0YTM1ZGFiNGU1NDU1OGEyYWNiMTkxOTNhMWIyODczNyJ9fX0="
         Enabled: true
       fletcher:
-        Name: ""
+        Name: "Savanna Fletcher Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWY4MGNjNGE1ZjFiYTZlNWEyOTdkZTdiZjRiMzY3ZGJkY2I5YTZmNDZjNmM2OGRhYjIxNWQ1OGQ5MmZmY2RkNSJ9fX0="
         Enabled: true
       shepherd:
-        Name: ""
+        Name: "Savanna Shepherd Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
         Enabled: true
       fisherman:
-        Name: ""
+        Name: "Savanna Fisherman Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAyZWQ0NGZkMGNjOTU5ZjhiNjU0ZmZmN2EyN2IyZGU2ZGViN2EwY2NmOTQ0NWFkMjVlZDBjN2RmMzY5MGZmYiJ9fX0="
         Enabled: true
       librarian:
-        Name: ""
+        Name: "Savanna Librarian Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
         Enabled: true
       toolsmith:
-        Name: ""
+        Name: "Savanna Toolsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
         Enabled: true
       weaponsmith:
-        Name: ""
+        Name: "Savanna Weaponsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIwNDI5YjNiOWFmYTU4OTA4NmMxZGY2ODA4MGRmY2ZlNzI4MjRkNjUxMTZkMzMzODU2ZDE5ODY5YjNmNWY3YSJ9fX0="
         Enabled: true
       cartographer:
-        Name: ""
+        Name: "Savanna Cartographer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQwMzVhY2EyNmJlOTdiZTg0MDY0MDZmMTU1N2ZhOTkwNzM4NzcwZmUwMzgxOTRhNGFiODFjZTBjODM5NmM3MiJ9fX0="
         Enabled: true
       leatherworker:
-        Name: ""
+        Name: "Savanna Leatherworker Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDMyZTY4ZWNmZjhmNjk1ZThjMTAyNDg1NDRhYmY5OWM4ZDQ1MDdhMzllOGQ1ODZmY2JlN2UzYjIzYWFhN2RlYyJ9fX0="
         Enabled: true
       none:
-        Name: ""
+        Name: "Savanna Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
         Enabled: true
     snow:
       mason:
-        Name: "Snow ZombieVillager Mason"
+        Name: "Snow Mason Zombie Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
         Enabled: true
       cleric:
-        Name: "Snow ZombieVillager Cleric"
+        Name: "Snow Cleric Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
         Enabled: true
       farmer:
-        Name: "Snow ZombieVillager Farmer"
+        Name: "Snow Farmer Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM1ZTI0N2UwMzBlNjA3MGUyOGM5ZGUxYTRmNDcyNDUwNTIxZTU3M2RhNGQyNTkyMzVlNzAyYmRhMDkxMWE3NSJ9fX0="
         Enabled: true
       armorer:
-        Name: "Snow ZombieVillager Armorer"
+        Name: "Snow Armorer Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc1OTVkNzcyZDg1Y2VkMTg4YmI2YjA1Mjc3ZGQ5MDk4OTFhMTVhNGJiODdjYTdiNzYzNDY4MzdmMzk1MjI2ZCJ9fX0="
         Enabled: true
       butcher:
-        Name: ""
+        Name: "Snow Butcher Zombie Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmE1NWYzZDkyNjU3M2FkNjY1YWI4NDU4NjcxMDZmZmFhZWVmOTQyMWU2ODQyN2ZmYjI3MTc3YTA3YTc3MTg3MiJ9fX0="
         Enabled: true
       fletcher:
-        Name: ""
+        Name: "Snow Fletcher Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTliOWUyODBiZmJjNjFiNWEyNTRkMzA5ZGQwODNjYzI3MjJlZDA1OWMxMWEzYTBlZGE5MzE2YmFlN2FhYWUxNSJ9fX0="
         Enabled: true
       shepherd:
-        Name: ""
+        Name: "Snow Shepherd Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
         Enabled: true
       fisherman:
-        Name: ""
+        Name: "Snow Fisherman Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIzNDg0Y2M5Mzc5ZDk2MWMxZWEwMmI2MjhjM2EwMzk5ZGU3MmI5ODM4NzE1MDc5MWRmN2E0ZDQxYjhkMTJmMiJ9fX0="
         Enabled: true
       librarian:
-        Name: ""
+        Name: "Snow Librarian Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
         Enabled: true
       toolsmith:
-        Name: ""
+        Name: "Snow Toolsmith Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
         Enabled: true
       weaponsmith:
-        Name: ""
+        Name: "Snow Weaponsmith Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI2OGJiNjc0YTkzYzZiOGQ2ODdjMzUyMDBhZGEzYWZhYmFhOTQwZGRlZWRlNGEyZDUzN2U1OGRkNzQxYmUxZSJ9fX0="
         Enabled: true
       cartographer:
-        Name: ""
+        Name: "Snow Cartographer Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWFiMmZmYTY3Mjc3YjA1ZDhhNTY5M2M0ZmE2Y2FhYjI3NzE0ZDlhOWU1NmU0NmUyMTYyMWE1NzhiYzcxYmJmZCJ9fX0="
         Enabled: true
       leatherworker:
-        Name: ""
+        Name: "Snow Leatherworker Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjA4MGRmMzdjMzRhM2ViZjcxMTA2ZTE5NWQ1ZWE5MjMzOWJjNzAzODkxOWU3ZDgyNjdmYjNkODY5NWIyMzkzNiJ9fX0="
         Enabled: true
       none:
-        Name: ""
+        Name: "Snow Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
         Enabled: true
     swamp:
       mason:
-        Name: ""
+        Name: "Swamp Mason Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjJjY2EyZDlmMGFlZjQyY2MzMDg2NDE1ZTE0MTk1NjBmMzQzMzRiMTY3YmViZmVmZWNjNDM0OTJjYjE0MTc4OSJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
         Enabled: true
       cleric:
-        Name: ""
+        Name: "Swamp Cleric Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
         Enabled: true
       farmer:
-        Name: ""
+        Name: "Swamp Farmer Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0"
         Enabled: true
       armorer:
-        Name: ""
+        Name: "Swamp Armorer Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFjNjg4OTdkNzE0OWFlNjdkYThmNGJhZDdhYzYzZmM3Y2JkYjk0YWY1MmRlMGU0YWQ3YjZkYjlmOWNmMzQ5YyJ9fX0="
         Enabled: true
       butcher:
-        Name: ""
+        Name: "Swamp Butcher Zombie Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWYxNjU4NDYzMjE2MDM4MWIzYzQ4M2U3MTc0YjJlZTU3YzI0Mjc2YTE4N2NmZWUwNzQwYTRhNWM2ODdmZmFkNyJ9fX0="
         Enabled: true
       fletcher:
-        Name: ""
+        Name: "Swamp Fletcher Zombie Villager"
         Description: " "
-        Texture: " "
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVhMjZhYzBlMjU0OThhZGFkYTRlY2VhNThiYjRlNzZkYTMyZDVjYTJkZTMwN2VmZTVlNDIxOGZiN2M1ZWY4OSJ9fX0="
         Enabled: true
       shepherd:
-        Name: ""
+        Name: "Swamp Shepherd Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
         Enabled: true
       fisherman:
-        Name: ""
+        Name: "Swamp Fisherman Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1NDY1OTQwNWUyYTYzODM3NTdmMDJlZmE3YzVhOWQ0ZTE5ZTU1NDUxOWUxOGU4ZGEyMDQ4MDhiMWI1NjViOSJ9fX0="
         Enabled: true
       librarian:
-        Name: ""
+        Name: "Swamp Librarian Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
         Enabled: true
       toolsmith:
-        Name: ""
+        Name: "Swamp Toolsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
         Enabled: true
       weaponsmith:
-        Name: ""
+        Name: "Swamp Weaponsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIyNjZlYmFkZjdkYjQwNTViZWNiY2RjMzc1NDE1MTc5OTYzMTljNjYxYWFlOTgxZDMwYWM2NGI2Nzg3N2FkZCJ9fX0="
         Enabled: true
       cartographer:
-        Name: ""
+        Name: "Swamp Cartographer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2YwNDlkZmEzZmM0ZDJmNzJlOWVhOWI5NjBmMDdkMTIzNjlmZTc3YTA0MmVjNzAwNThmMmFhNjUzMjEzNWZhOSJ9fX0="
         Enabled: true
       leatherworker:
-        Name: ""
+        Name: "Swamp Leatherworker Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
         Enabled: true
       none:
-        Name: ""
+        Name: "Swamp Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
         Enabled: true
     taiga:
       mason:
-        Name: ""
+        Name: "Taiga Mason Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
       cleric:
-        Name: ""
+        Name: "Taiga Cleric Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
       farmer:
-        Name: ""
+        Name: "Taiga Farmer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0"
         Enabled: true
       armorer:
-        Name: ""
+        Name: "Taiga Armorer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA0MTNhMTQyMmNjODBkOWRkNWViYzg5ZWY0ODkyNTZjN2QyODg4MzlhYTM3ZTNjYzcxMmVlZDllOTc5YjlhMSJ9fX0="
         Enabled: true
       butcher:
-        Name: ""
+        Name: "Taiga Butcher Zombie Villager"
         Description: " "
         Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQ0YmNhNjgxNTFkNTlmMjIxNDdlMmVlYjEyMzQzZmU5OTI3MTViZDA0OWIyNzk0MzEyMGIxNDI3OTBhNmI5In19fQ=="
         Enabled: true
       fletcher:
-        Name: ""
+        Name: "Taiga Fletcher Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVhMjZhYzBlMjU0OThhZGFkYTRlY2VhNThiYjRlNzZkYTMyZDVjYTJkZTMwN2VmZTVlNDIxOGZiN2M1ZWY4OSJ9fX0="
         Enabled: true
       shepherd:
-        Name: ""
+        Name: "Taiga Shepherd Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
       fisherman:
-        Name: ""
+        Name: "Taiga Fisherman Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1NDY1OTQwNWUyYTYzODM3NTdmMDJlZmE3YzVhOWQ0ZTE5ZTU1NDUxOWUxOGU4ZGEyMDQ4MDhiMWI1NjViOSJ9fX0="
         Enabled: true
       librarian:
-        Name: ""
+        Name: "Taiga Librarian Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
         Enabled: true
       toolsmith:
-        Name: ""
+        Name: "Taiga Toolsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
       weaponsmith:
-        Name: ""
+        Name: "Taiga Weaponsmith Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmZlNTRmMGZkY2IxN2Q4ODgzZGUyYjhmZjc5MDkwZGVlM2U5ZDhjZWY1NjMzZjVhOTQxYzZjZGQyNGYxZGZiMCJ9fX0="
         Enabled: true
       cartographer:
-        Name: ""
+        Name: "Taiga Cartographer Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmYyZDVmODMwYjQ4MTVjOTBiZjRlZGQ3YzBjMDliZDdjOTE1ZmFjZDBjMjhhZDBmZDQzOWY5YjAyNGM5MGIyNyJ9fX0="
         Enabled: true
       leatherworker:
-        Name: ""
+        Name: "Taiga Leatherworker Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
         Enabled: true
       none:
-        Name: ""
+        Name: "Taiga Zombie Villager"
         Description: " "
-        Texture: ""
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
     jungle:
       mason:
-        Name: "Mason Villager"
+        Name: "Jungle Mason Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmZiOTM5MzBmOWQxMGEwNWFkYjg0YTY4MTZiZWU5MzBkNTI5NDRhNWUxYTY3ZjkwZjY1YzdmZWM0ZWM1YTY4YSJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
       cleric:
-        Name: "Cleric Villager"
+        Name: "Jungle Cleric Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjYxYzQwZjhkYTQwOWVlZjQ0MzJjZTEwNjNmNTAwNTIwMTcwNzUwMzhjZjNhOWE2NTQ4NWVhNjIxYzU0OWY0MCJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
       farmer:
-        Name: "Farmer Villager"
+        Name: "Jungle Farmer Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA4YmRiNTNjNTVmZWYzMmEwNjU4ZTFjNzk2NjYxNGFmMGJmZjYwOTEyNDliOGZlM2I3N2EwMjc1ZGE4MmU0MyJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0"
         Enabled: true
       armorer:
-        Name: "Armorer Villager"
+        Name: "Jungle Armorer Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI4ZmYwM2NjY2ZjNDNmNjY5MjVkNjEzMzJiMWQ2ZTc4YjQxYjE1ZjRhYjNjMmU2NjM1NDkyYzdmZDM0NDYyNCJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjY1MGVjOTJkYTRiNjc5NzhhMmRjNmJmYzMyMjhhZDY2ZGRjZThhZmYxYTE4M2Q2MzNmNzY0Mjk0YmNlMzNlNCJ9fX0="
         Enabled: true
       butcher:
-        Name: "Butcher Villager"
+        Name: "Jungle Butcher Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNiZDFlNzg2NjRkNzZhYWIxMzcwNmY3Y2U5MWY3NWE1MmNlYzAxN2Q2MDQ0NmZiNDNiZDhiZjIwNDJkZDNiMyJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWNjZThkNmNlNDEyNGNlYzNlODRhODUyZTcwZjUwMjkzZjI0NGRkYzllZTg1NzhmN2Q2ZDg5MjllMTZiYWQ2OSJ9fX0="
         Enabled: true
       fletcher:
-        Name: "Fletcher Villager"
+        Name: "Jungle Fletcher Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUxMjYxNTgyMjBlOTQ2NTE3YjJjMjBlMTM4MDU5MjhkZjA2ZTE5YzExMDFiZGVhMmJjNWE0ZmM5NWY5YzAxMSJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVhMjZhYzBlMjU0OThhZGFkYTRlY2VhNThiYjRlNzZkYTMyZDVjYTJkZTMwN2VmZTVlNDIxOGZiN2M1ZWY4OSJ9fX0="
         Enabled: true
       shepherd:
-        Name: "Shepherd Villager"
+        Name: "Jungle Shepherd Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU3NzFiNzM4MzQ5ZDFkZTBlMDFlODk0YWU0MDE2ODZmNTk4Y2ExOWEyMDg4YjA5NTE0OWZkZTliNzZhNDM3NyJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
       fisherman:
-        Name: "Fisherman Villager"
+        Name: "Jungle Fisherman Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM3ZjQ0YjUxMWY3MDYzMTg3ZDBmZTEyYzc0YTBjYjhjOTNmMzRkMGY1ODczMzhiMmE5YzIyZjNmYTJmMjEyIn19fQ=="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc1M2NiMjNiNTcyMGUyZTM2NWJiNDI5OTJlNDAzYWUzNjFlMzU2Y2M0ZTRiNjZlNTRmNjI5MjUzNmYzY2MwNSJ9fX0="
         Enabled: true
       librarian:
-        Name: "Librarian Villager"
+        Name: "Jungle Librarian Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRmMDRlYjIwY2QwYjgyYWFlZjI1MjBhZWQ5ODY3YzNjY2EyNDdhNGNkOTc1YTEyZWE1MGRmMDNhNzE3NjI0MSJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
         Enabled: true
       toolsmith:
-        Name: "Toolsmith Villager"
+        Name: "Jungle Toolsmith Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWE4NTEyNTg0OTEzNDFjMDAxNDlhOWM5MmRlMWFjZGU2NjViMTMxYzhhNzRjOWZmZTBjYjFlM2E1YWQ5NzQ5In19fQ=="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
       weaponsmith:
-        Name: "Weaponsmith Villager"
+        Name: "Jungle Weaponsmith Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBiM2E0MDNiODBjMmZmZTdiMzY1OTZmZDgwOWQ1NWM2MjRlN2M0MTQzYzZmZDYwYjFkNjJkMTU2MjkwYzU2OSJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM1NGE0MTcyYTliYTljNDdmYjg1M2FiMjg0ZmRjMGEzNDQzMjYwMTNlNWQ3M2M0YmVjNzgwMGQ4M2Y0ZTM5OSJ9fX0="
         Enabled: true
       cartographer:
-        Name: "Cartographer Villager"
+        Name: "Jungle Cartographer Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZjNmFjOWQ4NTU1NGJiZTU2YTY2NjhkZTBhNTRjYjFlZmY5M2UxNGY0YmNkZjcyNDVhNzQ0Y2MzNzcyMWYwYSJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhkMDBjMTViOGZlYmE4N2IxNDA0NjYzYmRiMTVhZTc1ZTQwZTQ5ZWQxNDA2MzVhYzgwZjQzOGI1MmMyMjFlYyJ9fX0="
         Enabled: true
       leatherworker:
-        Name: "Leatherworker Villager"
+        Name: "Jungle LeatherWorker Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc2Y2Y4YjczNzhlODg5Mzk1ZDUzOGU2MzU0YTE3YTNkZTZiMjk0YmI2YmY4ZGI5YzcwMTk1MWM2OGQzYzBlNiJ9fX0="
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
         Enabled: true
       none:
-        Name: "Villager"
+        Name: "Jungle Zombie Villager"
         Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiODMwZWI0MDgyYWNlYzgzNmJjODM1ZTQwYTExMjgyYmI1MTE5MzMxNWY5MTE4NDMzN2U4ZDM1NTU1ODMifX19"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
         Enabled: true
