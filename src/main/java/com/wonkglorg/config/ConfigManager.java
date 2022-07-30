@@ -1,14 +1,14 @@
 package com.wonkglorg.config;
 
 
-import com.wonkglorg.utilitylib.abstraction.Config;
+import com.wonkglorg.utilitylib.config.Config;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ConfigManager
 {
-	private List<Config> configs = new ArrayList<>();
+	private final List<Config> configs = new ArrayList<>();
 	
 	public void addConfig(Config config)
 	{

@@ -8,7 +8,7 @@ import com.wonkglorg.config.ConfigManager;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.listeners.DamageListener;
 import com.wonkglorg.listeners.DeathListener;
-import com.wonkglorg.utilitylib.abstraction.Config;
+import com.wonkglorg.utilitylib.config.Config;
 import org.bukkit.entity.Entity;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -18,7 +18,6 @@ import java.util.ArrayList;
 public final class Heads extends JavaPlugin
 {
 	static ArrayList<Entity> DropHeads = new ArrayList<>();
-	private static Heads plugin;
 	
 	public static ConfigManager manager;
 	public static ConfigManager langManager;
@@ -26,7 +25,6 @@ public final class Heads extends JavaPlugin
 	@Override
 	public void onEnable()
 	{
-		plugin = this;
 		
 		// ADD METHOD TO SEE DROP CHANCES AND MAKE GUI TO GO THROUGH ALL HEADS THAT EXIST AND ADD INFORMATION LIKE DROP CHANCE, SORT TEHM BY BELONGING TOGETHER
 		//Configs

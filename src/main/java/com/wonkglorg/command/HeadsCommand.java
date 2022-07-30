@@ -3,7 +3,7 @@ package com.wonkglorg.command;
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.abstraction.Command;
-import com.wonkglorg.utilitylib.abstraction.Config;
+import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utils.HeadUtils;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -19,6 +19,7 @@ import java.util.Set;
 
 public class HeadsCommand extends Command
 {
+	private final List<EntityType> all = new ArrayList<>();
 	private final List<EntityType> hostiles = new ArrayList<>();
 	private final List<EntityType> passives = new ArrayList<>();
 	private final List<EntityType> animals = new ArrayList<>();
@@ -60,7 +61,7 @@ public class HeadsCommand extends Command
 	
 	private List<String> processPathValidation(String path)
 	{
-		Set<String> subHeads = config.getSection(path);
+		Set<String> subHeads = config.getSection(path,true);
 		List<String> validPaths = new ArrayList<>();
 		if(!subHeads.isEmpty())
 		{
@@ -83,6 +84,10 @@ public class HeadsCommand extends Command
 	private void addHeads(String filterType, Player player)
 	{
 		List<EntityType> filter = null;
+		if(filterType.equalsIgnoreCase("ALL"))
+		{
+			filter = all;
+		}
 		if(filterType.equalsIgnoreCase("ANIMAL"))
 		{
 			filter = animals;
@@ -125,40 +130,28 @@ public class HeadsCommand extends Command
 		initHostileList();
 		initAnimalList();
 		initBossList();
+		initAllList();
 		initCompletionList();
 	}
 	
 	private void initCompletionList()
 	{
 		completions.addAll(Arrays.asList("ALL", "HOSTILE", "ANIMAL", "PASSIVE", "BOSS"));
-		hostiles.forEach(entity ->
+		all.forEach(entity ->
 		{
 			if(!completions.contains(entity.name()))
 			{
 				completions.add(entity.name());
 			}
 		});
-		passives.forEach(entity ->
-		{
-			if(!completions.contains(entity.name()))
-			{
-				completions.add(entity.name());
-			}
-		});
-		bosses.forEach(entity ->
-		{
-			if(!completions.contains(entity.name()))
-			{
-				completions.add(entity.name());
-			}
-		});
-		animals.forEach(entity ->
-		{
-			if(!completions.contains(entity.name()))
-			{
-				completions.add(entity.name());
-			}
-		});
+	}
+	
+	private void initAllList()
+	{
+		lambdaAdd(hostiles, all);
+		lambdaAdd(animals, all);
+		lambdaAdd(passives, all);
+		lambdaAdd(bosses, all);
 	}
 	
 	private void initHostileList()
@@ -264,6 +257,17 @@ public class HeadsCommand extends Command
 				EntityType.SALMON,
 				EntityType.SQUID,
 				EntityType.TROPICAL_FISH));
+	}
+	
+	private void lambdaAdd(List<EntityType> entityTypeList, List<EntityType> copyToList)
+	{
+		entityTypeList.forEach(entity ->
+		{
+			if(!copyToList.contains(entity))
+			{
+				copyToList.add(entity);
+			}
+		});
 	}
 	
 	private void initBossList()

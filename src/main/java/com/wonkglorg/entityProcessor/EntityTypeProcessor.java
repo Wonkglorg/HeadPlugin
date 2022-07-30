@@ -2,7 +2,7 @@ package com.wonkglorg.entityProcessor;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
-import com.wonkglorg.utilitylib.abstraction.Config;
+import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.utils.random.WeightedRandomPicker;
 import com.wonkglorg.utils.HeadUtils;
 import static com.wonkglorg.utils.HeadUtils.dropHead;
@@ -26,7 +26,7 @@ public abstract class EntityTypeProcessor
 		this.entity = entity;
 		String path = path();
 		Config config = Heads.getManager().getConfig(YML.HEAD_DATA.getFileName());
-		Set<String> subHeads = config.getSection(path);
+		Set<String> subHeads = config.getSection(path,false);
 		if(!subHeads.isEmpty())
 		{
 			WeightedRandomPicker<String> weightedRandomPicker = new WeightedRandomPicker<>();

@@ -4,20 +4,19 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.entityProcessor.AxolotlProcessor;
 import com.wonkglorg.entityProcessor.EntityProcessor;
 import com.wonkglorg.entityProcessor.EntityTypeProcessor;
+import com.wonkglorg.entityProcessor.HorseProcessor;
+import com.wonkglorg.entityProcessor.LlamaProcessor;
 import com.wonkglorg.entityProcessor.ParrotProcessor;
 import com.wonkglorg.entityProcessor.PlayerProcessor;
 import com.wonkglorg.entityProcessor.RabbitProcessor;
 import com.wonkglorg.entityProcessor.SheepProcessor;
+import com.wonkglorg.entityProcessor.TraderLlamaProcessor;
 import com.wonkglorg.entityProcessor.VillagerProcessor;
 import com.wonkglorg.entityProcessor.ZombieVillagerProcessor;
-import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import org.bukkit.entity.Entity;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
-import org.bukkit.inventory.ItemStack;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,6 +61,9 @@ public class DeathListener implements Listener
 		entityTypeProcessors.add(new VillagerProcessor());
 		entityTypeProcessors.add(new ZombieVillagerProcessor());
 		entityTypeProcessors.add(new PlayerProcessor());
+		entityTypeProcessors.add(new HorseProcessor());
+		entityTypeProcessors.add(new LlamaProcessor());
+		entityTypeProcessors.add(new TraderLlamaProcessor());
 		entityTypeProcessors.add(new EntityProcessor());
 		
 	}

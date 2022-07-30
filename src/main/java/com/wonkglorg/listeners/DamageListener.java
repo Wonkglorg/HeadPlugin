@@ -3,7 +3,7 @@ package com.wonkglorg.listeners;
 import com.wonkglorg.Heads;
 import com.wonkglorg.config.ConfigManager;
 import com.wonkglorg.enums.YML;
-import com.wonkglorg.utilitylib.abstraction.Config;
+import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import org.bukkit.entity.Creeper;
 import org.bukkit.entity.Player;
