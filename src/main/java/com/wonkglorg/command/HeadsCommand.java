@@ -4,6 +4,7 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.abstraction.Command;
 import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.utils.message.Message;
 import com.wonkglorg.utils.HeadUtils;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -14,6 +15,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -25,6 +27,8 @@ public class HeadsCommand extends Command
 	private final List<EntityType> animals = new ArrayList<>();
 	private final List<EntityType> bosses = new ArrayList<>();
 	private final List<String> completions = new ArrayList<>();
+	
+	private final HashMap<String, List<EntityType>> handlerMap = new HashMap<>();
 	private final Config config;
 	
 	public HeadsCommand(@NotNull JavaPlugin main, @NotNull String name)
@@ -32,6 +36,7 @@ public class HeadsCommand extends Command
 		super(main, name);
 		config = Heads.getManager().getConfig(YML.HEAD_DATA.getFileName());
 		initLists();
+		initHandleMap();
 	}
 	
 	@Override
@@ -61,7 +66,7 @@ public class HeadsCommand extends Command
 	
 	private List<String> processPathValidation(String path)
 	{
-		Set<String> subHeads = config.getSection(path,true);
+		Set<String> subHeads = config.getSection(path, true);
 		List<String> validPaths = new ArrayList<>();
 		if(!subHeads.isEmpty())
 		{
@@ -83,27 +88,9 @@ public class HeadsCommand extends Command
 	
 	private void addHeads(String filterType, Player player)
 	{
-		List<EntityType> filter = null;
-		if(filterType.equalsIgnoreCase("ALL"))
-		{
-			filter = all;
-		}
-		if(filterType.equalsIgnoreCase("ANIMAL"))
-		{
-			filter = animals;
-		}
-		if(filterType.equalsIgnoreCase("HOSTILE"))
-		{
-			filter = hostiles;
-		}
-		if(filterType.equalsIgnoreCase("PASSIVE"))
-		{
-			filter = passives;
-		}
-		if(filterType.equalsIgnoreCase("BOSS"))
-		{
-			filter = bosses;
-		}
+		int droppedHeads = 0;
+		List<EntityType> filter;
+		filter = handlerMap.get(filterType);
 		if(filter == null)
 		{
 			filter = Collections.singletonList(EntityType.valueOf(filterType));
@@ -116,12 +103,35 @@ public class HeadsCommand extends Command
 			}
 			for(String paths : processPathValidation("Heads." + entity.name().toLowerCase().replaceAll("_", " ")))
 			{
-				if(config.getBoolean(paths + ".Enabled"))
+				if(!config.getBoolean(paths + ".Enabled"))
 				{
-					HeadUtils.dropHead(paths + ".Texture", paths + ".Name", paths + ".Description", player.getLocation());
+					continue;
 				}
+				if(config.contains(paths + ".DropChance"))
+				{
+					double dropchance = config.getDouble(paths + ".DropChance");
+					HeadUtils.dropHead(paths + ".Texture",
+							paths + ".Name",
+							paths + ".Description" + "|DropChance = " + dropchance,
+							player.getLocation());
+					droppedHeads++;
+					continue;
+				}
+				droppedHeads++;
+				HeadUtils.dropHead(paths + ".Texture", paths + ".Name", paths + ".Description", player.getLocation());
 			}
 		}
+		Message.msgPlayer(player,"#&FFFF55Dropped &##fcca03" + droppedHeads + " #&FFFF55Heads");
+	}
+	
+	private void initHandleMap()
+	{
+		handlerMap.put("ALL", all);
+		handlerMap.put("ANIMAL", animals);
+		handlerMap.put("BOSS", bosses);
+		handlerMap.put("PASSIVE", passives);
+		handlerMap.put("HOSTILE", hostiles);
+		
 	}
 	
 	private void initLists()
