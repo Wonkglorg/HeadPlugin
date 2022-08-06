@@ -10,6 +10,7 @@ import com.wonkglorg.listeners.DamageListener;
 import com.wonkglorg.listeners.DeathListener;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.config.ConfigManager;
+import com.wonkglorg.utilitylib.lang.LangManager;
 import org.bukkit.entity.Entity;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -21,6 +22,7 @@ public final class Heads extends JavaPlugin
 	static ArrayList<Entity> DropHeads = new ArrayList<>();
 	
 	private static ConfigManager manager;
+	private static LangManager langManager;
 	
 	@Override
 	public void onEnable()
@@ -58,12 +60,13 @@ public final class Heads extends JavaPlugin
 	
 	private void addConfigs()
 	{
+		langManager = new LangManager();
 		
 		manager = new ConfigManager();
-		manager.addConfig(new Config(this, YML.CONFIG.getFileName()));
-		manager.addConfig(new Config(this, YML.HEAD_DATA.getFileName()));
-		manager.addConfig(new Config(this,YML.ENGLISH.getFileName()));
-		manager.loadConfigs();
+		manager.add(new Config(this, YML.CONFIG.getFileName()));
+		manager.add(new Config(this, YML.HEAD_DATA.getFileName()));
+		manager.add(new Config(this,YML.ENGLISH.getFileName()));
+		manager.load();
 	}
 	
 	public static void setArray(Entity entity)

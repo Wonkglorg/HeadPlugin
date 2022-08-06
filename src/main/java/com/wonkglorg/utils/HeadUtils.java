@@ -19,6 +19,9 @@ public class HeadUtils
 		else{
 			descriptionArray = new String[0];
 		}
+		if(configTexture==null || configTexture.isEmpty()){
+			configTexture = "";
+		}
 		
 		loc.getWorld().dropItemNaturally(loc, ItemUtility.createCustomHead(configTexture, configName, descriptionArray));
 	}

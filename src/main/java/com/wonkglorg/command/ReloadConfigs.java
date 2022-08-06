@@ -2,7 +2,7 @@ package com.wonkglorg.command;
 
 import com.wonkglorg.enums.English;
 import com.wonkglorg.enums.YML;
-import com.wonkglorg.utilitylib.abstraction.Command;
+import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.config.ConfigManager;
 import com.wonkglorg.utilitylib.utils.message.Message;
@@ -41,7 +41,7 @@ public class ReloadConfigs extends Command
 		String ymlName = args[0];
 		if(ymlName.equalsIgnoreCase("ALL"))
 		{
-			manager.loadConfigs();
+			manager.load();
 			Message.msgPlayer(player, English.RELOAD_CONFIG_ALL_SUCCESS.toString());
 			return true;
 		}

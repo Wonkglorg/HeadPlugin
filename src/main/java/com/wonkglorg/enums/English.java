@@ -27,7 +27,7 @@ public enum English
 		setFile(Heads.getManager().getConfig(YML.ENGLISH.getFileName()));
 	}
 	
-	public static void setFile(Config langConfig)
+	public void setFile(Config langConfig)
 	{
 		LANG = langConfig;
 	}

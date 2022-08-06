@@ -3,7 +3,7 @@ package com.wonkglorg.command;
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.English;
 import com.wonkglorg.enums.YML;
-import com.wonkglorg.utilitylib.abstraction.Command;
+import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.utils.message.Message;
 import com.wonkglorg.utils.HeadUtils;
@@ -47,6 +47,7 @@ public class HeadsCommand extends Command
 		{
 			return false;
 		}
+		
 		addHeads(args[0], player);
 		
 		return true;
@@ -168,6 +169,8 @@ public class HeadsCommand extends Command
 	private void initHostileList()
 	{
 		hostiles.addAll(Arrays.asList(EntityType.BLAZE,
+				EntityType.SPIDER,
+				EntityType.CAVE_SPIDER,
 				EntityType.CREEPER,
 				EntityType.DROWNED,
 				EntityType.ELDER_GUARDIAN,
