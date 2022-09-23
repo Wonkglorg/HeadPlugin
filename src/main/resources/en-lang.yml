@@ -10,3 +10,17 @@ command-head-drop-success: <prefix>&#FFFF55Dropped &#fcca03<headcount> &#FFFF55H
 
 #PVP Head Drop Description
 pvp-head-description: Killed by <killer>
+
+#Milk Command
+
+
+
+#milk-fail-acquire: "&#FFFF00<target> cannot be milked for another <seconds>!"
+
+#milk-success-acquire-milker: ""
+
+#milk-success-acquire-milked: ""
+
+#milk-drink-fail: ""
+
+#milk-drink-success: ""

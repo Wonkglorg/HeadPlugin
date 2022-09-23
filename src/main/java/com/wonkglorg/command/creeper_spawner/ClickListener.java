@@ -1,5 +1,6 @@
 package com.wonkglorg.command.creeper_spawner;
 
+import com.wonkglorg.utilitylib.listener.EventListener;
 import org.bukkit.Location;
 import org.bukkit.NamespacedKey;
 import org.bukkit.World;
@@ -7,14 +8,20 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Creeper;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.persistence.PersistentDataType;
+import org.bukkit.plugin.java.JavaPlugin;
 
-public class ClickListener implements Listener
+public class ClickListener extends EventListener
 {
 	private long delay;
+	
+	public ClickListener(JavaPlugin plugin)
+	{
+		super(plugin);
+	}
+	
 	@EventHandler
 	public void PlayerInteraction(PlayerInteractEvent e)
 	{
@@ -34,7 +41,7 @@ public class ClickListener implements Listener
 			Location loc = e.getInteractionPoint();
 			Creeper creeper = (Creeper) world.spawnEntity(loc, EntityType.CREEPER);
 			creeper.setExplosionRadius(30);
-			creeper.getPersistentDataContainer().set(new NamespacedKey("no_damage", "non_block_removal"), PersistentDataType.INTEGER, 1);
+			creeper.getPersistentDataContainer().set(new NamespacedKey(plugin, "noblockdamage"), PersistentDataType.INTEGER, 1);
 			if(type.equalsIgnoreCase("charged"))
 			{
 				creeper.setPowered(true);

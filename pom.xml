@@ -3,7 +3,6 @@
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
 	<groupId>com.wonkglorg</groupId>
 	<artifactId>Heads</artifactId>
 	<version>1.19</version>
@@ -60,7 +59,7 @@
 		</repository>
 		<repository>
 			<id>sonatype</id>
-			<url>https://oss.sonatype.org/con	tent/groups/public/</url>
+			<url>https://oss.sonatype.org/con tent/groups/public/</url>
 		</repository>
 		<repository>
 			<id>jitpack.io</id>
@@ -78,7 +77,7 @@
 		<dependency>
 			<groupId>com.github.Wonkglorg</groupId>
 			<artifactId>Minecraft-UtilityLib</artifactId>
-			<version>1.2.0</version>
+			<version>9c61954e07</version>
 		</dependency>
 	</dependencies>
 </project>

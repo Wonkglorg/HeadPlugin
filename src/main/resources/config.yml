@@ -11,3 +11,10 @@ Creeper_Explosion_Head: true
 
 #Only drop heads from Charged creeper damage
 ChargedCreeperRequired: true
+
+
+
+
+#in seconds
+milking-recharge-delay: 400
+milk-drink-delay: 400

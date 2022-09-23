@@ -3,7 +3,6 @@ package com.wonkglorg.entityProcessor;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Horse;
-import org.bukkit.entity.Parrot;
 
 public class HorseProcessor extends EntityTypeProcessor
 {

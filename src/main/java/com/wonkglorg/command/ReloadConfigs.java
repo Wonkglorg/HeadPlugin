@@ -4,7 +4,7 @@ import com.wonkglorg.enums.English;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.config.ConfigManager;
+import com.wonkglorg.utilitylib.managers.ConfigManager;
 import com.wonkglorg.utilitylib.utils.message.Message;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;

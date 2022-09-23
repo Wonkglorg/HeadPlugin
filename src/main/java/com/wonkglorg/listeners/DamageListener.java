@@ -4,22 +4,24 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.enums.English;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.config.ConfigManager;
+import com.wonkglorg.utilitylib.listener.EventListener;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
+import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Creeper;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.persistence.PersistentDataType;
+import org.bukkit.plugin.java.JavaPlugin;
 
-public class DamageListener implements Listener
+public class DamageListener extends EventListener
 {
-	private final Config config = Heads.getManager().getConfig(YML.CONFIG.getFileName());
-	private ConfigManager langManager;
+	private final Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.CONFIG.getFileName());
 	
-	public DamageListener()
+	public DamageListener(JavaPlugin plugin)
 	{
+		super(plugin);
 	}
 	
 	@EventHandler
@@ -69,7 +71,7 @@ public class DamageListener implements Listener
 			{
 				return;
 			}
-			Heads.setArray(e.getEntity());
+			creeper.getPersistentDataContainer().set(new NamespacedKey(plugin,"drophead"), PersistentDataType.STRING,"true");
 		}
 	}
 }

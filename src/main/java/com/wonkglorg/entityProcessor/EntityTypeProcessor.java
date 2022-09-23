@@ -5,18 +5,16 @@ import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.utils.random.WeightedRandomPicker;
 import static com.wonkglorg.utils.HeadUtils.dropHead;
+import com.wonkglorg.MobHeadData;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public abstract class EntityTypeProcessor
 {
 	protected Entity entity;
-	private final List<String> chanceList = new ArrayList<>();
-	protected WeightedRandomPicker<String> weightedRandomPicker;
+	protected WeightedRandomPicker<MobHeadData> weightedRandomPicker;
 	
 	abstract String path();
 	
@@ -28,66 +26,45 @@ public abstract class EntityTypeProcessor
 	{
 		this.entity = entity;
 		String path = path();
-		Config config = Heads.getManager().getConfig(YML.HEAD_DATA.getFileName());
-		Set<String> subHeads = config.getSection(path, false);
+		Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+		List<MobHeadData> mobHeadDataList = MobHeadData.getAllValidConfigHeadData(config, path);
 		weightedRandomPicker = new WeightedRandomPicker<>();
-		if(!subHeads.isEmpty())
+		if(mobHeadDataList.isEmpty())
 		{
-			String finalPath = path;
-			subHeads.forEach(s ->
+			return;
+		}
+		for(MobHeadData mobHead : mobHeadDataList)
+		{
+			if(mobHead.getDropChance() > 0.0)
 			{
-				double dropchance = config.getDouble(finalPath + "." + s + ".DropChance");
-				if(dropchance != 0.0)
-				{
-					if(config.getBoolean(finalPath + "." + s + ".Enabled"))
-					{
-						weightedRandomPicker.addEntry(s, dropchance);
-						chanceList.add(s);
-					}
-				}
-			});
-			if(!weightedRandomPicker.getEntries().isEmpty())
+				weightedRandomPicker.addEntry(mobHead, mobHead.getDropChance());
+			}
+		}
+		
+		if(weightedRandomPicker.getEntries().size() > 1)
+		{
+			if(weightedRandomPicker.getAccumulatedWeight() <= 100)
 			{
-				if(weightedRandomPicker.getAccumulatedWeight() <= 100)
+				for(MobHeadData mobHead : mobHeadDataList)
 				{
-					for(String path1 : chanceList)
+					if(mobHead.getDropChance() > Math.random() * 100)
 					{
-						if(config.getDouble(path + "." + path1 + ".DropChance") > Math.random() * 100)
-						{
-							dropHead(path + "." + path1 + ".Texture", path + "." + path1 + ".Name", path + "." + path1 + ".Description", loc);
-							return;
-						}
-					}
-					return;
-				}
-				if(weightedRandomPicker.getEntries().size() > 1)
-				{
-					String picked = weightedRandomPicker.getRandom();
-					path = path + "." + picked;
-				}
-			} else
-			{
-				if(config.getBoolean(path + ".Enabled"))
-				{
-					weightedRandomPicker.addEntry(path, config.getDouble(path + ".DropChance"));
-					
-					if(weightedRandomPicker.getAccumulatedWeight() > Math.random() * 100)
-					{
-						dropHead(path + ".Texture", path + ".Name", path + ".Description", loc);
+						dropHead(mobHead.getTexture(), mobHead.getName(), mobHead.getDescription(), loc);
 						return;
 					}
 				}
 			}
-			if(weightedRandomPicker.getEntries().isEmpty())
-			{
-				return;
-			}
-		}
-		if(weightedRandomPicker.getEntries().size() != 1)
-		{
-			dropHead(path + ".Texture", path + ".Name", path + ".Description", loc);
+			MobHeadData picked = weightedRandomPicker.getRandom();
+			dropHead(picked.getTexture(), picked.getName(), picked.getDescription(), loc);
 		}
 		
+		if(weightedRandomPicker.getEntries().size() == 1)
+		{
+			if(weightedRandomPicker.getAccumulatedWeight() > Math.random() * 100)
+			{
+				MobHeadData mobHead = mobHeadDataList.get(0);
+				dropHead(mobHead.getTexture(), mobHead.getName(), mobHead.getDescription(), loc);
+			}
+		}
 	}
-	
 }

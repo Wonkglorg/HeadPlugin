@@ -20,3 +20,13 @@ commands:
     usage: "Usage: /<command> <args>"
     permission: Heads.Reload.Config
     permission-message: You do not have permission to use this command!
+  head-editor:
+    description: Opens web based editor for heads
+    usage: "Usage: /<command>"
+    permission: Heads.Editor
+    permission-message: You do not have permission to use this command!
+  headconfig:
+    description: Opens gui for head config
+    usage: "Usage: /<command>"
+    permission: Heads.Config
+    permission-message: You do not have permission to use this command!

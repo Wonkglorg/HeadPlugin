@@ -1,4 +1,4 @@
-package com.wonkglorg.command;
+package com.wonkglorg.command.collection_gui;
 
 import com.wonkglorg.utilitylib.command.Command;
 import org.bukkit.entity.Player;
@@ -7,11 +7,17 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class WeightFinder extends Command
+public class Collection extends Command
 {
-	public WeightFinder(@NotNull JavaPlugin main, @NotNull String name)
+	/**
+	 * Instantiates a new Command.
+	 *
+	 * @param plugin the plugin
+	 * @param name the name
+	 */
+	public Collection(@NotNull JavaPlugin plugin, @NotNull String name)
 	{
-		super(main, name);
+		super(plugin, name);
 	}
 	
 	@Override

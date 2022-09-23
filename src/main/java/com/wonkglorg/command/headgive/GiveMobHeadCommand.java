@@ -1,4 +1,4 @@
-package com.wonkglorg.command;
+package com.wonkglorg.command.headgive;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.English;
@@ -7,6 +7,7 @@ import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.utils.message.Message;
 import com.wonkglorg.utils.HeadUtils;
+import com.wonkglorg.MobHeadData;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -18,9 +19,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
 
-public class HeadsCommand extends Command
+public class GiveMobHeadCommand extends Command
 {
 	private final List<EntityType> all = new ArrayList<>();
 	private final List<EntityType> hostiles = new ArrayList<>();
@@ -32,10 +32,10 @@ public class HeadsCommand extends Command
 	private final HashMap<String, List<EntityType>> handlerMap = new HashMap<>();
 	private final Config config;
 	
-	public HeadsCommand(@NotNull JavaPlugin main, @NotNull String name)
+	public GiveMobHeadCommand(@NotNull JavaPlugin main, @NotNull String name)
 	{
 		super(main, name);
-		config = Heads.getManager().getConfig(YML.HEAD_DATA.getFileName());
+		config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 		initLists();
 		initHandleMap();
 	}
@@ -66,28 +66,6 @@ public class HeadsCommand extends Command
 		return null;
 	}
 	
-	private List<String> processPathValidation(String path)
-	{
-		Set<String> subHeads = config.getSection(path, true);
-		List<String> validPaths = new ArrayList<>();
-		if(!subHeads.isEmpty())
-		{
-			subHeads.forEach(s ->
-			{
-				if(config.getString(path + "." + s + ".Texture") != null)
-				{
-					validPaths.add(path + "." + s);
-				}
-				
-			});
-		}
-		if(config.getString(path + ".Texture") != null)
-		{
-			validPaths.add(path);
-		}
-		return validPaths;
-	}
-	
 	private void addHeads(String filterType, Player player)
 	{
 		int droppedHeads = 0;
@@ -103,24 +81,21 @@ public class HeadsCommand extends Command
 			{
 				continue;
 			}
-			for(String paths : processPathValidation("Heads." + entity.name().toLowerCase().replaceAll("_", " ")))
+			
+			for(MobHeadData headData : MobHeadData.getAllValidConfigHeadData(config, "Heads." + entity.name().toLowerCase().replaceAll("_", " ")))
 			{
-				if(!config.getBoolean(paths + ".Enabled"))
+				if(!headData.isEnabled())
 				{
 					continue;
 				}
-				if(config.contains(paths + ".DropChance"))
+				if(headData.getDropChance() != 0)
 				{
-					double dropchance = config.getDouble(paths + ".DropChance");
-					HeadUtils.dropHead(paths + ".Texture",
-							paths + ".Name",
-							paths + ".Description" + "|DropChance = " + dropchance,
-							player.getLocation());
+					HeadUtils.dropHead(headData.getTexture(), headData.getName(), headData.getDescription(), player.getLocation());
 					droppedHeads++;
 					continue;
 				}
 				droppedHeads++;
-				HeadUtils.dropHead(paths + ".Texture", paths + ".Name", paths + ".Description", player.getLocation());
+				HeadUtils.dropHead(headData.getTexture(), headData.getName(), headData.getDescription(), player.getLocation());
 			}
 		}
 		Message.msgPlayer(player, English.COMMAND_HEAD_DROP_SUCCESS.toString().replace("<headcount>", String.valueOf(droppedHeads)));
