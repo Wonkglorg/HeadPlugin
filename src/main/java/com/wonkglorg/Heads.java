@@ -1,21 +1,24 @@
 package com.wonkglorg;
 
-import com.wonkglorg.command.Editor;
-import com.wonkglorg.command.headgive.GiveMobHeadCommand;
 import com.wonkglorg.command.ReloadConfigs;
 import com.wonkglorg.command.config_gui.HeadConfig;
 import com.wonkglorg.command.creeper_spawner.ChargedCreeper;
 import com.wonkglorg.command.creeper_spawner.ClickListener;
 import com.wonkglorg.command.creeper_spawner.ExplosionEvent;
+import com.wonkglorg.command.headgive.GiveCustomHead;
+import com.wonkglorg.command.headgive.GiveMobHeadCommand;
 import com.wonkglorg.enums.YML;
+import com.wonkglorg.listeners.ChatEvent;
 import com.wonkglorg.listeners.DamageListener;
 import com.wonkglorg.listeners.DeathListener;
 import com.wonkglorg.listeners.HeadPickupListener;
-import com.wonkglorg.listeners.Milk;
-import com.wonkglorg.utilitylib.config.Config;
+
+import com.wonkglorg.utilitylib.config.ConfigYML;
 import com.wonkglorg.utilitylib.managers.PluginManager;
+import com.wonkglorg.utilitylib.utils.message.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Locale;
 
 public final class Heads extends JavaPlugin
 {
@@ -25,8 +28,6 @@ public final class Heads extends JavaPlugin
 	@Override
 	public void onEnable()
 	{
-		// ADD METHOD TO SEE DROP CHANCES AND MAKE GUI TO GO THROUGH ALL HEADS THAT EXIST AND ADD INFORMATION LIKE DROP CHANCE, SORT TEHM BY BELONGING TOGETHER
-		//Configs
 		heads = this;
 		pluginManager = new PluginManager(this);
 		addConfigs();
@@ -38,16 +39,19 @@ public final class Heads extends JavaPlugin
 	@Override
 	public void onDisable()
 	{
+		pluginManager.getConfigManager().save();
 	}
 	
 	private void addCommands()
 	{
 		new ChargedCreeper(this, "spawn-creeper");
-		new GiveMobHeadCommand(this, "give-mob-head");
-		new
-		new ReloadConfigs(this, "reload-heads", pluginManager.getConfigManager());
-		new Editor(this,"head-editor");
-		new HeadConfig(this,"headconfig");
+		
+		new GiveCustomHead(this, "givecustomhead");
+		new GiveMobHeadCommand(this, "givemobhead");
+		
+		new ReloadConfigs(this, "head-reload", pluginManager.getConfigManager());
+		
+		new HeadConfig(this, "headconfig");
 	}
 	
 	private void addListeners()
@@ -57,19 +61,29 @@ public final class Heads extends JavaPlugin
 		new ClickListener(this);
 		new ExplosionEvent(this);
 		new HeadPickupListener(this);
-		new Milk(this);
+		new ChatEvent(this);
+		
+		//add sql  to save data of all skulls names / owner / enchants etc?
+		
 	}
 	
 	private void addConfigs()
 	{
-		pluginManager.addConfig(new Config(this, YML.CONFIG.getFileName()));
-		pluginManager.addConfig(new Config(this, YML.HEAD_DATA.getFileName()));
-		pluginManager.addConfig(new Config(this, YML.ENGLISH.getFileName()));
+		pluginManager.addConfig(new ConfigYML(this, YML.CONFIG.getFileName()));
+		pluginManager.addConfig(new ConfigYML(this, YML.HEAD_DATA.getFileName()));
+		pluginManager.addConfig(new ConfigYML(this, YML.HEAD_DROP_NUMBERS.getFileName()));
+		
+		pluginManager.setDefaultLang(Locale.ENGLISH, new ConfigYML(this, "eng.yml", "lang"));
+		//pluginManager.getLangManager().addAllLangFilesFromPath(this, "lang/");
+		pluginManager.getLangManager().replace("<prefix>", ChatColor.GRAY + "[HeadPlugin]&r");
 		pluginManager.registerAll();
 	}
-	public static Heads getInstance(){
+	
+	public static Heads getInstance()
+	{
 		return heads;
 	}
+	
 	public static PluginManager getPluginManager()
 	{
 		return pluginManager;

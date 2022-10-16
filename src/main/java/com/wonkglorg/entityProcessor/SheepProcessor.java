@@ -11,8 +11,8 @@ public class SheepProcessor extends EntityTypeProcessor
 	String path()
 	{
 		Sheep sheep = (Sheep) entity;
+		String name = sheep.getType().toString().toLowerCase();
 		String color = sheep.getColor().name().toLowerCase();
-		String name = sheep.getName().toLowerCase();
 		return "Heads." + name + "." + color;
 	}
 	

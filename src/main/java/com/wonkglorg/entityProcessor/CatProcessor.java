@@ -10,7 +10,7 @@ public class CatProcessor extends EntityTypeProcessor
 	String path()
 	{
 		Cat cat = (Cat) entity;
-		String name = cat.getName().toLowerCase();
+		String name = cat.getType().toString().toLowerCase();
 		String variant = cat.getCatType().name().toLowerCase();
 		return  "Heads." + name + "." + variant;
 	}

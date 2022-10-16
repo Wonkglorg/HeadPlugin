@@ -10,11 +10,12 @@ Player_PvP_Head_DropChance: 100
 Creeper_Explosion_Head: true
 
 #Only drop heads from Charged creeper damage
-ChargedCreeperRequired: true
+Charged_Creeper_Required: true
 
+#Default Head options
+Remove_Vanilla_Mob_Heads: true
 
-
-
-#in seconds
-milking-recharge-delay: 400
-milk-drink-delay: 400
+#Specific vanilla heads, only works if Remove_Vanilla_Mob_Heads is set to true
+Remove_Vanilla_Zombie_Head: true
+Remove_Vanilla_Creeper_Head: true
+Remove_Vanilla_Skeleton_Head: true

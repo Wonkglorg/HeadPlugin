@@ -10,7 +10,7 @@ public class ParrotProcessor extends EntityTypeProcessor
 	String path()
 	{
 		Parrot parrot = (Parrot) entity;
-		String name = parrot.getName().toLowerCase();
+		String name = parrot.getType().toString().toLowerCase();
 		String type = parrot.getVariant().name().toLowerCase();
 		return "Heads." + name + "." + type;
 	}

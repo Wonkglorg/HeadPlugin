@@ -10,7 +10,7 @@ public class RabbitProcessor extends EntityTypeProcessor
 	String path()
 	{
 		Rabbit rabbit = (Rabbit) entity;
-		String name = rabbit.getName().toLowerCase();
+		String name = rabbit.getType().toString().toLowerCase();
 		String type = rabbit.getRabbitType().name().toLowerCase();
 		return "Heads." + name + "." + type;
 	}

@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.wonkglorg</groupId>
 	<artifactId>Heads</artifactId>
-	<version>1.19</version>
+	<version>1.19.2</version>
 	<packaging>jar</packaging>
 	
 	<name>Heads</name>
@@ -71,13 +71,13 @@
 		<dependency>
 			<groupId>io.papermc.paper</groupId>
 			<artifactId>paper-api</artifactId>
-			<version>1.19-R0.1-SNAPSHOT</version>
+			<version>1.19.2-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.github.Wonkglorg</groupId>
 			<artifactId>Minecraft-UtilityLib</artifactId>
-			<version>9c61954e07</version>
+			<version>cf7f8a4e00</version>
 		</dependency>
 	</dependencies>
 </project>

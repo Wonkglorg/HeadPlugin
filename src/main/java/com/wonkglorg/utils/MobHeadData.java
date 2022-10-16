@@ -1,6 +1,9 @@
-package com.wonkglorg;
+package com.wonkglorg.utils;
 
 import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.utils.item.ItemUtility;
+import com.wonkglorg.utilitylib.utils.message.ChatColor;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +20,12 @@ public class MobHeadData
 	
 	private String path;
 	
-	public MobHeadData(String name, String description, String texture, boolean enabled, double dropChance, String path)
+	private String originalName;
+	
+	public MobHeadData(String name, String originalName, String description, String texture, boolean enabled, double dropChance, String path)
 	{
 		this.name = name;
+		this.originalName = originalName;
 		this.description = description;
 		this.texture = texture;
 		this.enabled = enabled;
@@ -27,9 +33,10 @@ public class MobHeadData
 		this.path = path;
 	}
 	
-	public MobHeadData(String path, Config config)
+	public MobHeadData(String path, Config config, int offset)
 	{
 		this.config = config;
+		this.originalName = path.split("\\.")[offset];
 		this.name = config.getString(path + ".Name");
 		this.description = config.getString(path + ".Description");
 		this.texture = config.getString(path + ".Texture");
@@ -45,6 +52,25 @@ public class MobHeadData
 		setConfigDescription(config);
 		setConfigEnabled(config);
 		setConfigDropChance(config);
+		config.silentSave();
+	}
+	
+	public List<String> splitPathIntoSections(Config config, String path)
+	{
+		String[] splitPath = path.split("\\.");
+		List<String> stringList = new ArrayList<>();
+		StringBuilder builder = new StringBuilder();
+		for(String s : splitPath)
+		{
+			builder.append(s);
+			if(!isValidHeadPath(config, builder.toString()))
+			{
+				stringList.add(builder.toString());
+				builder.append(".");
+			}
+		}
+		return stringList;
+		
 	}
 	
 	public static List<MobHeadData> getAllValidConfigHeadData(Config config, String path)
@@ -53,24 +79,60 @@ public class MobHeadData
 		Set<String> subHeads = config.getSection(path, true);
 		if(subHeads.isEmpty())
 		{
-			if(config.getBoolean(path + ".Enabled"))
+			if(isValidHeadPath(config, path))
 			{
-				mobHeadData.add(new MobHeadData(path, config));
+				mobHeadData.add(new MobHeadData(path, config, 1));
 			}
 			return mobHeadData;
 		}
-		if(config.getBoolean(path + ".Enabled"))
+		if(isValidHeadPath(config, path))
 		{
-			mobHeadData.add(new MobHeadData(path, config));
+			mobHeadData.add(new MobHeadData(path, config, 1));
 		}
 		for(String heads : subHeads)
 		{
-			if(config.getBoolean(path + "." + heads + ".Enabled"))
+			if(isValidHeadPath(config, path + "." + heads))
 			{
-				mobHeadData.add(new MobHeadData(path + "." + heads, config));
+				mobHeadData.add(new MobHeadData(path + "." + heads, config, 1));
 			}
 		}
 		return mobHeadData;
+	}
+	
+	public static boolean isValidHeadPath(Config config, String path)
+	{
+		return config.contains(path + ".Enabled") && config.contains(path + ".Texture") && config.contains(path + ".DropChance") && config.contains(
+				path + ".Name") && config.contains(path + ".Description");
+	}
+	
+	public static MobHeadData getFirstValidConfigHeadData(Config config, String path)
+	{
+		String newPath;
+		for(String categories : config.getSection(path, false))
+		{
+			newPath = path + "." + categories;
+			Set<String> subHeads = config.getSection(newPath, true);
+			if(subHeads.isEmpty())
+			{
+				if(isValidHeadPath(config, newPath))
+				{
+					return new MobHeadData(newPath, config, 1);
+				}
+				continue;
+			}
+			if(isValidHeadPath(config, newPath))
+			{
+				return new MobHeadData(newPath, config, 1);
+			}
+			for(String heads : subHeads)
+			{
+				if(isValidHeadPath(config, newPath + "." + heads))
+				{
+					return new MobHeadData(newPath + "." + heads, config, 1);
+				}
+			}
+		}
+		return null;
 	}
 	
 	public static List<MobHeadData> getFirstOfAllValidConfigHeadData(Config config, String path)
@@ -83,29 +145,53 @@ public class MobHeadData
 			Set<String> subHeads = config.getSection(newPath, true);
 			if(subHeads.isEmpty())
 			{
-				if(config.getBoolean(newPath + ".Enabled") && config.getString(newPath + ".Texture") != null)
+				if(isValidHeadPath(config, newPath))
 				{
-					mobHeadData.add(new MobHeadData(newPath, config));
+					mobHeadData.add(new MobHeadData(newPath, config, 1));
 				}
 				continue;
 			}
-			if(config.getBoolean(newPath + ".Enabled") && config.getString(newPath + ".Texture") != null)
+			if(isValidHeadPath(config, newPath))
 			{
-				mobHeadData.add(new MobHeadData(newPath, config));
+				mobHeadData.add(new MobHeadData(newPath, config, 1));
 				continue;
 			}
-			
-			//skip to next head category if 1 matches
 			for(String heads : subHeads)
 			{
-				if(config.getBoolean(newPath + "." + heads + ".Enabled") && config.getString(newPath + ".Texture") != null)
+				if(isValidHeadPath(config, newPath + "." + heads))
 				{
-					mobHeadData.add(new MobHeadData(newPath + "." + heads, config));
+					mobHeadData.add(new MobHeadData(newPath + "." + heads, config, 1));
 					break;
 				}
 			}
 		}
 		return mobHeadData;
+	}
+	
+	public ItemStack createHeadItem()
+	{
+		return ItemUtility.createCustomHead(texture, name, description);
+	}
+	
+	public ItemStack createHeadItemWithInfoDesc()
+	{
+		String type = enabled ? ChatColor.GREEN + "Enabled" : ChatColor.RED + "Disabled";
+
+		return ItemUtility.createCustomHead(texture,
+				name,
+				ChatColor.Reset + ChatColor.GOLD + "Dropchance: " + dropChance + "%",
+				type ,
+				description);
+	}
+	
+	public String getOriginalName()
+	{
+		return originalName;
+	}
+	
+	public void setOriginalName(String originalName)
+	{
+		this.originalName = originalName;
 	}
 	
 	private void setConfigTexture(Config config)

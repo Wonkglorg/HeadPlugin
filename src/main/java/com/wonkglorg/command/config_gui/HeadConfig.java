@@ -3,8 +3,6 @@ package com.wonkglorg.command.config_gui;
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.command.Command;
-import com.wonkglorg.utilitylib.utils.inventory.InventoryGUI;
-import com.wonkglorg.utilitylib.utils.inventory.MenuUtility;
 import com.wonkglorg.utils.HeadMenuUtility;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -26,19 +24,17 @@ public class HeadConfig extends Command
 	}
 	
 	@Override
+	public boolean allowConsole()
+	{
+		return false;
+	}
+	
+	@Override
 	public boolean execute(@NotNull Player player, String[] args)
 	{
 		HeadMenuUtility menuUtility = HeadMenuUtility.get(player);
-		InventoryGUI inventoryGUI = new InventoryGUI(54,"Head Config",plugin,menuUtility){
-			@Override
-			public void addComponents()
-			{
-			
-			}
-		};
-		new HeadConfigGui(inventoryGUI,menuUtility,Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()));
+		new HeadConfigGui(menuUtility,Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),"Heads");
 		
-		//try to understand pagination menu
 		return true;
 	}
 	

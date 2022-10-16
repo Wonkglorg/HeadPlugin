@@ -18,7 +18,7 @@ public class HeadPickupListener extends EventListener
 	
 	@EventHandler
 	public void itemPickup(EntityPickupItemEvent e) {
-		if(e.getEntity() instanceof Player player){
+		if(e.getEntity() instanceof Player){
 			if(e.getItem().getPersistentDataContainer().get(new NamespacedKey(Heads.getInstance(),"newdrop"), PersistentDataType.STRING) != null){
 				//add that head to the collection and other stuff
 			}

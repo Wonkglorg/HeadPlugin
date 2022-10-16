@@ -5,7 +5,7 @@ import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.utils.random.WeightedRandomPicker;
 import static com.wonkglorg.utils.HeadUtils.dropHead;
-import com.wonkglorg.MobHeadData;
+import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 
@@ -27,6 +27,8 @@ public abstract class EntityTypeProcessor
 		this.entity = entity;
 		String path = path();
 		Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+		Config countConfig = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DROP_NUMBERS.getFileName());
+		
 		List<MobHeadData> mobHeadDataList = MobHeadData.getAllValidConfigHeadData(config, path);
 		weightedRandomPicker = new WeightedRandomPicker<>();
 		if(mobHeadDataList.isEmpty())
@@ -35,7 +37,7 @@ public abstract class EntityTypeProcessor
 		}
 		for(MobHeadData mobHead : mobHeadDataList)
 		{
-			if(mobHead.getDropChance() > 0.0)
+			if(mobHead.getDropChance() > 0.0 && mobHead.isEnabled())
 			{
 				weightedRandomPicker.addEntry(mobHead, mobHead.getDropChance());
 			}
@@ -50,6 +52,8 @@ public abstract class EntityTypeProcessor
 					if(mobHead.getDropChance() > Math.random() * 100)
 					{
 						dropHead(mobHead.getTexture(), mobHead.getName(), mobHead.getDescription(), loc);
+						countConfig.set(path, countConfig.contains(path) ? countConfig.getInt(path)+1 : 1);
+						countConfig.silentSave();
 						return;
 					}
 				}
@@ -64,6 +68,8 @@ public abstract class EntityTypeProcessor
 			{
 				MobHeadData mobHead = mobHeadDataList.get(0);
 				dropHead(mobHead.getTexture(), mobHead.getName(), mobHead.getDescription(), loc);
+				countConfig.set(path, countConfig.contains(path) ? countConfig.getInt(path)+1 : 1);
+				countConfig.silentSave();
 			}
 		}
 	}

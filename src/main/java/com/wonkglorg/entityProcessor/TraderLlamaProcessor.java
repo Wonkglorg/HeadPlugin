@@ -10,7 +10,7 @@ public class TraderLlamaProcessor extends EntityTypeProcessor
 	String path()
 	{
 		TraderLlama llama = (TraderLlama) entity;
-		String name = llama.getName().toLowerCase();
+		String name = llama.getType().toString().toLowerCase();
 		String type = llama.getColor().name().toLowerCase();
 		return "Heads." + name + "." + type;
 	}

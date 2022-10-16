@@ -21,6 +21,12 @@ public class Collection extends Command
 	}
 	
 	@Override
+	public boolean allowConsole()
+	{
+		return false;
+	}
+	
+	@Override
 	public boolean execute(@NotNull Player player, String[] args)
 	{
 		return false;

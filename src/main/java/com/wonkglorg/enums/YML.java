@@ -3,7 +3,7 @@ package com.wonkglorg.enums;
 public enum YML
 {
 	CONFIG("config.yml"),
-	ENGLISH("en-lang.yml"),
+	HEAD_DROP_NUMBERS("head-drop-info.yml"),
 	HEAD_DATA("head_data.yml");
 	private final String fileName;
 	YML(String fileName){

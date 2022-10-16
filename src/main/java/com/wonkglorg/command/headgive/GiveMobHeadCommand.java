@@ -1,13 +1,13 @@
 package com.wonkglorg.command.headgive;
 
 import com.wonkglorg.Heads;
-import com.wonkglorg.enums.English;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.managers.LangManager;
+import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import com.wonkglorg.utilitylib.utils.message.Message;
-import com.wonkglorg.utils.HeadUtils;
-import com.wonkglorg.MobHeadData;
+import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -22,6 +22,7 @@ import java.util.List;
 
 public class GiveMobHeadCommand extends Command
 {
+	private final LangManager lang = Heads.getPluginManager().getLangManager();
 	private final List<EntityType> all = new ArrayList<>();
 	private final List<EntityType> hostiles = new ArrayList<>();
 	private final List<EntityType> passives = new ArrayList<>();
@@ -41,17 +42,29 @@ public class GiveMobHeadCommand extends Command
 	}
 	
 	@Override
+	public boolean allowConsole()
+	{
+		return false;
+	}
+	
+	@Override
 	public boolean execute(@NotNull Player player, String[] args)
 	{
-		if(args.length != 1)
+		if(args.length < 1)
 		{
 			return false;
 		}
 		
-		addHeads(args[0], player);
-		
+		if(args.length == 1)
+		{
+			addHeads(argAsString(0), player);
+			return true;
+		}
+		addHeads(argAsString(0), argAsPlayer(1));
 		return true;
 	}
+	
+	List<String> emptyList = new ArrayList<>();
 	
 	@Override
 	public List<String> tabComplete(@NotNull Player player, String[] args)
@@ -63,11 +76,19 @@ public class GiveMobHeadCommand extends Command
 			Collections.sort(returnValues);
 			return returnValues;
 		}
-		return null;
+		if(args.length == 2)
+		{
+			return null;
+		}
+		return emptyList;
 	}
 	
 	private void addHeads(String filterType, Player player)
 	{
+		if(player == null)
+		{
+			return;
+		}
 		int droppedHeads = 0;
 		List<EntityType> filter;
 		filter = handlerMap.get(filterType);
@@ -88,17 +109,15 @@ public class GiveMobHeadCommand extends Command
 				{
 					continue;
 				}
-				if(headData.getDropChance() != 0)
-				{
-					HeadUtils.dropHead(headData.getTexture(), headData.getName(), headData.getDescription(), player.getLocation());
-					droppedHeads++;
-					continue;
-				}
+				ItemUtility.give(player, ItemUtility.createCustomHead(headData.getTexture(), headData.getName(), headData.getDescription()));
 				droppedHeads++;
-				HeadUtils.dropHead(headData.getTexture(), headData.getName(), headData.getDescription(), player.getLocation());
 			}
 		}
-		Message.msgPlayer(player, English.COMMAND_HEAD_DROP_SUCCESS.toString().replace("<headcount>", String.valueOf(droppedHeads)));
+		Message.msgPlayer(player, lang.getValue(player, "command-head-drop-success").replace("<headcount>", String.valueOf(droppedHeads)));
+		if(droppedHeads > 300)
+		{
+			Message.msgPlayer(player, lang.getValue(player, "command-head-drop-warn"));
+		}
 	}
 	
 	private void initHandleMap()
@@ -135,10 +154,10 @@ public class GiveMobHeadCommand extends Command
 	
 	private void initAllList()
 	{
-		lambdaAdd(hostiles, all);
-		lambdaAdd(animals, all);
-		lambdaAdd(passives, all);
-		lambdaAdd(bosses, all);
+		addToList(hostiles, all);
+		addToList(animals, all);
+		addToList(passives, all);
+		addToList(bosses, all);
 	}
 	
 	private void initHostileList()
@@ -248,7 +267,7 @@ public class GiveMobHeadCommand extends Command
 				EntityType.TROPICAL_FISH));
 	}
 	
-	private void lambdaAdd(List<EntityType> entityTypeList, List<EntityType> copyToList)
+	private void addToList(List<EntityType> entityTypeList, List<EntityType> copyToList)
 	{
 		entityTypeList.forEach(entity ->
 		{

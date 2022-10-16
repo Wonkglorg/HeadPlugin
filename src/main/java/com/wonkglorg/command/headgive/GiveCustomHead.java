@@ -1,12 +1,12 @@
 package com.wonkglorg.command.headgive;
 
 import com.wonkglorg.utilitylib.command.Command;
-import com.wonkglorg.utilitylib.utils.Utils;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class GiveCustomHead extends Command
@@ -23,46 +23,46 @@ public class GiveCustomHead extends Command
 	}
 	
 	@Override
+	public boolean allowConsole()
+	{
+		return false;
+	}
+	
+	@Override
 	public boolean execute(@NotNull Player player, String[] args)
 	{
-		String texture;
-		String name;
-		String description;
+		
 		if(args.length < 1)
 		{
 			return false;
 		}
-		if(args.length == 1)
+		if(argAsPlayer(0) != null)
 		{
-			texture = args[0];
-			Utils.give(player,ItemUtility.createCustomHead(texture, "&rCustom Head"));
-			return true;
+			return processCommand(argAsPlayer(0), 1);
 		}
-		if(args.length == 2)
+		return processCommand(player, 0);
+	}
+	
+	private boolean processCommand(Player target, int offset)
+	{
+		StringBuilder builder = new StringBuilder();
+		for(int i = 2 + offset; args.length > i; i++)
 		{
-			texture = args[0];
-			name = args[1];
-			Utils.give(player,ItemUtility.createCustomHead(texture, name));
-			return true;
+			builder.append(argAsString(i)).append(" ");
 		}
-		
-		texture = args[0];
-		name = args[1];
-		StringBuilder stringBuilder = new StringBuilder();
-		for(int i = 2; args.length > i; i++)
-		{
-			stringBuilder.append(args[i]);
-		}
-		description = stringBuilder.toString();
-		
-		//Add multi line support
-		Utils.give(player,ItemUtility.createCustomHead(texture, name, description));
+		ItemUtility.give(target, ItemUtility.createCustomHead(argAsString(offset), argAsString(1 + offset), builder.toString()));
 		return true;
 	}
+	
+	List<String> empty = new ArrayList<>();
 	
 	@Override
 	public List<String> tabComplete(@NotNull Player player, String[] args)
 	{
-		return null;
+		if(args.length == 1)
+		{
+			return null;
+		}
+		return empty;
 	}
 }

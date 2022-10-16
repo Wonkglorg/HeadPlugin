@@ -10,7 +10,7 @@ public class HorseProcessor extends EntityTypeProcessor
 	String path()
 	{
 		Horse horse = (Horse) entity;
-		String name = horse.getName().toLowerCase();
+		String name = horse.getType().toString().toLowerCase();
 		String type = horse.getColor().name().toLowerCase();
 		return "Heads." + name + "." + type;
 	}

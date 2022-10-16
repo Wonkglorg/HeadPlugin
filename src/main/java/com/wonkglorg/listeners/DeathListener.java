@@ -1,5 +1,6 @@
 package com.wonkglorg.listeners;
 
+import com.wonkglorg.Heads;
 import com.wonkglorg.entityProcessor.AxolotlProcessor;
 import com.wonkglorg.entityProcessor.CatProcessor;
 import com.wonkglorg.entityProcessor.EntityProcessor;
@@ -13,11 +14,16 @@ import com.wonkglorg.entityProcessor.SheepProcessor;
 import com.wonkglorg.entityProcessor.TraderLlamaProcessor;
 import com.wonkglorg.entityProcessor.VillagerProcessor;
 import com.wonkglorg.entityProcessor.ZombieVillagerProcessor;
+import com.wonkglorg.enums.YML;
+import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.listener.EventListener;
+import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDeathEvent;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -28,6 +34,7 @@ import java.util.Objects;
 public class DeathListener extends EventListener
 {
 	List<EntityTypeProcessor> entityTypeProcessors = new ArrayList<>();
+	Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.CONFIG.getFileName());
 	
 	public DeathListener(JavaPlugin plugin)
 	{
@@ -39,17 +46,38 @@ public class DeathListener extends EventListener
 	public void onDeath(EntityDeathEvent e)
 	{
 		Entity mob = e.getEntity();
-		if(Objects.equals(mob.getPersistentDataContainer().get(new NamespacedKey(plugin, "drophead"), PersistentDataType.STRING), "true")){
+		if(Objects.equals(mob.getPersistentDataContainer().get(new NamespacedKey(plugin, "drophead"), PersistentDataType.STRING), "true"))
+		{
 			for(EntityTypeProcessor processor : entityTypeProcessors)
 			{
 				if(processor.matches(mob))
 				{
+					//Check how to detect why a creeper exploded? for negating some people from getting heads and to log
+					removeDefaultHeadDrops(e.getDrops(), e.getEntity().getType());
 					processor.process(mob, e.getEntity().getLocation());
 					return;
 				}
 			}
 		}
 		
+	}
+	
+	private void removeDefaultHeadDrops(List<ItemStack> drops, EntityType entity)
+	{
+		if(entity == EntityType.CREEPER && config.getBoolean("Remove_Vanilla_Creeper_Head"))
+		{
+			drops.remove(new ItemStack(Material.CREEPER_HEAD));
+			return;
+		}
+		if(entity == EntityType.SKELETON && config.getBoolean("Remove_Vanilla_Skeleton_Head"))
+		{
+			drops.remove(new ItemStack(Material.SKELETON_SKULL));
+			return;
+		}
+		if(entity == EntityType.ZOMBIE && config.getBoolean("Remove_Vanilla_Zombie_Head"))
+		{
+			drops.remove(new ItemStack(Material.ZOMBIE_HEAD));
+		}
 	}
 	
 	private void addProcessors(List<EntityTypeProcessor> entityTypeProcessors)
