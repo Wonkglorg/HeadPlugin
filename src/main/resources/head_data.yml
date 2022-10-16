@@ -1756,590 +1756,687 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        Name: "Plains Cleric Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Cleric Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       farmer:
-        Name: "Plains Farmer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Farmer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       armorer:
-        Name: "Plains Armorer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzE3YWIxZjRhMzFiZTUyYTZjOTk1ZTI0MDg3OGYwMTgyNGNjOTA1NDM5ZDY2NDI1NjVkNjA5MWM2NDFhZjhlYSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Armorer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzE3YWIxZjRhMzFiZTUyYTZjOTk1ZTI0MDg3OGYwMTgyNGNjOTA1NDM5ZDY2NDI1NjVkNjA5MWM2NDFhZjhlYSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       butcher:
-        Name: "Plains Butcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWNjZThkNmNlNDEyNGNlYzNlODRhODUyZTcwZjUwMjkzZjI0NGRkYzllZTg1NzhmN2Q2ZDg5MjllMTZiYWQ2OSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Butcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWNjZThkNmNlNDEyNGNlYzNlODRhODUyZTcwZjUwMjkzZjI0NGRkYzllZTg1NzhmN2Q2ZDg5MjllMTZiYWQ2OSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fletcher:
-        Name: "Plains Fletcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjk1NzIyZmM4Zjg3MjM3MDJjMzI1Y2FmNGI2YWY2NTFmOWRjYmMzMTA4NmE3MjcwYTI1YTNkM2MwZTE2MmMwMSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Fletcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjk1NzIyZmM4Zjg3MjM3MDJjMzI1Y2FmNGI2YWY2NTFmOWRjYmMzMTA4NmE3MjcwYTI1YTNkM2MwZTE2MmMwMSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       shepherd:
-        Name: "Plains Shepherd Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Shepherd Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fisherman:
-        Name: "Plains Fisherman Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1NDY1OTQwNWUyYTYzODM3NTdmMDJlZmE3YzVhOWQ0ZTE5ZTU1NDUxOWUxOGU4ZGEyMDQ4MDhiMWI1NjViOSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Fisherman Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1NDY1OTQwNWUyYTYzODM3NTdmMDJlZmE3YzVhOWQ0ZTE5ZTU1NDUxOWUxOGU4ZGEyMDQ4MDhiMWI1NjViOSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       librarian:
-        Name: "Plains Librarian Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Librarian Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       toolsmith:
-        Name: "Plains Toolsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Toolsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       weaponsmith:
-        Name: "Plains Weaponsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM1NGE0MTcyYTliYTljNDdmYjg1M2FiMjg0ZmRjMGEzNDQzMjYwMTNlNWQ3M2M0YmVjNzgwMGQ4M2Y0ZTM5OSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Weaponsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM1NGE0MTcyYTliYTljNDdmYjg1M2FiMjg0ZmRjMGEzNDQzMjYwMTNlNWQ3M2M0YmVjNzgwMGQ4M2Y0ZTM5OSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cartographer:
-        Name: "Plains Cartographer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhkMDBjMTViOGZlYmE4N2IxNDA0NjYzYmRiMTVhZTc1ZTQwZTQ5ZWQxNDA2MzVhYzgwZjQzOGI1MmMyMjFlYyJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Cartographer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhkMDBjMTViOGZlYmE4N2IxNDA0NjYzYmRiMTVhZTc1ZTQwZTQ5ZWQxNDA2MzVhYzgwZjQzOGI1MmMyMjFlYyJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       leatherworker:
-        Name: "Plains Leatherworker Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Leatherworker Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       none:
-        Name: "Plains Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Plains Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ4NWVhNjk0ZjY1ZTczZWI1NDZkYzJjNTg4Y2YyZDA3MDZiYzVlMDhjMTRlNzEyNWY5NzNiMzAzZmY0YzhlOCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
     desert:
       mason:
-        Name: "Desert Mason Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Mason Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cleric:
-        Name: "Desert Cleric Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Cleric Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       farmer:
-        Name: "Desert Farmer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA2MTA5MjQ0MzZlNzEyNjY3MjFlN2M4Y2FkN2VjZDZhZmQ4ZDFkMGRkZmMyNGUzOGNmMDc4OGI2MjBhMDExMSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Farmer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA2MTA5MjQ0MzZlNzEyNjY3MjFlN2M4Y2FkN2VjZDZhZmQ4ZDFkMGRkZmMyNGUzOGNmMDc4OGI2MjBhMDExMSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       armorer:
-        Name: "Desert Armorer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjI1YWZlYzRmOGFjNzJjMzQ5YzViNWNiNGNjNjY5MzUzMzNjZTQ0NTY3NDY4MTRhYjU4ZjRiM2M5MmMyMzhiOSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Armorer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjI1YWZlYzRmOGFjNzJjMzQ5YzViNWNiNGNjNjY5MzUzMzNjZTQ0NTY3NDY4MTRhYjU4ZjRiM2M5MmMyMzhiOSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       butcher:
-        Name: "Desert Butcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWEyNTM0MjI0YzkzNTg4YWM0MDE3NzQ4NmFkMWJjODY2NjhiYzhmMGI2Y2E4ZDA4M2UzYWJkMmE1MWNkOWFiYSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Butcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWEyNTM0MjI0YzkzNTg4YWM0MDE3NzQ4NmFkMWJjODY2NjhiYzhmMGI2Y2E4ZDA4M2UzYWJkMmE1MWNkOWFiYSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fletcher:
-        Name: "Desert Fletcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM4YWI3MGNjNTM4NzkwMWIyOTBmN2Y4MTU4NWZmMTlkYWQ1ZTYyNTY0YWQxMTBiM2UxZGE3OWRmOTVlMWMzMiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Fletcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM4YWI3MGNjNTM4NzkwMWIyOTBmN2Y4MTU4NWZmMTlkYWQ1ZTYyNTY0YWQxMTBiM2UxZGE3OWRmOTVlMWMzMiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       shepherd:
-        Name: "Desert Shepherd Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Shepherd Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fisherman:
-        Name: "Desert Fisherman Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRiYmIzY2Q2NDA1YmFhNDllMGQxMDg3NTU0YzJjZTU0NWM1NDJmM2ExOTFhYzljM2Y2ZGYzODk2OGUxMjdkNiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Fisherman Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRiYmIzY2Q2NDA1YmFhNDllMGQxMDg3NTU0YzJjZTU0NWM1NDJmM2ExOTFhYzljM2Y2ZGYzODk2OGUxMjdkNiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       librarian:
-        Name: "Desert Librarian Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Librarian Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       toolsmith:
-        Name: "Desert Toolsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Toolsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       weaponsmith:
-        Name: "Desert Weaponsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ5YWRmODNhNGY2ZTM3ZmUzZjYxYjQ2ZDczZWJkOGEzNDJkMWM3NWRkNDgzNWNiZDI5OWQyOTY4ZDcwMjNmNCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Weaponsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ5YWRmODNhNGY2ZTM3ZmUzZjYxYjQ2ZDczZWJkOGEzNDJkMWM3NWRkNDgzNWNiZDI5OWQyOTY4ZDcwMjNmNCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cartographer:
-        Name: "Desert Cartographer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgzNTM3NDIxMGM2YzE0M2Q0ZGIzMmY0OTgxODc3MjM4ODljMjNmNTljN2VmZGZlOGZjZDQ0MGMwYmJmYWUzOSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Cartographer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjgzNTM3NDIxMGM2YzE0M2Q0ZGIzMmY0OTgxODc3MjM4ODljMjNmNTljN2VmZGZlOGZjZDQ0MGMwYmJmYWUzOSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       leatherworker:
-        Name: "Desert Leatherworker Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcyZDk4YzkxMDFjNjllNzRkN2JhNjUyMjlhOTQ5NzE2NTM1YmNhN2Q5ZjQxZWQzYTQwYjY1M2U3ZmM5MDNiNCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Leatherworker Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcyZDk4YzkxMDFjNjllNzRkN2JhNjUyMjlhOTQ5NzE2NTM1YmNhN2Q5ZjQxZWQzYTQwYjY1M2U3ZmM5MDNiNCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       none:
-        Name: "Desert Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Desert Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg5ZDg1ZjQ1Yzg3ZjEwYjNkZTQyMTQyNmUzYTgzNzE4ZDc4MDZjZWZiMDIwNGJlYTBjNjI5ZjM2MzE1MGYzZiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
     savanna:
       mason:
-        Name: "Savanna Mason Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Mason Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cleric:
-        Name: "Savanna Cleric Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODA1NjhjMjc2MmIyYWU2NTg1YzIzYTI2ZDg1Y2ZkMzA4ZjEyMTgzNTVlMWVjZDNiMTFmNTliNDAyNGZiYjEzMyJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Cleric Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODA1NjhjMjc2MmIyYWU2NTg1YzIzYTI2ZDg1Y2ZkMzA4ZjEyMTgzNTVlMWVjZDNiMTFmNTliNDAyNGZiYjEzMyJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       farmer:
-        Name: "Savanna Farmer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Farmer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       armorer:
-        Name: "Savanna Armorer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWMyNDUzNzkwOTM1NDI1NjRlNWUxM2IwNjg2NTkzODFmYWQzMTk2MDQ2NzQyNWM5ODJjMmVhZTIwMjYzZjYwZCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Armorer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWMyNDUzNzkwOTM1NDI1NjRlNWUxM2IwNjg2NTkzODFmYWQzMTk2MDQ2NzQyNWM5ODJjMmVhZTIwMjYzZjYwZCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       butcher:
-        Name: "Savanna Butcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTgwOWMxNmNmZTZkZTI1YTA4MzM4NGRkNjZkNzYzNmI0YTM1ZGFiNGU1NDU1OGEyYWNiMTkxOTNhMWIyODczNyJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Butcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTgwOWMxNmNmZTZkZTI1YTA4MzM4NGRkNjZkNzYzNmI0YTM1ZGFiNGU1NDU1OGEyYWNiMTkxOTNhMWIyODczNyJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fletcher:
-        Name: "Savanna Fletcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWY4MGNjNGE1ZjFiYTZlNWEyOTdkZTdiZjRiMzY3ZGJkY2I5YTZmNDZjNmM2OGRhYjIxNWQ1OGQ5MmZmY2RkNSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Fletcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWY4MGNjNGE1ZjFiYTZlNWEyOTdkZTdiZjRiMzY3ZGJkY2I5YTZmNDZjNmM2OGRhYjIxNWQ1OGQ5MmZmY2RkNSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       shepherd:
-        Name: "Savanna Shepherd Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Shepherd Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fisherman:
-        Name: "Savanna Fisherman Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAyZWQ0NGZkMGNjOTU5ZjhiNjU0ZmZmN2EyN2IyZGU2ZGViN2EwY2NmOTQ0NWFkMjVlZDBjN2RmMzY5MGZmYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Fisherman Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAyZWQ0NGZkMGNjOTU5ZjhiNjU0ZmZmN2EyN2IyZGU2ZGViN2EwY2NmOTQ0NWFkMjVlZDBjN2RmMzY5MGZmYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       librarian:
-        Name: "Savanna Librarian Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Librarian Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       toolsmith:
-        Name: "Savanna Toolsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Toolsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       weaponsmith:
-        Name: "Savanna Weaponsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIwNDI5YjNiOWFmYTU4OTA4NmMxZGY2ODA4MGRmY2ZlNzI4MjRkNjUxMTZkMzMzODU2ZDE5ODY5YjNmNWY3YSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Weaponsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzIwNDI5YjNiOWFmYTU4OTA4NmMxZGY2ODA4MGRmY2ZlNzI4MjRkNjUxMTZkMzMzODU2ZDE5ODY5YjNmNWY3YSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cartographer:
-        Name: "Savanna Cartographer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQwMzVhY2EyNmJlOTdiZTg0MDY0MDZmMTU1N2ZhOTkwNzM4NzcwZmUwMzgxOTRhNGFiODFjZTBjODM5NmM3MiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Cartographer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQwMzVhY2EyNmJlOTdiZTg0MDY0MDZmMTU1N2ZhOTkwNzM4NzcwZmUwMzgxOTRhNGFiODFjZTBjODM5NmM3MiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       leatherworker:
-        Name: "Savanna Leatherworker Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDMyZTY4ZWNmZjhmNjk1ZThjMTAyNDg1NDRhYmY5OWM4ZDQ1MDdhMzllOGQ1ODZmY2JlN2UzYjIzYWFhN2RlYyJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Leatherworker Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDMyZTY4ZWNmZjhmNjk1ZThjMTAyNDg1NDRhYmY5OWM4ZDQ1MDdhMzllOGQ1ODZmY2JlN2UzYjIzYWFhN2RlYyJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       none:
-        Name: "Savanna Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Savanna Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIyNGVjMzk5ODI1MGY5NTA4MzYxMDM5MTgyMjY2Njg3MTAzYjg5NGVjOGI5NDg4M2ZlYWNkM2MzNTFkYjUwNiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
     snow:
       mason:
-        Name: "Snow Mason Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Mason Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cleric:
-        Name: "Snow Cleric Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Cleric Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       farmer:
-        Name: "Snow Farmer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM1ZTI0N2UwMzBlNjA3MGUyOGM5ZGUxYTRmNDcyNDUwNTIxZTU3M2RhNGQyNTkyMzVlNzAyYmRhMDkxMWE3NSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Farmer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM1ZTI0N2UwMzBlNjA3MGUyOGM5ZGUxYTRmNDcyNDUwNTIxZTU3M2RhNGQyNTkyMzVlNzAyYmRhMDkxMWE3NSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       armorer:
-        Name: "Snow Armorer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc1OTVkNzcyZDg1Y2VkMTg4YmI2YjA1Mjc3ZGQ5MDk4OTFhMTVhNGJiODdjYTdiNzYzNDY4MzdmMzk1MjI2ZCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Armorer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc1OTVkNzcyZDg1Y2VkMTg4YmI2YjA1Mjc3ZGQ5MDk4OTFhMTVhNGJiODdjYTdiNzYzNDY4MzdmMzk1MjI2ZCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       butcher:
-        Name: "Snow Butcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmE1NWYzZDkyNjU3M2FkNjY1YWI4NDU4NjcxMDZmZmFhZWVmOTQyMWU2ODQyN2ZmYjI3MTc3YTA3YTc3MTg3MiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Butcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmE1NWYzZDkyNjU3M2FkNjY1YWI4NDU4NjcxMDZmZmFhZWVmOTQyMWU2ODQyN2ZmYjI3MTc3YTA3YTc3MTg3MiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fletcher:
-        Name: "Snow Fletcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTliOWUyODBiZmJjNjFiNWEyNTRkMzA5ZGQwODNjYzI3MjJlZDA1OWMxMWEzYTBlZGE5MzE2YmFlN2FhYWUxNSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Fletcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTliOWUyODBiZmJjNjFiNWEyNTRkMzA5ZGQwODNjYzI3MjJlZDA1OWMxMWEzYTBlZGE5MzE2YmFlN2FhYWUxNSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       shepherd:
-        Name: "Snow Shepherd Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Shepherd Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fisherman:
-        Name: "Snow Fisherman Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIzNDg0Y2M5Mzc5ZDk2MWMxZWEwMmI2MjhjM2EwMzk5ZGU3MmI5ODM4NzE1MDc5MWRmN2E0ZDQxYjhkMTJmMiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Fisherman Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIzNDg0Y2M5Mzc5ZDk2MWMxZWEwMmI2MjhjM2EwMzk5ZGU3MmI5ODM4NzE1MDc5MWRmN2E0ZDQxYjhkMTJmMiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       librarian:
-        Name: "Snow Librarian Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Librarian Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       toolsmith:
-        Name: "Snow Toolsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Toolsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       weaponsmith:
-        Name: "Snow Weaponsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI2OGJiNjc0YTkzYzZiOGQ2ODdjMzUyMDBhZGEzYWZhYmFhOTQwZGRlZWRlNGEyZDUzN2U1OGRkNzQxYmUxZSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Weaponsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI2OGJiNjc0YTkzYzZiOGQ2ODdjMzUyMDBhZGEzYWZhYmFhOTQwZGRlZWRlNGEyZDUzN2U1OGRkNzQxYmUxZSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cartographer:
-        Name: "Snow Cartographer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWFiMmZmYTY3Mjc3YjA1ZDhhNTY5M2M0ZmE2Y2FhYjI3NzE0ZDlhOWU1NmU0NmUyMTYyMWE1NzhiYzcxYmJmZCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Cartographer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWFiMmZmYTY3Mjc3YjA1ZDhhNTY5M2M0ZmE2Y2FhYjI3NzE0ZDlhOWU1NmU0NmUyMTYyMWE1NzhiYzcxYmJmZCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       leatherworker:
-        Name: "Snow Leatherworker Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjA4MGRmMzdjMzRhM2ViZjcxMTA2ZTE5NWQ1ZWE5MjMzOWJjNzAzODkxOWU3ZDgyNjdmYjNkODY5NWIyMzkzNiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Leatherworker Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjA4MGRmMzdjMzRhM2ViZjcxMTA2ZTE5NWQ1ZWE5MjMzOWJjNzAzODkxOWU3ZDgyNjdmYjNkODY5NWIyMzkzNiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       none:
-        Name: "Snow Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Snow Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxMmI3YjUzMDAxZWY4NTE3MTlmZGY4YzA4OGRlMDNiMTFkNGFlNDNmNmZmNTNhYzVhMjY3ZDI0ZGYxZGM2MCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
     swamp:
       mason:
-        Name: "Swamp Mason Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Mason Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cleric:
-        Name: "Swamp Cleric Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Cleric Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       farmer:
-        Name: "Swamp Farmer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0"
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Farmer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0"
+          Enabled: true
+          DropChance: 100.0
       armorer:
-        Name: "Swamp Armorer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFjNjg4OTdkNzE0OWFlNjdkYThmNGJhZDdhYzYzZmM3Y2JkYjk0YWY1MmRlMGU0YWQ3YjZkYjlmOWNmMzQ5YyJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Armorer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFjNjg4OTdkNzE0OWFlNjdkYThmNGJhZDdhYzYzZmM3Y2JkYjk0YWY1MmRlMGU0YWQ3YjZkYjlmOWNmMzQ5YyJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       butcher:
-        Name: "Swamp Butcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWYxNjU4NDYzMjE2MDM4MWIzYzQ4M2U3MTc0YjJlZTU3YzI0Mjc2YTE4N2NmZWUwNzQwYTRhNWM2ODdmZmFkNyJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Butcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWYxNjU4NDYzMjE2MDM4MWIzYzQ4M2U3MTc0YjJlZTU3YzI0Mjc2YTE4N2NmZWUwNzQwYTRhNWM2ODdmZmFkNyJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fletcher:
-        Name: "Swamp Fletcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVhMjZhYzBlMjU0OThhZGFkYTRlY2VhNThiYjRlNzZkYTMyZDVjYTJkZTMwN2VmZTVlNDIxOGZiN2M1ZWY4OSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Fletcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVhMjZhYzBlMjU0OThhZGFkYTRlY2VhNThiYjRlNzZkYTMyZDVjYTJkZTMwN2VmZTVlNDIxOGZiN2M1ZWY4OSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       shepherd:
-        Name: "Swamp Shepherd Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Shepherd Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fisherman:
-        Name: "Swamp Fisherman Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1NDY1OTQwNWUyYTYzODM3NTdmMDJlZmE3YzVhOWQ0ZTE5ZTU1NDUxOWUxOGU4ZGEyMDQ4MDhiMWI1NjViOSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Fisherman Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1NDY1OTQwNWUyYTYzODM3NTdmMDJlZmE3YzVhOWQ0ZTE5ZTU1NDUxOWUxOGU4ZGEyMDQ4MDhiMWI1NjViOSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       librarian:
-        Name: "Swamp Librarian Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Librarian Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       toolsmith:
-        Name: "Swamp Toolsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Toolsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       weaponsmith:
-        Name: "Swamp Weaponsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIyNjZlYmFkZjdkYjQwNTViZWNiY2RjMzc1NDE1MTc5OTYzMTljNjYxYWFlOTgxZDMwYWM2NGI2Nzg3N2FkZCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Weaponsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIyNjZlYmFkZjdkYjQwNTViZWNiY2RjMzc1NDE1MTc5OTYzMTljNjYxYWFlOTgxZDMwYWM2NGI2Nzg3N2FkZCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cartographer:
-        Name: "Swamp Cartographer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2YwNDlkZmEzZmM0ZDJmNzJlOWVhOWI5NjBmMDdkMTIzNjlmZTc3YTA0MmVjNzAwNThmMmFhNjUzMjEzNWZhOSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Cartographer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2YwNDlkZmEzZmM0ZDJmNzJlOWVhOWI5NjBmMDdkMTIzNjlmZTc3YTA0MmVjNzAwNThmMmFhNjUzMjEzNWZhOSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       leatherworker:
-        Name: "Swamp Leatherworker Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Leatherworker Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       none:
-        Name: "Swamp Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Swamp Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWFmNTNmNTA2Y2I1MmJjMjA1MDY0OWU1YTdhZGMxMTk5ZmE0ZmM0ZjlmZmYxODU0ZGE1ZWI2MDk2NmI1OCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
     taiga:
       mason:
-        Name: "Taiga Mason Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Mason Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cleric:
-        Name: "Taiga Cleric Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Cleric Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       farmer:
-        Name: "Taiga Farmer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0"
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Farmer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0"
+          Enabled: true
+          DropChance: 100.0
       armorer:
-        Name: "Taiga Armorer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA0MTNhMTQyMmNjODBkOWRkNWViYzg5ZWY0ODkyNTZjN2QyODg4MzlhYTM3ZTNjYzcxMmVlZDllOTc5YjlhMSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Armorer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzA0MTNhMTQyMmNjODBkOWRkNWViYzg5ZWY0ODkyNTZjN2QyODg4MzlhYTM3ZTNjYzcxMmVlZDllOTc5YjlhMSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       butcher:
-        Name: "Taiga Butcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQ0YmNhNjgxNTFkNTlmMjIxNDdlMmVlYjEyMzQzZmU5OTI3MTViZDA0OWIyNzk0MzEyMGIxNDI3OTBhNmI5In19fQ=="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Butcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQ0YmNhNjgxNTFkNTlmMjIxNDdlMmVlYjEyMzQzZmU5OTI3MTViZDA0OWIyNzk0MzEyMGIxNDI3OTBhNmI5In19fQ=="
+          Enabled: true
+          DropChance: 100.0
       fletcher:
-        Name: "Taiga Fletcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVhMjZhYzBlMjU0OThhZGFkYTRlY2VhNThiYjRlNzZkYTMyZDVjYTJkZTMwN2VmZTVlNDIxOGZiN2M1ZWY4OSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Fletcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVhMjZhYzBlMjU0OThhZGFkYTRlY2VhNThiYjRlNzZkYTMyZDVjYTJkZTMwN2VmZTVlNDIxOGZiN2M1ZWY4OSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       shepherd:
-        Name: "Taiga Shepherd Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Shepherd Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fisherman:
-        Name: "Taiga Fisherman Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1NDY1OTQwNWUyYTYzODM3NTdmMDJlZmE3YzVhOWQ0ZTE5ZTU1NDUxOWUxOGU4ZGEyMDQ4MDhiMWI1NjViOSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Fisherman Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU1NDY1OTQwNWUyYTYzODM3NTdmMDJlZmE3YzVhOWQ0ZTE5ZTU1NDUxOWUxOGU4ZGEyMDQ4MDhiMWI1NjViOSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       librarian:
-        Name: "Taiga Librarian Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Librarian Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       toolsmith:
-        Name: "Taiga Toolsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Toolsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       weaponsmith:
-        Name: "Taiga Weaponsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmZlNTRmMGZkY2IxN2Q4ODgzZGUyYjhmZjc5MDkwZGVlM2U5ZDhjZWY1NjMzZjVhOTQxYzZjZGQyNGYxZGZiMCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Weaponsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmZlNTRmMGZkY2IxN2Q4ODgzZGUyYjhmZjc5MDkwZGVlM2U5ZDhjZWY1NjMzZjVhOTQxYzZjZGQyNGYxZGZiMCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cartographer:
-        Name: "Taiga Cartographer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmYyZDVmODMwYjQ4MTVjOTBiZjRlZGQ3YzBjMDliZDdjOTE1ZmFjZDBjMjhhZDBmZDQzOWY5YjAyNGM5MGIyNyJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Cartographer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmYyZDVmODMwYjQ4MTVjOTBiZjRlZGQ3YzBjMDliZDdjOTE1ZmFjZDBjMjhhZDBmZDQzOWY5YjAyNGM5MGIyNyJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       leatherworker:
-        Name: "Taiga Leatherworker Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Leatherworker Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       none:
-        Name: "Taiga Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Taiga Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
     jungle:
       mason:
-        Name: "Jungle Mason Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Mason Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cleric:
-        Name: "Jungle Cleric Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Cleric Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       farmer:
-        Name: "Jungle Farmer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0"
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Farmer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTg3MzY1MDQxMGQ4NTU3YTgxYTI3YjliN2Q4NTU4N2RkNWQwNGZhNzFkMmMwZjY4NjZjZTQ4NDMwMjUyMDA4ZSJ9fX0"
+          Enabled: true
+          DropChance: 100.0
       armorer:
-        Name: "Jungle Armorer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjY1MGVjOTJkYTRiNjc5NzhhMmRjNmJmYzMyMjhhZDY2ZGRjZThhZmYxYTE4M2Q2MzNmNzY0Mjk0YmNlMzNlNCJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Armorer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjY1MGVjOTJkYTRiNjc5NzhhMmRjNmJmYzMyMjhhZDY2ZGRjZThhZmYxYTE4M2Q2MzNmNzY0Mjk0YmNlMzNlNCJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       butcher:
-        Name: "Jungle Butcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWNjZThkNmNlNDEyNGNlYzNlODRhODUyZTcwZjUwMjkzZjI0NGRkYzllZTg1NzhmN2Q2ZDg5MjllMTZiYWQ2OSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Butcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWNjZThkNmNlNDEyNGNlYzNlODRhODUyZTcwZjUwMjkzZjI0NGRkYzllZTg1NzhmN2Q2ZDg5MjllMTZiYWQ2OSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fletcher:
-        Name: "Jungle Fletcher Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVhMjZhYzBlMjU0OThhZGFkYTRlY2VhNThiYjRlNzZkYTMyZDVjYTJkZTMwN2VmZTVlNDIxOGZiN2M1ZWY4OSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Fletcher Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVhMjZhYzBlMjU0OThhZGFkYTRlY2VhNThiYjRlNzZkYTMyZDVjYTJkZTMwN2VmZTVlNDIxOGZiN2M1ZWY4OSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       shepherd:
-        Name: "Jungle Shepherd Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Shepherd Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       fisherman:
-        Name: "Jungle Fisherman Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc1M2NiMjNiNTcyMGUyZTM2NWJiNDI5OTJlNDAzYWUzNjFlMzU2Y2M0ZTRiNjZlNTRmNjI5MjUzNmYzY2MwNSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Fisherman Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc1M2NiMjNiNTcyMGUyZTM2NWJiNDI5OTJlNDAzYWUzNjFlMzU2Y2M0ZTRiNjZlNTRmNjI5MjUzNmYzY2MwNSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       librarian:
-        Name: "Jungle Librarian Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Librarian Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzOGU4YWYwNzU3MDFhZDQwZGU1YjJlZjE4ZTFlZDM5Njc4ZTg1NTg0NDRlZTkxZDU2M2Q1ZTVhZWIzMmZhYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       toolsmith:
-        Name: "Jungle Toolsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Toolsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       weaponsmith:
-        Name: "Jungle Weaponsmith Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM1NGE0MTcyYTliYTljNDdmYjg1M2FiMjg0ZmRjMGEzNDQzMjYwMTNlNWQ3M2M0YmVjNzgwMGQ4M2Y0ZTM5OSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Weaponsmith Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM1NGE0MTcyYTliYTljNDdmYjg1M2FiMjg0ZmRjMGEzNDQzMjYwMTNlNWQ3M2M0YmVjNzgwMGQ4M2Y0ZTM5OSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       cartographer:
-        Name: "Jungle Cartographer Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhkMDBjMTViOGZlYmE4N2IxNDA0NjYzYmRiMTVhZTc1ZTQwZTQ5ZWQxNDA2MzVhYzgwZjQzOGI1MmMyMjFlYyJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Cartographer Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhkMDBjMTViOGZlYmE4N2IxNDA0NjYzYmRiMTVhZTc1ZTQwZTQ5ZWQxNDA2MzVhYzgwZjQzOGI1MmMyMjFlYyJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       leatherworker:
-        Name: "Jungle LeatherWorker Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle LeatherWorker Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
+          Enabled: true
+          DropChance: 100.0
       none:
-        Name: "Jungle Zombie Villager"
-        Description: " "
-        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
-        Enabled: true
-        DropChance: 100.0
+        default:
+          Name: "Jungle Zombie Villager"
+          Description: " "
+          Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
+          Enabled: true
+          DropChance: 100.0

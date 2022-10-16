@@ -1,5 +1,6 @@
 package com.wonkglorg.utils;
 
+import com.wonkglorg.utilitylib.utils.inventory.Button;
 import com.wonkglorg.utilitylib.utils.inventory.InventoryGUI;
 import com.wonkglorg.utilitylib.utils.inventory.MenuUtility;
 import com.wonkglorg.utilitylib.utils.inventory.PaginationGui;
@@ -15,6 +16,8 @@ public class HeadMenuUtility extends MenuUtility
 	private MenuDataVariables dataVariables;
 	private MobHeadData mobHeadData;
 	private double incrementSize;
+	
+	private Button selectedButton;
 	
 	/**
 	 * Instantiates a new Menu utility.
@@ -98,6 +101,16 @@ public class HeadMenuUtility extends MenuUtility
 		{
 			incrementSize = 10;
 		}
+	}
+	
+	public Button getSelectedButton()
+	{
+		return selectedButton;
+	}
+	
+	public void setSelectedButton(Button selectedButton)
+	{
+		this.selectedButton = selectedButton;
 	}
 	
 	public void decrement()

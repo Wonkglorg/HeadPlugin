@@ -11,6 +11,7 @@ import com.wonkglorg.utilitylib.utils.message.ChatColor;
 import com.wonkglorg.utils.HeadMenuUtility;
 import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.Material;
+import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
@@ -102,11 +103,12 @@ public class HeadConfigGui extends PaginationGui
 			String testPath = path + "." + subPath;
 			if(MobHeadData.isValidHeadPath(config, testPath))
 			{
-				if(!added){
-					gui.addButton(49,addNew());
+				if(!added)
+				{
+					gui.addButton(49, addNew());
 					added = true;
 				}
-				addPagedButton(HeadConfigButton(new MobHeadData(testPath, config, 1),subPath));
+				addPagedButton(HeadConfigButton(new MobHeadData(testPath, config, 1), subPath));
 				continue;
 			}
 			MobHeadData mobHead = MobHeadData.getFirstValidConfigHeadData(config, testPath);
@@ -134,7 +136,7 @@ public class HeadConfigGui extends PaginationGui
 		};
 	}
 	
-	private Button HeadConfigButton(MobHeadData mobHeadData,String fileName)
+	private Button HeadConfigButton(MobHeadData mobHeadData, String fileName)
 	{
 		ItemStack icon = ItemUtility.addLore(mobHeadData.createHeadItemWithInfoDesc(), ChatColor.Reset + ChatColor.AQUA + "File name: " + fileName);
 		return new Button(icon)
@@ -143,10 +145,22 @@ public class HeadConfigGui extends PaginationGui
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
+				if(e.getClick() == ClickType.SHIFT_LEFT)
+				{
+					setItem(ItemUtility.setName(icon, icon.displayName() + " ~ Selected"));
+					/*
+					menuUtility.setSelectedButton(this);
+					menuUtility.getSelectedButton().setItem(ItemUtility.setName(icon, icon.displayName() + "~ Selected"));
+					
+					 */
+					 
+					 
+				}
+				
 				clear();
 				setPage(1);
 				menuUtility.setMobHeadData(mobHeadData);
-				new HeadConfigurationPage(menuUtility,false).open();
+				new HeadConfigurationPage(menuUtility, false).open();
 			}
 		};
 	}
