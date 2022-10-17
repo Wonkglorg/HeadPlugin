@@ -18,6 +18,8 @@ public class MobHeadData
 	private double dropChance;
 	private Config config;
 	
+	private String fileName;
+	
 	private String path;
 	
 	private String originalName;
@@ -35,13 +37,15 @@ public class MobHeadData
 	
 	public MobHeadData(String path, Config config, int offset)
 	{
+		String[] pathParts = path.split("\\.");
 		this.config = config;
-		this.originalName = path.split("\\.")[offset];
+		this.originalName = pathParts[offset];
 		this.name = config.getString(path + ".Name");
 		this.description = config.getString(path + ".Description");
 		this.texture = config.getString(path + ".Texture");
 		this.enabled = config.getBoolean(path + ".Enabled");
 		this.dropChance = config.getDouble(path + ".DropChance");
+		this.fileName = pathParts[pathParts.length-1];
 		this.path = path;
 	}
 	
@@ -71,6 +75,22 @@ public class MobHeadData
 		}
 		return stringList;
 		
+	}
+	
+	public static String createNewDirectory(Config config, String path, String name)
+	{
+		String comPath = path + "." + name;
+		if(isValidHeadPath(config, comPath))
+		{
+			return null;
+		}
+		config.set(comPath + "." + "Name", "Enter value");
+		config.set(comPath + "." + "Description", "Enter value");
+		config.set(comPath + "." + "Texture", "Enter value");
+		config.set(comPath + "." + "Enabled", true);
+		config.set(comPath + "." + "DropChance", 100.0);
+		config.silentSave();
+		return comPath;
 	}
 	
 	public static List<MobHeadData> getAllValidConfigHeadData(Config config, String path)
@@ -176,12 +196,8 @@ public class MobHeadData
 	public ItemStack createHeadItemWithInfoDesc()
 	{
 		String type = enabled ? ChatColor.GREEN + "Enabled" : ChatColor.RED + "Disabled";
-
-		return ItemUtility.createCustomHead(texture,
-				name,
-				ChatColor.Reset + ChatColor.GOLD + "Dropchance: " + dropChance + "%",
-				type ,
-				description);
+		
+		return ItemUtility.createCustomHead(texture, name, ChatColor.Reset + ChatColor.GOLD + "Dropchance: " + dropChance + "%", type, description);
 	}
 	
 	public String getOriginalName()
@@ -279,4 +295,13 @@ public class MobHeadData
 		this.path = path;
 	}
 	
+	public String getFileName()
+	{
+		return fileName;
+	}
+	
+	public void setFileName(String fileName)
+	{
+		this.fileName = fileName;
+	}
 }

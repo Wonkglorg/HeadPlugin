@@ -1,22 +1,16 @@
 package com.wonkglorg.utils;
 
 import com.wonkglorg.utilitylib.utils.inventory.Button;
-import com.wonkglorg.utilitylib.utils.inventory.InventoryGUI;
 import com.wonkglorg.utilitylib.utils.inventory.MenuUtility;
-import com.wonkglorg.utilitylib.utils.inventory.PaginationGui;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 public class HeadMenuUtility extends MenuUtility
 {
-	private InventoryGUI lastInventory;
-	
-	private PaginationGui lastPaginatedInventory;
-	
+	private String lastPath;
 	private MenuDataVariables dataVariables;
 	private MobHeadData mobHeadData;
 	private double incrementSize;
-	
 	private Button selectedButton;
 	
 	/**
@@ -60,21 +54,6 @@ public class HeadMenuUtility extends MenuUtility
 		this.mobHeadData = mobHeadData;
 	}
 	
-	public InventoryGUI getLastInventory()
-	{
-		return lastInventory;
-	}
-	
-	public PaginationGui getLastPaginatedInventory()
-	{
-		return lastPaginatedInventory;
-	}
-	
-	public void setLastPaginatedInventory(PaginationGui lastPaginatedInventory)
-	{
-		this.lastPaginatedInventory = lastPaginatedInventory;
-	}
-	
 	public MenuDataVariables getDataVariable()
 	{
 		return dataVariables;
@@ -83,11 +62,6 @@ public class HeadMenuUtility extends MenuUtility
 	public void setDataVariables(MenuDataVariables dataVariables)
 	{
 		this.dataVariables = dataVariables;
-	}
-	
-	public void setLastInventory(InventoryGUI lastInventory)
-	{
-		this.lastInventory = lastInventory;
 	}
 	
 	public void increment()
@@ -129,6 +103,16 @@ public class HeadMenuUtility extends MenuUtility
 	public double getIncrementSize()
 	{
 		return incrementSize;
+	}
+	
+	public String getLastPath()
+	{
+		return lastPath;
+	}
+	
+	public void setLastPath(String lastPath)
+	{
+		this.lastPath = lastPath;
 	}
 	
 	public void setIncrementSize(double incrementSize)

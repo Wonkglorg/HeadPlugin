@@ -2,15 +2,19 @@ package com.wonkglorg.command.config_gui;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.managers.LangManager;
 import com.wonkglorg.utilitylib.utils.builder.ItemBuilder;
 import com.wonkglorg.utilitylib.utils.inventory.Button;
 import com.wonkglorg.utilitylib.utils.inventory.InventoryGUI;
 import com.wonkglorg.utilitylib.utils.inventory.PaginationGui;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import com.wonkglorg.utilitylib.utils.message.ChatColor;
+import com.wonkglorg.utilitylib.utils.message.Message;
 import com.wonkglorg.utils.HeadMenuUtility;
+import com.wonkglorg.utils.MenuDataVariables;
 import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
@@ -23,6 +27,7 @@ public class HeadConfigGui extends PaginationGui
 {
 	private final Config config;
 	private final HeadMenuUtility menuUtility;
+	private final LangManager lang = Heads.getPluginManager().getLangManager();
 	private final Stack<String> pathStack = new Stack<>();
 	List<MobHeadData> mobHeadData;
 	private String mainPath;
@@ -41,7 +46,9 @@ public class HeadConfigGui extends PaginationGui
 		this.mainPath = path;
 		this.config = config;
 		this.menuUtility = menuUtility;
+		
 		mobHeadData = MobHeadData.getFirstOfAllValidConfigHeadData(config, "Heads");
+		
 		setPage(1);
 		
 		addSlots(1, 1, 8, 4);
@@ -69,7 +76,7 @@ public class HeadConfigGui extends PaginationGui
 	
 	private Button backwards()
 	{
-		ItemStack icon = new ItemBuilder(Material.ARROW).setName("Previos Page").build();
+		ItemStack icon = new ItemBuilder(Material.ARROW).setName("Previous Page").build();
 		return new Button(icon)
 		{
 			@Override
@@ -108,6 +115,7 @@ public class HeadConfigGui extends PaginationGui
 					gui.addButton(49, addNew());
 					added = true;
 				}
+				
 				addPagedButton(HeadConfigButton(new MobHeadData(testPath, config, 1), subPath));
 				continue;
 			}
@@ -147,20 +155,22 @@ public class HeadConfigGui extends PaginationGui
 			{
 				if(e.getClick() == ClickType.SHIFT_LEFT)
 				{
-					setItem(ItemUtility.setName(icon, icon.displayName() + " ~ Selected"));
+					setItem(ItemUtility.setName(icon, mobHeadData.getName() + " ~ Selected"));
+					gui.update();
+					return;
 					/*
 					menuUtility.setSelectedButton(this);
 					menuUtility.getSelectedButton().setItem(ItemUtility.setName(icon, icon.displayName() + "~ Selected"));
 					
 					 */
-					 
-					 
+					
 				}
 				
 				clear();
 				setPage(1);
 				menuUtility.setMobHeadData(mobHeadData);
 				new HeadConfigurationPage(menuUtility, false).open();
+				gui.destroy();
 			}
 		};
 	}
@@ -193,8 +203,15 @@ public class HeadConfigGui extends PaginationGui
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				ItemUtility.setName(icon, "Feature not yet available :(");
-				gui.update();
+				//setItem(new ItemBuilder(Material.LIME_CONCRETE).setName("Feature not yet available :(").build());
+				Player player = menuUtility.getOwner();
+				Message.msgPlayer(player,lang.getValue(player,"command-request-set-file-name"));
+				Message.msgPlayer(player,lang.getValue(player,"command-request-cancel"));
+				menuUtility.setLastPath(mainPath);
+				menuUtility.setDataVariables(MenuDataVariables.FILENAME);
+				Heads.add(player);
+				gui.destroy();
+				gui.getInventory().close();
 			}
 		};
 	}
@@ -228,4 +245,5 @@ public class HeadConfigGui extends PaginationGui
 			}
 		};
 	}
+	
 }

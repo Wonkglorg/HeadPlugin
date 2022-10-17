@@ -12,18 +12,22 @@ import com.wonkglorg.listeners.ChatEvent;
 import com.wonkglorg.listeners.DamageListener;
 import com.wonkglorg.listeners.DeathListener;
 import com.wonkglorg.listeners.HeadPickupListener;
-
 import com.wonkglorg.utilitylib.config.ConfigYML;
 import com.wonkglorg.utilitylib.managers.PluginManager;
 import com.wonkglorg.utilitylib.utils.message.ChatColor;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public final class Heads extends JavaPlugin
 {
 	private static PluginManager pluginManager;
 	private static Heads heads;
+	
+	private static List<Player> playerChatListener = new ArrayList<>();
 	
 	@Override
 	public void onEnable()
@@ -87,5 +91,19 @@ public final class Heads extends JavaPlugin
 	public static PluginManager getPluginManager()
 	{
 		return pluginManager;
+	}
+	
+	public static boolean exists(Player player)
+	{
+		return playerChatListener.contains(player);
+	}
+	
+	public static void remove(Player player)
+	{
+		playerChatListener.remove(player);
+	}
+	
+	public static void add(Player player){
+		playerChatListener.add(player);
 	}
 }

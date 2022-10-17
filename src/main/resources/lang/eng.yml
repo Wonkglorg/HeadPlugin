@@ -10,10 +10,11 @@ reload-config-error: <prefix>&4 <config> does not exist!
 command-head-drop-success: <prefix> &#FFFF55Dropped &#fcca03<headcount> &#FFFF55Head
 command-head-drop-warn: <prefix>&4 Too many heads may not drop duo to lag prevention
 #Heads
-command-request-cancel: <prefix> command-request-cancel
-command-request-change-name: <prefix> command-request-change-name
-command-request-change-description: <prefix> command-request-change-description
-command-request-change-texture: <prefix> command-request-change-texture
+command-request-cancel: <prefix> Type cancel or quit to return to the menu without changes
+command-request-change-name: <prefix> Enter new name in chat
+command-request-change-description: <prefix> Enter new description in chat
+command-request-change-texture: <prefix> Enter new texture in chat
+command-request-set-file-name: <prefix> Enter sub-category name in chat to create a new mob head
 
 #PVP Head Drop Description
 pvp-head-description: Killed by <killer>

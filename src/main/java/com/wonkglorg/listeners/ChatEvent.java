@@ -1,5 +1,10 @@
 package com.wonkglorg.listeners;
 
+import com.wonkglorg.Heads;
+import com.wonkglorg.command.config_gui.HeadConfigGui;
+import com.wonkglorg.enums.YML;
+import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utils.MenuDataVariables;
 import com.wonkglorg.utils.MobHeadData;
 import com.wonkglorg.command.config_gui.HeadConfigurationPage;
 import com.wonkglorg.utilitylib.listener.EventListener;
@@ -17,12 +22,12 @@ public class ChatEvent extends EventListener
 		super(plugin);
 	}
 	
-	
+	private Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 	//replace with async chat event
 	@EventHandler(priority = EventPriority.HIGH)
 	public void chatMessage(PlayerChatEvent e)
 	{
-		if(!HeadConfigurationPage.exists(e.getPlayer()))
+		if(!Heads.exists(e.getPlayer()))
 		{
 			return;
 		}
@@ -34,8 +39,13 @@ public class ChatEvent extends EventListener
 		
 		if(message.equalsIgnoreCase("cancel") || message.equalsIgnoreCase("quit")){
 			e.setCancelled(true);
+			if(headMenuUtility.getDataVariable() == MenuDataVariables.FILENAME){
+				new HeadConfigGui(headMenuUtility,config, headMenuUtility.getLastPath());
+				Heads.remove(player);
+				return;
+			}
 			new HeadConfigurationPage(headMenuUtility,false).open();
-			HeadConfigurationPage.removeEntry(player);
+			Heads.remove(player);
 		}
 		
 		switch(headMenuUtility.getDataVariable())
@@ -43,10 +53,17 @@ public class ChatEvent extends EventListener
 			case NAME -> mobHeadData.setName(message);
 			case TEXTURE -> mobHeadData.setTexture(message);
 			case DESCRIPTION -> mobHeadData.setDescription(message);
+			case FILENAME ->  {
+				e.setCancelled(true);
+				MobHeadData.createNewDirectory(config,headMenuUtility.getLastPath(),message);
+				new HeadConfigGui(headMenuUtility,config, headMenuUtility.getLastPath());
+				return;
+			}
+			
 		}
 		e.setCancelled(true);
 		headMenuUtility.setMobHeadData(mobHeadData);
 		new HeadConfigurationPage(headMenuUtility,true).open();
-		HeadConfigurationPage.removeEntry(player);
+		Heads.remove(player);
 	}
 }
