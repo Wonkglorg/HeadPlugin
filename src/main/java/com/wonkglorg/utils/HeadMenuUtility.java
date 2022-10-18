@@ -1,5 +1,6 @@
 package com.wonkglorg.utils;
 
+import com.wonkglorg.enums.MenuDataVariables;
 import com.wonkglorg.utilitylib.utils.inventory.Button;
 import com.wonkglorg.utilitylib.utils.inventory.MenuUtility;
 import org.bukkit.entity.Player;

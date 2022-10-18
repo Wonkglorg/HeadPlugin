@@ -4,7 +4,7 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.command.config_gui.HeadConfigGui;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utils.MenuDataVariables;
+import com.wonkglorg.enums.MenuDataVariables;
 import com.wonkglorg.utils.MobHeadData;
 import com.wonkglorg.command.config_gui.HeadConfigurationPage;
 import com.wonkglorg.utilitylib.listener.EventListener;
@@ -40,7 +40,7 @@ public class ChatEvent extends EventListener
 		if(message.equalsIgnoreCase("cancel") || message.equalsIgnoreCase("quit")){
 			e.setCancelled(true);
 			if(headMenuUtility.getDataVariable() == MenuDataVariables.FILENAME){
-				new HeadConfigGui(headMenuUtility,config, headMenuUtility.getLastPath());
+				new HeadConfigGui(headMenuUtility,config, headMenuUtility.getLastPath(),null);
 				Heads.remove(player);
 				return;
 			}
@@ -56,7 +56,7 @@ public class ChatEvent extends EventListener
 			case FILENAME ->  {
 				e.setCancelled(true);
 				MobHeadData.createNewDirectory(config,headMenuUtility.getLastPath(),message);
-				new HeadConfigGui(headMenuUtility,config, headMenuUtility.getLastPath());
+				new HeadConfigGui(headMenuUtility,config, headMenuUtility.getLastPath(),null);
 				return;
 			}
 			

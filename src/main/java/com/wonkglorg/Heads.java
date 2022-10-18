@@ -27,7 +27,7 @@ public final class Heads extends JavaPlugin
 	private static PluginManager pluginManager;
 	private static Heads heads;
 	
-	private static List<Player> playerChatListener = new ArrayList<>();
+	private static final List<Player> playerChatListener = new ArrayList<>();
 	
 	@Override
 	public void onEnable()
@@ -67,7 +67,10 @@ public final class Heads extends JavaPlugin
 		new HeadPickupListener(this);
 		new ChatEvent(this);
 		
-		//add sql  to save data of all skulls names / owner / enchants etc?
+		
+		//Add config to do events on head drops, like fireworks, other particle effects etc
+		
+		//add sql  to save data of all skulls names / owner / enchants etc in case they get placed and picked up again
 		
 	}
 	

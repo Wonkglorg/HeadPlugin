@@ -10,7 +10,7 @@ import com.wonkglorg.utilitylib.utils.inventory.InventoryGUI;
 import com.wonkglorg.utilitylib.utils.message.ChatColor;
 import com.wonkglorg.utilitylib.utils.message.Message;
 import com.wonkglorg.utils.HeadMenuUtility;
-import com.wonkglorg.utils.MenuDataVariables;
+import com.wonkglorg.enums.MenuDataVariables;
 import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -24,7 +24,7 @@ public class HeadConfigurationPage extends InventoryGUI
 	private final MobHeadData headData;
 	private final LangManager lang = Heads.getPluginManager().getLangManager();
 	private final Player player;
-	private boolean changes;
+	private final boolean changes;
 	
 	public HeadConfigurationPage(HeadMenuUtility menuUtility, boolean changes)
 	{
@@ -85,7 +85,7 @@ public class HeadConfigurationPage extends InventoryGUI
 				}
 				new HeadConfigGui(headMenuUtility,
 						Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),
-						builder.toString());
+						builder.toString(),null);
 				headMenuUtility.setMobHeadData(null);
 				destroy();
 			}
@@ -112,7 +112,7 @@ public class HeadConfigurationPage extends InventoryGUI
 				}
 				new HeadConfigGui(headMenuUtility,
 						Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),
-						builder.toString());
+						builder.toString(),null);
 				headMenuUtility.setMobHeadData(null);
 				destroy();
 			}

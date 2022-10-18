@@ -33,7 +33,7 @@ public class HeadConfig extends Command
 	public boolean execute(@NotNull Player player, String[] args)
 	{
 		HeadMenuUtility menuUtility = HeadMenuUtility.get(player);
-		new HeadConfigGui(menuUtility,Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),"Heads");
+		new HeadConfigGui(menuUtility,Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),"Heads",null);
 		
 		return true;
 	}
