@@ -1,9 +1,14 @@
 package com.wonkglorg.utils;
 
+import com.wonkglorg.Heads;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import com.wonkglorg.utilitylib.utils.message.ChatColor;
+import com.wonkglorg.utilitylib.utils.random.WeightedRandomPicker;
+import org.bukkit.Location;
+import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.persistence.PersistentDataType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,16 +21,21 @@ public class MobHeadData
 	private String texture;
 	private boolean enabled;
 	private double dropChance;
-	private Config config;
-	
+	private final Config config;
 	private String fileName;
-	
 	private String path;
-	
 	private String originalName;
 	
-	public MobHeadData(String name, String originalName, String description, String texture, boolean enabled, double dropChance, String path)
+	public MobHeadData(String name,
+					   String originalName,
+					   String description,
+					   String texture,
+					   boolean enabled,
+					   double dropChance,
+					   String path,
+					   Config config)
 	{
+		this.config = config;
 		this.name = name;
 		this.originalName = originalName;
 		this.description = description;
@@ -45,11 +55,22 @@ public class MobHeadData
 		this.texture = config.getString(path + ".Texture");
 		this.enabled = config.getBoolean(path + ".Enabled");
 		this.dropChance = config.getDouble(path + ".DropChance");
-		this.fileName = pathParts[pathParts.length-1];
+		this.fileName = pathParts[pathParts.length - 1];
 		this.path = path;
 	}
 	
-	public void setValues()
+	public void setValuesFromHeadData(MobHeadData mobHeadData)
+	{
+		this.name = mobHeadData.getName();
+		this.originalName = mobHeadData.getOriginalName();
+		this.description = mobHeadData.description;
+		this.texture = mobHeadData.getTexture();
+		this.enabled = mobHeadData.isEnabled();
+		this.dropChance = mobHeadData.getDropChance();
+		this.path = mobHeadData.getPath();
+	}
+	
+	public void writeToConfig()
 	{
 		setConfigTexture(config);
 		setConfigName(config);
@@ -57,24 +78,6 @@ public class MobHeadData
 		setConfigEnabled(config);
 		setConfigDropChance(config);
 		config.silentSave();
-	}
-	
-	public List<String> splitPathIntoSections(Config config, String path)
-	{
-		String[] splitPath = path.split("\\.");
-		List<String> stringList = new ArrayList<>();
-		StringBuilder builder = new StringBuilder();
-		for(String s : splitPath)
-		{
-			builder.append(s);
-			if(!isValidHeadPath(config, builder.toString()))
-			{
-				stringList.add(builder.toString());
-				builder.append(".");
-			}
-		}
-		return stringList;
-		
 	}
 	
 	public static String createNewDirectory(Config config, String path, String name)
@@ -117,6 +120,15 @@ public class MobHeadData
 			}
 		}
 		return mobHeadData;
+	}
+	
+	public static void dropHead(String texture, String name, String description, Location loc)
+	{
+		loc.getWorld()
+		   .dropItemNaturally(loc,
+				   ItemUtility.createCustomHead(texture, name, description != null ? description.split("\\|") : new String[0]))
+		   .getPersistentDataContainer()
+		   .set(new NamespacedKey(Heads.getInstance(), "newdrop"), PersistentDataType.STRING, "true");
 	}
 	
 	public static boolean isValidHeadPath(Config config, String path)
@@ -188,16 +200,49 @@ public class MobHeadData
 		return mobHeadData;
 	}
 	
+	public static MobHeadData randomHeadDrop(List<MobHeadData> mobHeadDataList)
+	{
+		WeightedRandomPicker<MobHeadData> weightedRandomPicker = new WeightedRandomPicker<>();
+		if(mobHeadDataList.isEmpty())
+		{
+			return null;
+		}
+		for(MobHeadData mobHead : mobHeadDataList)
+		{
+			if(mobHead.getDropChance() > 0.0 && mobHead.isEnabled())
+			{
+				weightedRandomPicker.addEntry(mobHead, mobHead.getDropChance());
+			}
+		}
+		
+		if(weightedRandomPicker.getEntries().size() > 1)
+		{
+			if(weightedRandomPicker.getAccumulatedWeight() <= 100)
+			{
+				weightedRandomPicker.addEntry(null, 100 - weightedRandomPicker.getAccumulatedWeight());
+			}
+			return weightedRandomPicker.getRandom();
+		}
+		
+		if(weightedRandomPicker.getAccumulatedWeight() > Math.random() * 100)
+		{
+			return mobHeadDataList.get(0);
+		}
+		return null;
+	}
+	
 	public ItemStack createHeadItem()
 	{
-		return ItemUtility.createCustomHead(texture, name, description);
+		return ItemUtility.createCustomHead(texture, name, description != null ? List.of(description.split("\\|")) : List.of(" "));
 	}
 	
 	public ItemStack createHeadItemWithInfoDesc()
 	{
-		String type = enabled ? ChatColor.GREEN + "Enabled" : ChatColor.RED + "Disabled";
-		
-		return ItemUtility.createCustomHead(texture, name, ChatColor.Reset + ChatColor.GOLD + "Dropchance: " + dropChance + "%", type, description);
+		List<String> finishedDesc = new ArrayList<>();
+		finishedDesc.add(enabled ? ChatColor.GREEN + "Enabled" : ChatColor.RED + "Disabled");
+		finishedDesc.add(ChatColor.Reset + ChatColor.GOLD + "Dropchance: " + dropChance + "%");
+		finishedDesc.addAll(description != null ? List.of(description.split("\\|")) : List.of(" "));
+		return ItemUtility.createCustomHead(texture, name, finishedDesc);
 	}
 	
 	public String getOriginalName()

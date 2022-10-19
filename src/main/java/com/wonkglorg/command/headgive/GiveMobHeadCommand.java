@@ -92,10 +92,7 @@ public class GiveMobHeadCommand extends Command
 		int droppedHeads = 0;
 		List<EntityType> filter;
 		filter = handlerMap.get(filterType);
-		if(filter == null)
-		{
-			filter = Collections.singletonList(EntityType.valueOf(filterType));
-		}
+		filter = filter == null ? Collections.singletonList(EntityType.valueOf(filterType)) : filter;
 		for(EntityType entity : EntityType.values())
 		{
 			if(!filter.contains(entity))
@@ -114,7 +111,7 @@ public class GiveMobHeadCommand extends Command
 			}
 		}
 		Message.msgPlayer(player, lang.getValue(player, "command-head-drop-success").replace("<headcount>", String.valueOf(droppedHeads)));
-		if(droppedHeads > 300)
+		if(droppedHeads > 200)
 		{
 			Message.msgPlayer(player, lang.getValue(player, "command-head-drop-warn"));
 		}

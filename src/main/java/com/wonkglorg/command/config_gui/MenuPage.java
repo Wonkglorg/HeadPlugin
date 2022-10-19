@@ -1,6 +1,7 @@
 package com.wonkglorg.command.config_gui;
 
 import com.wonkglorg.Heads;
+import com.wonkglorg.enums.MenuDataVariables;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.managers.LangManager;
 import com.wonkglorg.utilitylib.utils.builder.ItemBuilder;
@@ -11,7 +12,6 @@ import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import com.wonkglorg.utilitylib.utils.message.ChatColor;
 import com.wonkglorg.utilitylib.utils.message.Message;
 import com.wonkglorg.utils.HeadMenuUtility;
-import com.wonkglorg.enums.MenuDataVariables;
 import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -21,20 +21,19 @@ import org.bukkit.inventory.ItemStack;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Stack;
+import java.util.Set;
 
-public class HeadConfigGui extends PaginationGui
+public class MenuPage extends PaginationGui
 {
 	private final Config config;
 	private final HeadMenuUtility menuUtility;
 	private final LangManager lang = Heads.getPluginManager().getLangManager();
-	private final Stack<String> pathStack = new Stack<>();
 	List<MobHeadData> mobHeadData;
 	private String mainPath;
 	private String selectedFile;
 	private boolean confirmed = false;
 	
-	public HeadConfigGui(HeadMenuUtility menuUtility, Config config, String path, String name)
+	public MenuPage(HeadMenuUtility menuUtility, Config config, String path, String name)
 	{
 		super(new InventoryGUI(54, name == null ? "Head Config" : name, Heads.getInstance(), menuUtility)
 		{
@@ -44,7 +43,6 @@ public class HeadConfigGui extends PaginationGui
 			
 			}
 		});
-		//pathStack.push()
 		this.mainPath = path;
 		this.config = config;
 		this.menuUtility = menuUtility;
@@ -94,11 +92,17 @@ public class HeadConfigGui extends PaginationGui
 		boolean added = false;
 		gui.removeButton(49);
 		gui.removeButton(53);
+		if(config.getBoolean(path + ".customPath"))
+		{
+			gui.addButton(49, addNew());
+		}
 		if(mainPath.equalsIgnoreCase("heads"))
 		{
-			for(MobHeadData mobHeadData1 : mobHeadData)
+			for(String s : config.getSection("Heads", false))
 			{
-				addPagedButton(BasePathButton(mobHeadData1));
+				
+				//Redo this method to show valid head configs if possible or error otherwise
+				addPagedButton(BasePathButton(MobHeadData.getFirstValidConfigHeadData(config, "Heads." + s), s));
 			}
 			gui.removeButton(45);
 			checkArrowButtons();
@@ -108,8 +112,9 @@ public class HeadConfigGui extends PaginationGui
 		{
 			gui.addButton(45, returnButton());
 		}
-		
-		for(String subPath : config.getSection(path, false))
+		Set<String> pathList = config.getSection(path, false);
+		pathList.remove("customPath");
+		for(String subPath : pathList)
 		{
 			String testPath = path + "." + subPath;
 			if(MobHeadData.isValidHeadPath(config, testPath))
@@ -121,30 +126,43 @@ public class HeadConfigGui extends PaginationGui
 					added = true;
 				}
 				
-				addPagedButton(HeadConfigButton(new MobHeadData(testPath, config, 1), subPath));
+				addPagedButton(HeadConfigButton(new MobHeadData(testPath, config, 1),subPath));
 			} else
 			{
 				MobHeadData mobHead = MobHeadData.getFirstValidConfigHeadData(config, testPath);
 				if(mobHead == null)
 				{
+					addPagedButton(SubPathButton(path, null, subPath));
 					continue;
 				}
-				addPagedButton(SubPathButton(testPath, mobHead.getTexture(), subPath, " "));
+				addPagedButton(SubPathButton(path, mobHead, subPath));
 			}
 		}
 		checkArrowButtons();
 		updatePage();
 	}
 	
-	private Button SubPathButton(String testPath, String texture, String name, String description)
+	private Button SubPathButton(String pathInput, MobHeadData mobHeadData, String name)
 	{
 		setPage(1);
-		return new Button(ItemUtility.createCustomHead(texture, name.toLowerCase(), description))
+		ItemStack icon;
+		if(mobHeadData == null)
+		{
+			icon = new ItemBuilder(Material.BEDROCK).setName("&r" + name)
+													.addLoreLine(ChatColor.Reset + ChatColor.RED + "No Texture available")
+													.build();
+		} else
+		{
+			String baseName = name;
+			String capitalLetter = baseName.substring(0, 1).toUpperCase();
+			icon = ItemUtility.createCustomHead(mobHeadData.getTexture(), "&r" + capitalLetter + baseName.substring(1));
+		}
+		return new Button(icon)
 		{
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				mainPath = testPath;
+				mainPath = pathInput + "." + name;
 				setPage(1);
 				clear();
 				handleNextButtons(config, mainPath);
@@ -182,7 +200,7 @@ public class HeadConfigGui extends PaginationGui
 				clear();
 				setPage(1);
 				menuUtility.setMobHeadData(mobHeadData);
-				new HeadConfigurationPage(menuUtility, false).open();
+				new ConfigurationPage(menuUtility, false).open();
 				gui.destroy();
 			}
 		};
@@ -201,14 +219,6 @@ public class HeadConfigGui extends PaginationGui
 					return;
 				}
 				
-				if(selectedFile.equalsIgnoreCase("default"))
-				{
-					gui.destroy();
-					gui.getInventory().close();
-					new HeadConfigGui(menuUtility, config, mainPath, ChatColor.RED + "Default can not be removed");
-					return;
-				}
-				
 				if(!confirmed)
 				{
 					setItem(ItemUtility.setName(icon, "Confirm?"));
@@ -221,23 +231,38 @@ public class HeadConfigGui extends PaginationGui
 				confirmed = false;
 				gui.destroy();
 				gui.getInventory().close();
-				new HeadConfigGui(menuUtility, config, mainPath, null);
+				new MenuPage(menuUtility, config, mainPath, null);
 			}
 		};
 	}
 	
-	private Button BasePathButton(MobHeadData mobHeadData)
+	private Button BasePathButton(MobHeadData mobHeadData, String basePathName)
 	{
 		setPage(1);
-		String baseName = mobHeadData.getOriginalName();
-		String capitalLetter = baseName.substring(0, 1).toUpperCase();
+		ItemStack icon;
+		String name;
 		
-		return new Button(ItemUtility.createCustomHead(mobHeadData.getTexture(), "&r" + capitalLetter + baseName.substring(1)))
+		if(mobHeadData == null)
+		{
+			icon = new ItemBuilder(Material.BEDROCK).setName("&r" + basePathName.substring(0, 1).toUpperCase() + basePathName.substring(1))
+													.addLoreLine(ChatColor.Reset + ChatColor.RED + "No Texture available")
+													.build();
+			name = basePathName;
+		} else
+		{
+			String baseName = mobHeadData.getOriginalName();
+			String capitalLetter = baseName.substring(0, 1).toUpperCase();
+			name = mobHeadData.getOriginalName();
+			icon = ItemUtility.createCustomHead(mobHeadData.getTexture(), "&r" + capitalLetter + baseName.substring(1));
+		}
+		
+		String finalName = name;
+		return new Button(icon)
 		{
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				mainPath = mainPath + "." + mobHeadData.getOriginalName();
+				mainPath = mainPath + "." + finalName;
 				clear();
 				handleNextButtons(config, mainPath);
 				
@@ -260,7 +285,7 @@ public class HeadConfigGui extends PaginationGui
 				Message.msgPlayer(player, lang.getValue(player, "command-request-cancel"));
 				menuUtility.setLastPath(mainPath);
 				menuUtility.setDataVariables(MenuDataVariables.FILENAME);
-				Heads.add(player);
+				ChangeValueCommand.setPlayerDataChange(player, null);
 				gui.destroy();
 				gui.getInventory().close();
 			}
@@ -299,18 +324,14 @@ public class HeadConfigGui extends PaginationGui
 	
 	private void checkArrowButtons()
 	{
-		System.out.println("Checking buttons");
 		gui.removeButton(47);
 		gui.removeButton(51);
-		System.out.println("Max page: " + getMaxPage());
 		if(getPage() < getMaxPage())
 		{
-			System.out.println("Added forward");
 			gui.addButton(forward(), 51);
 		}
 		if(getPage() > 1)
 		{
-			System.out.println("Added backward");
 			gui.addButton(backwards(), 47);
 		}
 		

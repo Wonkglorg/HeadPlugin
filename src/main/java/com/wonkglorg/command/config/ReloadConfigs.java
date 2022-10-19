@@ -1,4 +1,4 @@
-package com.wonkglorg.command;
+package com.wonkglorg.command.config;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
@@ -100,15 +100,6 @@ public class ReloadConfigs extends Command
 		{
 			configList.add(lang.name());
 			configMap.put(lang.name(), lang);
-		}
-	}
-	
-	private void sendMessage(Player player,String value){
-		if(player == null){
-			Logger.log(lang.getValue(Locale.ENGLISH, value));
-		}
-		else{
-			Message.msgPlayer(player, lang.getValue(player, value));
 		}
 	}
 }

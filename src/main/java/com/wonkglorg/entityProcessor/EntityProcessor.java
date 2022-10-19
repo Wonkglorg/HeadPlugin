@@ -9,9 +9,6 @@ public class EntityProcessor extends EntityTypeProcessor
 	@Override
 	String path()
 	{
-		
-		//change all getnames to get type otherwise it gets the nick
-		
 		String name = entity.getType().toString().toLowerCase();
 		return "Heads." + name;
 	}

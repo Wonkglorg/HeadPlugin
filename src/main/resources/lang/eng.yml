@@ -13,7 +13,8 @@ command-head-drop-warn: <prefix>&4 Too many heads may not drop duo to lag preven
 command-request-cancel: <prefix> Type cancel or quit to return to the menu without changes
 command-request-change-name: <prefix> Enter new name in chat
 command-request-change-description: <prefix> Enter new description in chat
-command-request-change-texture: <prefix> Enter new texture in chat
+command-request-change-texture: <prefix> Enter new texture in chat as a base64 value or choose a pre setup texture!
+command-request-change-dropchance: <prefix> command-request-change-dropchance
 command-request-set-file-name: <prefix> Enter sub-category name in chat to create a new mob head
 
 #PVP Head Drop Description

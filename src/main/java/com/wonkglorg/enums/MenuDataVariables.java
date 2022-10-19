@@ -6,5 +6,6 @@ public enum MenuDataVariables
 	DESCRIPTION,
 	TEXTURE,
 	FILENAME,
+	DROPCHANCE,
 	;
 }

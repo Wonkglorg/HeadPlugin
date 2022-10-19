@@ -11,7 +11,6 @@
 Heads:
   sheep:
     red:
-      customPath: true
       default:
         Name: "&#ed1811Red Sheep"
         Description: " "
@@ -19,7 +18,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     orange:
-      customPath: true
       default:
         Name: "&#ed5711Orange Sheep"
         Description: " "
@@ -27,7 +25,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     yellow:
-      customPath: true
       default:
         Name: "&#daed09Yellow Sheep"
         Description: " "
@@ -35,7 +32,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     lime:
-      customPath: true
       default:
         Name: "&#42ed09Lime Sheep"
         Description: " "
@@ -43,7 +39,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     green:
-      customPath: true
       default:
         Name: "&#0dbd13Green Sheep"
         Description: " "
@@ -51,7 +46,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     cyan:
-      customPath: true
       default:
         Name: "&#13d4b4Cyan Sheep"
         Description: " "
@@ -59,7 +53,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     blue:
-      customPath: true
       default:
         Name: "&#0e73edBlue Sheep"
         Description: " "
@@ -67,7 +60,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     light_blue:
-      customPath: true
       default:
         Name: "&#197ffaLight Blue Sheep"
         Description: " "
@@ -75,7 +67,6 @@ Heads:
         Enabled: true
         DropChance: 100
     purple:
-      customPath: true
       default:
         Name: "&#7908c9Purple Sheep"
         Description: " "
@@ -83,7 +74,6 @@ Heads:
         Enabled: true
         DropChance: 100
     magenta:
-      customPath: true
       default:
         Name: "&#b00dd9Magenta Sheep"
         Description: " "
@@ -91,7 +81,6 @@ Heads:
         Enabled: true
         DropChance: 100
     pink:
-      customPath: true
       default:
         Name: "&#ed0ea3Pink Sheep"
         Description: " "
@@ -99,7 +88,6 @@ Heads:
         Enabled: true
         DropChance: 100
     brown:
-      customPath: true
       default:
         Name: "&#632c36Brown Sheep"
         Description: " "
@@ -107,7 +95,6 @@ Heads:
         Enabled: true
         DropChance: 100
     black:
-      customPath: true
       default:
         Name: "&#0f0f0fBlack Sheep"
         Description: " "
@@ -115,7 +102,6 @@ Heads:
         Enabled: true
         DropChance: 100
     gray:
-      customPath: true
       default:
         Name: "&#4d4b4bGray Sheep"
         Description: " "
@@ -123,7 +109,6 @@ Heads:
         Enabled: true
         DropChance: 100
     light_gray:
-      customPath: true
       default:
         Name: "&#878484Light Gray Sheep"
         Description: " "
@@ -131,7 +116,6 @@ Heads:
         Enabled: true
         DropChance: 100
     white:
-      customPath: true
       default:
         Name: "&#edebebWhite Sheep"
         Description: " "
@@ -139,7 +123,6 @@ Heads:
         Enabled: true
         DropChance: 100
   cow:
-    customPath: true
     default:
       Name: "Cow"
       Description: " "
@@ -147,7 +130,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   fox:
-    customPath: true
     default:
       Name: "Fox"
       Description: " "
@@ -155,7 +137,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   bat:
-    customPath: true
     default:
       Name: "Bat"
       Description: " "
@@ -163,7 +144,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   chicken:
-    customPath: true
     default:
       Name: "Chicken"
       Description: " "
@@ -171,7 +151,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   cod:
-    customPath: true
     default:
       Name: "Cod"
       Description: " "
@@ -179,7 +158,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   ocelot:
-    customPath: true
     default:
       Name: "Ocelot"
       Description: " "
@@ -187,15 +165,13 @@ Heads:
       Enabled: true
       DropChance: 100.0
   pig:
-    customPath: true
     default:
       Name: "Pig"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNjY4ZWY3Y2I3OWRkOWMyMmNlM2QxZjNmNGNiNmUyNTU5ODkzYjZkZjRhNDY5NTE0ZTY2N2MxNmFhNCJ9fX0="
       Enabled: true
       DropChance: 100.0
-  snowman:
-    customPath: true
+  snow_golem:
     default:
       Name: "Snowman"
       Description: " "
@@ -204,7 +180,6 @@ Heads:
       DropChance: 100.0
   rabbit:
     black:
-      customPath: true
       default:
         Name: "Black Rabbit"
         Description: " "
@@ -212,7 +187,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     white:
-      customPath: true
       default:
         Name: "White Rabbit"
         Description: " "
@@ -220,7 +194,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     gold:
-      customPath: true
       default:
         Name: "Gold Rabbit"
         Description: " "
@@ -228,7 +201,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     black_and_white:
-      customPath: true
       default:
         Name: "Black & White Rabbit"
         Description: " "
@@ -236,7 +208,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     the_killer_bunny:
-      customPath: true
       default:
         Name: "Killer Bunny"
         Description: " "
@@ -244,7 +215,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     salt_and_pepper:
-      customPath: true
       default:
         Name: "Salt and Pepper Rabbit"
         Description: " "
@@ -252,7 +222,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     brown:
-      customPath: true
       default:
         Name: "Brown Rabbit"
         Description: " "
@@ -260,7 +229,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
   salmon:
-    customPath: true
     default:
       Name: "Salmon"
       Description: " "
@@ -268,7 +236,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   mushroom_cow:
-    customPath: true
     default:
       Name: "Mushroom Cow"
       Description: " "
@@ -276,7 +243,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   squid:
-    customPath: true
     default:
       Name: "Squid"
       Description: " "
@@ -284,7 +250,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   strider:
-    customPath: true
     default:
       Name: "Strider"
       Description: " "
@@ -292,7 +257,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   tropical fish:
-    customPath: true
     default:
       Name: "Tropical Fish"
       Description: " "
@@ -300,7 +264,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   turtle:
-    customPath: true
     default:
       Name: "Turtle"
       Description: " "
@@ -310,7 +273,6 @@ Heads:
   villager:
     plains:
       mason:
-        customPath: true
         default:
           Name: "Plains Mason Villager"
           Description: " "
@@ -318,7 +280,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Plains Cleric Villager"
           Description: " "
@@ -326,7 +287,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Plains Farmer Villager"
           Description: " "
@@ -334,7 +294,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Plains Armorer Villager"
           Description: " "
@@ -342,7 +301,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Plains Butcher Villager"
           Description: " "
@@ -350,7 +308,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Plains Fletcher Villager"
           Description: " "
@@ -358,7 +315,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Plains Shepherd Villager"
           Description: " "
@@ -366,7 +322,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Plains Fisherman Villager"
           Description: " "
@@ -374,7 +329,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Plains Librarian Villager"
           Description: " "
@@ -382,7 +336,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Plains ToolSmith Villager"
           Description: " "
@@ -390,7 +343,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Plains Weaponsmith Villager"
           Description: " "
@@ -398,7 +350,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Plains Cartographer Villager"
           Description: " "
@@ -406,7 +357,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Plains Leatherworker Villager"
           Description: " "
@@ -414,7 +364,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Plains Villager"
           Description: " "
@@ -423,7 +372,6 @@ Heads:
           DropChance: 100.0
     desert:
       mason:
-        customPath: true
         default:
           Name: "Desert Mason Villager"
           Description: " "
@@ -431,7 +379,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Desert Cleric Villager"
           Description: " "
@@ -439,7 +386,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Desert Farmer Villager"
           Description: " "
@@ -447,7 +393,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Desert Armored Villager"
           Description: " "
@@ -455,7 +400,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Desert Butcher Villager"
           Description: " "
@@ -463,7 +407,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Desert Fletcher Villager"
           Description: " "
@@ -471,7 +414,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Desert Shepherd Villager"
           Description: " "
@@ -479,7 +421,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Desert Fisherman Villager"
           Description: " "
@@ -487,7 +428,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Desert Librarian Villager"
           Description: " "
@@ -495,7 +435,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Desert Toolsmith Villager"
           Description: " "
@@ -503,7 +442,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Desert Weaponsmith Villager"
           Description: " "
@@ -511,7 +449,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Desert Cartographer Villager"
           Description: " "
@@ -519,7 +456,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Desert Leatherworker Villager"
           Description: " "
@@ -527,7 +463,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Desert Villager"
           Description: " "
@@ -537,14 +472,12 @@ Heads:
     savanna:
       mason:
         default:
-          customPath: true
           Name: "Savanna Mason Villager"
           Description: " "
           Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDAwMzY0Yzk4YWYwNTlhZTZkNTgxZmNhNjAzOGJlZTE0Yjg2OTk5OGZiM2FhMzgyYjNjNDc3NWQ1NGU4NDgxZiJ9fX0="
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Savanna Cleric Villager"
           Description: " "
@@ -552,7 +485,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Savanna Farmer Villager"
           Description: " "
@@ -560,7 +492,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Savanna Armorer Villager"
           Description: " "
@@ -568,7 +499,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Savanna Butcher Villager"
           Description: " "
@@ -576,7 +506,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Savanna Fletcher Villager"
           Description: " "
@@ -584,7 +513,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Savanna Shepherd Villager"
           Description: " "
@@ -592,7 +520,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Savanna Fisherman Villager"
           Description: " "
@@ -600,7 +527,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Savanna Librarian Villager"
           Description: " "
@@ -608,7 +534,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Savanna Toolsmith Villager"
           Description: " "
@@ -616,7 +541,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Savanna Weaponsmith Villager"
           Description: " "
@@ -624,7 +548,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Villager Cartographer Villager"
           Description: " "
@@ -632,7 +555,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Savanna Leatherworker Villager"
           Description: " "
@@ -640,7 +562,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Savanna Villager"
           Description: " "
@@ -649,7 +570,6 @@ Heads:
           DropChance: 100.0
     snow:
       mason:
-        customPath: true
         default:
           Name: "Snow Mason Villager"
           Description: " "
@@ -657,7 +577,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Snow Cleric Villager"
           Description: " "
@@ -665,7 +584,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Snow Farmer Villager"
           Description: " "
@@ -673,7 +591,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Snow Armorer Villager"
           Description: " "
@@ -681,7 +598,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Snow Butcher Villager"
           Description: " "
@@ -689,7 +605,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Snow Fletcher Villager"
           Description: " "
@@ -697,7 +612,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Snow Shepherd Villager"
           Description: " "
@@ -705,7 +619,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Snow Fisherman Villager"
           Description: " "
@@ -713,7 +626,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Snow Librarian Villager"
           Description: " "
@@ -721,7 +633,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Snow Toolsmith Villager"
           Description: " "
@@ -729,7 +640,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Snow Weaponsmith Villager"
           Description: " "
@@ -737,7 +647,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Snow Cartographer Villager"
           Description: " "
@@ -745,7 +654,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Snow Leatherworker Villager"
           Description: " "
@@ -753,7 +661,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Snow Villager"
           Description: " "
@@ -762,7 +669,6 @@ Heads:
           DropChance: 100.0
     swamp:
       mason:
-        customPath: true
         default:
           Name: "Swamp Mason Villager"
           Description: " "
@@ -770,7 +676,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Swamp Cleric Villager"
           Description: " "
@@ -778,7 +683,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Swamp Farmer Villager"
           Description: " "
@@ -786,7 +690,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Swamp Farmer Villager"
           Description: " "
@@ -794,7 +697,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Snow Butcher Villager"
           Description: " "
@@ -802,7 +704,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Snow Fletcher Villager"
           Description: " "
@@ -810,7 +711,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Snow Shepherd Villager"
           Description: " "
@@ -818,7 +718,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Snow Fisherman Villager"
           Description: " "
@@ -826,7 +725,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Snow Librarian Villager"
           Description: " "
@@ -834,7 +732,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Snow Toolsmith Villager"
           Description: " "
@@ -842,7 +739,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Snow Weaponsmith Villager"
           Description: " "
@@ -850,7 +746,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Snow Cartographer Villager"
           Description: " "
@@ -858,7 +753,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Snow Leatherworker Villager"
           Description: " "
@@ -866,7 +760,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Snow Villager"
           Description: " "
@@ -875,7 +768,6 @@ Heads:
           DropChance: 100.0
     taiga:
       mason:
-        customPath: true
         default:
           Name: "Taiga Mason Villager"
           Description: " "
@@ -883,7 +775,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Taiga Cleric Villager"
           Description: " "
@@ -891,7 +782,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Taiga Farmer Villager"
           Description: " "
@@ -899,7 +789,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Taiga Armorer Villager"
           Description: " "
@@ -907,7 +796,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Taiga Butcher Villager"
           Description: " "
@@ -915,7 +803,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Taiga Fletcher Villager"
           Description: " "
@@ -923,7 +810,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Taiga Shepherd Villager"
           Description: " "
@@ -931,7 +817,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Taiga Fisherman Villager"
           Description: " "
@@ -939,7 +824,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Taiga Librarian Villager"
           Description: " "
@@ -947,7 +831,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Taiga Toolsmith Villager"
           Description: " "
@@ -955,7 +838,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Taiga Weaponsmith Villager"
           Description: " "
@@ -963,7 +845,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Taiga Cartographer Villager"
           Description: " "
@@ -971,7 +852,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Taiga Leatherworker Villager"
           Description: " "
@@ -979,7 +859,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Taiga Villager"
           Description: " "
@@ -988,7 +867,6 @@ Heads:
           DropChance: 100.0
     jungle:
       mason:
-        customPath: true
         default:
           Name: "Jungle Mason Villager"
           Description: " "
@@ -996,7 +874,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Jungle Cleric Villager"
           Description: " "
@@ -1004,7 +881,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Jungle Farmer Villager"
           Description: " "
@@ -1012,7 +888,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Jungle Armorer Villager"
           Description: " "
@@ -1020,7 +895,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Jungle Butcher Villager"
           Description: " "
@@ -1028,7 +902,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Jungle Fletcher Villager"
           Description: " "
@@ -1036,7 +909,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Jungle Shepherd Villager"
           Description: " "
@@ -1044,7 +916,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Jungle Fisherman Villager"
           Description: " "
@@ -1052,7 +923,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Jungle Librarian Villager"
           Description: " "
@@ -1060,7 +930,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Jungle Toolsmith Villager"
           Description: " "
@@ -1068,7 +937,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Jungle Weaponsmith Villager"
           Description: " "
@@ -1076,7 +944,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Jungle Cartographer Villager"
           Description: " "
@@ -1084,7 +951,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Jungle Leatherworker Villager"
           Description: " "
@@ -1092,7 +958,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Jungle Villager"
           Description: " "
@@ -1100,7 +965,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
   wandering trader:
-    customPath: true
     default:
       Name: "Wandering Trader"
       Description: " "
@@ -1108,7 +972,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   pufferfish:
-    customPath: true
     default:
       Name: "Pufferfish"
       Description: " "
@@ -1117,7 +980,6 @@ Heads:
       DropChance: 100.0
   axolotl:
     gold:
-      customPath: true
       default:
         Name: "Gold Axolotl"
         Description: " "
@@ -1125,7 +987,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     wild:
-      customPath: true
       default:
         Name: "Brown Axolotl"
         Description: " "
@@ -1133,7 +994,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     blue:
-      customPath: true
       default:
         Name: "Blue Axolotl"
         Description: " "
@@ -1141,7 +1001,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     cyan:
-      customPath: true
       default:
         Name: "Cyan Axolotl"
         Description: " "
@@ -1149,7 +1008,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     lucy:
-      customPath: true
       default:
         Name: "Pink Axolotl"
         Description: " "
@@ -1157,7 +1015,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
   glowsquid:
-    customPath: true
     default:
       Name: "Glow Squid"
       Description: " "
@@ -1165,7 +1022,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   donkey:
-    customPath: true
     default:
       Name: "Donkey"
       Description: " "
@@ -1174,7 +1030,6 @@ Heads:
       DropChance: 100.0
   horse:
     brown:
-      customPath: true
       default:
         Name: "Brown Horse"
         Description: " "
@@ -1182,7 +1037,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     white:
-      customPath: true
       default:
         Name: "White Horse"
         Description: " "
@@ -1190,7 +1044,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     black:
-      customPath: true
       default:
         Name: "Black Horse"
         Description: " "
@@ -1198,7 +1051,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     gray:
-      customPath: true
       default:
         Name: "Gray Horse"
         Description: " "
@@ -1206,7 +1058,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     creamy:
-      customPath: true
       default:
         Name: "Creamy Horse"
         Description: " "
@@ -1214,7 +1065,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     chestnut:
-      customPath: true
       default:
         Name: "Chestnut Horse"
         Description: " "
@@ -1222,7 +1072,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     darkbrown:
-      customPath: true
       default:
         Name: "Dark Brown Horse"
         Description: " "
@@ -1231,7 +1080,6 @@ Heads:
         DropChance: 100.0
   cat:
     black:
-      customPath: true
       default:
         Name: "Black Cat"
         Description: " "
@@ -1239,7 +1087,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     red:
-      customPath: true
       default:
         Name: "Red Cat"
         Description: " "
@@ -1247,7 +1094,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     tabby:
-      customPath: true
       default:
         Name: "Tabby Cat"
         Description: " "
@@ -1255,7 +1101,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     calico:
-      customPath: true
       default:
         Name: "Calico Head"
         Description: " "
@@ -1263,7 +1108,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     jellie:
-      customPath: true
       default:
         Name: "Jellie Cat"
         Description: " "
@@ -1271,7 +1115,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     persian:
-      customPath: true
       default:
         Name: "Persian Cat"
         Description: " "
@@ -1279,7 +1122,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     ragdoll:
-      customPath: true
       default:
         Name: "Ragdoll Cat"
         Description: " "
@@ -1287,7 +1129,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     siamese:
-      customPath: true
       default:
         Name: "Siamese"
         Description: " "
@@ -1295,7 +1136,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     all black:
-      customPath: true
       default:
         Name: "All Black Cat"
         Description: " "
@@ -1303,7 +1143,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     british shorthair:
-      customPath: true
       default:
         Name: "British Shorthair Cat"
         Description: " "
@@ -1311,7 +1150,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     white:
-      customPath: true
       default:
         Name: "White Cat"
         Description: " "
@@ -1320,7 +1158,6 @@ Heads:
         DropChance: 100.0
   parrot:
     green:
-      customPath: true
       default:
         Name: "Green Parrot"
         Description: " "
@@ -1328,7 +1165,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     gray:
-      customPath: true
       default:
         Name: "Gray Parrot"
         Description: " "
@@ -1336,7 +1172,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     cyan:
-      customPath: true
       default:
         Name: "Cyan Parrot"
         Description: " "
@@ -1344,7 +1179,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     blue:
-      customPath: true
       default:
         Name: "Blue Parrot"
         Description: " "
@@ -1352,7 +1186,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     red:
-      customPath: true
       default:
         Name: "Red Parrot"
         Description: " "
@@ -1360,23 +1193,20 @@ Heads:
         Enabled: true
         DropChance: 100.0
   mule:
-    customPath: true
     default:
       Name: "Mule"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZkY2RhMjY1ZTU3ZTRmNTFiMTQ1YWFjYmY1YjU5YmRjNjA5OWZmZDNjY2UwYTY2MWIyYzAwNjVkODA5MzBkOCJ9fX0="
       Enabled: true
       DropChance: 100.0
-  skeleton_horse:
-    customPath: true
+  skeleton horse:
     default:
       Name: "Skeleton Horse"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdlZmZjZTM1MTMyYzg2ZmY3MmJjYWU3N2RmYmIxZDIyNTg3ZTk0ZGYzY2JjMjU3MGVkMTdjZjg5NzNhIn19fQ=="
       Enabled: true
       DropChance: 100.0
-  zombie_horse:
-    customPath: true
+  zombie horse:
     default:
       Name: "Zombie Horse"
       Description: " "
@@ -1384,23 +1214,20 @@ Heads:
       Enabled: true
       DropChance: 100.0
   dolphin:
-    customPath: true
     default:
       Name: "Dolphine"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=="
       Enabled: true
       DropChance: 100.0
-  polar_bear:
-    customPath: true
+  polar bear:
     default:
       Name: "Polar Bear"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQyMTIzYWMxNWVmZmExYmE0NjQ2MjQ3Mjg3MWI4OGYxYjA5YzFkYjQ2NzYyMTM3NmUyZjcxNjU2ZDNmYmMifX19"
       Enabled: true
       DropChance: 100.0
-  trader_llama:
-    customPath: true
+  trader llama:
      gray:
        default:
         Name: "Gray Trader Llama"
@@ -1409,7 +1236,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
      brown:
-       customPath: true
        default:
         Name: "Brown Trader Llama"
         Description: " "
@@ -1417,7 +1243,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
      white:
-       customPath: true
        default:
         Name: "White Trader Llama"
         Description: " "
@@ -1425,7 +1250,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
      creamy:
-       customPath: true
        default:
         Name: "Creamy Trader Llama"
         Description: " "
@@ -1434,7 +1258,6 @@ Heads:
         DropChance: 100.0
   llama:
     gray:
-      customPath: true
       default:
         Name: "Gray Llama"
         Description: " "
@@ -1442,7 +1265,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     brown:
-      customPath: true
       default:
         Name: "Brown Llama"
         Description: " "
@@ -1450,7 +1272,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     white:
-      customPath: true
       default:
         Name: "White Llama"
         Description: " "
@@ -1458,7 +1279,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     creamy:
-      customPath: true
       default:
         Name: "Creamy Llama"
         Description: " "
@@ -1466,7 +1286,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
   panda:
-    customPath: true
     default:
       Name: "Panda"
       Description: " "
@@ -1474,7 +1293,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   wolf:
-    customPath: true
     default:
       Name: "Wolf"
       Description: " "
@@ -1482,15 +1300,13 @@ Heads:
       Enabled: true
       DropChance: 100.0
   bee:
-    customPath: true
     default:
       Name: "Bee"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTg3NDc4N2UzNjE1OWU0ZDc0ZGI1ZTI1YmFiYTk4N2I2NjVkY2M4OTBiZTlmMjYyYmIwY2JjZjVkMDFiODJiNiJ9fX0="
       Enabled: true
       DropChance: 100.0
-  iron_golem:
-    customPath: true
+  iron golem:
     default:
       Name: "Iron Golem"
       Description: " "
@@ -1498,7 +1314,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   goat:
-    customPath: true
     default:
       Name: "Goat"
       Description: " "
@@ -1507,7 +1322,6 @@ Heads:
       DropChance: 100.0
   frog:
     cold:
-      customPath: true
       default:
         Name: "Cold Frog"
         Description: " "
@@ -1515,7 +1329,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     warm:
-      customPath: true
       default:
         Name: "Warm Frog"
         Description: " "
@@ -1523,7 +1336,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
     tempered:
-      customPath: true
       default:
         Name: "Tempered Frog"
         Description: " "
@@ -1531,7 +1343,6 @@ Heads:
         Enabled: true
         DropChance: 100.0
   allay:
-    customPath: true
     default:
       Name: "Allay"
       Description: " "
@@ -1539,23 +1350,20 @@ Heads:
       Enabled: true
       DropChance: 100.0
   spider:
-    customPath: true
     default:
       Name: "Spider"
-      Description: "&#392913 This is colored &b This is bold text &b&i now it is Italic | &#ff0000 it is still italic but also red, &o now you can not&r read it"
+      Description: "&#392913 This is colored &b This is bold text &b&i now it is Italic | &#ff0000 it is still italic but also red, &o now you can not &rread it"
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q1NDE1NDFkYWFmZjUwODk2Y2QyNThiZGJkZDRjZjgwYzNiYTgxNjczNTcyNjA3OGJmZTM5MzkyN2U1N2YxIn19fQ=="
       Enabled: true
       DropChance: 100.0
-  cave_spider:
-    customPath: true
+  cave spider:
     default:
       Name: "Cave Spider"
       Description: " Test Description "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE2NDVkZmQ3N2QwOTkyMzEwN2IzNDk2ZTk0ZWViNWMzMDMyOWY5N2VmYzk2ZWQ3NmUyMjZlOTgyMjQifX19"
       Enabled: true
       DropChance: 100.0
-  zombified_piglin:
-    customPath: true
+  zombified piglin:
     default:
       Name: "Zombified Piglin"
       Description: " "
@@ -1563,7 +1371,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   piglin:
-    customPath: true
     default:
       Name: "Piglin"
       Description: " "
@@ -1571,7 +1378,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   enderman:
-    customPath: true
     default:
       Name: "Enderman"
       Description: " "
@@ -1579,7 +1385,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   evoker:
-    customPath: true
     default:
       Name: "Evoker"
       Description: " "
@@ -1587,7 +1392,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   vindicator:
-    customPath: true
     default:
       Name: "Vindicator"
       Description: " "
@@ -1595,7 +1399,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   pillager:
-    customPath: true
     default:
       Name: "Pillager"
       Description: " "
@@ -1603,7 +1406,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   ravager:
-    customPath: true
     default:
       Name: "Ravager"
       Description: " "
@@ -1611,7 +1413,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   vex:
-    customPath: true
     default:
       Name: "Vex"
       Description: " "
@@ -1619,7 +1420,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   endermite:
-    customPath: true
     default:
       Name: "Endermite"
       Description: " "
@@ -1627,7 +1427,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   guardian:
-    customPath: true
     default:
       Name: "Guardian"
       Description: " "
@@ -1635,7 +1434,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   elder guardian:
-    customPath: true
     default:
       Name: "Elder Guardian"
       Description: " "
@@ -1643,7 +1441,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   shulker:
-    customPath: true
     default:
       Name: "Purple Shulker"
       Description: " "
@@ -1741,7 +1538,6 @@ Heads:
       Enabled: true
       DropChance: 5.0
   husk:
-    customPath: true
     default:
       Name: "Husk"
       Description: " "
@@ -1749,7 +1545,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   stray:
-    customPath: true
     default:
       Name: "Stray"
       Description: " "
@@ -1757,7 +1552,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   phantom:
-    customPath: true
     default:
       Name: "Phantom"
       Description: " "
@@ -1765,7 +1559,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   blaze:
-    customPath: true
     default:
       Name: "Blaze"
       Description: " "
@@ -1773,15 +1566,13 @@ Heads:
       Enabled: true
       DropChance: 100.0
   ghast:
-    customPath: true
     default:
       Name: "Ghast"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU4YTM4ZTlhZmJkM2RhMTBkMTliNTc3YzU1YzdiZmQ2YjRmMmU0MDdlNDRkNDAxN2IyM2JlOTE2N2FiZmYwMiJ9fX0="
       Enabled: true
       DropChance: 100.0
-  magma_cube:
-    customPath: true
+  magma cube:
     default:
       Name: "Magma Cube"
       Description: " "
@@ -1789,7 +1580,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   silverfish:
-    customPath: true
     default:
       Name: "Silverfish"
       Description: " "
@@ -1797,7 +1587,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   zombie:
-    customPath: true
     default:
       Name: "Zombie"
       Description: " "
@@ -1805,7 +1594,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   creeper:
-    customPath: true
     default:
     #add all the creeper colors to plugin
       Name: "Creeper"
@@ -1814,7 +1602,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   skeleton:
-    customPath: true
     default:
       Name: "skeleton"
       Description: " "
@@ -1822,7 +1609,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   slime:
-    customPath: true
     default:
       Name: "Green Slime"
       Description: " "
@@ -1854,7 +1640,6 @@ Heads:
       Enabled: true
       DropChance: 5.0
     cyan:
-      customPath: true
       Name: "Cyan Slime"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU4YzllN2IwMGYzMWJmMjkzNzdmY2YxODlmYjczNzViYjJlZTMwMzkxZjc1YzU0MGE3YjIxNzVkM2Q0NTQyMyJ9fX0="
@@ -1885,7 +1670,6 @@ Heads:
       Enabled: true
       DropChance: 5.0
   drowned:
-    customPath: true
     default:
       Name: "Drowned"
       Description: " "
@@ -1893,7 +1677,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   wither skeleton:
-    customPath: true
     default:
       Name: "Wither Skeleton"
       Description: " "
@@ -1901,7 +1684,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   witch:
-    customPath: true
     default:
       Name: "Witch"
       Description: " "
@@ -1909,7 +1691,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   hoglin:
-    customPath: true
     default:
       Name: "Hoglin"
       Description: " "
@@ -1917,7 +1698,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   piglin brute:
-    customPath: true
     default:
       Name: "Piglin Brute"
       Description: " "
@@ -1925,7 +1705,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   zoglin:
-    customPath: true
     default:
       Name: "Zoglin"
       Description: " "
@@ -1933,7 +1712,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   wither:
-    customPath: true
     default:
       Name: "Wither"
       Description: " "
@@ -1941,7 +1719,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   warden:
-    customPath: true
     default:
       Name: "Warden"
       Description: " "
@@ -1949,7 +1726,6 @@ Heads:
       Enabled: true
       DropChance: 100.0
   illusioner:
-    customPath: true
     default:
       Name: "Illusioner"
       Description: " "
@@ -1957,17 +1733,17 @@ Heads:
       Enabled: true
       DropChance: 100.0
   ender dragon:
-    customPath: true
     default:
       Name: "Ender Dragon"
       Description: "How did you even obtain this? |Unfortunately I did not set a real drop for this yet |enjoy the placeholder item :)"
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTdhMWM2YzJlOGE4Y2RmZDhiNzk5ZThiZjkxMmQ2MDBjZDNiOThmMjZjOTNiNTQyZjY0NDY0YWVjMjkxYjcyOSJ9fX0="
       Enabled: true
       DropChance: 100.0
+  player:
+    Enabled: true
   zombie villager:
     plains:
       mason:
-        customPath: true
         default:
           Name: "Plains Mason Zombie Villager"
           Description: " "
@@ -1975,7 +1751,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Plains Cleric Zombie Villager"
           Description: " "
@@ -1983,7 +1758,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Plains Farmer Zombie Villager"
           Description: " "
@@ -1991,7 +1765,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Plains Armorer Zombie Villager"
           Description: " "
@@ -1999,7 +1772,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Plains Butcher Zombie Villager"
           Description: " "
@@ -2007,7 +1779,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Plains Fletcher Zombie Villager"
           Description: " "
@@ -2015,7 +1786,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Plains Shepherd Zombie Villager"
           Description: " "
@@ -2023,7 +1793,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Plains Fisherman Zombie Villager"
           Description: " "
@@ -2031,7 +1800,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Plains Librarian Zombie Villager"
           Description: " "
@@ -2039,7 +1807,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Plains Toolsmith Zombie Villager"
           Description: " "
@@ -2047,7 +1814,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Plains Weaponsmith Zombie Villager"
           Description: " "
@@ -2055,7 +1821,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Plains Cartographer Zombie Villager"
           Description: " "
@@ -2063,7 +1828,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Plains Leatherworker Zombie Villager"
           Description: " "
@@ -2071,7 +1835,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Plains Zombie Villager"
           Description: " "
@@ -2080,7 +1843,6 @@ Heads:
           DropChance: 100.0
     desert:
       mason:
-        customPath: true
         default:
           Name: "Desert Mason Zombie Villager"
           Description: " "
@@ -2088,7 +1850,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Desert Cleric Zombie Villager"
           Description: " "
@@ -2096,7 +1857,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Desert Farmer Zombie Villager"
           Description: " "
@@ -2104,7 +1864,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Desert Armorer Zombie Villager"
           Description: " "
@@ -2112,7 +1871,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Desert Butcher Zombie Villager"
           Description: " "
@@ -2120,7 +1878,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Desert Fletcher Zombie Villager"
           Description: " "
@@ -2128,7 +1885,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Desert Shepherd Zombie Villager"
           Description: " "
@@ -2136,7 +1892,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Desert Fisherman Zombie Villager"
           Description: " "
@@ -2144,7 +1899,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Desert Librarian Zombie Villager"
           Description: " "
@@ -2152,7 +1906,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Desert Toolsmith Zombie Villager"
           Description: " "
@@ -2160,7 +1913,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Desert Weaponsmith Zombie Villager"
           Description: " "
@@ -2168,7 +1920,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Desert Cartographer Zombie Villager"
           Description: " "
@@ -2176,7 +1927,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Desert Leatherworker Zombie Villager"
           Description: " "
@@ -2184,7 +1934,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Desert Zombie Villager"
           Description: " "
@@ -2193,7 +1942,6 @@ Heads:
           DropChance: 100.0
     savanna:
       mason:
-        customPath: true
         default:
           Name: "Savanna Mason Zombie Villager"
           Description: " "
@@ -2201,7 +1949,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Savanna Cleric Zombie Villager"
           Description: " "
@@ -2209,7 +1956,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Savanna Farmer Zombie Villager"
           Description: " "
@@ -2217,7 +1963,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Savanna Armorer Zombie Villager"
           Description: " "
@@ -2225,7 +1970,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Savanna Butcher Zombie Villager"
           Description: " "
@@ -2233,7 +1977,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Savanna Fletcher Zombie Villager"
           Description: " "
@@ -2241,7 +1984,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Savanna Shepherd Zombie Villager"
           Description: " "
@@ -2249,7 +1991,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Savanna Fisherman Zombie Villager"
           Description: " "
@@ -2257,7 +1998,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Savanna Librarian Zombie Villager"
           Description: " "
@@ -2265,7 +2005,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Savanna Toolsmith Zombie Villager"
           Description: " "
@@ -2273,7 +2012,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Savanna Weaponsmith Zombie Villager"
           Description: " "
@@ -2281,7 +2019,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Savanna Cartographer Zombie Villager"
           Description: " "
@@ -2289,7 +2026,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Savanna Leatherworker Zombie Villager"
           Description: " "
@@ -2297,7 +2033,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Savanna Zombie Villager"
           Description: " "
@@ -2306,7 +2041,6 @@ Heads:
           DropChance: 100.0
     snow:
       mason:
-        customPath: true
         default:
           Name: "Snow Mason Zombie Villager"
           Description: " "
@@ -2314,7 +2048,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Snow Cleric Zombie Villager"
           Description: " "
@@ -2322,7 +2055,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Snow Farmer Zombie Villager"
           Description: " "
@@ -2330,7 +2062,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Snow Armorer Zombie Villager"
           Description: " "
@@ -2338,7 +2069,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Snow Butcher Zombie Villager"
           Description: " "
@@ -2346,7 +2076,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Snow Fletcher Zombie Villager"
           Description: " "
@@ -2354,7 +2083,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Snow Shepherd Zombie Villager"
           Description: " "
@@ -2362,7 +2090,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Snow Fisherman Zombie Villager"
           Description: " "
@@ -2370,7 +2097,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Snow Librarian Zombie Villager"
           Description: " "
@@ -2378,7 +2104,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Snow Toolsmith Zombie Villager"
           Description: " "
@@ -2386,7 +2111,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Snow Weaponsmith Zombie Villager"
           Description: " "
@@ -2394,7 +2118,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Snow Cartographer Zombie Villager"
           Description: " "
@@ -2402,7 +2125,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Snow Leatherworker Zombie Villager"
           Description: " "
@@ -2410,7 +2132,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Snow Zombie Villager"
           Description: " "
@@ -2419,7 +2140,6 @@ Heads:
           DropChance: 100.0
     swamp:
       mason:
-        customPath: true
         default:
           Name: "Swamp Mason Zombie Villager"
           Description: " "
@@ -2427,7 +2147,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Swamp Cleric Zombie Villager"
           Description: " "
@@ -2435,7 +2154,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Swamp Farmer Zombie Villager"
           Description: " "
@@ -2443,7 +2161,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Swamp Armorer Zombie Villager"
           Description: " "
@@ -2451,7 +2168,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Swamp Butcher Zombie Villager"
           Description: " "
@@ -2459,7 +2175,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Swamp Fletcher Zombie Villager"
           Description: " "
@@ -2467,7 +2182,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Swamp Shepherd Zombie Villager"
           Description: " "
@@ -2475,7 +2189,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Swamp Fisherman Zombie Villager"
           Description: " "
@@ -2483,7 +2196,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Swamp Librarian Zombie Villager"
           Description: " "
@@ -2491,7 +2203,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Swamp Toolsmith Zombie Villager"
           Description: " "
@@ -2499,7 +2210,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Swamp Weaponsmith Zombie Villager"
           Description: " "
@@ -2507,7 +2217,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Swamp Cartographer Zombie Villager"
           Description: " "
@@ -2515,7 +2224,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Swamp Leatherworker Zombie Villager"
           Description: " "
@@ -2523,7 +2231,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Swamp Zombie Villager"
           Description: " "
@@ -2532,7 +2239,6 @@ Heads:
           DropChance: 100.0
     taiga:
       mason:
-        customPath: true
         default:
           Name: "Taiga Mason Zombie Villager"
           Description: " "
@@ -2540,7 +2246,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Taiga Cleric Zombie Villager"
           Description: " "
@@ -2548,7 +2253,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Taiga Farmer Zombie Villager"
           Description: " "
@@ -2556,7 +2260,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Taiga Armorer Zombie Villager"
           Description: " "
@@ -2564,7 +2267,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Taiga Butcher Zombie Villager"
           Description: " "
@@ -2572,7 +2274,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Taiga Fletcher Zombie Villager"
           Description: " "
@@ -2580,7 +2281,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Taiga Shepherd Zombie Villager"
           Description: " "
@@ -2588,7 +2288,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Taiga Fisherman Zombie Villager"
           Description: " "
@@ -2596,7 +2295,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Taiga Librarian Zombie Villager"
           Description: " "
@@ -2604,7 +2302,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Taiga Toolsmith Zombie Villager"
           Description: " "
@@ -2612,7 +2309,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Taiga Weaponsmith Zombie Villager"
           Description: " "
@@ -2620,7 +2316,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Taiga Cartographer Zombie Villager"
           Description: " "
@@ -2628,7 +2323,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Taiga Leatherworker Zombie Villager"
           Description: " "
@@ -2636,7 +2330,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Taiga Zombie Villager"
           Description: " "
@@ -2645,7 +2338,6 @@ Heads:
           DropChance: 100.0
     jungle:
       mason:
-        customPath: true
         default:
           Name: "Jungle Mason Zombie Villager"
           Description: " "
@@ -2653,7 +2345,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cleric:
-        customPath: true
         default:
           Name: "Jungle Cleric Zombie Villager"
           Description: " "
@@ -2661,7 +2352,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       farmer:
-        customPath: true
         default:
           Name: "Jungle Farmer Zombie Villager"
           Description: " "
@@ -2669,7 +2359,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       armorer:
-        customPath: true
         default:
           Name: "Jungle Armorer Zombie Villager"
           Description: " "
@@ -2677,7 +2366,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       butcher:
-        customPath: true
         default:
           Name: "Jungle Butcher Zombie Villager"
           Description: " "
@@ -2685,7 +2373,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fletcher:
-        customPath: true
         default:
           Name: "Jungle Fletcher Zombie Villager"
           Description: " "
@@ -2693,7 +2380,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       shepherd:
-        customPath: true
         default:
           Name: "Jungle Shepherd Zombie Villager"
           Description: " "
@@ -2701,7 +2387,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       fisherman:
-        customPath: true
         default:
           Name: "Jungle Fisherman Zombie Villager"
           Description: " "
@@ -2709,7 +2394,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       librarian:
-        customPath: true
         default:
           Name: "Jungle Librarian Zombie Villager"
           Description: " "
@@ -2717,7 +2401,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       toolsmith:
-        customPath: true
         default:
           Name: "Jungle Toolsmith Zombie Villager"
           Description: " "
@@ -2725,7 +2408,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       weaponsmith:
-        customPath: true
         default:
           Name: "Jungle Weaponsmith Zombie Villager"
           Description: " "
@@ -2733,7 +2415,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       cartographer:
-        customPath: true
         default:
           Name: "Jungle Cartographer Zombie Villager"
           Description: " "
@@ -2741,7 +2422,6 @@ Heads:
           Enabled: true
           DropChance: 100.0
       leatherworker:
-        customPath: true
         default:
           Name: "Jungle LeatherWorker Zombie Villager"
           Description: " "
@@ -2749,12 +2429,9 @@ Heads:
           Enabled: true
           DropChance: 100.0
       none:
-        customPath: true
         default:
           Name: "Jungle Zombie Villager"
           Description: " "
           Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
           Enabled: true
           DropChance: 100.0
-  player:
-    Enabled: true

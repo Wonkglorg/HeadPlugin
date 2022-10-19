@@ -49,7 +49,6 @@ public class DamageListener extends EventListener
 			}
 			if(Math.random() * 100 <= config.getInt("Player_PvP_Head_DropChance"))
 			{
-
 				ItemStack playerHead = ItemUtility.createPlayerHead(player.getUniqueId());
 				player.getWorld().dropItemNaturally(player.getLocation(),
 						ItemUtility.addLore(playerHead, lang.getValue(player,"pvp-head-description").replace("<killer>", damager.getName())));

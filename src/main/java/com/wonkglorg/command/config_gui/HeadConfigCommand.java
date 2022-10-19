@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class HeadConfig extends Command
+public class HeadConfigCommand extends Command
 {
 	/**
 	 * Instantiates a new Command.
@@ -18,7 +18,7 @@ public class HeadConfig extends Command
 	 * @param plugin the plugin
 	 * @param name the name
 	 */
-	public HeadConfig(@NotNull JavaPlugin plugin, @NotNull String name)
+	public HeadConfigCommand(@NotNull JavaPlugin plugin, @NotNull String name)
 	{
 		super(plugin, name);
 	}
@@ -33,7 +33,7 @@ public class HeadConfig extends Command
 	public boolean execute(@NotNull Player player, String[] args)
 	{
 		HeadMenuUtility menuUtility = HeadMenuUtility.get(player);
-		new HeadConfigGui(menuUtility,Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),"Heads",null);
+		new MenuPage(menuUtility,Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),"Heads",null);
 		
 		return true;
 	}

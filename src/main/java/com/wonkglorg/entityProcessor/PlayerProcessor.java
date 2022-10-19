@@ -1,8 +1,8 @@
 package com.wonkglorg.entityProcessor;
 
+import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
-import com.wonkglorg.utils.HeadUtils;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -26,7 +26,7 @@ public class PlayerProcessor extends EntityTypeProcessor
 	{
 		if(entity instanceof Player player)
 		{
-			if(HeadUtils.readConfigBoolean(YML.HEAD_DATA, "Heads.player.Enabled"))
+			if(Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()).getBoolean("Heads.player.Enabled"))
 			{
 				player.getWorld().dropItemNaturally(player.getLocation(), ItemUtility.createPlayerHead(player.getUniqueId()));
 			}
