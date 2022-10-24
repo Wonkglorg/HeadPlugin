@@ -19,8 +19,6 @@ import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
 
 public class MenuPage extends PaginationGui
@@ -28,12 +26,11 @@ public class MenuPage extends PaginationGui
 	private final Config config;
 	private final HeadMenuUtility menuUtility;
 	private final LangManager lang = Heads.getPluginManager().getLangManager();
-	List<MobHeadData> mobHeadData;
 	private String mainPath;
 	private String selectedFile;
 	private boolean confirmed = false;
 	
-	public MenuPage(HeadMenuUtility menuUtility, Config config, String path, String name)
+	public MenuPage(HeadMenuUtility menuUtility, Config config, String path, String name,int page)
 	{
 		super(new InventoryGUI(54, name == null ? "Head Config" : name, Heads.getInstance(), menuUtility)
 		{
@@ -47,20 +44,18 @@ public class MenuPage extends PaginationGui
 		this.config = config;
 		this.menuUtility = menuUtility;
 		
-		mobHeadData = MobHeadData.getFirstOfAllValidConfigHeadData(config, "Heads");
+		addSlots(1, 1, 8, 5);
 		
-		setPage(1);
-		
-		addSlots(1, 1, 8, 4);
-		
+		setFillerItem(InventoryGUI.FILLER);
 		handleNextButtons(config, mainPath);
+		setPage(page);
 		gui.open();
 		updatePage();
 	}
 	
 	private Button forward()
 	{
-		ItemStack icon = new ItemBuilder(Material.ARROW).setName("Next Page").build();
+		ItemStack icon = new ItemBuilder(Material.ARROW).setName(ChatColor.Reset + ChatColor.GOLD + "Next Page").build();
 		return new Button(icon)
 		{
 			@Override
@@ -74,7 +69,7 @@ public class MenuPage extends PaginationGui
 	
 	private Button backwards()
 	{
-		ItemStack icon = new ItemBuilder(Material.ARROW).setName("Previous Page").build();
+		ItemStack icon = new ItemBuilder(Material.ARROW).setName(ChatColor.Reset + ChatColor.GOLD + "Previous Page").build();
 		return new Button(icon)
 		{
 			@Override
@@ -98,12 +93,9 @@ public class MenuPage extends PaginationGui
 		}
 		if(mainPath.equalsIgnoreCase("heads"))
 		{
-			for(String s : config.getSection("Heads", false))
-			{
-				
-				//Redo this method to show valid head configs if possible or error otherwise
-				addPagedButton(BasePathButton(MobHeadData.getFirstValidConfigHeadData(config, "Heads." + s), s));
-			}
+			config.getSection("Heads", false).forEach(s -> addPagedButton(BasePathButton(MobHeadData.getFirstValidConfigHeadData(config,
+					"Heads." + s), s)));
+			setPage(menuUtility.getLastPage());
 			gui.removeButton(45);
 			checkArrowButtons();
 			updatePage();
@@ -126,7 +118,7 @@ public class MenuPage extends PaginationGui
 					added = true;
 				}
 				
-				addPagedButton(HeadConfigButton(new MobHeadData(testPath, config, 1),subPath));
+				addPagedButton(HeadConfigButton(new MobHeadData(testPath, config, 1), subPath));
 			} else
 			{
 				MobHeadData mobHead = MobHeadData.getFirstValidConfigHeadData(config, testPath);
@@ -153,9 +145,8 @@ public class MenuPage extends PaginationGui
 													.build();
 		} else
 		{
-			String baseName = name;
-			String capitalLetter = baseName.substring(0, 1).toUpperCase();
-			icon = ItemUtility.createCustomHead(mobHeadData.getTexture(), "&r" + capitalLetter + baseName.substring(1));
+			String capitalLetter = name.substring(0, 1).toUpperCase();
+			icon = ItemUtility.createCustomHead(mobHeadData.getTexture(), ChatColor.Reset + ChatColor.LIGHT_PURPLE + capitalLetter + name.substring(1).replace("_", " "));
 		}
 		return new Button(icon)
 		{
@@ -163,6 +154,8 @@ public class MenuPage extends PaginationGui
 			public void onClick(InventoryClickEvent e)
 			{
 				mainPath = pathInput + "." + name;
+				System.out.println("Get page: " + getPage());
+				menuUtility.setLastPage(getPage());
 				setPage(1);
 				clear();
 				handleNextButtons(config, mainPath);
@@ -182,26 +175,17 @@ public class MenuPage extends PaginationGui
 			{
 				if(e.getClick() == ClickType.SHIFT_LEFT)
 				{
+					mainPath = config.getParentPath(mobHeadData.getPath());
+					selectedFile = fileName;
 					setItem(ItemUtility.setName(icon, mobHeadData.getName() + " ~ Selected"));
 					gui.update();
-					String[] stringArray = mobHeadData.getPath().split("\\.");
-					StringBuilder builder = new StringBuilder();
-					builder.append(stringArray[0]);
-					for(int i = 1; i < stringArray.length - 1; i++)
-					{
-						builder.append(".");
-						builder.append(stringArray[i]);
-					}
-					mainPath = builder.toString();
-					selectedFile = fileName;
 					return;
 				}
 				mainPath = mobHeadData.getPath();
-				clear();
-				setPage(1);
 				menuUtility.setMobHeadData(mobHeadData);
-				new ConfigurationPage(menuUtility, false).open();
+				setPage(1);
 				gui.destroy();
+				new ConfigurationPage(menuUtility, false).open();
 			}
 		};
 	}
@@ -231,7 +215,7 @@ public class MenuPage extends PaginationGui
 				confirmed = false;
 				gui.destroy();
 				gui.getInventory().close();
-				new MenuPage(menuUtility, config, mainPath, null);
+				new MenuPage(menuUtility, config, mainPath, null,1);
 			}
 		};
 	}
@@ -253,7 +237,7 @@ public class MenuPage extends PaginationGui
 			String baseName = mobHeadData.getOriginalName();
 			String capitalLetter = baseName.substring(0, 1).toUpperCase();
 			name = mobHeadData.getOriginalName();
-			icon = ItemUtility.createCustomHead(mobHeadData.getTexture(), "&r" + capitalLetter + baseName.substring(1));
+			icon = ItemUtility.createCustomHead(mobHeadData.getTexture(), ChatColor.Reset + ChatColor.LIGHT_PURPLE + capitalLetter + baseName.substring(1).replace("_", " "));
 		}
 		
 		String finalName = name;
@@ -263,10 +247,9 @@ public class MenuPage extends PaginationGui
 			public void onClick(InventoryClickEvent e)
 			{
 				mainPath = mainPath + "." + finalName;
-				clear();
-				handleNextButtons(config, mainPath);
-				
-				updatePage();
+				menuUtility.setLastPage(getPage());
+				gui.destroy();
+				new MenuPage(menuUtility, config, mainPath, finalName, 1);
 			}
 		};
 	}
@@ -283,7 +266,6 @@ public class MenuPage extends PaginationGui
 				Player player = menuUtility.getOwner();
 				Message.msgPlayer(player, lang.getValue(player, "command-request-set-file-name"));
 				Message.msgPlayer(player, lang.getValue(player, "command-request-cancel"));
-				menuUtility.setLastPath(mainPath);
 				menuUtility.setDataVariables(MenuDataVariables.FILENAME);
 				ChangeValueCommand.setPlayerDataChange(player, null);
 				gui.destroy();
@@ -301,23 +283,10 @@ public class MenuPage extends PaginationGui
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				String[] splitPath = (mainPath.split("\\."));
-				if(splitPath.length < 2)
-				{
-					return;
-				}
-				String[] trimmedPath = Arrays.copyOf(splitPath, splitPath.length - 1);
-				
-				StringBuilder stringBuilder = new StringBuilder();
-				stringBuilder.append(trimmedPath[0]);
-				for(int i = 1; i < trimmedPath.length; i++)
-				{
-					stringBuilder.append(".").append(trimmedPath[i]);
-				}
-				mainPath = stringBuilder.toString();
+				mainPath = config.getParentPath(mainPath);
 				clear();
-				setPage(1);
-				handleNextButtons(config, mainPath);
+				gui.destroy();
+				new MenuPage(menuUtility, config, mainPath, null, menuUtility.getLastPage());
 			}
 		};
 	}
@@ -326,6 +295,7 @@ public class MenuPage extends PaginationGui
 	{
 		gui.removeButton(47);
 		gui.removeButton(51);
+		gui.fill(0, 54, InventoryGUI.FILLER);
 		if(getPage() < getMaxPage())
 		{
 			gui.addButton(forward(), 51);

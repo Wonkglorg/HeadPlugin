@@ -16,11 +16,11 @@ import com.wonkglorg.utils.HeadMenuUtility;
 import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
 import java.awt.Color;
-import java.util.Arrays;
 
 public class ConfigurationPage extends InventoryGUI
 {
@@ -28,6 +28,7 @@ public class ConfigurationPage extends InventoryGUI
 	private final LangManager lang = Heads.getPluginManager().getLangManager();
 	private final Config backupConfig = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA_BACKUP.getFileName());
 	private final Player player;
+	private final Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 	private final boolean changes;
 	private boolean resetConfirmed = false;
 	
@@ -49,16 +50,10 @@ public class ConfigurationPage extends InventoryGUI
 		addButton(changeTexture(), 25);
 		addButton(setEnabled((HeadMenuUtility) menuUtility, this), 40);
 		addButton(dropChance((HeadMenuUtility) menuUtility, this), 43);
-		String[] path = headData.getPath().split("\\.");
-		StringBuilder builder = new StringBuilder();
-		for(String s : Arrays.copyOf(path, path.length - 1))
+		String defaultPath = config.getParentPath(headData.getPath());
+		if(MobHeadData.isValidHeadPath(backupConfig, defaultPath + ".default"))
 		{
-			builder.append(s).append(".");
-		}
-		
-		if(MobHeadData.isValidHeadPath(backupConfig, builder.toString().trim() + "default"))
-		{
-			addButton(resetHeadToDefault(headData.getPath(), builder.toString().trim() + "default"), 41);
+			addButton(resetHeadToDefault(headData.getPath(), defaultPath + ".default"), 41);
 		}
 		if(changes)
 		{
@@ -91,20 +86,10 @@ public class ConfigurationPage extends InventoryGUI
 				headMenuUtility.getMobHeadData().writeToConfig();
 				Message.msgPlayer(menuUtility.getOwner(), "Successfully applied changes");
 				headConfigurationPage.destroy();
-				String[] path = headMenuUtility.getMobHeadData().getPath().split("\\.");
-				StringBuilder builder = new StringBuilder();
-				builder.append(path[0]);
-				for(int i = 1; i < path.length - 1; i++)
-				{
-					builder.append(".");
-					builder.append(path[i]);
-				}
-				new MenuPage(headMenuUtility,
-						Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),
-						builder.toString(),
-						null);
-				headMenuUtility.setMobHeadData(null);
 				destroy();
+				new MenuPage(headMenuUtility, config, config.getParentPath(headMenuUtility.getMobHeadData().getPath()), null,
+						headMenuUtility.getLastPage());
+				headMenuUtility.setMobHeadData(null);
 			}
 		};
 	}
@@ -118,19 +103,9 @@ public class ConfigurationPage extends InventoryGUI
 			public void onClick(InventoryClickEvent e)
 			{
 				HeadMenuUtility headMenuUtility = (HeadMenuUtility) menuUtility;
-				String[] path = headMenuUtility.getMobHeadData().getPath().split("\\.");
 				headConfigurationPage.destroy();
-				StringBuilder builder = new StringBuilder();
-				builder.append(path[0]);
-				for(int i = 1; i < path.length - 1; i++)
-				{
-					builder.append(".");
-					builder.append(path[i]);
-				}
-				new MenuPage(headMenuUtility,
-						Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),
-						builder.toString(),
-						null);
+				new MenuPage(headMenuUtility, config, config.getParentPath(headMenuUtility.getMobHeadData().getPath()), null,
+						headMenuUtility.getLastPage());
 				headMenuUtility.setMobHeadData(null);
 				destroy();
 			}
@@ -190,7 +165,6 @@ public class ConfigurationPage extends InventoryGUI
 	private Button resetHeadToDefault(String path, String backupDefaultPath)
 	{
 		
-		//NAME DOESN'T MATTER GET DEFAULT VALUE FROM PATH YOU ARE IN NO MATTER THE HEAD
 		ItemStack icon = new ItemBuilder(Material.BEACON).setName("Reset to default values").build();
 		return new Button(icon)
 		{
@@ -240,44 +214,13 @@ public class ConfigurationPage extends InventoryGUI
 			{
 				MobHeadData mobHeadData = menuUtility.getMobHeadData();
 				
-				switch(e.getClick())
+				if(e.getClick() == ClickType.LEFT)
 				{
-					case LEFT ->
-					{
-						
-						ChangeValueCommand.setPlayerDataChange(player, mobHeadData);
-						handleChange(MenuDataVariables.DROPCHANCE);
-						destroy();
-						update();
-						getInventory().close();
-						/*
-						double dropchance = mobHeadData.getDropChance() + menuUtility.getIncrementSize();
-						double nearest = round(dropchance, 1);
-						mobHeadData.setDropChance(nearest > 100 ? 100 : nearest);
-						
-						 */
-					}
-					/*
-					case RIGHT ->
-					{
-						double dropchance = mobHeadData.getDropChance() - menuUtility.getIncrementSize();
-						double nearest = round(dropchance, 1);
-						mobHeadData.setDropChance(nearest < 0 ? 0 : nearest);
-						
-					}
-					case DROP -> menuUtility.increment();
-					case CONTROL_DROP -> menuUtility.decrement();
-					case SHIFT_LEFT ->
-					{
-						
-						ChangeValueCommand.setPlayerDataChange(player, mobHeadData);
-						handleChange(MenuDataVariables.DROPCHANCE);
-						destroy();
-						update();
-						getInventory().close();
-					}
-					
-					 */
+					ChangeValueCommand.setPlayerDataChange(player, mobHeadData);
+					handleChange(MenuDataVariables.DROPCHANCE);
+					destroy();
+					update();
+					getInventory().close();
 				}
 				setItem(getChanceItemStack(menuUtility));
 				addButton(accept(configurationPage), 45);
@@ -294,15 +237,9 @@ public class ConfigurationPage extends InventoryGUI
 		Color color = ChatColor.gradient(100, 0, dropchance, Color.GREEN, Color.RED);
 		String buf = Integer.toHexString(color.getRGB());
 		String hex = "#" + buf.substring(buf.length() - 6);
-		return new ItemBuilder(Material.LIGHT).setName("Dropchance")
-											  .addLoreLine(ChatColor.HexColor(hex) + dropchance + "%")
-											  //.addLoreLine(ChatColor.Reset + ChatColor.GOLD + "Increment size: " + menuUtility.getIncrementSize())
-											  //.addLoreLine(ChatColor.Reset + ChatColor.LIGHT_PURPLE + "Drop > Increment")
-											  //.addLoreLine(ChatColor.Reset + ChatColor.LIGHT_PURPLE + "CRTL + Drop > Decrement")
-											  .addLoreLine(ChatColor.RED + ChatColor.GREEN + "Left click to set value")
-											  .build();
+		return new ItemBuilder(Material.LIGHT).setName("Dropchance").addLoreLine(ChatColor.HexColor(hex) + dropchance + "%")
+											  .addLoreLine(ChatColor.RED + ChatColor.GREEN + "Left click to set value").build();
 	}
-	
 	
 	private void handleChange(MenuDataVariables menuDataVariables)
 	{

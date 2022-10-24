@@ -80,12 +80,12 @@ public class MobHeadData
 		config.silentSave();
 	}
 	
-	public static String createNewDirectory(Config config, String path, String name)
+	public static void createNewDirectory(Config config, String path, String name)
 	{
 		String comPath = path + "." + name;
 		if(isValidHeadPath(config, comPath))
 		{
-			return null;
+			return;
 		}
 		config.set(comPath + "." + "Name", "Enter value");
 		config.set(comPath + "." + "Description", "Enter value");
@@ -93,7 +93,11 @@ public class MobHeadData
 		config.set(comPath + "." + "Enabled", true);
 		config.set(comPath + "." + "DropChance", 100.0);
 		config.silentSave();
-		return comPath;
+	}
+	
+	private static MobHeadData toMobHeadData(String path, Config config, int offset)
+	{
+		return new MobHeadData(path, config, offset);
 	}
 	
 	public static List<MobHeadData> getAllValidConfigHeadData(Config config, String path)
@@ -112,13 +116,11 @@ public class MobHeadData
 		{
 			mobHeadData.add(new MobHeadData(path, config, 1));
 		}
-		for(String heads : subHeads)
-		{
-			if(isValidHeadPath(config, path + "." + heads))
-			{
-				mobHeadData.add(new MobHeadData(path + "." + heads, config, 1));
-			}
-		}
+		
+		mobHeadData.addAll(subHeads.stream()
+								   .filter(subCategory -> isValidHeadPath(config, path + "." + subCategory))
+								   .map(e -> new MobHeadData(path + "." + subHeads, config, 1))
+								   .toList());
 		return mobHeadData;
 	}
 	
@@ -239,7 +241,7 @@ public class MobHeadData
 	public ItemStack createHeadItemWithInfoDesc()
 	{
 		List<String> finishedDesc = new ArrayList<>();
-		finishedDesc.add(enabled ? ChatColor.GREEN + "Enabled" : ChatColor.RED + "Disabled");
+		finishedDesc.add(enabled ? ChatColor.Reset + ChatColor.GREEN + "Enabled" : ChatColor.Reset + ChatColor.RED + "Disabled");
 		finishedDesc.add(ChatColor.Reset + ChatColor.GOLD + "Dropchance: " + dropChance + "%");
 		finishedDesc.addAll(description != null ? List.of(description.split("\\|")) : List.of(" "));
 		return ItemUtility.createCustomHead(texture, name, finishedDesc);
@@ -257,17 +259,17 @@ public class MobHeadData
 	
 	private void setConfigTexture(Config config)
 	{
-		config.set(path + ".Texture", texture);
+		config.set(path + ".Texture", texture != null ? texture : " ");
 	}
 	
 	private void setConfigName(Config config)
 	{
-		config.set(path + ".Name", name);
+		config.set(path + ".Name", name != null ? name : "Enter Name");
 	}
 	
 	private void setConfigDescription(Config config)
 	{
-		config.set(path + ".Description", description);
+		config.set(path + ".Description", description != null ? description : "Enter Description");
 	}
 	
 	private void setConfigEnabled(Config config)

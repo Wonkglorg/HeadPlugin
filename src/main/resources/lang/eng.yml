@@ -10,12 +10,17 @@ reload-config-error: <prefix>&4 <config> does not exist!
 command-head-drop-success: <prefix> &#FFFF55Dropped &#fcca03<headcount> &#FFFF55Head
 command-head-drop-warn: <prefix>&4 Too many heads may not drop duo to lag prevention
 #Heads
-command-request-cancel: <prefix> Type cancel or quit to return to the menu without changes
-command-request-change-name: <prefix> Enter new name in chat
-command-request-change-description: <prefix> Enter new description in chat
-command-request-change-texture: <prefix> Enter new texture in chat as a base64 value or choose a pre setup texture!
-command-request-change-dropchance: <prefix> command-request-change-dropchance
-command-request-set-file-name: <prefix> Enter sub-category name in chat to create a new mob head
+command-request-cancel: <prefix> Use /value cancel or quit to return to the menu without changes!
+command-request-change-name: <prefix> Enter new name using /value <arguments> in string form!
+command-request-change-description: <prefix> Enter new description using /value <arguments> in string form!
+command-request-change-texture: <prefix> Enter new texture using /value <arguments> in base64 form!
+command-request-change-dropchance: <prefix> Enter new dropchance using /value <argument> in double form!
+command-request-set-file-name: <prefix> Enter new head file name using /value <arguments> in string form!
+
+#Value command
+command-value-error-null-input: <prefix> Null is not a valid value!
+command-value-error-value-exists: <prefix> Value already exists!
+command-value-error-change-not-set: <prefix> Unknown value to edit, command only works if requested by a menu change!
 
 #PVP Head Drop Description
 pvp-head-description: Killed by <killer>

@@ -14,6 +14,8 @@ public class HeadMenuUtility extends MenuUtility
 	private double incrementSize;
 	private Button selectedButton;
 	
+	private int lastPage = 1;
+	
 	/**
 	 * Instantiates a new Menu utility.
 	 *
@@ -88,24 +90,6 @@ public class HeadMenuUtility extends MenuUtility
 		this.selectedButton = selectedButton;
 	}
 	
-	public void decrement()
-	{
-		if(incrementSize == 10)
-		{
-			incrementSize = 1;
-			return;
-		}
-		if(incrementSize == 1)
-		{
-			incrementSize = 0.1;
-		}
-	}
-	
-	public double getIncrementSize()
-	{
-		return incrementSize;
-	}
-	
 	public String getLastPath()
 	{
 		return lastPath;
@@ -116,8 +100,13 @@ public class HeadMenuUtility extends MenuUtility
 		this.lastPath = lastPath;
 	}
 	
-	public void setIncrementSize(double incrementSize)
+	public int getLastPage()
 	{
-		this.incrementSize = incrementSize;
+		return lastPage;
+	}
+	
+	public void setLastPage(int lastPage)
+	{
+		this.lastPage = lastPage;
 	}
 }
