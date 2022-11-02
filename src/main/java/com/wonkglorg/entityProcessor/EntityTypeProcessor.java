@@ -4,8 +4,10 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.managers.ConfigManager;
+import com.wonkglorg.utilitylib.utils.message.Message;
 import com.wonkglorg.utilitylib.utils.random.WeightedRandomPicker;
 import com.wonkglorg.utils.MobHeadData;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 
@@ -25,6 +27,8 @@ public abstract class EntityTypeProcessor
 	
 	protected void processHeadData(Entity entity, Location loc)
 	{
+		
+		//add option to random drop it without creeper needed, increases chance with looting
 		this.entity = entity;
 		String path = path();
 		Config config = configManager.getConfig(YML.HEAD_DATA.getFileName());
@@ -33,12 +37,10 @@ public abstract class EntityTypeProcessor
 		List<MobHeadData> mobHeadDataList = MobHeadData.getAllValidConfigHeadData(config, path);
 		
 		MobHeadData mobHead = MobHeadData.randomHeadDrop(mobHeadDataList);
-		
 		if(mobHead == null)
 		{
 			return;
 		}
-		
 		MobHeadData.dropHead(mobHead.getTexture(), mobHead.getName(), mobHead.getDescription(), loc);
 		countConfig.set(path, countConfig.contains(path) ? countConfig.getInt(path) + 1 : 1);
 		countConfig.silentSave();

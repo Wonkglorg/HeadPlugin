@@ -7,7 +7,9 @@ import com.wonkglorg.utilitylib.listener.EventListener;
 import com.wonkglorg.utilitylib.managers.LangManager;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import org.bukkit.NamespacedKey;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Creeper;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
@@ -19,6 +21,7 @@ public class DamageListener extends EventListener
 {
 	private final Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.CONFIG.getFileName());
 	private final LangManager lang = Heads.getPluginManager().getLangManager();
+	
 	public DamageListener(JavaPlugin plugin)
 	{
 		super(plugin);
@@ -27,10 +30,13 @@ public class DamageListener extends EventListener
 	@EventHandler
 	public void onCreeperDamage(EntityDamageByEntityEvent e)
 	{
+		if(config.getBoolean("Player_Kill_Entity_Head"))
+		{
+			processEntityDeath(e);
+		}
 		if(config.getBoolean("Creeper_Explosion_Head"))
 		{
 			processCreeperDamage(e);
-			return;
 		}
 		if(config.getBoolean("Player_PvP_Head"))
 		{
@@ -43,7 +49,7 @@ public class DamageListener extends EventListener
 	{
 		if(e.getDamager() instanceof Player damager && e.getEntity() instanceof Player player)
 		{
-			if(!e.getEntity().isDead())
+			if(player.getHealth() > e.getFinalDamage())
 			{
 				return;
 			}
@@ -51,15 +57,44 @@ public class DamageListener extends EventListener
 			{
 				ItemStack playerHead = ItemUtility.createPlayerHead(player.getUniqueId());
 				player.getWorld().dropItemNaturally(player.getLocation(),
-						ItemUtility.addLore(playerHead, lang.getValue(player,"pvp-head-description").replace("<killer>", damager.getName())));
+						ItemUtility.addLore(playerHead, lang.getValue(player, "pvp-head-description").replace("<killer>", damager.getName())));
 			}
 		}
 		
 	}
 	
+	private void processEntityDeath(EntityDamageByEntityEvent e)
+	{
+		
+		//ADD VALUES FROM THIS METHOD TO CONFIG FILE!!!!!!
+		if(e.getDamager() instanceof Player player && e.getEntity() instanceof LivingEntity livingEntity)
+		{
+			if(livingEntity instanceof Player){
+				return;
+			}
+			if(livingEntity.getHealth() > e.getFinalDamage())
+			{
+				return;
+			}
+			double bonus = 0;
+			ItemStack itemInHand = player.getInventory().getItemInMainHand();
+			if(itemInHand.containsEnchantment(Enchantment.LOOT_BONUS_MOBS))
+			{
+				bonus = itemInHand.getEnchantmentLevel(Enchantment.LOOT_BONUS_MOBS);
+			}
+			
+			if(Math.random() * 100 <=
+			   config.getInt("Player_Kill_Entity_Dropchance") + (bonus * config.getDouble("Player_kill_entity_looting_modifier")))
+			{
+				livingEntity.getPersistentDataContainer().set(new NamespacedKey(plugin, "drophead"), PersistentDataType.STRING, "true");
+			}
+			
+		}
+	}
+	
 	private void processCreeperDamage(EntityDamageByEntityEvent e)
 	{
-		if(e.getDamager() instanceof Creeper creeper)
+		if(e.getDamager() instanceof Creeper creeper && e.getEntity() instanceof LivingEntity livingEntity)
 		{
 			if(config.getBoolean("Charged_Creeper_Required"))
 			{
@@ -72,7 +107,7 @@ public class DamageListener extends EventListener
 			{
 				return;
 			}
-			e.getEntity().getPersistentDataContainer().set(new NamespacedKey(plugin,"drophead"), PersistentDataType.STRING,"true");
+			livingEntity.getPersistentDataContainer().set(new NamespacedKey(plugin, "drophead"), PersistentDataType.STRING, "true");
 		}
 	}
 }

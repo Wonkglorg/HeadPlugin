@@ -45,11 +45,11 @@ public class MobHeadData
 		this.path = path;
 	}
 	
-	public MobHeadData(String path, Config config, int offset)
+	public MobHeadData(String path, Config config, int originalNameOffset)
 	{
 		String[] pathParts = path.split("\\.");
 		this.config = config;
-		this.originalName = pathParts[offset];
+		this.originalName = pathParts[originalNameOffset];
 		this.name = config.getString(path + ".Name");
 		this.description = config.getString(path + ".Description");
 		this.texture = config.getString(path + ".Texture");
@@ -116,11 +116,11 @@ public class MobHeadData
 		{
 			mobHeadData.add(new MobHeadData(path, config, 1));
 		}
-		
 		mobHeadData.addAll(subHeads.stream()
 								   .filter(subCategory -> isValidHeadPath(config, path + "." + subCategory))
-								   .map(e -> new MobHeadData(path + "." + subHeads, config, 1))
+								   .map(e -> new MobHeadData(path + "." + e, config, 1))
 								   .toList());
+		
 		return mobHeadData;
 	}
 	

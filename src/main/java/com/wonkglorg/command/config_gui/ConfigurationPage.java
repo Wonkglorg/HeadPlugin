@@ -88,7 +88,7 @@ public class ConfigurationPage extends InventoryGUI
 				headConfigurationPage.destroy();
 				destroy();
 				new MenuPage(headMenuUtility, config, config.getParentPath(headMenuUtility.getMobHeadData().getPath()), null,
-						headMenuUtility.getLastPage());
+						1);
 				headMenuUtility.setMobHeadData(null);
 			}
 		};
@@ -105,7 +105,7 @@ public class ConfigurationPage extends InventoryGUI
 				HeadMenuUtility headMenuUtility = (HeadMenuUtility) menuUtility;
 				headConfigurationPage.destroy();
 				new MenuPage(headMenuUtility, config, config.getParentPath(headMenuUtility.getMobHeadData().getPath()), null,
-						headMenuUtility.getLastPage());
+						1);
 				headMenuUtility.setMobHeadData(null);
 				destroy();
 			}

@@ -6,7 +6,7 @@
 #Boolean  | Enabled: if false removes item from being able to drop
 #Double   | Dropchance: sets dropchance of item, can add up to more than 100 takes % value from combined numbers <and always drops a head,
 #if only 1 head is available and dropchance is not equal or bigger 100 it has a chance to drop nothing
-# if 2 or more values are specified and value is below 100 it has a chance to drop nothing instead
+#if 2 or more values are specified and combined value is below 100 it has a chance to drop nothing instead
 
 Heads:
   sheep:
@@ -1655,91 +1655,91 @@ Heads:
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTk5OTQwNDA0MzNhZjBmMDE1YmU0ZDY5NjhjM2Q1NWUwNDRjOThkYWMyYzRjNmE2ZWEwZWZhYzdhNmRkYiJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     orange:
       Name: "&r&6Orange Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU3MTFkOTU0YmQ1NjIzNmQxYTlmOTliZTg4MGM1ZDM4OTkwZGY2YmVmNzJlNzNmNzQ1YjA0OTk1ZGJmNiJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     yellow:
       Name: "&r&6Yellow Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGNiZjU1ODY4MzZiN2IzNDI5MzJlMWQyM2VmYzI0OTBjZjU5YzY5YWNjZjFlMDVlOWVkNTc2Y2FlZDhiNzg3NyJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     lime:
       Name: "&r&6Lime Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTcxNDQ5NTdjMmM1YmJmZTQ0N2Y0YjJkMzZhMjQ2ZWExYjAyM2RhNGNiZDFhYTJkYmJiMTVlOTQ5ODEyNDgifX19"
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     green:
       Name: "&r&6Green Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzMxYWJlMmJiMmI5MTQxZjEwMThlYjE1MzlkMmNmZWMxM2Q5MjMxYjUzYTQ2Y2FmOGRjMjFhYTI3MDUwNDkifX19"
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     cyan:
       Name: "&r&6Cyan Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjZmMTczZDRlM2U4YmQ2ZjliZTBiZjliNzQ1YmQxY2M3YTI5ZmY4MzZlZDJkNDg2YzViOTkyOTJjODVjYyJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     blue:
       Name: "&r&6Blue Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg3ZmU2ZGNhOGVmMjU2NDY4NTJkMzhiYjY3ZGIxYzEzYWUxYjFhNmVkOTg2MTg3ODc5OWRmYmFhMSJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     light_blue:
       Name: "&r&6Light Blue Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzIxY2RlYzJjZjRlYmVlZjM1ZDU4YjE4NGI4MzI1OThiYzg5MGEwYWU1YzJkNTRlZTliZTU4NmQwIn19fQ=="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     magenta:
       Name: "&r&6Magenta Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjlmZTI5MTY3NmM3YjNmOTZmM2NkZjYzYzQ3YjUzZmI0NWQ3M2JkNmZlMmNlMjJkZTEwNzQ5ZWIxNDI2YSJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     pink:
       Name: "&r&6Pink Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y4NDdjMTJkNTdmZTY1NTVlOGY5YjQ3ZTU2MmVjZjE2ODNmYjZjMzVmOTJjZTJjZWQyYWU2OGRlNjI4NzUwIn19fQ=="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     brown:
       Name: "&r&6Brown Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzk2ZDdmYjg3NDQ3ZmZjMDU0ZmIxMDliODRkNjIyNWQ0MTAyOWIxZTY3MTBjN2RlNTdmNjYxYWVmYTZmIn19fQ=="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     black:
       Name: "&r&6Black Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzU0NTVhYWFkYjIzMTdiNWYyOWU5ODk4MWFhNTdmNTc5NTcwNTA2OWQ4ZjQxNWMwZDY4YTkyYTc5MTQxM2IzYSJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     gray:
       Name: "&r&6Gray Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc5ODQzMmZiZWIyYmMyZDc1N2IxZDNjM2IzNTU4ZTY5OTAzOTJkZDA5MWVhNGVmMzgxYjJlMDE5Yzk0NjIifX19"
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     light_gray:
       Name: "&r&6Light Gray Shulker"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmZhMTdkNDFlYTE4M2JlZTUzZDU0NmM3YmVjNGNjZjZhNTRkNGY1MDhmZGU2ZWJmM2U1ZDM4OGQ0Y2JlYWNiOSJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     white:
       Name: "&r&6White"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmI5NGIwYWNiMzE3N2I0Y2RiMDE3ZmUzMWNkNWMyNDcyNjJkZWY1M2JmODMzODFjNmM4MmQ3MmM1NmFjIn19fQ=="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
   husk:
     customPath: true
     default:
@@ -1828,62 +1828,62 @@ Heads:
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YWVlYzZiODQyYWRhODY2OWY4NDZkNjViYzQ5NzYyNTk3ODI0YWI5NDRmMjJmNDViZjNiYmI5NDFhYmU2YyJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     red:
       Name: "&r&6Red Slime"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2NlNTYwOWU1MzM3MGZjYjUxYzc0MzMzYmZlMDM0MTRhZjk0ZmE0MTliNWMzZjA5YThkNTlkYWRjNTFmZjZmOCJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     orange:
       Name: "&r&6Orange Slime"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRhMzM0NjkwOTk0OGY0ZmM3MmI2N2Y1YTIzOWFjYTMyMTU1MDBkMDdjY2Q0Nzg4YTc3ZTg3NWEyMTM1NjViNiJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     yellow:
       Name: "&r&6Yellow Slime"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmViYThlMTNlM2JkMTI0M2Q3MTI4YWViZmE0OGQ0YzlmMmQxYjEyMDc0MDU0OGFhZjRhZmI5M2E1MWZlM2IyNiJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     lime:
       Name: "&r&6Lime Slime"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDRmMmE5ZWNlOGEyNDQ2NmU2NDU1NmZlZjQyNjdiNTlkYjQ5MWE0Y2NiNmE1NmUwNGQzOGVhNWI1MzU0MmRjIn19fQ=="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     cyan:
       customPath: true
       Name: "&r&6Cyan Slime"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU4YzllN2IwMGYzMWJmMjkzNzdmY2YxODlmYjczNzViYjJlZTMwMzkxZjc1YzU0MGE3YjIxNzVkM2Q0NTQyMyJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     blue:
       Name: "&r&6Blue Slime"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzI4NWNhYTJjM2NiOGExZWE4ZjJmN2UyZWNhZWU0NGFmYjIxYzYyMjExZGVhNmZkM2MxMzdiMjJiYjg2NzM0ZiJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     light_blue:
       Name: "&r&6Light Blue"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODBiMmRlNWRmMzk0ZDU0MmMzMTUzODU5MzJiMGQ4ZWE2OThlYjA5OWQzZDVlZDhjMzAwOGRjNTNhOGI3YmEzMCJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     purple:
       Name: "&r&6Purple Slime"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiZTM1YTEzM2I4YjhmNDNjYzEzOTQ2MzMyMGM4ZDA4MjQ2NzNjM2IyYmU0NDAxOWZhMzU5NzVhODkwYTAzZiJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
     pink:
       Name: "&r&6Pink Slime"
       Description: " "
       Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQzNGJhNjg4ZDlkMjc1YjViMmJjMjAwZmFhYzAwMGExMzQ1MjVlNTY1YjkyNjhlMzRiZTM5MmE2MDBkMTczZSJ9fX0="
       Enabled: true
-      DropChance: 5.0
+      DropChance: 100.0
   drowned:
     customPath: true
     default:

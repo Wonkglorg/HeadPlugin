@@ -17,10 +17,12 @@ import com.wonkglorg.entityProcessor.ZombieVillagerProcessor;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.listener.EventListener;
+import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
@@ -48,6 +50,11 @@ public class DeathListener extends EventListener
 		Entity mob = e.getEntity();
 		if(Objects.equals(mob.getPersistentDataContainer().get(new NamespacedKey(plugin, "drophead"), PersistentDataType.STRING), "true"))
 		{
+			if(mob instanceof Player player)
+			{
+				mob.getWorld().dropItemNaturally(mob.getLocation(), ItemUtility.createPlayerHead(player.getUniqueId()));
+				mob.getPersistentDataContainer().set(new NamespacedKey(plugin,"drophead"),PersistentDataType.STRING,"false");
+			}
 			for(EntityTypeProcessor processor : entityTypeProcessors)
 			{
 				if(processor.matches(mob))
@@ -58,6 +65,7 @@ public class DeathListener extends EventListener
 					return;
 				}
 			}
+			return;
 		}
 		
 	}

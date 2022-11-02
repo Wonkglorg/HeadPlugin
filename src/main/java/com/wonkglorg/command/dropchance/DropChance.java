@@ -43,6 +43,10 @@ public class DropChance extends Command
 	@Override
 	public boolean execute(Player player, String[] args)
 	{
+		
+		//split amount between threads and collect result afterwards
+		
+		//notify seperate threat that all are finished and then send message
 		int amount = 1;
 		
 		Map<String, Integer> rolledMap = new HashMap<>();

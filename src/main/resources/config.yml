@@ -6,6 +6,15 @@ Player_PvP_Head: false
 #DropChance for pvp kill head drops in %
 Player_PvP_Head_DropChance: 100
 
+#Enables Head drops from normal kills
+Player_Kill_Entity_Head: false
+
+#Dropchance per kill in %
+Player_Kill_Entity_Dropchance: 0.0
+#Looting modifier dropchance disabled if 0
+Player_Kill_Entity_Looting_Modifier: 3
+
+
 #Enables Head drops from Creeper explosions
 Creeper_Explosion_Head: true
 
