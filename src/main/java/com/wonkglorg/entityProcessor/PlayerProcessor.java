@@ -26,7 +26,7 @@ public class PlayerProcessor extends EntityTypeProcessor
 	{
 		if(entity instanceof Player player)
 		{
-			if(Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()).getBoolean("Heads.player.Enabled"))
+			if(Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()).getBoolean("Heads.player.Enabled"))
 			{
 				player.getWorld().dropItemNaturally(player.getLocation(), ItemUtility.createPlayerHead(player.getUniqueId()));
 			}

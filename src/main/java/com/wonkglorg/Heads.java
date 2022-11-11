@@ -2,7 +2,6 @@ package com.wonkglorg;
 
 import com.wonkglorg.command.config.ReloadConfigs;
 import com.wonkglorg.command.config_gui.ChangeValueCommand;
-import com.wonkglorg.command.config_gui.HeadConfigCommand;
 import com.wonkglorg.command.creeper_spawner.ChargedCreeper;
 import com.wonkglorg.command.creeper_spawner.ClickListener;
 import com.wonkglorg.command.creeper_spawner.ExplosionEvent;
@@ -12,77 +11,80 @@ import com.wonkglorg.command.headgive.GiveMobHeadCommand;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.listeners.DamageListener;
 import com.wonkglorg.listeners.DeathListener;
+import com.wonkglorg.utilitylib.UtilityPlugin;
 import com.wonkglorg.utilitylib.config.ConfigYML;
-import com.wonkglorg.utilitylib.managers.PluginManager;
 import com.wonkglorg.utilitylib.utils.message.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Locale;
 
-public final class Heads extends JavaPlugin
+public final class Heads extends UtilityPlugin
 {
-	private static PluginManager pluginManager;
-	private static Heads heads;
+	private static Heads plugin;
 	
 	@Override
-	public void onEnable()
+	public void pluginStartup()
 	{
-		heads = this;
-		pluginManager = new PluginManager(this);
-		addConfigs();
-		addListeners();
-		addCommands();
+		plugin = this;
 	}
 	
 	@Override
-	public void onDisable()
+	public void pluginShutdown()
 	{
-		pluginManager.getConfigManager().save();
+	
 	}
 	
-	private void addCommands()
+	@Override
+	public void event()
 	{
-		new ChargedCreeper(this, "spawn-creeper");
-		
-		new GiveCustomHead(this, "givecustomhead");
-		new GiveMobHeadCommand(this, "givemobhead");
-		
-		new ReloadConfigs(this, "head-reload", pluginManager.getConfigManager());
-		
-		new HeadConfigCommand(this, "headconfig");
-		new ChangeValueCommand(this, "value");
-		
-		new DropChance(this,"dropchance");
+		manager.add(new DamageListener(this));
+		manager.add(new DeathListener(this));
+		manager.add(new ClickListener(this));
+		manager.add(new ExplosionEvent(this));
 	}
 	
-	private void addListeners()
+	@Override
+	public void command()
 	{
-		new DamageListener(this);
-		new DeathListener(this);
-		new ClickListener(this);
-		new ExplosionEvent(this);
+		manager.add(new ChargedCreeper(this, "spawn-creeper"));
+		manager.add(new GiveCustomHead(this, "givecustomhead"));
+		manager.add(new GiveMobHeadCommand(this, "givemobhead"));
+		manager.add(new ReloadConfigs(this, "head-config-reload", manager.getConfigManager()));
+		manager.add(new ChangeValueCommand(this, "value"));
+		manager.add(new DropChance(this, "dropchance"));
 	}
 	
-	private void addConfigs()
+	@Override
+	public void config()
 	{
-		pluginManager.addConfig(new ConfigYML(this, YML.CONFIG.getFileName()));
-		pluginManager.addConfig(new ConfigYML(this, YML.HEAD_DATA.getFileName()));
-		pluginManager.addConfig(new ConfigYML(this, YML.HEAD_DROP_NUMBERS.getFileName()));
-		pluginManager.addConfig(new ConfigYML(this, YML.HEAD_DATA_BACKUP.getFileName()));
-		
-		pluginManager.setDefaultLang(Locale.ENGLISH, new ConfigYML(this, "eng.yml", "lang"));
-		pluginManager.getLangManager().replace("<prefix>", ChatColor.GRAY + "[HeadPlugin]&r");
-		pluginManager.registerAll();
+		manager.add(new ConfigYML(this, YML.CONFIG.getFileName()));
+		manager.add(new ConfigYML(this, YML.HEAD_DATA.getFileName()));
+		manager.add(new ConfigYML(this, YML.HEAD_DROP_NUMBERS.getFileName()));
+		manager.add(new ConfigYML(this, YML.HEAD_DATA_BACKUP.getFileName()));
 	}
 	
-	public static Heads getInstance()
+	@Override
+	public void lang()
 	{
-		return heads;
+		manager.getLangManager().setDefaultLang(Locale.ENGLISH, new ConfigYML(this, "eng.yml", "lang"));
+		manager.getLangManager().replace("<prefix>", ChatColor.GRAY + "[HeadPlugin]&r");
 	}
 	
-	public static PluginManager getPluginManager()
+	@Override
+	public void recipe()
 	{
-		return pluginManager;
+	
 	}
 	
+	@Override
+	public void enchant()
+	{
+	
+	}
+	
+	public static JavaPlugin getInstance()
+	{
+		return plugin;
+	}
+
 }

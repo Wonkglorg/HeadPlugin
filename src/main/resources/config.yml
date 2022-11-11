@@ -1,30 +1,46 @@
-#Configs for Head plugin
+###############################################
 
-#Enables Heads to drop in pvp
+
+###############################################
+#Chance to drop a player head when defeated in pvp by another player
 Player_PvP_Head: false
 
-#DropChance for pvp kill head drops in %
-Player_PvP_Head_DropChance: 100
+#Sets the % chance per kill to drop a head, if 100 or above always drop a head
+Player_PvP_Head_DropChance: 100.0
 
-#Enables Head drops from normal kills
+#Adds x% per looting level on the killing weapon to drop a head
+Player_PvP_Head_Looting_Modifier: 3.0
+###############################################
+
+###############################################
+#Chance to drop heads from players landing the final blow on any living entity
 Player_Kill_Entity_Head: false
-
-#Dropchance per kill in %
-Player_Kill_Entity_Dropchance: 0.0
-#Looting modifier dropchance disabled if 0
+#Sets the % chance per kill to drop a head, if 100 or above always drop a head
+Player_Kill_Entity_Dropchance: 1.6
+#Adds x% per looting level on the killing weapon to drop a head
 Player_Kill_Entity_Looting_Modifier: 3
+###############################################
 
 
-#Enables Head drops from Creeper explosions
+###############################################
+#Enables Head drops on creeper explosions does not need to be a killing blow
 Creeper_Explosion_Head: true
-
+#Creeper explosion needs to be a killing blow to drop a head
+Creeper_Killing_Blow: false
 #Only drop heads from Charged creeper damage
 Charged_Creeper_Required: true
+#Sets the % chance to drop a head on the above selected settings
+Creeper_Head_Dropchance: 100.0
+###############################################
 
-#Default Head options
+
+###############################################
+#Removes Vanilla Heads from dropping on charged creeper explosions,
+#if set to false 2 heads drop from creepers, skeletons and zombies by default
 Remove_Vanilla_Mob_Heads: true
 
-#Specific vanilla heads, only works if Remove_Vanilla_Mob_Heads is set to true
+#If set to false the head will still drop, above value must be set to true to take these
+#settings into account
 Remove_Vanilla_Zombie_Head: true
 Remove_Vanilla_Creeper_Head: true
 Remove_Vanilla_Skeleton_Head: true

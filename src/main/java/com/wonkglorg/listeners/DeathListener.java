@@ -16,7 +16,6 @@ import com.wonkglorg.entityProcessor.VillagerProcessor;
 import com.wonkglorg.entityProcessor.ZombieVillagerProcessor;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.listener.EventListener;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -24,6 +23,7 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
@@ -33,14 +33,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class DeathListener extends EventListener
+public class DeathListener implements Listener
 {
 	List<EntityTypeProcessor> entityTypeProcessors = new ArrayList<>();
-	Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.CONFIG.getFileName());
+	Config config = Heads.getManager().getConfigManager().getConfig(YML.CONFIG.getFileName());
+	
+	private final JavaPlugin plugin;
 	
 	public DeathListener(JavaPlugin plugin)
 	{
-		super(plugin);
+		this.plugin = plugin;
 		addProcessors(entityTypeProcessors);
 	}
 	
@@ -53,7 +55,7 @@ public class DeathListener extends EventListener
 			if(mob instanceof Player player)
 			{
 				mob.getWorld().dropItemNaturally(mob.getLocation(), ItemUtility.createPlayerHead(player.getUniqueId()));
-				mob.getPersistentDataContainer().set(new NamespacedKey(plugin,"drophead"),PersistentDataType.STRING,"false");
+				mob.getPersistentDataContainer().set(new NamespacedKey(plugin, "drophead"), PersistentDataType.STRING, "false");
 			}
 			for(EntityTypeProcessor processor : entityTypeProcessors)
 			{

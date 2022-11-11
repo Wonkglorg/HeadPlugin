@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 public class DropChance extends Command
 {
-	Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+	Config config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 	
 	/**
 	 * Instantiates a new Command.

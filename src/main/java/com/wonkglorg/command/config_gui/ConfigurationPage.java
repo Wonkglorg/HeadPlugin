@@ -5,13 +5,14 @@ import com.wonkglorg.enums.MenuDataVariables;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.managers.LangManager;
-import com.wonkglorg.utilitylib.utils.Utils;
+
 import com.wonkglorg.utilitylib.utils.builder.ItemBuilder;
 import com.wonkglorg.utilitylib.utils.inventory.Button;
 import com.wonkglorg.utilitylib.utils.inventory.InventoryGUI;
 import com.wonkglorg.utilitylib.utils.item.ItemUtility;
 import com.wonkglorg.utilitylib.utils.message.ChatColor;
 import com.wonkglorg.utilitylib.utils.message.Message;
+import com.wonkglorg.utilitylib.utils.players.PlayerUtil;
 import com.wonkglorg.utils.HeadMenuUtility;
 import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.Material;
@@ -25,21 +26,21 @@ import java.awt.Color;
 public class ConfigurationPage extends InventoryGUI
 {
 	private final MobHeadData headData;
-	private final LangManager lang = Heads.getPluginManager().getLangManager();
-	private final Config backupConfig = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA_BACKUP.getFileName());
+	private final LangManager lang = Heads.getManager().getLangManager();
+	private final Config backupConfig = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA_BACKUP.getFileName());
 	private final Player player;
-	private final Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+	private final Config config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 	private final boolean changes;
 	private boolean resetConfirmed = false;
 	
 	public ConfigurationPage(HeadMenuUtility menuUtility, boolean changes)
 	{
-		super(54, menuUtility.getMobHeadData().getName(), Heads.getInstance(), menuUtility);
+		super(54, menuUtility.getMobHeadData().getName(), Heads.getPlugin(Heads.class), menuUtility);
 		player = menuUtility.getOwner();
 		this.changes = changes;
 		headData = menuUtility.getMobHeadData();
 	}
-	
+	// IMPLEMENT WAY TO ONLY ALLOW HEADS TO DROP FROM SPECIFIC SOURCE LIKE PLAYER KILL OR CREEPER
 	@Override
 	public void addComponents()
 	{
@@ -69,7 +70,7 @@ public class ConfigurationPage extends InventoryGUI
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				Utils.give((Player) e.getWhoClicked(), headData.createHeadItem());
+				ItemUtility.give((Player) e.getWhoClicked(), headData.createHeadItem());
 			}
 		};
 	}

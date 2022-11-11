@@ -26,8 +26,8 @@ public class ChangeValueCommand extends Command
 {
 	
 	private static final Map<Player, MobHeadData> playerDataChange = new HashMap<>();
-	private final LangManager lang = Heads.getPluginManager().getLangManager();
-	private final Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA_BACKUP.getFileName());
+	private final LangManager lang = Heads.getManager().getLangManager();
+	private final Config config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA_BACKUP.getFileName());
 	private HeadMenuUtility menuUtility;
 	
 	/**
@@ -102,7 +102,7 @@ public class ChangeValueCommand extends Command
 			case FILENAME ->
 			{
 				String path = menuUtility.getLastPath() + "." + argAsString(0);
-				Config config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+				Config config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 				if(MobHeadData.isValidHeadPath(config, path))
 				{
 					Message.msgPlayer(player, lang.getValue(player, "command-value-error-value-exists"));

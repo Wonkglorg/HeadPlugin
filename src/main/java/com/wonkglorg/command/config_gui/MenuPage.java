@@ -25,7 +25,7 @@ public class MenuPage extends PaginationGui
 {
 	private final Config config;
 	private final HeadMenuUtility menuUtility;
-	private final LangManager lang = Heads.getPluginManager().getLangManager();
+	private final LangManager lang = Heads.getManager().getLangManager();
 	private String mainPath;
 	private String selectedFile;
 	private boolean confirmed = false;

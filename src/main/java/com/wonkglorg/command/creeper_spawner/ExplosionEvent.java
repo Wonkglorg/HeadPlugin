@@ -1,18 +1,19 @@
 package com.wonkglorg.command.creeper_spawner;
 
-import com.wonkglorg.utilitylib.listener.EventListener;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Creeper;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ExplosionEvent extends EventListener
+public class ExplosionEvent implements Listener
 {
+	private final JavaPlugin plugin;
 	public ExplosionEvent(JavaPlugin plugin)
 	{
-		super(plugin);
+		this.plugin = plugin;
 	}
 	
 	@EventHandler

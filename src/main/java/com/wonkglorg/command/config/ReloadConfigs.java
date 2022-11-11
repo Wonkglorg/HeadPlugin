@@ -26,7 +26,7 @@ public class ReloadConfigs extends Command
 	private final Map<String, Config> configMap = new HashMap<>();
 	private final List<String> configList = new ArrayList<>();
 	private final List<String> matches = new ArrayList<>();
-	private final LangManager lang = Heads.getPluginManager().getLangManager();
+	private final LangManager lang = Heads.getManager().getLangManager();
 	
 	@Override
 	public boolean allowConsole()

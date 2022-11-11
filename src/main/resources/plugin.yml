@@ -1,4 +1,4 @@
-name: Heads
+name: WonkyHeads
 version: '${project.version}'
 main: com.wonkglorg.Heads
 api-version: 1.19
@@ -20,7 +20,7 @@ commands:
     usage: "Usage: /<command> <args>"
     permission: Heads.give.head.custom
     permission-message: You do not have permission to use this command!
-  head-reload:
+  head-config-reload:
     description: Reloads configs
     usage: "Usage: /<command> <args>"
     permission: Heads.reload.config

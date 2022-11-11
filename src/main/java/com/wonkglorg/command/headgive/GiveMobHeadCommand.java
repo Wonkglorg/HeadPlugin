@@ -22,7 +22,7 @@ import java.util.List;
 
 public class GiveMobHeadCommand extends Command
 {
-	private final LangManager lang = Heads.getPluginManager().getLangManager();
+	private final LangManager lang = Heads.getManager().getLangManager();
 	private final List<EntityType> all = new ArrayList<>();
 	private final List<EntityType> hostiles = new ArrayList<>();
 	private final List<EntityType> passives = new ArrayList<>();
@@ -36,7 +36,7 @@ public class GiveMobHeadCommand extends Command
 	public GiveMobHeadCommand(@NotNull JavaPlugin main, @NotNull String name)
 	{
 		super(main, name);
-		config = Heads.getPluginManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+		config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 		initLists();
 		initHandleMap();
 	}

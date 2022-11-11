@@ -1,6 +1,5 @@
 package com.wonkglorg.command.creeper_spawner;
 
-import com.wonkglorg.utilitylib.listener.EventListener;
 import org.bukkit.Location;
 import org.bukkit.NamespacedKey;
 import org.bukkit.World;
@@ -8,18 +7,20 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Creeper;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ClickListener extends EventListener
+public class ClickListener implements Listener
 {
 	private long delay;
+	private final JavaPlugin plugin;
 	
 	public ClickListener(JavaPlugin plugin)
 	{
-		super(plugin);
+		this.plugin = plugin;
 	}
 	
 	@EventHandler
@@ -27,10 +28,11 @@ public class ClickListener extends EventListener
 	{
 		Action action = e.getAction();
 		Block block = e.getClickedBlock();
-		if(block == null){
+		if(block == null)
+		{
 			return;
 		}
-		if(action.isRightClick() && e.getItem() == null && System.currentTimeMillis()-delay > 100 && block.isSolid())
+		if(action.isRightClick() && e.getItem() == null && System.currentTimeMillis() - delay > 100 && block.isSolid())
 		{
 			String type = ChargedCreeper.getPlayerStringMap().get(e.getPlayer());
 			if(type == null || type.equalsIgnoreCase("non"))

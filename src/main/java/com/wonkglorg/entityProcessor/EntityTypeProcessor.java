@@ -17,7 +17,7 @@ public abstract class EntityTypeProcessor
 {
 	
 	protected Entity entity;
-	private final ConfigManager configManager = Heads.getPluginManager().getConfigManager();
+	private final ConfigManager configManager = Heads.getManager().getConfigManager();
 	
 	abstract String path();
 	
