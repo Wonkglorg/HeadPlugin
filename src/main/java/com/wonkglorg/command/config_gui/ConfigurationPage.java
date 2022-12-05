@@ -9,7 +9,7 @@ import com.wonkglorg.utilitylib.managers.LangManager;
 import com.wonkglorg.utilitylib.utils.builder.ItemBuilder;
 import com.wonkglorg.utilitylib.utils.inventory.Button;
 import com.wonkglorg.utilitylib.utils.inventory.InventoryGUI;
-import com.wonkglorg.utilitylib.utils.item.ItemUtility;
+import com.wonkglorg.utilitylib.utils.item.ItemUtil;
 import com.wonkglorg.utilitylib.utils.message.ChatColor;
 import com.wonkglorg.utilitylib.utils.message.Message;
 import com.wonkglorg.utilitylib.utils.players.PlayerUtil;
@@ -70,7 +70,7 @@ public class ConfigurationPage extends InventoryGUI
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				ItemUtility.give((Player) e.getWhoClicked(), headData.createHeadItem());
+				PlayerUtil.give((Player) e.getWhoClicked(), headData.createHeadItem());
 			}
 		};
 	}
@@ -89,7 +89,7 @@ public class ConfigurationPage extends InventoryGUI
 				headConfigurationPage.destroy();
 				destroy();
 				new MenuPage(headMenuUtility, config, config.getParentPath(headMenuUtility.getMobHeadData().getPath()), null,
-						1);
+						1).open();
 				headMenuUtility.setMobHeadData(null);
 			}
 		};
@@ -106,7 +106,7 @@ public class ConfigurationPage extends InventoryGUI
 				HeadMenuUtility headMenuUtility = (HeadMenuUtility) menuUtility;
 				headConfigurationPage.destroy();
 				new MenuPage(headMenuUtility, config, config.getParentPath(headMenuUtility.getMobHeadData().getPath()), null,
-						1);
+						1).open();
 				headMenuUtility.setMobHeadData(null);
 				destroy();
 			}
@@ -185,7 +185,7 @@ public class ConfigurationPage extends InventoryGUI
 					return;
 				}
 				resetConfirmed = true;
-				setItem(ItemUtility.rename(icon, "Confirm reset?"));
+				setItem(ItemUtil.rename(icon, "Confirm reset?"));
 				update();
 			}
 		};

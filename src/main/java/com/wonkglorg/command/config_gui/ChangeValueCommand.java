@@ -95,10 +95,7 @@ public class ChangeValueCommand extends Command
 				double value = argAsDouble(0);
 				mobHeadData.setDropChance(value >= 0 && value <= 100 ? round(value, 2) : mobHeadData.getDropChance());
 			}
-			case TEXTURE ->
-			{
-					mobHeadData.setTexture(argAsString(0));
-			}
+			case TEXTURE -> mobHeadData.setTexture(argAsString(0));
 			case FILENAME ->
 			{
 				String path = menuUtility.getLastPath() + "." + argAsString(0);
@@ -119,8 +116,6 @@ public class ChangeValueCommand extends Command
 		playerDataChange.remove(player);
 		return true;
 	}
-	
-	private List<String> sorted;
 	
 	@Override
 	public List<String> tabComplete(@NotNull Player player, String[] args)
@@ -149,7 +144,7 @@ public class ChangeValueCommand extends Command
 				{
 					return List.of(" ");
 				}
-				sorted = new ArrayList<>();
+				List<String> sorted = new ArrayList<>();
 				StringUtil.copyPartialMatches(s, stringSet.stream().map(s1 -> builder + "." + s1).collect(Collectors.toList()), sorted);
 				return sorted;
 			}

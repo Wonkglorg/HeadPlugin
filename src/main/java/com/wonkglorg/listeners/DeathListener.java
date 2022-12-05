@@ -16,7 +16,7 @@ import com.wonkglorg.entityProcessor.VillagerProcessor;
 import com.wonkglorg.entityProcessor.ZombieVillagerProcessor;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.utils.item.ItemUtility;
+import com.wonkglorg.utilitylib.utils.item.ItemUtil;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Entity;
@@ -54,7 +54,7 @@ public class DeathListener implements Listener
 		{
 			if(mob instanceof Player player)
 			{
-				mob.getWorld().dropItemNaturally(mob.getLocation(), ItemUtility.createPlayerHead(player.getUniqueId()));
+				mob.getWorld().dropItemNaturally(mob.getLocation(), ItemUtil.createPlayerHead(player.getUniqueId()));
 				mob.getPersistentDataContainer().set(new NamespacedKey(plugin, "drophead"), PersistentDataType.STRING, "false");
 			}
 			for(EntityTypeProcessor processor : entityTypeProcessors)
@@ -67,7 +67,6 @@ public class DeathListener implements Listener
 					return;
 				}
 			}
-			return;
 		}
 		
 	}

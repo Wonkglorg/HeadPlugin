@@ -5,8 +5,9 @@ import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.managers.LangManager;
-import com.wonkglorg.utilitylib.utils.item.ItemUtility;
+import com.wonkglorg.utilitylib.utils.item.ItemUtil;
 import com.wonkglorg.utilitylib.utils.message.Message;
+import com.wonkglorg.utilitylib.utils.players.PlayerUtil;
 import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -106,7 +107,7 @@ public class GiveMobHeadCommand extends Command
 				{
 					continue;
 				}
-				ItemUtility.give(player, ItemUtility.createCustomHead(headData.getTexture(), headData.getName(), headData.getDescription()));
+				PlayerUtil.give(player, ItemUtil.createCustomHead(headData.getTexture(), headData.getName(), headData.getDescription()));
 				droppedHeads++;
 			}
 		}

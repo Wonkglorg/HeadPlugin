@@ -4,7 +4,7 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.managers.LangManager;
-import com.wonkglorg.utilitylib.utils.item.ItemUtility;
+import com.wonkglorg.utilitylib.utils.item.ItemUtil;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Creeper;
@@ -62,9 +62,9 @@ public class DamageListener implements Listener
 			}
 			if(Math.random() * 100 <= config.getDouble("Player_PvP_Head_DropChance") + (bonus * config.getDouble("Player_PvP_Head_Looting_Modifier")))
 			{
-				ItemStack playerHead = ItemUtility.createPlayerHead(player.getUniqueId());
+				ItemStack playerHead = ItemUtil.createPlayerHead(player.getUniqueId());
 				player.getWorld().dropItemNaturally(player.getLocation(),
-						ItemUtility.addLore(playerHead, lang.getValue(player, "pvp-head-description").replace("<killer>", damager.getName())));
+						ItemUtil.addLore(playerHead, lang.getValue(player, "pvp-head-description").replace("<killer>", damager.getName())));
 			}
 		}
 		

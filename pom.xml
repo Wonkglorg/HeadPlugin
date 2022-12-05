@@ -77,7 +77,14 @@
 		<dependency>
 			<groupId>com.github.Wonkglorg</groupId>
 			<artifactId>Minecraft-UtilityLib</artifactId>
-			<version>9709ce1856</version>
+			<version>8734eeaa6c</version>
+		</dependency>
+		<dependency>
+			<groupId>eu.endercentral.crazy_advancements</groupId>
+			<artifactId>Crazy_Advancements</artifactId>
+			<scope> system</scope>
+			<version> 4.3.1 </version>
+			<systemPath> E:/7 - Java/Libs/Minecraft/CrazyAdvancementsAPI.jar</systemPath>
 		</dependency>
 	</dependencies>
 </project>

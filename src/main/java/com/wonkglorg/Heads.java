@@ -1,7 +1,9 @@
 package com.wonkglorg;
 
+import com.wonkglorg.advancements.PassiveMobs;
 import com.wonkglorg.command.config.ReloadConfigs;
 import com.wonkglorg.command.config_gui.ChangeValueCommand;
+import com.wonkglorg.command.config_gui.HeadConfigCommand;
 import com.wonkglorg.command.creeper_spawner.ChargedCreeper;
 import com.wonkglorg.command.creeper_spawner.ClickListener;
 import com.wonkglorg.command.creeper_spawner.ExplosionEvent;
@@ -40,12 +42,16 @@ public final class Heads extends UtilityPlugin
 		manager.add(new DamageListener(this));
 		manager.add(new DeathListener(this));
 		manager.add(new ClickListener(this));
+		if(dependencyExists("CrazyAdvancementsAPI")){
+			manager.add(new PassiveMobs(this));
+		}
 		manager.add(new ExplosionEvent(this));
 	}
 	
 	@Override
 	public void command()
 	{
+		manager.add(new HeadConfigCommand(this, "headconfig"));
 		manager.add(new ChargedCreeper(this, "spawn-creeper"));
 		manager.add(new GiveCustomHead(this, "givecustomhead"));
 		manager.add(new GiveMobHeadCommand(this, "givemobhead"));
@@ -57,10 +63,10 @@ public final class Heads extends UtilityPlugin
 	@Override
 	public void config()
 	{
-		manager.add(new ConfigYML(this, YML.CONFIG.getFileName()));
-		manager.add(new ConfigYML(this, YML.HEAD_DATA.getFileName()));
-		manager.add(new ConfigYML(this, YML.HEAD_DROP_NUMBERS.getFileName()));
-		manager.add(new ConfigYML(this, YML.HEAD_DATA_BACKUP.getFileName()));
+		for(YML yml : YML.values())
+		{
+			manager.add(new ConfigYML(this, yml.getFileName()));
+		}
 	}
 	
 	@Override
@@ -79,6 +85,11 @@ public final class Heads extends UtilityPlugin
 	@Override
 	public void enchant()
 	{
+	}
+	
+	@Override
+	public void loadBefore()
+	{
 	
 	}
 	
@@ -86,5 +97,12 @@ public final class Heads extends UtilityPlugin
 	{
 		return plugin;
 	}
-
+	
+	// TRACK PLAYERS ADVAMCENTS BY GIVING HEAD UNIQUE PROPERTY IF PICKED UP FOR FIRST TIME THEY GET PROGRESS
+	
+	//THINK OF METHOD TO ALLOW REPICKUP OF HEADS AND KEEP DATA ON THE HEAD
+	
+	//TRACK TOTAL PICKED UP HEADS?
+	
+	//HEAD ONLY GIVES ADVANCEMENT 1 TIME for the person who picked it up initially no one else.
 }

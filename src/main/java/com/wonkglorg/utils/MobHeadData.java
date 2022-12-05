@@ -2,7 +2,7 @@ package com.wonkglorg.utils;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.utils.item.ItemUtility;
+import com.wonkglorg.utilitylib.utils.item.ItemUtil;
 import com.wonkglorg.utilitylib.utils.message.ChatColor;
 import com.wonkglorg.utilitylib.utils.random.WeightedRandomPicker;
 import org.bukkit.Location;
@@ -128,7 +128,7 @@ public class MobHeadData
 	{
 		loc.getWorld()
 		   .dropItemNaturally(loc,
-				   ItemUtility.createCustomHead(texture, name, description != null ? description.split("\\|") : new String[0]))
+				   ItemUtil.createCustomHead(texture, name, description != null ? description.split("\\|") : new String[0]))
 		   .getPersistentDataContainer()
 		   .set(new NamespacedKey(Heads.getInstance(), "newdrop"), PersistentDataType.STRING, "true");
 	}
@@ -235,7 +235,7 @@ public class MobHeadData
 	
 	public ItemStack createHeadItem()
 	{
-		return ItemUtility.createCustomHead(texture, name, description != null ? List.of(description.split("\\|")) : List.of(" "));
+		return ItemUtil.createCustomHead(texture, name, description != null ? List.of(description.split("\\|")) : List.of(" "));
 	}
 	
 	public ItemStack createHeadItemWithInfoDesc()
@@ -244,7 +244,7 @@ public class MobHeadData
 		finishedDesc.add(enabled ? ChatColor.Reset + ChatColor.GREEN + "Enabled" : ChatColor.Reset + ChatColor.RED + "Disabled");
 		finishedDesc.add(ChatColor.Reset + ChatColor.GOLD + "Dropchance: " + dropChance + "%");
 		finishedDesc.addAll(description != null ? List.of(description.split("\\|")) : List.of(" "));
-		return ItemUtility.createCustomHead(texture, name, finishedDesc);
+		return ItemUtil.createCustomHead(texture, name, finishedDesc);
 	}
 	
 	public String getOriginalName()

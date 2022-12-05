@@ -1,7 +1,8 @@
 package com.wonkglorg.command.headgive;
 
 import com.wonkglorg.utilitylib.command.Command;
-import com.wonkglorg.utilitylib.utils.item.ItemUtility;
+import com.wonkglorg.utilitylib.utils.item.ItemUtil;
+import com.wonkglorg.utilitylib.utils.players.PlayerUtil;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
@@ -50,7 +51,7 @@ public class GiveCustomHead extends Command
 		{
 			builder.append(argAsString(i)).append(" ");
 		}
-		ItemUtility.give(target, ItemUtility.createCustomHead(argAsString(offset), argAsString(1 + offset), builder.toString()));
+		PlayerUtil.give(target, ItemUtil.createCustomHead(argAsString(offset), argAsString(1 + offset), builder.toString()));
 		return true;
 	}
 	

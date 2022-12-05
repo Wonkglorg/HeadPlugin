@@ -2,7 +2,7 @@ package com.wonkglorg.entityProcessor;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
-import com.wonkglorg.utilitylib.utils.item.ItemUtility;
+import com.wonkglorg.utilitylib.utils.item.ItemUtil;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -28,7 +28,7 @@ public class PlayerProcessor extends EntityTypeProcessor
 		{
 			if(Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()).getBoolean("Heads.player.Enabled"))
 			{
-				player.getWorld().dropItemNaturally(player.getLocation(), ItemUtility.createPlayerHead(player.getUniqueId()));
+				player.getWorld().dropItemNaturally(player.getLocation(), ItemUtil.createPlayerHead(player.getUniqueId()));
 			}
 		}
 	}
