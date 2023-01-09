@@ -2,13 +2,14 @@ package com.wonkglorg.command.headgive;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
+import com.wonkglorg.heads.MobHeadData;
+import com.wonkglorg.heads.MobHeadDataUtility;
 import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.item.ItemUtil;
 import com.wonkglorg.utilitylib.managers.LangManager;
-import com.wonkglorg.utilitylib.utils.item.ItemUtil;
-import com.wonkglorg.utilitylib.utils.message.Message;
+import com.wonkglorg.utilitylib.message.Message;
 import com.wonkglorg.utilitylib.utils.players.PlayerUtil;
-import com.wonkglorg.utils.MobHeadData;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -101,7 +102,7 @@ public class GiveMobHeadCommand extends Command
 				continue;
 			}
 			
-			for(MobHeadData headData : MobHeadData.getAllValidConfigHeadData(config, "Heads." + entity.name().toLowerCase().replaceAll("_", " ")))
+			for(MobHeadData headData : MobHeadDataUtility.getAllValidConfigHeadData(config, "Heads." + entity.name().toLowerCase().replaceAll("_", " ")))
 			{
 				if(!headData.isEnabled())
 				{

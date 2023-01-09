@@ -1,7 +1,7 @@
 package com.wonkglorg.command.creeper_spawner;
 
 import com.wonkglorg.utilitylib.command.Command;
-import com.wonkglorg.utilitylib.utils.message.Message;
+import com.wonkglorg.utilitylib.message.Message;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.StringUtil;

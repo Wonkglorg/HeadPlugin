@@ -26,7 +26,7 @@ commands:
     usage: "Usage: /<command> <args>"
     permission: Heads.reload.config
     permission-message: You do not have permission to use this command!
-  headconfig:
+  HeadGui:
     description: Opens gui for head config
     usage: "Usage: /<command>"
     permission: Heads.gui.config

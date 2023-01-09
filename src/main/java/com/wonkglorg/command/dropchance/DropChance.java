@@ -2,11 +2,12 @@ package com.wonkglorg.command.dropchance;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
+import com.wonkglorg.heads.MobHeadData;
+import com.wonkglorg.heads.MobHeadDataUtility;
 import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.utils.message.ChatColor;
-import com.wonkglorg.utilitylib.utils.message.Message;
-import com.wonkglorg.utils.MobHeadData;
+import com.wonkglorg.utilitylib.message.ChatColor;
+import com.wonkglorg.utilitylib.message.Message;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.StringUtil;
@@ -63,11 +64,11 @@ public class DropChance extends Command
 			amount = argAsInteger(1, 1);
 		}
 		
-		List<MobHeadData> mobHeadDataList = MobHeadData.getAllValidConfigHeadData(config, argAsString(0));
+		List<MobHeadData> mobHeadDataList = MobHeadDataUtility.getAllValidConfigHeadData(config, argAsString(0));
 		
 		for(int i = 0; i < amount; i++)
 		{
-			MobHeadData mobHeadData = MobHeadData.randomHeadDrop(mobHeadDataList);
+			MobHeadData mobHeadData = MobHeadDataUtility.randomHeadDrop(mobHeadDataList);
 			if(mobHeadData == null)
 			{
 				rolledMap.put("nothing", (rolledMap.get("nothing") != null ? rolledMap.get("nothing") : 0) + 1);
@@ -83,7 +84,7 @@ public class DropChance extends Command
 		}
 		int finalAmount = amount;
 		mobDropDataList.sort((o1, o2) -> Double.compare(o2.getPercent(finalAmount), o1.getPercent(finalAmount)));
-		Message.msgPlayer(player, ChatColor.Reset + ChatColor.GOLD+ "Total rolled " +ChatColor.YELLOW+  amount);
+		Message.msgPlayer(player, ChatColor.Reset + ChatColor.GOLD + "Total rolled " + ChatColor.YELLOW + amount);
 
 		Message.msgPlayer(player, ChatColor.Reset + ChatColor.GOLD + "%     " + ChatColor.LIGHT_PURPLE + "Amount      " + ChatColor.BLUE + "Name");
 		for(MobDropData mobDropData : mobDropDataList)

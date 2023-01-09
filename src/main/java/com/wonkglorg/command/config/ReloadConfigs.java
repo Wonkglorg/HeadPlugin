@@ -7,7 +7,7 @@ import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.logger.Logger;
 import com.wonkglorg.utilitylib.managers.ConfigManager;
 import com.wonkglorg.utilitylib.managers.LangManager;
-import com.wonkglorg.utilitylib.utils.message.Message;
+import com.wonkglorg.utilitylib.message.Message;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.StringUtil;
@@ -49,19 +49,24 @@ public class ReloadConfigs extends Command
 			return false;
 		}
 		String ymlName = argAsString(0);
-		if(ymlName.equalsIgnoreCase("ALL"))
+		
+		switch(ymlName.toLowerCase())
 		{
-			manager.load();
-			Logger.log(lang.getValue(Locale.ENGLISH, "reload-config-all-success"));
-			Message.msgPlayer(player, lang.getValue(player, "reload-config-all-success"));
-			return true;
+			case "all" ->
+			{
+				manager.load();
+				Logger.log(lang.getValue(Locale.ENGLISH, "reload-config-all-success"));
+				Message.msgPlayer(player, lang.getValue(player, "reload-config-all-success"));
+				return true;
+			}
+			case "all lang" ->
+			{
+				lang.load();
+				Message.msgPlayer(player, lang.getValue(player, "reload-config-all-lang-success"));
+				return true;
+			}
 		}
-		if(ymlName.equalsIgnoreCase("ALL Lang"))
-		{
-			lang.load();
-			Message.msgPlayer(player, lang.getValue(player, "reload-config-all-lang-success"));
-			return true;
-		}
+		
 		Config config = configMap.get(ymlName);
 		
 		if(config == null)

@@ -1,0 +1,60 @@
+advancements:
+#Add ingame gui to edit advancements
+
+#Save them by name + all their settings in a config
+
+#save items as base64 gui as what to showcase
+
+#save list of items or other rewards to determin x% chance to get something on completion or gain xp or something else
+#add option to execute command on completion
+#Execute multiple commands with placeholders
+
+#TEMPLATE ADVANCEMENTS
+
+  Cow:
+    title: Test Name
+    description: Test Description
+    frame: TASK
+    visibility: ALWAYS
+    x: 1
+    y: 1
+    icon: Heads.Sheep.Red
+    #save icon as base 64 value or get icon from seperate file? maybe better then just link to it with a unique id
+    parent:
+    advancementFlag: SHOW_TOAST
+    enabled: true
+    criteria:
+      values:
+        - redSheep: Heads.Sheep.Red
+        - blueSheep: Heads.Sheep.Blue
+      #Map values to the head path than use the map in requirements
+      requirements:
+        1:
+          - RedSheep
+        2:
+          - BlueSheep
+  Pig:
+    title: Test Name
+    description: Test Description
+    frame: TASK
+    visibility: ALWAYS
+    x: 1
+    y: 1
+    icon: Heads.Sheep.Red
+    #save icon as base 64 value or get icon from seperate file? maybe better then just link to it with a unique id
+    parent:
+    advancementFlag: SHOW_TOAST
+    enabled: true
+    criteria:
+      values:
+        - redSheep: Heads.Sheep.Red
+        - blueSheep: Heads.Sheep.Blue
+      #Map values to the head path than use the map in requirements
+      requirements:
+        1:
+          - RedSheep
+        2:
+          - BlueSheep
+
+
+

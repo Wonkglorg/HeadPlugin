@@ -2736,7 +2736,7 @@ Heads:
       leatherworker:
         customPath: true
         default:
-          Name: "Jungle LeatherWorker Zombie Villager"
+          Name: "Jungle Leatherworker Zombie Villager"
           Description: " "
           Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWIyMzg4YjIzZGRkNmE5YTU3NzZmZjJlOGNhNTViNGVmZTMwOTBjYWFmOTY3YzIyNzY5YzU3NmIwYTQwYjg4NSJ9fX0="
           Enabled: true
@@ -2749,5 +2749,3 @@ Heads:
           Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ODU3OGJlMGUxMjE3MjczNGE3ODI0MmRhYjE0OTY0YWJjODVhYjliNTk2MzYxZjdjNWRhZjhmMTRhMGZlYiJ9fX0="
           Enabled: true
           DropChance: 100.0
-  player:
-    Enabled: true

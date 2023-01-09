@@ -1,8 +1,9 @@
 package com.wonkglorg.utils;
 
 import com.wonkglorg.enums.MenuDataVariables;
-import com.wonkglorg.utilitylib.utils.inventory.Button;
-import com.wonkglorg.utilitylib.utils.inventory.MenuUtility;
+import com.wonkglorg.heads.MobHeadData;
+import com.wonkglorg.utilitylib.inventory.Button;
+import com.wonkglorg.utilitylib.inventory.MenuUtility;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
