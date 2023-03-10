@@ -6,11 +6,12 @@ import com.wonkglorg.enums.YML;
 import com.wonkglorg.gui.heads.ConfigurationPage;
 import com.wonkglorg.gui.heads.HeadMenuPage;
 import com.wonkglorg.heads.MobHeadData;
+import com.wonkglorg.heads.MobHeadDataUtility;
 import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.managers.LangManager;
 import com.wonkglorg.utilitylib.message.Message;
-import com.wonkglorg.utils.HeadMenuUtility;
+import com.wonkglorg.utils.HeadProfile;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.StringUtil;
@@ -29,7 +30,7 @@ public class ChangeValueCommand extends Command
 	private static final Map<Player, MobHeadData> playerDataChange = new HashMap<>();
 	private final LangManager lang = Heads.getManager().getLangManager();
 	private final Config config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA_BACKUP.getFileName());
-	private HeadMenuUtility menuUtility;
+	private HeadProfile menuUtility;
 	
 	/**
 	 * Instantiates a new Command.
@@ -72,7 +73,7 @@ public class ChangeValueCommand extends Command
 		playerDataChange.keySet().removeIf(Predicate.not(Player::isValid));
 		
 		MobHeadData mobHeadData = playerDataChange.get(player);
-		HeadMenuUtility menuUtility = HeadMenuUtility.get(player);
+		HeadProfile menuUtility = Heads.getProfileManager().get(player);
 		this.menuUtility = menuUtility;
 		StringBuilder builder = new StringBuilder();
 		
@@ -108,8 +109,8 @@ public class ChangeValueCommand extends Command
 					Message.msgPlayer(player, lang.getValue(player, "command-value-error-value-exists"));
 					return true;
 				}
-				MobHeadData.createNewDirectory(config, menuUtility.getLastPath(), argAsString(0));
-				new HeadMenuPage((Heads) plugin, menuUtility, config, menuUtility.getLastPath(), null, menuUtility.getLastPage()).open();
+				MobHeadDataUtility.createNewDirectory(config, menuUtility.getLastPath(), argAsString(0));
+				new HeadMenuPage((Heads) plugin, menuUtility, config, menuUtility.getLastPath(), null, menuUtility.getCurrentPage()).open();
 				return true;
 			}
 		}
@@ -123,7 +124,7 @@ public class ChangeValueCommand extends Command
 	@Override
 	public List<String> tabComplete(@NotNull Player player, String[] args)
 	{
-		menuUtility = HeadMenuUtility.get(player);
+		menuUtility = Heads.getProfileManager().get(player);
 		if(menuUtility == null)
 		{
 			return null;
@@ -171,6 +172,7 @@ public class ChangeValueCommand extends Command
 	{
 		playerDataChange.put(player, mobHeadData);
 	}
+	
 	/*
 	private static final Map<Player, MobHeadData> playerDataChange = new HashMap<>();
 	private final LangManager lang = Heads.getManager().getLangManager();
@@ -301,8 +303,7 @@ public class ChangeValueCommand extends Command
 		variableHandlerMap.put(MenuDataVariables.DROPCHANCE, new HeadDropChanceHandler());
 	}
 		 */
-	public record DataChange(String stringValue, double doubleValue, HeadMenuUtility menuUtility, LangManager lang)
+	public record DataChange(String stringValue, double doubleValue, HeadProfile menuUtility, LangManager lang)
 	{}
-	
 	
 }

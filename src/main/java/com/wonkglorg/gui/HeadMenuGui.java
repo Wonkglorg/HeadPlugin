@@ -7,18 +7,20 @@ import com.wonkglorg.gui.heads.HeadMenuPage;
 import com.wonkglorg.utilitylib.builder.ItemBuilder;
 import com.wonkglorg.utilitylib.inventory.Button;
 import com.wonkglorg.utilitylib.inventory.InventoryGUI;
-import com.wonkglorg.utilitylib.inventory.MenuUtility;
-import com.wonkglorg.utils.HeadMenuUtility;
+import com.wonkglorg.utilitylib.inventory.Profile;
+import com.wonkglorg.utilitylib.item.ItemUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.UUID;
+
 public class HeadMenuGui extends InventoryGUI
 {
 	private final Heads plugin;
 	
-	public HeadMenuGui(Heads plugin, MenuUtility menuUtility)
+	public HeadMenuGui(Heads plugin, Profile menuUtility)
 	{
 		super(9, "Head Gui", plugin, menuUtility);
 		this.plugin = plugin;
@@ -27,7 +29,7 @@ public class HeadMenuGui extends InventoryGUI
 	@Override
 	public void addComponents()
 	{
-		fill(0, 9	, FILLER);
+		fill(0, 9, FILLER);
 		addButton(HeadDropConfigButton(), 1);
 		addButton(AdvancementsButton(), 3);
 		addButton(CloseButton(), 7);
@@ -35,14 +37,14 @@ public class HeadMenuGui extends InventoryGUI
 	
 	private Button HeadDropConfigButton()
 	{
-		ItemStack icon = new ItemBuilder(Material.STONE).setName("Head Config").build();
+		ItemStack icon = ItemUtil.createPlayerHead(UUID.fromString("30ef44d4-f1bb-4e9f-b079-d5d62364c244"), "Head Config");
 		return new Button(icon)
 		{
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
 				new HeadMenuPage(plugin,
-						(HeadMenuUtility) menuUtility,
+						menuUtility,
 						plugin.manager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),
 						"Heads",
 						null,

@@ -4,8 +4,8 @@ import com.wonkglorg.advancements.AdvancementData;
 import com.wonkglorg.advancements.AdvancementHandler;
 import com.wonkglorg.utilitylib.inventory.Button;
 import com.wonkglorg.utilitylib.inventory.InventoryGUI;
-import com.wonkglorg.utilitylib.inventory.MenuUtility;
 import com.wonkglorg.utilitylib.inventory.PaginationGui;
+import com.wonkglorg.utilitylib.inventory.Profile;
 import com.wonkglorg.utilitylib.item.ItemUtil;
 import eu.endercentral.crazy_advancements.advancement.AdvancementDisplay;
 import org.bukkit.event.inventory.InventoryClickEvent;
@@ -18,13 +18,13 @@ public class AdvancementMenuPage extends InventoryGUI
 	private final PaginationGui pagination;
 	private final JavaPlugin plugin;
 	
-	public AdvancementMenuPage(JavaPlugin plugin, MenuUtility menuUtility, AdvancementHandler handler)
+	public AdvancementMenuPage(JavaPlugin plugin, Profile menuUtility, AdvancementHandler handler)
 	{
 		super(54, "Advancements", plugin, menuUtility);
 		this.plugin = plugin;
 		this.handler = handler;
 		pagination = new PaginationGui(this, FILLER);
-		pagination.addSlots(2, 1, 4, 4);
+		pagination.addSlots(1, 1, 4, 7);
 	}
 	
 	@Override
@@ -35,11 +35,8 @@ public class AdvancementMenuPage extends InventoryGUI
 		{
 			pagination.addPagedButton(addAdvancements(advancementData));
 		}
-		//add all advancements to the list
 		
-		//first add value without parent if exists
-		
-		//Add all values to map and order by weather they are roots or not, then add the next layer etc
+		//check if someone is in the menu editing a value rn then block it for other users, keep track with a hashmap, and check them whenever a player opens this menu. otherwise you could ruin someone elses edits.ye I
 	}
 	
 	private Button addAdvancements(AdvancementData advancement)
@@ -51,6 +48,8 @@ public class AdvancementMenuPage extends InventoryGUI
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
+				new AdvancementConfiguration(plugin,menuUtility,advancement).open();
+				destroy();
 			}
 		};
 	}

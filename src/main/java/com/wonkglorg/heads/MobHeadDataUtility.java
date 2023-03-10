@@ -1,6 +1,8 @@
 package com.wonkglorg.heads;
 
+import com.wonkglorg.Heads;
 import com.wonkglorg.enums.PersistentContainer;
+import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.item.ItemUtil;
 import com.wonkglorg.utilitylib.utils.random.WeightedRandomPicker;
@@ -24,10 +26,6 @@ public class MobHeadDataUtility
 		
 		for(MobHeadData mobHead : mobHeadDataList)
 		{
-			if(mobHead.getWorlds() != null)
-			{
-			
-			}
 			if(mobHead.getDropChance() > 0.0 && mobHead.isEnabled())
 			{
 				weightedRandomPicker.addEntry(mobHead, mobHead.getDropChance());
@@ -62,19 +60,10 @@ public class MobHeadDataUtility
 		{
 			if(mobHead.getWorlds() != null && !(mobHead.getWorlds().contains(world)))
 			{
-				if(!mobHead.getWorlds().contains("%all%")){
+				if(!mobHead.getWorlds().contains("%all%"))
+				{
 					continue;
 				}
-				//if the head does not match the current world they will not be added to the list. Test if it actually works??? or if oversight
-				
-				//MAYBE BETTER APPROACH?
-				
-				//method to mass add something to either all heads, 1 category, sub category etc
-				
-				//basically each category lets you set something for the entire thing by shift selecting it
-				
-				
-				//change how heads are sorted?
 			}
 			if(mobHead.getDropChance() > 0.0 && mobHead.isEnabled())
 			{
@@ -169,6 +158,27 @@ public class MobHeadDataUtility
 		return mobHeadData;
 	}
 	
+	public static void updateYML()
+	{
+		Config config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+		for(MobHeadData mobHeadData : getAllValidConfigHeadData(config, "Heads"))
+		{
+			String path = mobHeadData.getPath();
+			if(!config.contains(path + ".Worlds"))
+			{
+				config.set(path + ".Worlds", "%all%");
+			}
+			if(!config.contains(path + ".Permission"))
+			{
+				config.set(path + ".Permission", "%non%");
+			}
+			if(!config.contains(path + ".Sound"))
+			{
+				config.set(path + ".Sound", "ENTITY_" + mobHeadData.getOriginalName().toUpperCase() + "_AMBIENT");
+			}
+		}
+	}
+	
 	public static MobHeadData getFirstValidConfigHeadData(Config config, String path)
 	{
 		String newPath;
@@ -203,6 +213,24 @@ public class MobHeadDataUtility
 	{
 		return config.contains(path + ".Enabled") && config.contains(path + ".Texture") && config.contains(path + ".DropChance") && config.contains(
 				path + ".Name") && config.contains(path + ".Description");
+	}
+	
+	public static void createNewDirectory(Config config, String path, String name)
+	{
+		String comPath = path + "." + name;
+		if(isValidHeadPath(config, comPath))
+		{
+			return;
+		}
+		config.set(comPath + ".Name", "Enter value");
+		config.set(comPath + ".Description", "Enter value");
+		config.set(comPath + ".Texture", "Enter value");
+		config.set(comPath + ".Enabled", true);
+		config.set(comPath + ".DropChance", 100.0);
+		config.set(comPath + ".Worlds", "%all%");
+		config.set(comPath + ".Permission", "%non%");
+		config.set(comPath + ".Sound", " ");
+		config.silentSave();
 	}
 	
 }

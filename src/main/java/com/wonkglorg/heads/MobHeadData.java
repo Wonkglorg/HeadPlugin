@@ -7,8 +7,10 @@ import com.wonkglorg.utilitylib.item.ItemUtil;
 import com.wonkglorg.utilitylib.message.ChatColor;
 import org.bukkit.Sound;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -28,8 +30,6 @@ public class MobHeadData
 	private Set<String> permissions;
 	private Sound sound;
 	
-	
-	
 	//show player list of all possible sounds with search feature to narrow it down?
 	
 	//so typing cave results in all values returned with cave in the name
@@ -46,6 +46,8 @@ public class MobHeadData
 					   double dropChance,
 					   String path,
 					   Set<String> worlds,
+					   Set<String> permissions,
+					   Sound sound,
 					   Config config)
 	{
 		this.config = config;
@@ -57,34 +59,39 @@ public class MobHeadData
 		this.dropChance = dropChance;
 		this.path = path;
 		this.worlds = worlds;
+		this.permissions = permissions;
+		this.sound = sound;
 	}
 	
 	public MobHeadData(String path, Config config, int originalNameOffset)
 	{
-		Sound.ENTITY_SQUID_AMBIENT
 		String[] pathParts = path.split("\\.");
 		this.config = config;
-		this.originalName = pathParts[originalNameOffset];
-		this.name = config.getString(path + ".Name");
-		this.description = config.getString(path + ".Description");
-		this.texture = config.getString(path + ".Texture");
-		this.enabled = config.getBoolean(path + ".Enabled");
-		this.dropChance = config.getDouble(path + ".DropChance");
-		this.fileName = pathParts[pathParts.length - 1];
-		this.path = path;
-		this.worlds = new HashSet<>(config.getStringList(path + ".Worlds"));
+		setOriginalName(pathParts[originalNameOffset]);
+		setName(config.getString(path + ".Name"));
+		setDescription(config.getString(path + ".Description"));
+		setTexture(config.getString(path + ".Texture"));
+		setEnabled(config.getBoolean(path + ".Enabled"));
+		setDropChance(config.getDouble(path + ".DropChance"));
+		setFileName(pathParts[pathParts.length - 1]);
+		setPath(path);
+		setWorlds(config.getString(path + ".Worlds"));
+		setPermissions(config.getString(path + ".Permission"));
+		setSound(config.getString(path + ".Sound"));
 	}
 	
 	public void setValuesFromHeadData(MobHeadData mobHeadData)
 	{
-		this.name = mobHeadData.getName();
-		this.originalName = mobHeadData.getOriginalName();
-		this.description = mobHeadData.description;
-		this.texture = mobHeadData.getTexture();
-		this.enabled = mobHeadData.isEnabled();
-		this.dropChance = mobHeadData.getDropChance();
-		this.path = mobHeadData.getPath();
-		this.worlds = mobHeadData.getWorlds();
+		setOriginalName(mobHeadData.getOriginalName());
+		setName(mobHeadData.getName());
+		setDescription(mobHeadData.getDescription());
+		setTexture(mobHeadData.getTexture());
+		setEnabled(mobHeadData.isEnabled());
+		setDropChance(mobHeadData.getDropChance());
+		setPath(mobHeadData.getPath());
+		setWorlds(mobHeadData.getWorlds());
+		setSound(mobHeadData.getSound());
+		
 	}
 	
 	public void writeToConfig()
@@ -94,23 +101,9 @@ public class MobHeadData
 		setConfigDescription(config);
 		setConfigEnabled(config);
 		setConfigDropChance(config);
-		setWorlds(config);
-		config.silentSave();
-	}
-	
-	public static void createNewDirectory(Config config, String path, String name)
-	{
-		String comPath = path + "." + name;
-		if(isValidHeadPath(config, comPath))
-		{
-			return;
-		}
-		config.set(comPath + ".Name", "Enter value");
-		config.set(comPath + ".Description", "Enter value");
-		config.set(comPath + ".Texture", "Enter value");
-		config.set(comPath + ".Enabled", true);
-		config.set(comPath + ".DropChance", 100.0);
-		config.set(comPath + ".", new ArrayList<String>());
+		setConfigWorlds(config);
+		setConfigPermission(config);
+		setConfigSound(config);
 		config.silentSave();
 	}
 	
@@ -182,14 +175,26 @@ public class MobHeadData
 		config.set(path + ".DropChance", dropChance);
 	}
 	
-	private void setWorlds(Config config)
+	private void setConfigWorlds(Config config)
 	{
 		if(worlds == null)
 		{
-			config.set(path + ".Worlds", new ArrayList<String>());
+			config.set(path + ".Worlds", "");
 			return;
 		}
 		config.set(path + ".Worlds", worlds);
+		
+		//convert back to singular string with all seperated by ","
+	}
+	
+	private void setConfigPermission(Config config)
+	{
+		//convert back to singular string with all seperated by ","
+	}
+	
+	private void setConfigSound(Config config)
+	{
+		config.set(path + ".Sound", sound.toString());
 	}
 	
 	public String getName()
@@ -274,5 +279,55 @@ public class MobHeadData
 	public void setWorlds(Set<String> worlds)
 	{
 		this.worlds = worlds;
+	}
+	
+	public void setWorlds(String worlds)
+	{
+		if(worlds == null)
+		{
+			this.worlds = new HashSet<>(List.of("%all%"));
+			return;
+		}
+		this.worlds = new HashSet<>(Arrays.stream(worlds.split(",")).toList());
+	}
+	
+	public Set<String> getPermissions()
+	{
+		return permissions;
+	}
+	
+	public Sound getSound()
+	{
+		return sound;
+	}
+	
+	public void setPermissions(Set<String> permissions)
+	{
+		this.permissions = permissions;
+	}
+	
+	public void setPermissions(String permissions)
+	{
+		if(permissions == null){
+			this.permissions = new HashSet<>(List.of(" "));
+			return;
+		}
+		this.permissions = new HashSet<>(Arrays.stream(permissions.split(",")).toList());
+	}
+	
+	public void setSound(@NotNull Sound sound)
+	{
+		this.sound = sound;
+	}
+	
+	public void setSound(String sound)
+	{
+		try
+		{
+			this.sound = Sound.valueOf(sound);
+		} catch(Exception e)
+		{
+			this.sound = Sound.ENTITY_VILLAGER_AMBIENT;
+		}
 	}
 }

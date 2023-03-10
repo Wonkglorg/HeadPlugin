@@ -7,6 +7,7 @@ import com.wonkglorg.enums.YML;
 import com.wonkglorg.heads.MobHeadData;
 import com.wonkglorg.utilitylib.builder.ItemBuilder;
 import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.config.ConfigYML;
 import com.wonkglorg.utilitylib.inventory.Button;
 import com.wonkglorg.utilitylib.inventory.InventoryGUI;
 import com.wonkglorg.utilitylib.item.ItemUtil;
@@ -14,7 +15,7 @@ import com.wonkglorg.utilitylib.managers.LangManager;
 import com.wonkglorg.utilitylib.message.ChatColor;
 import com.wonkglorg.utilitylib.message.Message;
 import com.wonkglorg.utilitylib.utils.players.PlayerUtil;
-import com.wonkglorg.utils.HeadMenuUtility;
+import com.wonkglorg.utils.HeadProfile;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
@@ -30,11 +31,11 @@ public class ConfigurationPage extends InventoryGUI
 	private final LangManager lang = Heads.getManager().getLangManager();
 	private final Config backupConfig = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA_BACKUP.getFileName());
 	private final Player player;
-	private final Config config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+	private final ConfigYML config = (ConfigYML) Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 	private final boolean changes;
 	private boolean resetConfirmed = false;
 	
-	public ConfigurationPage(Heads plugin, HeadMenuUtility menuUtility, boolean changes)
+	public ConfigurationPage(Heads plugin, HeadProfile menuUtility, boolean changes)
 	{
 		super(54, menuUtility.getMobHeadData().getName(), Heads.getPlugin(Heads.class), menuUtility);
 		player = menuUtility.getOwner();
@@ -52,8 +53,8 @@ public class ConfigurationPage extends InventoryGUI
 		addButton(changeName(), 19);
 		addButton(changeDescription(), 22);
 		addButton(changeTexture(), 25);
-		addButton(setEnabled((HeadMenuUtility) menuUtility, this), 40);
-		addButton(dropChance((HeadMenuUtility) menuUtility, this), 43);
+		addButton(setEnabled((HeadProfile) menuUtility, this), 40);
+		addButton(dropChance((HeadProfile) menuUtility, this), 43);
 		String defaultPath = config.getParentPath(headData.getPath());
 		if(MobHeadData.isValidHeadPath(backupConfig, defaultPath + ".default"))
 		{
@@ -86,7 +87,7 @@ public class ConfigurationPage extends InventoryGUI
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				HeadMenuUtility headMenuUtility = (HeadMenuUtility) menuUtility;
+				HeadProfile headMenuUtility = (HeadProfile) menuUtility;
 				headMenuUtility.getMobHeadData().writeToConfig();
 				Message.msgPlayer(menuUtility.getOwner(), "Successfully applied changes");
 				headConfigurationPage.destroy();
@@ -105,7 +106,7 @@ public class ConfigurationPage extends InventoryGUI
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				HeadMenuUtility headMenuUtility = (HeadMenuUtility) menuUtility;
+				HeadProfile headMenuUtility = (HeadProfile) menuUtility;
 				headConfigurationPage.destroy();
 				new HeadMenuPage(plugin, headMenuUtility, config, config.getParentPath(headMenuUtility.getMobHeadData().getPath()), null, 1).open();
 				headMenuUtility.setMobHeadData(null);
@@ -114,7 +115,7 @@ public class ConfigurationPage extends InventoryGUI
 		};
 	}
 	
-	private Button setEnabled(HeadMenuUtility menuUtility, ConfigurationPage configurationPage)
+	private Button setEnabled(HeadProfile menuUtility, ConfigurationPage configurationPage)
 	{
 		ItemStack icon = menuUtility.getMobHeadData().isEnabled()
 						 ? new ItemBuilder(Material.LIME_CONCRETE).setName("Enabled").build()
@@ -180,7 +181,7 @@ public class ConfigurationPage extends InventoryGUI
 					headData.writeToConfig();
 					setItem(icon);
 					destroy();
-					new ConfigurationPage(plugin, (HeadMenuUtility) menuUtility, false).open();
+					new ConfigurationPage(plugin, (HeadProfile) menuUtility, false).open();
 					update();
 					resetConfirmed = false;
 					return;
@@ -207,7 +208,7 @@ public class ConfigurationPage extends InventoryGUI
 		};
 	}
 	
-	private Button dropChance(HeadMenuUtility menuUtility, ConfigurationPage configurationPage)
+	private Button dropChance(HeadProfile menuUtility, ConfigurationPage configurationPage)
 	{
 		return new Button(getChanceItemStack(menuUtility))
 		{
@@ -231,7 +232,7 @@ public class ConfigurationPage extends InventoryGUI
 		};
 	}
 	
-	private ItemStack getChanceItemStack(HeadMenuUtility menuUtility)
+	private ItemStack getChanceItemStack(HeadProfile menuUtility)
 	{
 		double dropchance = menuUtility.getMobHeadData().getDropChance();
 		Color color = ChatColor.gradient(100, 0, dropchance, Color.GREEN, Color.RED);
@@ -245,7 +246,7 @@ public class ConfigurationPage extends InventoryGUI
 	
 	private void handleChange(MenuDataVariables menuDataVariables)
 	{
-		HeadMenuUtility headUtil = (HeadMenuUtility) menuUtility;
+		HeadProfile headUtil = (HeadProfile) menuUtility;
 		ChangeValueCommand.setPlayerDataChange(headUtil.getOwner(), headData);
 		headUtil.setDataVariables(menuDataVariables);
 		switch(menuDataVariables)

@@ -32,12 +32,12 @@ public abstract class EntityTypeProcessor
 		
 		List<MobHeadData> mobHeadDataList = MobHeadDataUtility.getAllValidConfigHeadData(config, path);
 		
-		MobHeadData mobHead = MobHeadDataUtility.randomHeadDrop(mobHeadDataList);
+		MobHeadData mobHead = MobHeadDataUtility.randomHeadDrop(mobHeadDataList, loc.getWorld().getName());
 		if(mobHead == null)
 		{
 			return;
 		}
-		MobHeadDataUtility.dropHead(mobHead.getTexture(), mobHead.getName(), mobHead.getDescription(), loc, mobHead.getFileName());
+		MobHeadDataUtility.dropHead(mobHead.getTexture(), mobHead.getName(), mobHead.getDescription(), loc, mobHead.getPath());
 		countConfig.set(path, countConfig.contains(path) ? countConfig.getInt(path) + 1 : 1);
 		countConfig.silentSave();
 	}

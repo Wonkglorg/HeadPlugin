@@ -18,12 +18,13 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
 public class DeathListener implements Listener
 {
-	DefaultHashMap<EntityType, EntityTypeProcessor> entityProcessorMap = new DefaultHashMap<>(new EntityProcessor());
+	HashMap<EntityType, EntityTypeProcessor> entityProcessorMap = new DefaultHashMap<>(new EntityProcessor());
 	Config config = Heads.getManager().getConfigManager().getConfig(YML.CONFIG.getFileName());
 	
 	private final JavaPlugin plugin;

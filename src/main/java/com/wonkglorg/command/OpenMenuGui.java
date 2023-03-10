@@ -3,7 +3,6 @@ package com.wonkglorg.command;
 import com.wonkglorg.Heads;
 import com.wonkglorg.gui.HeadMenuGui;
 import com.wonkglorg.utilitylib.command.Command;
-import com.wonkglorg.utils.HeadMenuUtility;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
@@ -34,7 +33,7 @@ public class OpenMenuGui extends Command
 	@Override
 	public boolean execute(Player player, String[] args)
 	{
-		new HeadMenuGui(plugin, HeadMenuUtility.get(player)).open();
+		new HeadMenuGui(plugin, plugin.getProfileManager().get(player)).open();
 		return true;
 	}
 	

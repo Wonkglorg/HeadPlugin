@@ -4,12 +4,16 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.heads.MobHeadData;
 import com.wonkglorg.heads.MobHeadDataUtility;
+import com.wonkglorg.utilitylib.builder.TimerBuilder;
 import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.message.ChatColor;
 import com.wonkglorg.utilitylib.message.Message;
+import com.wonkglorg.utilitylib.utils.DateUtils;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.StringUtil;
 import org.jetbrains.annotations.NotNull;
 
@@ -50,7 +54,6 @@ public class DropChance extends Command
 		//notify seperate threat that all are finished and then send message
 		int amount = 1;
 		
-		Map<String, Integer> rolledMap = new HashMap<>();
 		if(args.length == 1)
 		{
 			return false;
@@ -66,26 +69,48 @@ public class DropChance extends Command
 		
 		List<MobHeadData> mobHeadDataList = MobHeadDataUtility.getAllValidConfigHeadData(config, argAsString(0));
 		
+		int finalAmount1 = amount;
+		new BukkitRunnable()
+		{
+			@Override
+			public void run()
+			{
+				Map<String, Integer> resultMap = roll(mobHeadDataList, finalAmount1);
+				sendResult(resultMap, finalAmount1, player);
+			}
+		}.runTask(plugin);
+		
+		return true;
+	}
+	
+	public Map<String, Integer> roll(List<MobHeadData> mobHeadDataList, int amount)
+	{
+		Map<String, Integer> rollMap = new HashMap<>();
+		
 		for(int i = 0; i < amount; i++)
 		{
 			MobHeadData mobHeadData = MobHeadDataUtility.randomHeadDrop(mobHeadDataList);
 			if(mobHeadData == null)
 			{
-				rolledMap.put("nothing", (rolledMap.get("nothing") != null ? rolledMap.get("nothing") : 0) + 1);
+				rollMap.put("nothing", (rollMap.get("nothing") != null ? rollMap.get("nothing") : 0) + 1);
 				continue;
 			}
-			rolledMap.put(mobHeadData.getName(), (rolledMap.get(mobHeadData.getName()) != null ? rolledMap.get(mobHeadData.getName()) : 0) + 1);
+			rollMap.put(mobHeadData.getName(), (rollMap.get(mobHeadData.getName()) != null ? rollMap.get(mobHeadData.getName()) : 0) + 1);
 			
 		}
+		return rollMap;
+	}
+	
+	public void sendResult(Map<String, Integer> resultMap, int amount, Player player)
+	{
 		List<MobDropData> mobDropDataList = new ArrayList<>();
-		for(String s : rolledMap.keySet())
+		for(String s : resultMap.keySet())
 		{
-			mobDropDataList.add(new MobDropData(rolledMap.get(s), s));
+			mobDropDataList.add(new MobDropData(resultMap.get(s), s));
 		}
-		int finalAmount = amount;
-		mobDropDataList.sort((o1, o2) -> Double.compare(o2.getPercent(finalAmount), o1.getPercent(finalAmount)));
+		mobDropDataList.sort((o1, o2) -> Double.compare(o2.getPercent(amount), o1.getPercent(amount)));
 		Message.msgPlayer(player, ChatColor.Reset + ChatColor.GOLD + "Total rolled " + ChatColor.YELLOW + amount);
-
+		
 		Message.msgPlayer(player, ChatColor.Reset + ChatColor.GOLD + "%     " + ChatColor.LIGHT_PURPLE + "Amount      " + ChatColor.BLUE + "Name");
 		for(MobDropData mobDropData : mobDropDataList)
 		{
@@ -95,12 +120,11 @@ public class DropChance extends Command
 					round(mobDropData.getPercent(amount), 2) +
 					" " +
 					ChatColor.LIGHT_PURPLE +
-					(int)mobDropData.getAmount() +
+					(int) mobDropData.getAmount() +
 					" " +
 					ChatColor.BLUE +
 					mobDropData.getName());
 		}
-		return true;
 	}
 	
 	List<String> empty = new ArrayList<>();

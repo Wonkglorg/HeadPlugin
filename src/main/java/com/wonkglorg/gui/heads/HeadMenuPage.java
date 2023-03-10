@@ -8,14 +8,16 @@ import com.wonkglorg.heads.MobHeadData;
 import com.wonkglorg.heads.MobHeadDataUtility;
 import com.wonkglorg.utilitylib.builder.ItemBuilder;
 import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.config.ConfigYML;
 import com.wonkglorg.utilitylib.inventory.Button;
 import com.wonkglorg.utilitylib.inventory.InventoryGUI;
 import com.wonkglorg.utilitylib.inventory.PaginationGui;
+import com.wonkglorg.utilitylib.inventory.Profile;
 import com.wonkglorg.utilitylib.item.ItemUtil;
 import com.wonkglorg.utilitylib.managers.LangManager;
 import com.wonkglorg.utilitylib.message.ChatColor;
 import com.wonkglorg.utilitylib.message.Message;
-import com.wonkglorg.utils.HeadMenuUtility;
+import com.wonkglorg.utils.HeadProfile;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
@@ -26,22 +28,22 @@ import java.util.Set;
 
 public class HeadMenuPage extends InventoryGUI
 {
-	private final Config config;
+	private final ConfigYML config;
 	private final Heads plugin;
-	private final HeadMenuUtility menuUtility;
+	private final HeadProfile menuUtility;
 	private final PaginationGui pagination;
 	private final LangManager lang = Heads.getManager().getLangManager();
 	private String mainPath;
 	private String selectedFile;
 	private boolean confirmed = false;
 	
-	public HeadMenuPage(Heads plugin, HeadMenuUtility menuUtility, Config config, String path, String name, int page)
+	public HeadMenuPage(Heads plugin, Profile menuUtility, Config config, String path, String name, int page)
 	{
 		super(54, name == null ? "Head Config" : name, Heads.getInstance(), menuUtility);
 		this.plugin = plugin;
 		this.mainPath = path;
-		this.config = config;
-		this.menuUtility = menuUtility;
+		this.config = (ConfigYML) config;
+		this.menuUtility = (HeadProfile) menuUtility;
 		
 		//Define pagination and set the slots it should fill
 		pagination = new PaginationGui(this);
@@ -117,7 +119,7 @@ public class HeadMenuPage extends InventoryGUI
 			config.getSection("Heads", false).forEach(s -> pagination.addPagedButton(basePathButton(MobHeadDataUtility.getFirstValidConfigHeadData(
 					config,
 					"Heads." + s), s)));
-			pagination.setPage(menuUtility.getLastPage());
+			pagination.setPage(menuUtility.getCurrentPage());
 			removeButton(45);
 			checkArrowButtons();
 			pagination.updatePage();
@@ -174,7 +176,7 @@ public class HeadMenuPage extends InventoryGUI
 			public void onClick(InventoryClickEvent e)
 			{
 				mainPath = pathInput + "." + name;
-				menuUtility.setLastPage(pagination.getPage());
+				menuUtility.setCurrentPage(pagination.getPage());
 				pagination.setPage(1);
 				clear();
 				handleNextButtons(config, mainPath);
@@ -267,7 +269,7 @@ public class HeadMenuPage extends InventoryGUI
 			public void onClick(InventoryClickEvent e)
 			{
 				mainPath = mainPath + "." + finalName;
-				menuUtility.setLastPage(pagination.getPage());
+				menuUtility.setCurrentPage(pagination.getPage());
 				destroy();
 				new HeadMenuPage(plugin, menuUtility, config, mainPath, finalName, 1).open();
 			}
@@ -307,7 +309,7 @@ public class HeadMenuPage extends InventoryGUI
 				mainPath = config.getParentPath(mainPath);
 				clear();
 				destroy();
-				new HeadMenuPage(plugin, menuUtility, config, mainPath, null, menuUtility.getLastPage()).open();
+				new HeadMenuPage(plugin, menuUtility, config, mainPath, null, menuUtility.getCurrentPage()).open();
 			}
 		};
 	}
