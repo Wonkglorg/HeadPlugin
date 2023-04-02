@@ -55,7 +55,6 @@ public class HeadMenuPage extends InventoryGUI
 	@Override
 	public void addComponents()
 	{
-		pagination.setFillerItem(InventoryGUI.FILLER);
 		pagination.addSlots(1, 1, 8, 5);
 		
 		handleNextButtons(config, mainPath);
@@ -318,7 +317,7 @@ public class HeadMenuPage extends InventoryGUI
 	{
 		removeButton(47);
 		removeButton(51);
-		fill(0, 54, InventoryGUI.FILLER);
+		fill(InventoryGUI.FILLER);
 		if(pagination.getPage() < pagination.getMaxPage())
 		{
 			addButton(forward(), 51);

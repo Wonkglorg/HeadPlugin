@@ -29,7 +29,7 @@ public class AdvancementConfiguration extends InventoryGUI
 	public void switchPage()
 	{
 		
-		fill(0, 53, FILLER);
+		fill(FILLER);
 		
 		if(page == 1)
 		{

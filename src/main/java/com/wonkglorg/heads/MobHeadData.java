@@ -1,7 +1,5 @@
 package com.wonkglorg.heads;
 
-import com.wonkglorg.Heads;
-import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.item.ItemUtil;
 import com.wonkglorg.utilitylib.message.ChatColor;
@@ -29,14 +27,6 @@ public class MobHeadData
 	private Set<String> worlds;
 	private Set<String> permissions;
 	private Sound sound;
-	
-	//show player list of all possible sounds with search feature to narrow it down?
-	
-	//so typing cave results in all values returned with cave in the name
-	
-	//then just use value.of(button name)
-	
-	//do not use sql, not worth it for current purpose, stay with flatfile
 	
 	public MobHeadData(String name,
 					   String originalName,
@@ -130,12 +120,15 @@ public class MobHeadData
 		finishedDesc.add(enabled ? ChatColor.Reset + ChatColor.GREEN + "Enabled" : ChatColor.Reset + ChatColor.RED + "Disabled");
 		finishedDesc.add(ChatColor.Reset + ChatColor.GOLD + "Dropchance: " + dropChance + "%");
 		finishedDesc.addAll(description != null ? List.of(description.split("\\|")) : List.of(" "));
-		if(worlds.contains("%all%"))
+		if(worlds != null)
 		{
-			finishedDesc.add("Worlds: ALL");
-		} else
-		{
-			finishedDesc.add("Worlds: " + worlds);
+			if(worlds.contains("%all%"))
+			{
+				finishedDesc.add("Worlds: ALL");
+			} else
+			{
+				finishedDesc.add("Worlds: " + worlds);
+			}
 		}
 		return ItemUtil.createCustomHead(texture, name, finishedDesc);
 	}
@@ -179,12 +172,27 @@ public class MobHeadData
 	{
 		if(worlds == null)
 		{
-			config.set(path + ".Worlds", "");
+			config.set(path + ".Worlds", "%all%");
 			return;
 		}
-		config.set(path + ".Worlds", worlds);
+		StringBuilder stringBuilder = new StringBuilder();
+		List<String> worldList = worlds.stream().toList();
+		for(int i = 0; i < worldList.size(); i++)
+		{
+			if(i == 1)
+			{
+				stringBuilder.append(worldList.get(i));
+				continue;
+			}
+			stringBuilder.append(",").append(worldList.get(i));
+		}
 		
-		//convert back to singular string with all seperated by ","
+		for(String s : worlds)
+		{
+			stringBuilder.append(s).append(",");
+		}
+		
+		config.set(path + ".Worlds", stringBuilder.toString());
 	}
 	
 	private void setConfigPermission(Config config)
@@ -269,11 +277,7 @@ public class MobHeadData
 	
 	public Set<String> getWorlds()
 	{
-		if(Heads.getManager().getConfigManager().getConfig(YML.CONFIG.getFileName()).getBoolean("WorldRestrictedHeads"))
-		{
-			return worlds;
-		}
-		return null;
+		return worlds;
 	}
 	
 	public void setWorlds(Set<String> worlds)
@@ -308,7 +312,8 @@ public class MobHeadData
 	
 	public void setPermissions(String permissions)
 	{
-		if(permissions == null){
+		if(permissions == null)
+		{
 			this.permissions = new HashSet<>(List.of(" "));
 			return;
 		}

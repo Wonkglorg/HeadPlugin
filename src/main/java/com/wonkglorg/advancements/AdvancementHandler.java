@@ -38,21 +38,25 @@ public class AdvancementHandler
 		String path = "advancements";
 		for(String section : config.getSection(path, false))
 		{
+			System.out.println("----------------------------------------------------------");
 			if(advancements.containsKey(section))
 			{
+				System.out.println("Already added");
 				continue;
 			}
 			path = "advancements";
 			path = path + "." + section;
+			System.out.println("Path " + path);
 			if(!AdvancementData.isValid(config, path))
 			{
+				System.out.println("Not valid");
 				continue;
 			}
 			
 			AdvancementData advancementData = new AdvancementBuilder(section, path, config).setValuesFromConfig().build();
-			
+			System.out.println("AdvancementData " + advancementData);
 			checkParent(config, advancementData);
-			
+			System.out.println("AdvancementQueue " + advancementQueue);
 			while(!advancementQueue.isEmpty())
 			{
 				AdvancementData advancement = advancementQueue.pop();

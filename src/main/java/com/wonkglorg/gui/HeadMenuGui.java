@@ -20,16 +20,16 @@ public class HeadMenuGui extends InventoryGUI
 {
 	private final Heads plugin;
 	
-	public HeadMenuGui(Heads plugin, Profile menuUtility)
+	public HeadMenuGui(Heads plugin, Profile profile)
 	{
-		super(9, "Head Gui", plugin, menuUtility);
+		super(9, "Head Gui", plugin, profile);
 		this.plugin = plugin;
 	}
 	
 	@Override
 	public void addComponents()
 	{
-		fill(0, 9, FILLER);
+		fill(FILLER);
 		addButton(HeadDropConfigButton(), 1);
 		addButton(AdvancementsButton(), 3);
 		addButton(CloseButton(), 7);
@@ -44,7 +44,7 @@ public class HeadMenuGui extends InventoryGUI
 			public void onClick(InventoryClickEvent e)
 			{
 				new HeadMenuPage(plugin,
-						menuUtility,
+						profile,
 						plugin.manager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName()),
 						"Heads",
 						null,
@@ -71,7 +71,7 @@ public class HeadMenuGui extends InventoryGUI
 			{
 				if(plugin.advancementApiExists())
 				{
-					new AdvancementMenuPage(plugin, menuUtility, plugin.getAdvancementHandler()).open();
+					new AdvancementMenuPage(plugin, profile, plugin.getAdvancementHandler()).open();
 				}
 			}
 		};
@@ -86,7 +86,7 @@ public class HeadMenuGui extends InventoryGUI
 			public void onClick(InventoryClickEvent e)
 			{
 				destroy();
-				menuUtility.getOwner().closeInventory();
+				profile.getOwner().closeInventory();
 			}
 		};
 	}

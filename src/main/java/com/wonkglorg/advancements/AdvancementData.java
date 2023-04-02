@@ -10,11 +10,11 @@ import java.util.Map;
 
 public class AdvancementData implements Cloneable
 {
-	private StringAdvancement sAdvancement;
-	private Advancement advancement;
+	private final StringAdvancement sAdvancement;
+	private final Advancement advancement;
 	private ItemStack icon;
 	private boolean enabled;
-	private Map<String, String> criteriaLookupMap;
+	private final Map<String, String> criteriaLookupMap;
 	
 	public AdvancementData(StringAdvancement sAdvancement,
 						   Advancement advancement,
@@ -61,7 +61,8 @@ public class AdvancementData implements Cloneable
 			   config.contains(path + ".y") &&
 			   config.contains(path + ".icon") &&
 			   config.contains(path + ".advancementFlag") &&
-			   config.contains(path + ".Enabled");
+			   config.contains(path + ".enabled") &&
+			   config.contains(path + ".requirements");
 	}
 	
 	public void setEnabled(boolean enabled)

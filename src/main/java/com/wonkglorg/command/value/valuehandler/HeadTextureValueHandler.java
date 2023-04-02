@@ -1,14 +1,18 @@
 package com.wonkglorg.command.value.valuehandler;
 
-import com.wonkglorg.command.value.ChangeValueCommand.DataChange;
 import com.wonkglorg.heads.MobHeadData;
+import com.wonkglorg.utilitylib.config.Config;
+import org.bukkit.entity.Player;
 
-public class HeadTextureValueHandler implements HeadValueHandler
+public class HeadTextureValueHandler extends HeadValueHandler
 {
 	
+	
 	@Override
-	public void accept(MobHeadData mobHeadData, DataChange value)
+	public void accept(Player player, Config config, MobHeadData mobHeadData, String value)
 	{
-		mobHeadData.setTexture(value.stringValue());
+		mobHeadData.setTexture(value);
+		
+		handle(player, config, mobHeadData);
 	}
 }

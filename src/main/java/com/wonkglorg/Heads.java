@@ -19,41 +19,23 @@ import com.wonkglorg.utilitylib.inventory.ProfileManager;
 import com.wonkglorg.utilitylib.managers.PluginManager;
 import com.wonkglorg.utilitylib.message.ChatColor;
 import com.wonkglorg.utils.HeadProfile;
+import com.wonkglorg.web.MainWebHandler;
 import eu.endercentral.crazy_advancements.manager.AdvancementManager;
-
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Locale;
 
 public final class Heads extends UtilityPlugin
 {
-	
-	//CLEANUP AND REWORK ALL CODE!!!!!!!!! VERY MESSY RN
-	
-	//WORLDS HAVE BEEN ADDED TO HEADATA BUT ARE NOT USED YET NOR FINISHED ADDING IN HEAD YML
-	
-	//FINISH ADVANCEMENTS NOW WORKING RN WHY?
-	
-	//ADD OPTION TO DROP HEADS FROM OTHER THINGS LIKE FOUND IN CHESTS WANDERING TRADERS, VILLAGERS, FROM BLOCK BREAK ADD NEW MENU FOR THIS
-	
-	// IF PLAYER HAS PERMISSION X LET THEM DROP HEADS??? IDK HOW TO INCLUDE THAT
-	
-	/*
-		fix criteria to also work on main parent paths if for exmaple criteria is sheep
-		
-		then sheep.red.default would also work by splitting paths up and checking it compared to all sub builds
-		
-		when the head is dropped after death event add a new string with the path to it, which then serves as the indicator for the advancements
-	 */
 	private static Heads plugin;
 	private boolean advancementApi = false;
 	private AdvancementHandler advancementHandler;
 	private AdvancementManager advancementManager;
 	private static final ProfileManager<HeadProfile> profileManager = new ProfileManager<>(new HeadProfile(null));
 	
-	@Override
 	public void loadBefore()
 	{
+		new MainWebHandler();
 		plugin = this;
 		if(dependencyExists("CrazyAdvancementsAPI"))
 		{
@@ -66,6 +48,13 @@ public final class Heads extends UtilityPlugin
 	@Override
 	public void pluginStartup()
 	{
+		loadBefore();
+		
+		config();
+		lang();
+		event();
+		command();
+		
 		advancementHandler.startup(manager.getConfigManager().getConfig(YML.ADVANCEMENTS.getFileName()));
 		MobHeadDataUtility.updateYML();
 	}
@@ -76,7 +65,6 @@ public final class Heads extends UtilityPlugin
 	
 	}
 	
-	@Override
 	public void event()
 	{
 		manager.add(new DamageListener(this));
@@ -88,7 +76,6 @@ public final class Heads extends UtilityPlugin
 		}
 	}
 	
-	@Override
 	public void command()
 	{
 		manager.add(new OpenMenuGui(this, "head-gui"));
@@ -99,7 +86,6 @@ public final class Heads extends UtilityPlugin
 		manager.add(new DropChance(this, "head-dropchance"));
 	}
 	
-	@Override
 	public void config()
 	{
 		for(YML yml : YML.values())
@@ -113,22 +99,10 @@ public final class Heads extends UtilityPlugin
 		
 	}
 	
-	@Override
 	public void lang()
 	{
 		manager.addDefaultLang(Locale.ENGLISH, new ConfigYML(this, "eng.yml", "lang"));
 		manager.getLangManager().replace("<prefix>", ChatColor.GRAY + "[HeadPlugin]" + ChatColor.Reset);
-	}
-	
-	@Override
-	public void recipe()
-	{
-	
-	}
-	
-	@Override
-	public void enchant()
-	{
 	}
 	
 	public static JavaPlugin getInstance()
@@ -155,12 +129,4 @@ public final class Heads extends UtilityPlugin
 	{
 		return profileManager;
 	}
-	
-	// TRACK PLAYERS ADVAMCENTS BY GIVING HEAD UNIQUE PROPERTY IF PICKED UP FOR FIRST TIME THEY GET PROGRESS
-	
-	//THINK OF METHOD TO ALLOW REPICKUP OF HEADS AND KEEP DATA ON THE HEAD
-	
-	//TRACK TOTAL PICKED UP HEADS?
-	
-	//HEAD ONLY GIVES ADVANCEMENT 1 TIME for the person who picked it up initially no one else.
 }

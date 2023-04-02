@@ -77,8 +77,14 @@
 		<dependency>
 			<groupId>com.github.Wonkglorg</groupId>
 			<artifactId>Minecraft-UtilityLib</artifactId>
-			<version>f5292ef37b</version>
+			<version>c7e3f3d330</version>
 		</dependency>
+		<dependency>
+			<groupId>io.javalin</groupId>
+			<artifactId>javalin</artifactId>
+			<version>5.4.2</version>
+		</dependency>
+
 		<dependency>
 			<groupId>eu.endercentral.crazy_advancements</groupId>
 			<artifactId>Crazy_Advancements</artifactId>

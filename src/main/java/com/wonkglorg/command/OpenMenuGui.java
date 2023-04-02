@@ -33,7 +33,7 @@ public class OpenMenuGui extends Command
 	@Override
 	public boolean execute(Player player, String[] args)
 	{
-		new HeadMenuGui(plugin, plugin.getProfileManager().get(player)).open();
+		new HeadMenuGui(plugin, Heads.getProfileManager().get(player)).open();
 		return true;
 	}
 	

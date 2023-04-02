@@ -9,7 +9,7 @@ import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.item.ItemUtil;
 import com.wonkglorg.utilitylib.managers.LangManager;
 import com.wonkglorg.utilitylib.message.Message;
-import com.wonkglorg.utilitylib.utils.players.PlayerUtil;
+import com.wonkglorg.utilitylib.players.PlayerUtil;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;

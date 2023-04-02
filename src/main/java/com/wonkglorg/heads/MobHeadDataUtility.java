@@ -5,7 +5,7 @@ import com.wonkglorg.enums.PersistentContainer;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.utilitylib.config.Config;
 import com.wonkglorg.utilitylib.item.ItemUtil;
-import com.wonkglorg.utilitylib.utils.random.WeightedRandomPicker;
+import com.wonkglorg.utilitylib.random.WeightedRandomPicker;
 import org.bukkit.Location;
 import org.bukkit.persistence.PersistentDataType;
 

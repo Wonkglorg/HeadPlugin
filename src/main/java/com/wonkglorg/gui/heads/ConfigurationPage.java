@@ -14,15 +14,14 @@ import com.wonkglorg.utilitylib.item.ItemUtil;
 import com.wonkglorg.utilitylib.managers.LangManager;
 import com.wonkglorg.utilitylib.message.ChatColor;
 import com.wonkglorg.utilitylib.message.Message;
-import com.wonkglorg.utilitylib.utils.players.PlayerUtil;
+import com.wonkglorg.utilitylib.message.color_components.Color;
+import com.wonkglorg.utilitylib.players.PlayerUtil;
 import com.wonkglorg.utils.HeadProfile;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
-
-import java.awt.Color;
 
 public class ConfigurationPage extends InventoryGUI
 {
@@ -48,13 +47,13 @@ public class ConfigurationPage extends InventoryGUI
 	@Override
 	public void addComponents()
 	{
-		fill(0, super.getInventory().getSize(), new ItemBuilder(Material.GRAY_STAINED_GLASS_PANE).setName(" ").build());
+		fill(FILLER);
 		addButton(headShowcase(headData.createHeadItemWithInfoDesc()), 4);
 		addButton(changeName(), 19);
 		addButton(changeDescription(), 22);
 		addButton(changeTexture(), 25);
-		addButton(setEnabled((HeadProfile) menuUtility, this), 40);
-		addButton(dropChance((HeadProfile) menuUtility, this), 43);
+		addButton(setEnabled((HeadProfile) profile, this), 40);
+		addButton(dropChance((HeadProfile) profile, this), 43);
 		String defaultPath = config.getParentPath(headData.getPath());
 		if(MobHeadData.isValidHeadPath(backupConfig, defaultPath + ".default"))
 		{
@@ -87,9 +86,9 @@ public class ConfigurationPage extends InventoryGUI
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				HeadProfile headMenuUtility = (HeadProfile) menuUtility;
+				HeadProfile headMenuUtility = (HeadProfile) profile;
 				headMenuUtility.getMobHeadData().writeToConfig();
-				Message.msgPlayer(menuUtility.getOwner(), "Successfully applied changes");
+				Message.msgPlayer(profile.getOwner(), "Successfully applied changes");
 				headConfigurationPage.destroy();
 				destroy();
 				new HeadMenuPage(plugin, headMenuUtility, config, config.getParentPath(headMenuUtility.getMobHeadData().getPath()), null, 1).open();
@@ -106,7 +105,7 @@ public class ConfigurationPage extends InventoryGUI
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				HeadProfile headMenuUtility = (HeadProfile) menuUtility;
+				HeadProfile headMenuUtility = (HeadProfile) profile;
 				headConfigurationPage.destroy();
 				new HeadMenuPage(plugin, headMenuUtility, config, config.getParentPath(headMenuUtility.getMobHeadData().getPath()), null, 1).open();
 				headMenuUtility.setMobHeadData(null);
@@ -181,7 +180,7 @@ public class ConfigurationPage extends InventoryGUI
 					headData.writeToConfig();
 					setItem(icon);
 					destroy();
-					new ConfigurationPage(plugin, (HeadProfile) menuUtility, false).open();
+					new ConfigurationPage(plugin, (HeadProfile) profile, false).open();
 					update();
 					resetConfirmed = false;
 					return;
@@ -215,11 +214,8 @@ public class ConfigurationPage extends InventoryGUI
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				MobHeadData mobHeadData = menuUtility.getMobHeadData();
-				
 				if(e.getClick() == ClickType.LEFT)
 				{
-					ChangeValueCommand.setPlayerDataChange(player, mobHeadData);
 					handleChange(MenuDataVariables.DROPCHANCE);
 					destroy();
 					update();
@@ -232,31 +228,32 @@ public class ConfigurationPage extends InventoryGUI
 		};
 	}
 	
-	private ItemStack getChanceItemStack(HeadProfile menuUtility)
+	private ItemStack getChanceItemStack(HeadProfile profile)
 	{
-		double dropchance = menuUtility.getMobHeadData().getDropChance();
-		Color color = ChatColor.gradient(100, 0, dropchance, Color.GREEN, Color.RED);
-		String buf = Integer.toHexString(color.getRGB());
-		String hex = "#" + buf.substring(buf.length() - 6);
-		return new ItemBuilder(Material.LIGHT).setName("Dropchance")
-											  .addLoreLine(ChatColor.HexColor(hex) + dropchance + "%")
-											  .addLoreLine(ChatColor.RED + ChatColor.GREEN + "Left click to set value")
-											  .build();
+		double dropchance = profile.getMobHeadData().getDropChance();
+		String hexColor = Color.getHexColorBetween(0,
+				100,
+				dropchance,
+				new Color(java.awt.Color.RED),
+				new Color(java.awt.Color.YELLOW),
+				new Color(java.awt.Color.GREEN));
+		return new ItemBuilder(Material.LIGHT).setName("Dropchance").addLoreLine(ChatColor.hexToChatColor(hexColor) + dropchance + "%").addLoreLine(
+				ChatColor.GREEN + "Left click to set value").build();
 	}
 	
 	private void handleChange(MenuDataVariables menuDataVariables)
 	{
-		HeadProfile headUtil = (HeadProfile) menuUtility;
-		ChangeValueCommand.setPlayerDataChange(headUtil.getOwner(), headData);
-		headUtil.setDataVariables(menuDataVariables);
+		HeadProfile headData = (HeadProfile) profile;
+		headData.setDataVariables(menuDataVariables);
+		ChangeValueCommand.setPlayerDataChange(headData.getOwner(), this.headData);
 		switch(menuDataVariables)
 		{
-			case DESCRIPTION -> Message.msgPlayer(menuUtility.getOwner(), lang.getValue(player, "command-request-change-description"));
-			case TEXTURE -> Message.msgPlayer(menuUtility.getOwner(), lang.getValue(player, "command-request-change-texture"));
-			case NAME -> Message.msgPlayer(menuUtility.getOwner(), lang.getValue(player, "command-request-change-name"));
-			case DROPCHANCE -> Message.msgPlayer(menuUtility.getOwner(), lang.getValue(player, "command-request-change-dropchance"));
+			case DESCRIPTION -> Message.msgPlayer(profile.getOwner(), lang.getValue(player, "command-request-change-description"));
+			case TEXTURE -> Message.msgPlayer(profile.getOwner(), lang.getValue(player, "command-request-change-texture"));
+			case NAME -> Message.msgPlayer(profile.getOwner(), lang.getValue(player, "command-request-change-name"));
+			case DROPCHANCE -> Message.msgPlayer(profile.getOwner(), lang.getValue(player, "command-request-change-dropchance"));
 		}
-		Message.msgPlayer(menuUtility.getOwner(), lang.getValue(player, "command-request-cancel"));
+		Message.msgPlayer(profile.getOwner(), lang.getValue(player, "command-request-cancel"));
 	}
 	
 }

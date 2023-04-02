@@ -30,7 +30,7 @@ public class AdvancementMenuPage extends InventoryGUI
 	@Override
 	public void addComponents()
 	{
-		fill(0, 54, FILLER);
+		fill(FILLER);
 		for(AdvancementData advancementData : handler.getAdvancements().values())
 		{
 			pagination.addPagedButton(addAdvancements(advancementData));
@@ -48,7 +48,7 @@ public class AdvancementMenuPage extends InventoryGUI
 			@Override
 			public void onClick(InventoryClickEvent e)
 			{
-				new AdvancementConfiguration(plugin,menuUtility,advancement).open();
+				new AdvancementConfiguration(plugin,profile,advancement).open();
 				destroy();
 			}
 		};

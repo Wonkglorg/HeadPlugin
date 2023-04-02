@@ -2,7 +2,7 @@ package com.wonkglorg.command.headgive;
 
 import com.wonkglorg.utilitylib.command.Command;
 import com.wonkglorg.utilitylib.item.ItemUtil;
-import com.wonkglorg.utilitylib.utils.players.PlayerUtil;
+import com.wonkglorg.utilitylib.players.PlayerUtil;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;

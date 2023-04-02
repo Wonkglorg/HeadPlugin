@@ -5,7 +5,6 @@ import com.wonkglorg.enums.MenuDataVariables;
 import com.wonkglorg.heads.MobHeadData;
 import com.wonkglorg.utilitylib.inventory.Button;
 import com.wonkglorg.utilitylib.inventory.Profile;
-import eu.endercentral.crazy_advancements.advancement.Advancement;
 import org.bukkit.entity.Player;
 
 public class HeadProfile extends Profile
@@ -94,8 +93,6 @@ public class HeadProfile extends Profile
 	{
 		return advancementEditValue;
 	}
-	
-	
 	
 	public void setAdvancementEditValue(AdvancementEditValue advancementEditValue)
 	{

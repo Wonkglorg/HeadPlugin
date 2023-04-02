@@ -1,17 +1,27 @@
 package com.wonkglorg.command.value.valuehandler;
 
-import com.wonkglorg.command.value.ChangeValueCommand.DataChange;
 import com.wonkglorg.heads.MobHeadData;
+import com.wonkglorg.utilitylib.config.Config;
+import org.bukkit.entity.Player;
 
-public class HeadDropChanceHandler implements HeadValueHandler
+public class HeadDropChanceHandler extends HeadValueHandler
 {
-	@Override
-	public void accept(MobHeadData mobHeadData, DataChange value)
-	{
-		double doubleValue = value.doubleValue();
-		mobHeadData.setDropChance(doubleValue >= 0 && doubleValue <= 100 ? round(doubleValue, 2) : mobHeadData.getDropChance());
-	}
 	
+	@Override
+	public void accept(Player player, Config config, MobHeadData mobHeadData, String value)
+	{
+		double doubleValue;
+		try
+		{
+			doubleValue = Double.parseDouble(value);
+		}catch(Exception ignored){
+			doubleValue = 0;
+		}
+		
+		mobHeadData.setDropChance(doubleValue >= 0 && doubleValue <= 100 ? round(doubleValue, 2) : mobHeadData.getDropChance());
+		
+		handle(player, config, mobHeadData);
+	}
 	
 	//MOVE TO MENU UTILITY MATH OPERATIONS
 	private double round(double value, int precision)
