@@ -1,6 +1,6 @@
 package com.wonkglorg.advancements;
 
-import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.manager.config.Config;
 import eu.endercentral.crazy_advancements.advancement.Advancement;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;

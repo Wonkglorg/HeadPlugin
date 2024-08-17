@@ -1,7 +1,7 @@
 package com.wonkglorg.advancements;
 
 import com.wonkglorg.Heads;
-import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.manager.config.Config;
 import eu.endercentral.crazy_advancements.NameKey;
 import eu.endercentral.crazy_advancements.advancement.Advancement;
 import eu.endercentral.crazy_advancements.manager.AdvancementManager;

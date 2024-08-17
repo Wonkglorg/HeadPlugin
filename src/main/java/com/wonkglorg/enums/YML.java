@@ -6,18 +6,19 @@ public enum YML
 	HEAD_DROP_NUMBERS("head-drop-info.yml"),
 	HEAD_DATA("head_data.yml"),
 	HEAD_DATA_BACKUP("head_data_backup.yml"),
-	
+	HEAD_TEXTURES("texture_values.yml"),
 	ADVANCEMENTS("advancements.yml"),
 	;
 	private final String fileName;
-	YML(String fileName){
-	this.fileName = fileName;
+	
+	YML(String fileName)
+	{
+		this.fileName = fileName;
 	}
 	
 	public String getFileName()
 	{
 		return fileName;
 	}
-	
 	
 }

@@ -1,7 +1,7 @@
 package com.wonkglorg.command.value.valuehandler;
 
 import com.wonkglorg.heads.MobHeadData;
-import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.manager.config.Config;
 import org.bukkit.entity.Player;
 
 public class HeadDescriptionValueHandler extends HeadValueHandler

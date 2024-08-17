@@ -1,6 +1,6 @@
 package com.wonkglorg.advancements;
 
-import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.manager.config.Config;
 import org.jetbrains.annotations.NotNull;
 
 public class StringAdvancement

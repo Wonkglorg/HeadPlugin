@@ -8,6 +8,7 @@
 # if only 1 head is available and dropchance is not equal or bigger 100 it has a chance to drop nothing
 # if 2 or more values are specified and combined value is below 100 it has a chance to drop nothing instead
 
+
 Heads:
   sheep:
     red:
@@ -19,7 +20,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     orange:
       customPath: true
@@ -30,7 +31,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     yellow:
       customPath: true
@@ -41,7 +42,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     lime:
       customPath: true
@@ -52,7 +53,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     green:
       customPath: true
@@ -63,7 +64,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     cyan:
       customPath: true
@@ -74,7 +75,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     blue:
       customPath: true
@@ -85,7 +86,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     light_blue:
       customPath: true
@@ -96,7 +97,7 @@ Heads:
         Enabled: true
         DropChance: 100
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     purple:
       customPath: true
@@ -107,7 +108,7 @@ Heads:
         Enabled: true
         DropChance: 100
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     magenta:
       customPath: true
@@ -118,7 +119,7 @@ Heads:
         Enabled: true
         DropChance: 100
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     pink:
       customPath: true
@@ -129,7 +130,7 @@ Heads:
         Enabled: true
         DropChance: 100
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     brown:
       customPath: true
@@ -140,7 +141,7 @@ Heads:
         Enabled: true
         DropChance: 100
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     black:
       customPath: true
@@ -151,7 +152,7 @@ Heads:
         Enabled: true
         DropChance: 100
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     gray:
       customPath: true
@@ -162,7 +163,7 @@ Heads:
         Enabled: true
         DropChance: 100
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     light_gray:
       customPath: true
@@ -173,7 +174,7 @@ Heads:
         Enabled: true
         DropChance: 100
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
     white:
       customPath: true
@@ -184,7 +185,7 @@ Heads:
         Enabled: true
         DropChance: 100
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_SHEEP_AMBIENT
   cow:
     customPath: true
@@ -195,7 +196,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_COW_AMBIENT
   fox:
     customPath: true
@@ -206,7 +207,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_FOX_AMBIENT
   bat:
     customPath: true
@@ -217,7 +218,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_BAT_AMBIENT
   chicken:
     customPath: true
@@ -228,7 +229,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_CHICKEN_AMBIENT
   cod:
     customPath: true
@@ -239,7 +240,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_COD_AMBIENT
   ocelot:
     customPath: true
@@ -250,7 +251,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_OCELOT_AMBIENT
   pig:
     customPath: true
@@ -261,7 +262,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_PIG_AMBIENT
   snowman:
     customPath: true
@@ -272,7 +273,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SNOWMAN_AMBIENT
   rabbit:
     black:
@@ -284,7 +285,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_RABBIT_AMBIENT
     white:
       customPath: true
@@ -295,7 +296,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_RABBIT_AMBIENT
     gold:
       customPath: true
@@ -306,7 +307,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_RABBIT_AMBIENT
     black_and_white:
       customPath: true
@@ -317,7 +318,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_RABBIT_AMBIENT
     the_killer_bunny:
       customPath: true
@@ -328,7 +329,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_RABBIT_AMBIENT
     salt_and_pepper:
       customPath: true
@@ -339,7 +340,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_RABBIT_AMBIENT
     brown:
       customPath: true
@@ -350,7 +351,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_RABBIT_AMBIENT
   salmon:
     customPath: true
@@ -361,7 +362,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SALMON_AMBIENT
   mushroom_cow:
     customPath: true
@@ -372,7 +373,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_MUSHROOM_COW_AMBIENT
   squid:
     customPath: true
@@ -383,7 +384,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SQUID_AMBIENT
   strider:
     customPath: true
@@ -394,7 +395,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_STRIDER_AMBIENT
   tropical fish:
     customPath: true
@@ -405,7 +406,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_TROPICAL FISH_AMBIENT
   turtle:
     customPath: true
@@ -416,7 +417,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_TURTLE_AMBIENT
   villager:
     plains:
@@ -429,7 +430,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -440,7 +441,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -451,7 +452,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -462,7 +463,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -473,7 +474,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -484,7 +485,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -495,7 +496,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -506,7 +507,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -517,7 +518,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -528,7 +529,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -539,7 +540,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -550,7 +551,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -561,7 +562,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       none:
         customPath: true
@@ -572,7 +573,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
     desert:
       mason:
@@ -584,7 +585,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -595,7 +596,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -606,7 +607,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -617,7 +618,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -628,7 +629,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -639,7 +640,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -650,7 +651,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -661,7 +662,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -672,7 +673,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -683,7 +684,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -694,7 +695,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -705,7 +706,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -716,7 +717,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       none:
         customPath: true
@@ -727,7 +728,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
     savanna:
       mason:
@@ -739,7 +740,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -750,7 +751,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -761,7 +762,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -772,7 +773,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -783,7 +784,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -794,7 +795,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -805,7 +806,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -816,7 +817,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -827,7 +828,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -838,7 +839,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -849,7 +850,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -860,7 +861,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -871,7 +872,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       none:
         customPath: true
@@ -882,7 +883,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
     snow:
       mason:
@@ -894,7 +895,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -905,7 +906,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -916,7 +917,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -927,7 +928,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -938,7 +939,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -949,7 +950,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -960,7 +961,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -971,7 +972,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -982,7 +983,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -993,7 +994,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -1004,7 +1005,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -1015,7 +1016,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -1026,7 +1027,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       none:
         customPath: true
@@ -1037,7 +1038,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
     swamp:
       mason:
@@ -1049,7 +1050,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -1060,7 +1061,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -1071,7 +1072,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -1082,7 +1083,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -1093,7 +1094,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -1104,7 +1105,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -1115,7 +1116,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -1126,7 +1127,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -1137,7 +1138,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -1148,7 +1149,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -1159,7 +1160,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -1170,7 +1171,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -1181,7 +1182,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       none:
         customPath: true
@@ -1192,7 +1193,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
     taiga:
       mason:
@@ -1204,7 +1205,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -1215,7 +1216,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -1226,7 +1227,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -1237,7 +1238,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -1248,7 +1249,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -1259,7 +1260,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -1270,7 +1271,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -1281,7 +1282,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -1292,7 +1293,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -1303,7 +1304,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -1314,7 +1315,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -1325,7 +1326,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -1336,7 +1337,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       none:
         customPath: true
@@ -1347,7 +1348,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
     jungle:
       mason:
@@ -1359,7 +1360,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -1370,7 +1371,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -1381,7 +1382,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -1392,7 +1393,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -1403,7 +1404,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -1414,7 +1415,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -1425,7 +1426,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -1436,7 +1437,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -1447,7 +1448,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -1458,7 +1459,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -1469,7 +1470,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -1480,7 +1481,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -1491,7 +1492,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
       none:
         customPath: true
@@ -1502,7 +1503,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_VILLAGER_AMBIENT
   wandering trader:
     customPath: true
@@ -1513,7 +1514,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_WANDERING TRADER_AMBIENT
   pufferfish:
     customPath: true
@@ -1524,7 +1525,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_PUFFERFISH_AMBIENT
   axolotl:
     gold:
@@ -1536,7 +1537,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_AXOLOTL_AMBIENT
     wild:
       customPath: true
@@ -1547,7 +1548,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_AXOLOTL_AMBIENT
     blue:
       customPath: true
@@ -1558,7 +1559,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_AXOLOTL_AMBIENT
     cyan:
       customPath: true
@@ -1569,7 +1570,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_AXOLOTL_AMBIENT
     lucy:
       customPath: true
@@ -1580,7 +1581,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_AXOLOTL_AMBIENT
   glowsquid:
     customPath: true
@@ -1591,7 +1592,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_GLOWSQUID_AMBIENT
   donkey:
     customPath: true
@@ -1602,7 +1603,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_DONKEY_AMBIENT
   horse:
     brown:
@@ -1614,7 +1615,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_HORSE_AMBIENT
     white:
       customPath: true
@@ -1625,7 +1626,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_HORSE_AMBIENT
     black:
       customPath: true
@@ -1636,7 +1637,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_HORSE_AMBIENT
     gray:
       customPath: true
@@ -1647,7 +1648,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_HORSE_AMBIENT
     creamy:
       customPath: true
@@ -1658,7 +1659,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_HORSE_AMBIENT
     chestnut:
       customPath: true
@@ -1669,7 +1670,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_HORSE_AMBIENT
     darkbrown:
       customPath: true
@@ -1680,7 +1681,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_HORSE_AMBIENT
   cat:
     black:
@@ -1692,7 +1693,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     red:
       customPath: true
@@ -1703,7 +1704,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     tabby:
       customPath: true
@@ -1714,7 +1715,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     calico:
       customPath: true
@@ -1725,7 +1726,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     jellie:
       customPath: true
@@ -1736,7 +1737,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     persian:
       customPath: true
@@ -1747,7 +1748,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     ragdoll:
       customPath: true
@@ -1758,7 +1759,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     siamese:
       customPath: true
@@ -1769,7 +1770,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     all black:
       customPath: true
@@ -1780,7 +1781,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     british shorthair:
       customPath: true
@@ -1791,7 +1792,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
     white:
       customPath: true
@@ -1802,7 +1803,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_CAT_AMBIENT
   parrot:
     green:
@@ -1814,7 +1815,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_PARROT_AMBIENT
     gray:
       customPath: true
@@ -1825,7 +1826,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_PARROT_AMBIENT
     cyan:
       customPath: true
@@ -1836,7 +1837,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_PARROT_AMBIENT
     blue:
       customPath: true
@@ -1847,7 +1848,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_PARROT_AMBIENT
     red:
       customPath: true
@@ -1858,7 +1859,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_PARROT_AMBIENT
   mule:
     customPath: true
@@ -1869,7 +1870,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_MULE_AMBIENT
   skeleton_horse:
     customPath: true
@@ -1880,7 +1881,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SKELETON_HORSE_AMBIENT
   zombie_horse:
     customPath: true
@@ -1891,7 +1892,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ZOMBIE_HORSE_AMBIENT
   dolphin:
     customPath: true
@@ -1902,7 +1903,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_DOLPHIN_AMBIENT
   polar_bear:
     customPath: true
@@ -1913,7 +1914,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_POLAR_BEAR_AMBIENT
   trader_llama:
     gray:
@@ -1925,7 +1926,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_TRADER_LLAMA_AMBIENT
     brown:
       customPath: true
@@ -1936,7 +1937,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_TRADER_LLAMA_AMBIENT
     white:
       customPath: true
@@ -1947,7 +1948,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_TRADER_LLAMA_AMBIENT
     creamy:
       customPath: true
@@ -1958,7 +1959,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_TRADER_LLAMA_AMBIENT
   llama:
     gray:
@@ -1970,7 +1971,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_LLAMA_AMBIENT
     brown:
       customPath: true
@@ -1981,7 +1982,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_LLAMA_AMBIENT
     white:
       customPath: true
@@ -1992,7 +1993,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_LLAMA_AMBIENT
     creamy:
       customPath: true
@@ -2003,7 +2004,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_LLAMA_AMBIENT
   panda:
     customPath: true
@@ -2014,7 +2015,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_PANDA_AMBIENT
   wolf:
     customPath: true
@@ -2025,7 +2026,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_WOLF_AMBIENT
   bee:
     customPath: true
@@ -2036,7 +2037,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_BEE_AMBIENT
   iron_golem:
     customPath: true
@@ -2047,7 +2048,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_IRON_GOLEM_AMBIENT
   goat:
     customPath: true
@@ -2058,7 +2059,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_GOAT_AMBIENT
   frog:
     cold:
@@ -2070,7 +2071,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_FROG_AMBIENT
     warm:
       customPath: true
@@ -2081,7 +2082,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_FROG_AMBIENT
     tempered:
       customPath: true
@@ -2092,7 +2093,7 @@ Heads:
         Enabled: true
         DropChance: 100.0
         Worlds: '%all%'
-        Permission: '%non%'
+        
         Sound: ENTITY_FROG_AMBIENT
   allay:
     customPath: true
@@ -2103,7 +2104,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ALLAY_AMBIENT
   spider:
     customPath: true
@@ -2115,7 +2116,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SPIDER_AMBIENT
   cave_spider:
     customPath: true
@@ -2126,7 +2127,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_CAVE_SPIDER_AMBIENT
   zombified_piglin:
     customPath: true
@@ -2137,7 +2138,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ZOMBIFIED_PIGLIN_AMBIENT
   piglin:
     customPath: true
@@ -2148,7 +2149,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_PIGLIN_AMBIENT
   enderman:
     customPath: true
@@ -2159,7 +2160,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ENDERMAN_AMBIENT
   evoker:
     customPath: true
@@ -2170,7 +2171,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_EVOKER_AMBIENT
   vindicator:
     customPath: true
@@ -2181,7 +2182,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_VINDICATOR_AMBIENT
   pillager:
     customPath: true
@@ -2192,7 +2193,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_PILLAGER_AMBIENT
   ravager:
     customPath: true
@@ -2203,7 +2204,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_RAVAGER_AMBIENT
   vex:
     customPath: true
@@ -2214,7 +2215,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_VEX_AMBIENT
   endermite:
     customPath: true
@@ -2225,7 +2226,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ENDERMITE_AMBIENT
   guardian:
     customPath: true
@@ -2236,7 +2237,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_GUARDIAN_AMBIENT
   elder guardian:
     customPath: true
@@ -2247,7 +2248,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ELDER GUARDIAN_AMBIENT
   shulker:
     customPath: true
@@ -2258,7 +2259,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     red:
       Name: '&r&6Red Shulker'
@@ -2267,7 +2268,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     orange:
       Name: '&r&6Orange Shulker'
@@ -2276,7 +2277,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     yellow:
       Name: '&r&6Yellow Shulker'
@@ -2285,7 +2286,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     lime:
       Name: '&r&6Lime Shulker'
@@ -2294,7 +2295,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     green:
       Name: '&r&6Green Shulker'
@@ -2303,7 +2304,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     cyan:
       Name: '&r&6Cyan Shulker'
@@ -2312,7 +2313,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     blue:
       Name: '&r&6Blue Shulker'
@@ -2321,7 +2322,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     light_blue:
       Name: '&r&6Light Blue Shulker'
@@ -2330,7 +2331,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     magenta:
       Name: '&r&6Magenta Shulker'
@@ -2339,7 +2340,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     pink:
       Name: '&r&6Pink Shulker'
@@ -2348,7 +2349,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     brown:
       Name: '&r&6Brown Shulker'
@@ -2357,7 +2358,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     black:
       Name: '&r&6Black Shulker'
@@ -2366,7 +2367,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     gray:
       Name: '&r&6Gray Shulker'
@@ -2375,7 +2376,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     light_gray:
       Name: '&r&6Light Gray Shulker'
@@ -2384,7 +2385,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
     white:
       Name: '&r&6White'
@@ -2393,7 +2394,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SHULKER_AMBIENT
   husk:
     customPath: true
@@ -2404,7 +2405,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_HUSK_AMBIENT
   stray:
     customPath: true
@@ -2415,7 +2416,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_STRAY_AMBIENT
   phantom:
     customPath: true
@@ -2426,7 +2427,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_PHANTOM_AMBIENT
   blaze:
     customPath: true
@@ -2437,7 +2438,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_BLAZE_AMBIENT
   ghast:
     customPath: true
@@ -2448,7 +2449,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_GHAST_AMBIENT
   magma_cube:
     customPath: true
@@ -2459,7 +2460,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_MAGMA_CUBE_AMBIENT
   silverfish:
     customPath: true
@@ -2470,7 +2471,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SILVERFISH_AMBIENT
   zombie:
     customPath: true
@@ -2481,7 +2482,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ZOMBIE_AMBIENT
   creeper:
     customPath: true
@@ -2493,7 +2494,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_CREEPER_AMBIENT
   skeleton:
     customPath: true
@@ -2504,7 +2505,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SKELETON_AMBIENT
   slime:
     customPath: true
@@ -2515,7 +2516,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
     red:
       Name: '&r&6Red Slime'
@@ -2524,7 +2525,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
     orange:
       Name: '&r&6Orange Slime'
@@ -2533,7 +2534,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
     yellow:
       Name: '&r&6Yellow Slime'
@@ -2542,7 +2543,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
     lime:
       Name: '&r&6Lime Slime'
@@ -2551,7 +2552,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
     cyan:
       customPath: true
@@ -2561,7 +2562,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
     blue:
       Name: '&r&6Blue Slime'
@@ -2570,7 +2571,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
     light_blue:
       Name: '&r&6Light Blue'
@@ -2579,7 +2580,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
     purple:
       Name: '&r&6Purple Slime'
@@ -2588,7 +2589,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
     pink:
       Name: '&r&6Pink Slime'
@@ -2597,7 +2598,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_SLIME_AMBIENT
   drowned:
     customPath: true
@@ -2608,7 +2609,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_DROWNED_AMBIENT
   wither skeleton:
     customPath: true
@@ -2619,7 +2620,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_WITHER SKELETON_AMBIENT
   witch:
     customPath: true
@@ -2630,7 +2631,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_WITCH_AMBIENT
   hoglin:
     customPath: true
@@ -2641,7 +2642,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_HOGLIN_AMBIENT
   piglin brute:
     customPath: true
@@ -2652,7 +2653,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_PIGLIN BRUTE_AMBIENT
   zoglin:
     customPath: true
@@ -2663,7 +2664,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ZOGLIN_AMBIENT
   wither:
     customPath: true
@@ -2674,7 +2675,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_WITHER_AMBIENT
   warden:
     customPath: true
@@ -2685,7 +2686,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_WARDEN_AMBIENT
   illusioner:
     customPath: true
@@ -2696,7 +2697,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ILLUSIONER_AMBIENT
   ender dragon:
     customPath: true
@@ -2707,7 +2708,7 @@ Heads:
       Enabled: true
       DropChance: 100.0
       Worlds: '%all%'
-      Permission: '%non%'
+      
       Sound: ENTITY_ENDER DRAGON_AMBIENT
   zombie villager:
     plains:
@@ -2720,7 +2721,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -2731,7 +2732,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -2742,7 +2743,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -2753,7 +2754,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -2764,7 +2765,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -2775,7 +2776,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -2786,7 +2787,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -2797,7 +2798,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -2808,7 +2809,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -2819,7 +2820,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -2830,7 +2831,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -2841,7 +2842,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -2852,7 +2853,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       none:
         customPath: true
@@ -2863,7 +2864,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
     desert:
       mason:
@@ -2875,7 +2876,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -2886,7 +2887,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -2897,7 +2898,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -2908,7 +2909,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -2919,7 +2920,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -2930,7 +2931,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -2941,7 +2942,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -2952,7 +2953,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -2963,7 +2964,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -2974,7 +2975,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -2985,7 +2986,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -2996,7 +2997,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -3007,7 +3008,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       none:
         customPath: true
@@ -3018,7 +3019,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
     savanna:
       mason:
@@ -3030,7 +3031,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -3041,7 +3042,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -3052,7 +3053,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -3063,7 +3064,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -3074,7 +3075,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -3085,7 +3086,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -3096,7 +3097,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -3107,7 +3108,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -3118,7 +3119,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -3129,7 +3130,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -3140,7 +3141,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -3151,7 +3152,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -3162,7 +3163,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       none:
         customPath: true
@@ -3173,7 +3174,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
     snow:
       mason:
@@ -3185,7 +3186,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -3196,7 +3197,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -3207,7 +3208,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -3218,7 +3219,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -3229,7 +3230,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -3240,7 +3241,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -3251,7 +3252,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -3262,7 +3263,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -3273,7 +3274,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -3284,7 +3285,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -3295,7 +3296,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -3306,7 +3307,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -3317,7 +3318,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       none:
         customPath: true
@@ -3328,7 +3329,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
     swamp:
       mason:
@@ -3340,7 +3341,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -3351,7 +3352,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -3362,7 +3363,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -3373,7 +3374,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -3384,7 +3385,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -3395,7 +3396,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -3406,7 +3407,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -3417,7 +3418,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -3428,7 +3429,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -3439,7 +3440,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -3450,7 +3451,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -3461,7 +3462,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -3472,7 +3473,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       none:
         customPath: true
@@ -3483,7 +3484,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
     taiga:
       mason:
@@ -3495,7 +3496,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -3506,7 +3507,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -3517,7 +3518,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -3528,7 +3529,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -3539,7 +3540,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -3550,7 +3551,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -3561,7 +3562,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -3572,7 +3573,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -3583,7 +3584,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -3594,7 +3595,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -3605,7 +3606,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -3616,7 +3617,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -3627,7 +3628,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       none:
         customPath: true
@@ -3638,7 +3639,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
     jungle:
       mason:
@@ -3650,7 +3651,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cleric:
         customPath: true
@@ -3661,7 +3662,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       farmer:
         customPath: true
@@ -3672,7 +3673,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       armorer:
         customPath: true
@@ -3683,7 +3684,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       butcher:
         customPath: true
@@ -3694,7 +3695,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fletcher:
         customPath: true
@@ -3705,7 +3706,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       shepherd:
         customPath: true
@@ -3716,7 +3717,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       fisherman:
         customPath: true
@@ -3727,7 +3728,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       librarian:
         customPath: true
@@ -3738,7 +3739,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       toolsmith:
         customPath: true
@@ -3749,7 +3750,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       weaponsmith:
         customPath: true
@@ -3760,7 +3761,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       cartographer:
         customPath: true
@@ -3771,7 +3772,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       leatherworker:
         customPath: true
@@ -3782,7 +3783,7 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT
       none:
         customPath: true
@@ -3793,5 +3794,5 @@ Heads:
           Enabled: true
           DropChance: 100.0
           Worlds: '%all%'
-          Permission: '%non%'
+          
           Sound: ENTITY_ZOMBIE VILLAGER_AMBIENT

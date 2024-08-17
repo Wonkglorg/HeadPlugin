@@ -2,7 +2,7 @@ package com.wonkglorg.command;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.gui.HeadMenuGui;
-import com.wonkglorg.utilitylib.command.Command;
+import com.wonkglorg.utilitylib.manager.command.Command;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 

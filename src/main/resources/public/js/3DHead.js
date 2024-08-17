@@ -1,11 +1,12 @@
-import * as THREE from '../../../../../../three.module.js';
-import {OrbitControls} from '../../three/examples/jsm/controls/OrbitControls.js';
+import * as THREE from '/three';
+import {OrbitControls} from '/three/examples/jsm/controls/OrbitControls.js';
 
 const canvas = document.getElementById('canvas');
 const renderer = new THREE.WebGLRenderer({canvas});
 
 const scene = new THREE.Scene();
-
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 const camera = new THREE.PerspectiveCamera(75, canvas.width / canvas.height, 0.1, 1000);
 camera.position.set(0, 0, 5);
 
@@ -25,9 +26,6 @@ const texture = textureLoader.load(base64Texture, () =>
 {
     console.error('Texture not loaded');
 });
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
 
 const material = new THREE.MeshBasicMaterial({map: texture});
 

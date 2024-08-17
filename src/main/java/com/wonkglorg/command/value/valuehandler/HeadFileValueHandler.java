@@ -3,8 +3,8 @@ package com.wonkglorg.command.value.valuehandler;
 import com.wonkglorg.Heads;
 import com.wonkglorg.heads.MobHeadData;
 import com.wonkglorg.heads.MobHeadDataUtility;
-import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.message.Message;
+import com.wonkglorg.utilitylib.base.message.Message;
+import com.wonkglorg.utilitylib.manager.config.Config;
 import com.wonkglorg.utils.HeadProfile;
 import org.bukkit.entity.Player;
 
@@ -18,7 +18,7 @@ public class HeadFileValueHandler extends HeadValueHandler
 		System.out.println(path);
 		if(MobHeadData.isValidHeadPath(config, path))
 		{
-			Message.msgPlayer(player, Heads.getManager().getLangManager().getValue(player, "command-value-error-value-exists"));
+			Message.msgPlayer(player, Heads.manager().getLangManager().getValue(player, "command-value-error-value-exists"));
 			return;
 		}
 		MobHeadDataUtility.createNewDirectory(config, menuUtility.getLastPath(), value);

@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "three": "^0.151.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.77.0"
   }
 }

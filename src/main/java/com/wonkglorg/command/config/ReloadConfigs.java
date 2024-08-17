@@ -2,12 +2,12 @@ package com.wonkglorg.command.config;
 
 import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
-import com.wonkglorg.utilitylib.command.Command;
-import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.logger.Logger;
-import com.wonkglorg.utilitylib.managers.ConfigManager;
-import com.wonkglorg.utilitylib.managers.LangManager;
-import com.wonkglorg.utilitylib.message.Message;
+import com.wonkglorg.utilitylib.base.logger.Logger;
+import com.wonkglorg.utilitylib.base.message.Message;
+import com.wonkglorg.utilitylib.manager.command.Command;
+import com.wonkglorg.utilitylib.manager.config.Config;
+import com.wonkglorg.utilitylib.manager.managers.ConfigManager;
+import com.wonkglorg.utilitylib.manager.managers.LangManager;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.StringUtil;
@@ -20,47 +20,39 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-public class ReloadConfigs extends Command
-{
+public class ReloadConfigs extends Command{
 	private final ConfigManager manager;
 	private final Map<String, Config> configMap = new HashMap<>();
 	private final List<String> configList = new ArrayList<>();
 	private final List<String> matches = new ArrayList<>();
-	private final LangManager lang = Heads.getManager().getLangManager();
+	private final LangManager lang = Heads.manager().getLangManager();
 	
 	@Override
-	public boolean allowConsole()
-	{
+	public boolean allowConsole() {
 		return false;
 	}
 	
-	public ReloadConfigs(@NotNull JavaPlugin main, @NotNull String name, ConfigManager manager)
-	{
+	public ReloadConfigs(@NotNull JavaPlugin main, @NotNull String name, ConfigManager manager) {
 		super(main, name);
 		this.manager = manager;
 		initComponents();
 	}
 	
 	@Override
-	public boolean execute(@NotNull Player player, String[] args)
-	{
-		if(args.length == 0)
-		{
+	public boolean execute(@NotNull Player player, String[] args) {
+		if(args.length == 0){
 			return false;
 		}
 		String ymlName = argAsString(0);
 		
-		switch(ymlName.toLowerCase())
-		{
-			case "all" ->
-			{
+		switch(ymlName.toLowerCase()) {
+			case "all" -> {
 				manager.load();
 				Logger.log(lang.getValue(Locale.ENGLISH, "reload-config-all-success"));
 				Message.msgPlayer(player, lang.getValue(player, "reload-config-all-success"));
 				return true;
 			}
-			case "all lang" ->
-			{
+			case "all lang" -> {
 				lang.load();
 				Message.msgPlayer(player, lang.getValue(player, "reload-config-all-lang-success"));
 				return true;
@@ -69,8 +61,7 @@ public class ReloadConfigs extends Command
 		
 		Config config = configMap.get(ymlName);
 		
-		if(config == null)
-		{
+		if(config == null){
 			Message.msgPlayer(player, lang.getValue(player, "reload-config-error").replace("<config>", ymlName));
 			return true;
 		}
@@ -81,10 +72,8 @@ public class ReloadConfigs extends Command
 	}
 	
 	@Override
-	public List<String> tabComplete(@NotNull Player player, String[] args)
-	{
-		if(args.length == 1)
-		{
+	public List<String> tabComplete(@NotNull Player player, String[] args) {
+		if(args.length == 1){
 			StringUtil.copyPartialMatches(args[0], configList, matches);
 			Collections.sort(matches);
 			return matches;
@@ -92,17 +81,14 @@ public class ReloadConfigs extends Command
 		return null;
 	}
 	
-	private void initComponents()
-	{
-		for(YML configs : YML.values())
-		{
+	private void initComponents() {
+		for(YML configs : YML.values()){
 			configList.add("ALL");
 			configList.add("ALL Lang");
 			configList.add(configs.getFileName());
 			configMap.put(configs.getFileName(), manager.getConfig(configs.getFileName()));
 		}
-		for(Config lang : lang.getAllLangs().values())
-		{
+		for(Config lang : lang.getAllLangs().values()){
 			configList.add(lang.name());
 			configMap.put(lang.name(), lang);
 		}

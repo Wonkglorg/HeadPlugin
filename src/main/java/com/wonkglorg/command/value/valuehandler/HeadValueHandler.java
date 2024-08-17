@@ -5,7 +5,7 @@ import com.wonkglorg.enums.MenuDataVariables;
 import com.wonkglorg.gui.heads.ConfigurationPage;
 import com.wonkglorg.gui.heads.HeadMenuPage;
 import com.wonkglorg.heads.MobHeadData;
-import com.wonkglorg.utilitylib.config.Config;
+import com.wonkglorg.utilitylib.manager.config.Config;
 import com.wonkglorg.utils.HeadProfile;
 import org.bukkit.entity.Player;
 

@@ -10,13 +10,11 @@ import com.wonkglorg.command.value.valuehandler.HeadValueHandler;
 import com.wonkglorg.enums.MenuDataVariables;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.gui.heads.ConfigurationPage;
-import com.wonkglorg.gui.heads.HeadMenuPage;
 import com.wonkglorg.heads.MobHeadData;
-import com.wonkglorg.heads.MobHeadDataUtility;
-import com.wonkglorg.utilitylib.command.Command;
-import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.managers.LangManager;
-import com.wonkglorg.utilitylib.message.Message;
+import com.wonkglorg.utilitylib.base.message.Message;
+import com.wonkglorg.utilitylib.manager.command.Command;
+import com.wonkglorg.utilitylib.manager.config.Config;
+import com.wonkglorg.utilitylib.manager.managers.LangManager;
 import com.wonkglorg.utils.HeadProfile;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -34,8 +32,8 @@ import java.util.stream.Collectors;
 public class ChangeValueCommand extends Command
 {
 	private static final Map<Player, MobHeadData> playerDataChange = new HashMap<>();
-	private final LangManager lang = Heads.getManager().getLangManager();
-	private final Config config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA_BACKUP.getFileName());
+	private final LangManager lang = Heads.manager().getLangManager();
+	private final Config config = Heads.manager().getConfigManager().getConfig(YML.HEAD_DATA_BACKUP.getFileName());
 	
 	private final Map<MenuDataVariables, HeadValueHandler> variableHandlerMap = new HashMap<>();
 	private HeadProfile headProfile;

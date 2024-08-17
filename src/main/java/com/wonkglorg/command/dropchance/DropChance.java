@@ -4,10 +4,10 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.heads.MobHeadData;
 import com.wonkglorg.heads.MobHeadDataUtility;
-import com.wonkglorg.utilitylib.command.Command;
-import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.message.ChatColor;
-import com.wonkglorg.utilitylib.message.Message;
+import com.wonkglorg.utilitylib.base.message.ChatColor;
+import com.wonkglorg.utilitylib.base.message.Message;
+import com.wonkglorg.utilitylib.manager.command.Command;
+import com.wonkglorg.utilitylib.manager.config.Config;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 
 public class DropChance extends Command
 {
-	Config config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+	Config config = Heads.manager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 	
 	/**
 	 * Instantiates a new Command.

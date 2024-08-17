@@ -4,12 +4,13 @@ import com.wonkglorg.Heads;
 import com.wonkglorg.enums.YML;
 import com.wonkglorg.heads.MobHeadData;
 import com.wonkglorg.heads.MobHeadDataUtility;
-import com.wonkglorg.utilitylib.command.Command;
-import com.wonkglorg.utilitylib.config.Config;
-import com.wonkglorg.utilitylib.item.ItemUtil;
-import com.wonkglorg.utilitylib.managers.LangManager;
-import com.wonkglorg.utilitylib.message.Message;
-import com.wonkglorg.utilitylib.players.PlayerUtil;
+import com.wonkglorg.utilitylib.base.item.ItemUtil;
+import com.wonkglorg.utilitylib.base.message.Message;
+import com.wonkglorg.utilitylib.base.players.PlayerUtil;
+import com.wonkglorg.utilitylib.manager.command.Command;
+import com.wonkglorg.utilitylib.manager.config.Config;
+import com.wonkglorg.utilitylib.manager.managers.LangManager;
+
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -24,7 +25,8 @@ import java.util.List;
 
 public class GiveMobHeadCommand extends Command
 {
-	private final LangManager lang = Heads.getManager().getLangManager();
+	
+	private final LangManager lang = Heads.manager().getLangManager();
 	private final List<EntityType> all = new ArrayList<>();
 	private final List<EntityType> hostiles = new ArrayList<>();
 	private final List<EntityType> passives = new ArrayList<>();
@@ -38,7 +40,7 @@ public class GiveMobHeadCommand extends Command
 	public GiveMobHeadCommand(@NotNull JavaPlugin main, @NotNull String name)
 	{
 		super(main, name);
-		config = Heads.getManager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
+		config = Heads.manager().getConfigManager().getConfig(YML.HEAD_DATA.getFileName());
 		initLists();
 		initHandleMap();
 	}
